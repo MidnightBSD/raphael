@@ -3,13 +3,13 @@
 cmake_minimum_required(VERSION 3.2)
 
 # dh_translations detects this if there's no variable used
-set (GETTEXT_PACKAGE "midori")
+set (GETTEXT_PACKAGE "raphael")
 add_definitions("-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\"")
 project(${GETTEXT_PACKAGE} C)
 set(PROJECT_DOMAIN org.midori_browser.Midori)
-set(PROJECT_BUGS https://github.com/midori-browser/core/issues)
-set(PROJECT_WEBSITE https://www.midori-browser.org)
-set(CORE_VERSION 9.0)
+set(PROJECT_BUGS https://github.com/MidnightBSD/raphael/issues)
+set(PROJECT_WEBSITE https://github.com/MidnightBSD/raphael)
+set(CORE_VERSION 9.1)
 
 execute_process(COMMAND "git" "describe" "--tags"
                 OUTPUT_VARIABLE REVISION
@@ -72,7 +72,7 @@ set(CFLAGS "${CFLAGS} -g")
 set(VALA_CFLAGS "-g -fPIC -w -Werror")
 
 set(LIBCORE "${CMAKE_PROJECT_NAME}-core")
-set(CORE_USER_AGENT_VERSION "Midori/6")
+set(CORE_USER_AGENT_VERSION "Raphael/9")
 
 configure_file(config.h.in config.h @ONLY)
 
