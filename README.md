@@ -122,6 +122,15 @@ To verify a regression you might need to revert a particular change:
 
     # Revert only d54c7e45
     git revert d54c7e45
+    
+If the screen is "blank" as in web pages won't render and you get an EGL initilization error.  Try the following:
+set this in the environment: 
+WEBKIT_DISABLE_COMPOSITING_MODE=1 
+
+try running as root to see if it works. (not recommended for security reasons normally) 
+
+If these work, you may need to get your user added to the video group on your OS.  This also seems to be an issue with some newer mesa releases (22.x) or on systems that use wayland like Ubuntu. 
+[[https://bugs.webkit.org/show_bug.cgi?id=238513]]
 
 # Contributing code
 
