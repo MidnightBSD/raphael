@@ -1,24 +1,9 @@
-[![CircleCI](https://circleci.com/gh/midori-browser/core.svg?style=svg)](https://circleci.com/gh/midori-browser/core)
-[![Snap Status](https://build.snapcraft.io/badge/midori-browser/core.svg)](https://build.snapcraft.io/user/midori-browser/core)
-[![FlatHub](https://img.shields.io/badge/FlatHub-gray.svg)](https://flathub.org/apps/details/org.midori_browser.Midori)
-[![Telegram](https://img.shields.io/badge/Telegram-Chat-gray.svg?style=flat&logo=telegram&colorA=5583a4&logoColor=fff)](https://www.midori-browser.org/telegram)
-[![Twitter](https://img.shields.io/twitter/follow/midoriweb.svg?style=social&label=Follow)](https://twitter.com/midoriweb)
-[![Donate](https://img.shields.io/badge/PayPal-Donate-gray.svg?style=flat&logo=paypal&colorA=0071bb&logoColor=fff)](https://www.midori-browser.org/donate)
-[![BountySource](https://img.shields.io/bountysource/team/midori/activity.svg)](https://www.bountysource.com/teams/midori)
-[![Patreon](https://img.shields.io/badge/PATREON-Pledge-red.svg)](https://www.patreon.com/midoribrowser)
-
 <p align="center">
-    <img src="icons/scalable/apps/org.midori_browser.Midori.svg"/>
+    <b>Raphael</b>
+    a lightweight web browser
 </p>
 
-<p align="center">
-    <b>Midori</b>
-    a lightweight, fast and free web browser
-</p>
-
-![Midori Screenshot](https://www.midori-browser.org/images/screenshots/rdio.png)
-
-Midori is a lightweight yet powerful web browser which runs just as well on little embedded computers named for delicious pastries as it does on beefy machines with a core temperature exceeding that of planet earth. And it looks good doing that, too. Oh, and of course it's free software.
+Raphael is a fork of the Midori web browser to incorporate some bug fixes and security changes in the last webkit based version available.
 
 **Privacy out of the box**
 
@@ -35,29 +20,9 @@ Midori is a lightweight yet powerful web browser which runs just as well on litt
 * Web developer tools powered by WebKit
 * Cross-browser extensions compatible with Chrome, Firefox, Opera and Vivaldi
 
-Please report comments, suggestions and bugs to:
-    https://github.com/midori-browser/core/issues
+# Installing from MidnightBSD
 
-Join [the #midori IRC channel](https://www.midori-browser.org/irc) on Freenode
-or [the Telegram group](https://www.midori-browser.org/telegram)!
-
-# Installing Midori on Linux
-
-If [your distro supports snaps](https://docs.snapcraft.io/core/)
-you can install the **latest stable** version of Midori
-[from the snap store](https://snapcraft.io/midori) with a single command:
-
-    snap install midori
-
-> **Spoilers:** For those more adventurous types out there, trying out the preview of the next version is only the switch of a channel away.
-
-You can also install Midori from [FlatHub](https://flathub.org/apps/details/org.midori_browser.Midori).
-
-    flatpak install flathub org.midori_browser.Midori
-
-# Installing Midori on Android
-
-You can opt-in for the [beta release on the Play Store](https://play.google.com/apps/testing/org.midori_browser.midori).
+mport install raphael
 
 # Building from source
 
@@ -121,8 +86,7 @@ You'll want to **unit test** the code if you're testing a new version or contrib
 
 # Release process
 
-We're on a 8/4 cycle which means 8 weeks of features and 4 weeks of stabilization
-capped at a release once every 3 months ie. at the last of the third month.
+TBD
 
 Update `CORE_VERSION` in `CMakeLists.txt` to `10.0`.
 Add a section to `CHANGELOG.md`.
@@ -133,9 +97,6 @@ Add release to `data/org.midori_browser.Midori.appdata.xml.in`.
     git push origin HEAD
     git archive --prefix=midori-v10.0/ -o midori-v10.0.tar.gz -9 HEAD
 
-Propose a PR for the release.
-Publish the release on https://github.com/midori-browser/core/releases
-Promote snap on https://snapcraft.io/midori/release to the `stable` channel
 
 # Troubleshooting
 
@@ -189,11 +150,11 @@ If you haven't yet, [check that GitHub has your SSH key](https://github.com/sett
 [Fork the project on GitHub](https://help.github.com/articles/fork-a-repo).
 
     # USERNAME is your GitHub username
-    git clone git@github.com:USERNAME/core.git
+    git clone git@github.com:USERNAME/raphael.git
 
 Prepare to pull in updates from upstream:
 
-    git remote add upstream https://github.com/midori-browser/core.git
+    git remote add upstream https://github.com/midnightbsd/raphael.git
 
 > **Spoilers:** The code used to be hosted at `lp:midori` and `git.xfce.org/apps/midori` respectively.
 
@@ -267,7 +228,7 @@ This will automatically request a **review from other developers** who can then 
 
 ## Cross-browser web extensions
 
-The following API specification is supported by Midori:
+The following API specification is supported by Raphael:
 
     manifest.json
       name
@@ -304,7 +265,7 @@ The following API specification is supported by Midori:
           - title: string
             message: string
 
-# Jargon
+# Jargon (from Midori)
 
 * **freeze**: a period of bug fixes eg. 4/2 cycle means 4 weeks of features and 2 weeks of stabilization
 * **PR**: pull request, a branch proposed for review, analogous to **MR** (merge request) with Bazaar
