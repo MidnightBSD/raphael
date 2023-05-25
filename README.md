@@ -20,6 +20,8 @@ Raphael is a fork of the Midori web browser to incorporate some bug fixes and se
 * Web developer tools powered by WebKit
 * Cross-browser extensions compatible with Chrome, Firefox, Opera and Vivaldi
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MidnightBSD/raphael/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MidnightBSD/raphael/tree/master)
+
 # Installing from MidnightBSD
 
 mport install raphael
