@@ -5,7 +5,7 @@
 
 Raphael is a fork of the Midori web browser to incorporate some bug fixes and security changes in the last webkit based version available.
 
-[![Build Status](https://jenkins.midnightbsd.org/buildStatus/icon?job=MidnightBSD%2Fraphael%2Fmaster&build=8)](https://jenkins.midnightbsd.org/job/MidnightBSD/job/raphael/job/master/1/)
+[![Build Status](https://jenkins.midnightbsd.org/buildStatus/icon?job=MidnightBSD%2Fraphael%2Fmaster)](https://jenkins.midnightbsd.org/job/MidnightBSD/job/raphael/job/master/)
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/MidnightBSD/raphael/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MidnightBSD/raphael/tree/master)
 
