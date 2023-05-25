@@ -20,8 +20,6 @@ Raphael is a fork of the Midori web browser to incorporate some bug fixes and se
 * Web developer tools powered by WebKit
 * Cross-browser extensions compatible with Chrome, Firefox, Opera and Vivaldi
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MidnightBSD/raphael/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MidnightBSD/raphael/tree/master)
-
 # Installing from MidnightBSD
 
 mport install raphael
@@ -378,3 +376,8 @@ For testing your changes a real system is recommended because WebKitGTK+ doesn't
 See [Fedora 18 packages](http://dl.fedoraproject.org/pub/fedora/linux/releases/18/Everything/i386/os/Packages/m/).
 
 > **Spoilers:** Use `msys.bat` to launch a shell
+
+# CI
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MidnightBSD/raphael/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MidnightBSD/raphael/tree/master)
+
+
