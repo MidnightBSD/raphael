@@ -14,3 +14,10 @@ prime
 /build
 /captures
 .externalNativeBuild
+
+# anjuta
+.anjuta
+.anjuta_sym-db.db
+raphael.anjuta
+#clion
+.cmake-build-debug
