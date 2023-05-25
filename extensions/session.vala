@@ -371,7 +371,7 @@ namespace Tabby {
             combo.append ("1", _("Show Homepage"));
             combo.append ("2", _("Show last open tabs"));
             settings.bind_property ("load-on-startup", combo, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
-            var button = new Midori.LabelWidget (_("When Midori starts:"), combo);
+            var button = new Midori.LabelWidget (_("When Raphael starts:"), combo);
             box.add (button);
             box.show_all ();
             preferences.add (_("Browsing"), box);
