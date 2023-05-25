@@ -5,6 +5,12 @@
 
 Raphael is a fork of the Midori web browser to incorporate some bug fixes and security changes in the last webkit based version available.
 
+[![Build Status](https://jenkins.midnightbsd.org/buildStatus/icon?job=MidnightBSD%2Fraphael%2Fmaster&build=8)](https://jenkins.midnightbsd.org/job/MidnightBSD/job/raphael/job/master/1/)
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MidnightBSD/raphael/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MidnightBSD/raphael/tree/master)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMidnightBSD%2Fraphael.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FMidnightBSD%2Fraphael?ref=badge_shield)
+
 **Privacy out of the box**
 
 * Adblock filter list support
@@ -376,8 +382,5 @@ For testing your changes a real system is recommended because WebKitGTK+ doesn't
 See [Fedora 18 packages](http://dl.fedoraproject.org/pub/fedora/linux/releases/18/Everything/i386/os/Packages/m/).
 
 > **Spoilers:** Use `msys.bat` to launch a shell
-
-# CI
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MidnightBSD/raphael/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MidnightBSD/raphael/tree/master)
 
 
