@@ -24,7 +24,7 @@ description: |
 
 grade: stable
 confinement: strict
-icon: icons/scalable/apps/org.raphael.Raphael.svg
+icon: icons/scalable/apps/org.midnightbsd.Raphael.svg
 
 apps:
   raphael:
