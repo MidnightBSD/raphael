@@ -20,4 +20,4 @@ prime
 .anjuta_sym-db.db
 raphael.anjuta
 #clion
-.cmake-build-debug
+cmake-build-debug
