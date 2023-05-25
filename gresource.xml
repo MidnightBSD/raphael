@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/midori_browser/Midori">
-    <file>icons/16x16/apps/org.midori_browser.Midori.png</file>
-    <file>icons/22x22/apps/org.midori_browser.Midori.png</file>
-    <file>icons/scalable/apps/org.midori_browser.Midori.svg</file>
+  <gresource prefix="/org/midnightbsd/Raphael">
+    <file>icons/16x16/apps/org.midnightbsd.Raphael.png</file>
+    <file>icons/22x22/apps/org.midnightbsd.Raphael.png</file>
+    <file>icons/scalable/apps/org.midnightbsd.Raphael.svg</file>
     <file>icons/index.theme</file>
   </gresource>
-  <gresource prefix="/org/midori_browser/Midori/gtk">
+  <gresource prefix="/org/midnightbsd/Raphael/gtk">
     <file compressed="true" preprocess="xml-stripblanks" alias="menus.ui">ui/menus.ui</file>
     <file compressed="true" preprocess="xml-stripblanks" alias="help-overlay.ui">ui/shortcuts.ui</file>
   </gresource>

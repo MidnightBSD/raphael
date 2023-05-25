@@ -90,12 +90,12 @@ TBD
 
 Update `CORE_VERSION` in `CMakeLists.txt` to `10.0`.
 Add a section to `CHANGELOG.md`.
-Add release to `data/org.midori_browser.Midori.appdata.xml.in`.
+Add release to `data/org.midnightbsd.Raphael.appdata.xml.in`.
 
-    git commit -p -v -m "Release Midori 10.0"
+    git commit -p -v -m "Release Raphael 10.0"
     git checkout -B release-10.0
     git push origin HEAD
-    git archive --prefix=midori-v10.0/ -o midori-v10.0.tar.gz -9 HEAD
+    git archive --prefix=raphael-v10.0/ -o raphael-v10.0.tar.gz -9 HEAD
 
 
 # Troubleshooting
@@ -113,7 +113,7 @@ If the problem is a warning, not a crash GLib has a handy feature
 
 On Windows you can open the folder where Midori is installed and double-click gdb.exe which opens a command window:
 
-    file midori.exe
+    file raphael.exe
     run
     …
     bt

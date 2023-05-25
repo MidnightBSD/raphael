@@ -14,6 +14,7 @@ body {
     background-image: url(res:///data/logo-shade.svg);
     background-repeat: no-repeat;
     background-position: 90% 90%;
+    background-size: 100px 100px;
     color: #222222;
     font-family: -webkit-system-font, sans-serif;
     font-size: 14pt;

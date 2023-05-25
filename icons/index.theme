@@ -1,8 +1,8 @@
 [Icon Theme]
-Name=Midori
-Comment=Fallback Icons shipped with Midori
+Name=Raphael
+Comment=Fallback Icons shipped with Raphael
 Inherits=hicolor
-Example=org.midori_browser.Midori
+Example=org.midnightbsd.Raphael
 Directories=16/apps,22/apps,scalable/apps
 
 [16/apps]

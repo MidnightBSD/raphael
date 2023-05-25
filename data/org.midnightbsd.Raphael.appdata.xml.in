@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2015-2019 Christian Dywan <christian@twotoasts.de> -->
 <component type="desktop">
-  <id>org.midori_browser.Midori</id>
-  <launchable type="desktop-id">org.midori_browser.Midori.desktop</launchable>
+  <id>org.midnightbsd.Raphael</id>
+  <launchable type="desktop-id">org.midnightbsd.Raphael.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-2.1-or-later</project_license>
-  <_name>Midori Web Browser</_name>
+  <_name>Raphael Web Browser</_name>
   <categories>
     <category>Network</category>
     <category>WebBrowser</category>
@@ -20,7 +20,7 @@
   <summary>A fast and lightweight web browser</summary>
   <description>
     <p>
-    Midori is a lightweight yet powerful web browser which runs just as well on little embedded computers named for delicious pastries as it does on beefy machines with a core temperature exceeding that of planet earth. And it looks good doing that, too. Oh, and of course it's free software.
+    Raphael is a lightweight web browser
     </p>
     <p>Privacy out of the box</p>
     <ul>
@@ -38,18 +38,16 @@
       <li>Cross-browser extensions compatible with Chrome, Firefox, Opera and Vivaldi</li>
     </ul>
   </description>
-  <url type="homepage">https://www.midori-browser.org/</url>
+  <url type="homepage">https://github.com/midnightbsd/raphael/</url>
   <screenshots>
     <screenshot type="default">
-      <image>https://www.midori-browser.org/images/screenshots/rdio.png</image>
+      <image></image>
     </screenshot>
   </screenshots>
-  <update_contact>christian@twotoasts.de</update_contact>
-  <developer_name>Christian Dywan</developer_name>
-  <url type="bugtracker">https://github.com/midori-browser/core/issues</url>
-  <url type="faq">https://www.midori-browser.org/faq</url>
-  <url type="donation">https://www.midori-browser.org/donate</url>
-  <translation type="gettext">midori</translation>
+  <update_contact>luke@foolishgames.com</update_contact>
+  <developer_name>Lucas Holt</developer_name>
+  <url type="bugtracker">https://github.com/midnightbsd/raphael/issues</url>
+  <translation type="gettext">raphael</translation>
   <content_rating type="oars-1.1" />
   <releases>
     <release version="9.0" date="2019-07-27">
@@ -70,9 +68,5 @@
         </ul>
       </description>
     </release>
-    <release version="8.0" date="2019-02-28"/>
-    <release version="7.0" date="2018-11-30"/>
-    <release version="6.0" date="2018-10-31"/>
-    <release version="0.5.11" date="2015-08-30"/>
   </releases>
 </component>

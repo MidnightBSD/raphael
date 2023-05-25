@@ -1,6 +1,6 @@
 # List of source files containing translatable strings.
 
-data/org.midori_browser.Midori.desktop.in
+data/org.raphael.Raphael.desktop.in
 core/about.vala
 core/app.vala
 core/browser.vala
