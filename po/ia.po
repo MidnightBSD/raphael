@@ -1,11 +1,11 @@
-# Interlingua translation for midori
+# Interlingua translation for raphael
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the midori package.
+# This file is distributed under the same license as the raphael package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: midori\n"
+"Project-Id-Version: raphael\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-07-11 22:56-0400\n"
 "PO-Revision-Date: 2016-04-03 01:27+0000\n"
@@ -18,340 +18,340 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-10-13 05:13+0000\n"
 "X-Generator: Launchpad (build 18474)\n"
 
-#: ../data/midori.desktop.in.h:1 ../midori/main.c:142
-#: ../midori/midori-websettings.c:231
+#: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
+#: ../raphael/raphael-websettings.c:231
 msgid "Midori"
 msgstr "Midori"
 
-#: ../data/midori.desktop.in.h:2
+#: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Navigator Web"
 
-#: ../data/midori.desktop.in.h:3
+#: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
 msgstr "Le Navigator Web Midori"
 
-#: ../data/midori.desktop.in.h:4
+#: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
 msgstr "Naviga le Web"
 
-#: ../data/midori.desktop.in.h:5
+#: ../data/raphael.desktop.in.h:5
 msgid "Internet;WWW;Explorer"
 msgstr "Internet;WWW;Explorator"
 
-#: ../data/midori.desktop.in.h:6 ../midori/midori-browser.c:1783
+#: ../data/raphael.desktop.in.h:6 ../raphael/raphael-browser.c:1783
 msgid "New Tab"
 msgstr "Nove scheda"
 
-#: ../data/midori.desktop.in.h:7 ../midori/midori-browser.c:1780
+#: ../data/raphael.desktop.in.h:7 ../raphael/raphael-browser.c:1780
 msgid "New Window"
 msgstr "Nove fenestra"
 
-#: ../data/midori.desktop.in.h:8
+#: ../data/raphael.desktop.in.h:8
 msgid "New Private Browsing Window"
 msgstr "Nove fenestra private"
 
-#: ../data/midori-private.desktop.in.h:1
+#: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
 msgstr "Navigation private de Midori"
 
-#: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
+#: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
 msgstr "Navigation private"
 
-#: ../data/midori-private.desktop.in.h:3
+#: ../data/raphael-private.desktop.in.h:3
 msgid "Open a new private browsing window"
 msgstr "Aperir un nove fenestra private"
 
-#: ../midori/main.c:52
+#: ../raphael/main.c:52
 #, c-format
 msgid "Snapshot saved to: %s\n"
 msgstr "Pagina instantanee salvate in le: %s\n"
 
-#: ../midori/main.c:79
+#: ../raphael/main.c:79
 msgid "Run ADDRESS as a web application"
 msgstr "Facer girar ADDRESS qual application WEB"
 
-#: ../midori/main.c:79
+#: ../raphael/main.c:79
 msgid "ADDRESS"
 msgstr "ADRESSE"
 
-#: ../midori/main.c:81
+#: ../raphael/main.c:81
 msgid "Use FOLDER as configuration folder"
 msgstr "Usar DOSSIER como dossier de configuration"
 
-#: ../midori/main.c:81
+#: ../raphael/main.c:81
 msgid "FOLDER"
 msgstr "DOSSIER"
 
-#: ../midori/main.c:83
+#: ../raphael/main.c:83
 msgid "Private browsing, no changes are saved"
 msgstr "Navigation private, nulle cambios es salvate"
 
-#: ../midori/main.c:86
+#: ../raphael/main.c:86
 msgid "Portable mode, all runtime files are stored in one place"
 msgstr "Modo portabile, tote le files runtime es immagazinate in un loco"
 
-#: ../midori/main.c:89
+#: ../raphael/main.c:89
 msgid "Plain GTK+ window with WebKit, akin to GtkLauncher"
 msgstr "Planar le fenestra  GTK+ con WebKit, simile a GtkLauncher"
 
-#: ../midori/main.c:91
+#: ../raphael/main.c:91
 msgid "Show a diagnostic dialog"
 msgstr "Monstrar un fenestra de dialogo diagnostic"
 
-#: ../midori/main.c:93
+#: ../raphael/main.c:93
 msgid "Run within gdb and save a backtrace on crash"
 msgstr ""
 "Facer girar intra gdb e salvar un traciamento in retro in caso de crash"
 
-#: ../midori/main.c:95
+#: ../raphael/main.c:95
 msgid "Run the specified filename as javascript"
 msgstr "Facer fluer le nomine de file specificate qual script de java"
 
-#: ../midori/main.c:97
+#: ../raphael/main.c:97
 msgid "Take a snapshot of the specified URI"
 msgstr "Prender un pagina instantanee del URI specificate"
 
-#: ../midori/main.c:99
+#: ../raphael/main.c:99
 msgid "Execute the specified command"
 msgstr "Executar le commando specificate"
 
-#: ../midori/main.c:101
+#: ../raphael/main.c:101
 msgid "List available commands to execute with -e/ --execute"
 msgstr "Listar le commandos disponibile a executar con -e/ --execute"
 
-#: ../midori/main.c:103
+#: ../raphael/main.c:103
 msgid "Display program version"
 msgstr "Monstrar le version del programma"
 
-#: ../midori/main.c:105
+#: ../raphael/main.c:105
 msgid "Addresses"
 msgstr "Directiones"
 
-#: ../midori/main.c:107
+#: ../raphael/main.c:107
 msgid "Block URIs according to regular expression PATTERN"
 msgstr "Blocar le URIs in accordo con un MODELLO de expression regular"
 
-#: ../midori/main.c:107
+#: ../raphael/main.c:107
 msgid "PATTERN"
 msgstr "PATRONO"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
-#: ../midori/main.c:111
+#: ../raphael/main.c:111
 msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr "Reinitiar Raphael depost de SECUNDOS secundos de inactivitate"
 
-#: ../midori/main.c:111
+#: ../raphael/main.c:111
 msgid "SECONDS"
 msgstr "SECUNDOS"
 
-#: ../midori/main.c:136
+#: ../raphael/main.c:136
 msgid "Error: \"gdb\" can't be found\n"
 msgstr "Error: \"gdb\" non pote esser trovate\n"
 
-#: ../midori/main.c:162
+#: ../raphael/main.c:162
 msgid "Please report comments, suggestions and bugs to:"
 msgstr "Per favor reporta commentarios, suggestiones e errores a:"
 
-#: ../midori/main.c:164
+#: ../raphael/main.c:164
 msgid "Check for new versions at:"
 msgstr "Verificar pro versiones nove in:"
 
-#: ../midori/main.c:358
+#: ../raphael/main.c:358
 msgid "An unknown error occured"
 msgstr "Un error incognite occurreva"
 
-#: ../midori/midori-app.c:1184 ../midori/midori-browser.c:6078
+#: ../raphael/raphael-app.c:1184 ../raphael/raphael-browser.c:6078
 msgid "_Bookmarks"
 msgstr "_Favoritos"
 
-#: ../midori/midori-app.c:1185
+#: ../raphael/raphael-app.c:1185
 msgid "Add Boo_kmark"
 msgstr "Adder _marcapaginas"
 
-#: ../midori/midori-app.c:1186
+#: ../raphael/raphael-app.c:1186
 msgid "_Extensions"
 msgstr "_Extensiones"
 
 #. i18n: Browsing history, visited web pages, closed tabs
-#: ../midori/midori-app.c:1187 ../midori/midori-privatedata.c:230
+#: ../raphael/raphael-app.c:1187 ../raphael/raphael-privatedata.c:230
 msgid "_History"
 msgstr "_Historia"
 
-#: ../midori/midori-app.c:1188
+#: ../raphael/raphael-app.c:1188
 msgid "_Userscripts"
 msgstr "_Scripts de usator"
 
-#: ../midori/midori-app.c:1189
+#: ../raphael/raphael-app.c:1189
 msgid "User_styles"
 msgstr "_Stilos de usator"
 
-#: ../midori/midori-app.c:1190
+#: ../raphael/raphael-app.c:1190
 msgid "New _Tab"
 msgstr "Nove_Scheda"
 
-#: ../midori/midori-app.c:1191
+#: ../raphael/raphael-app.c:1191
 msgid "_Transfers"
 msgstr "_Transferentias"
 
-#: ../midori/midori-app.c:1192
+#: ../raphael/raphael-app.c:1192
 msgid "Netscape p_lugins"
 msgstr "E_xtensiones de Netscape"
 
-#: ../midori/midori-app.c:1193
+#: ../raphael/raphael-app.c:1193
 msgid "_Closed Tabs"
 msgstr "_Clauder le schedas"
 
-#: ../midori/midori-app.c:1194 ../midori/midori-browser.c:5228
+#: ../raphael/raphael-app.c:1194 ../raphael/raphael-browser.c:5228
 msgid "New _Window"
 msgstr "Nove _Fenestra"
 
-#: ../midori/midori-app.c:1195
+#: ../raphael/raphael-app.c:1195
 msgid "New _Folder"
 msgstr "_Dossier nove"
 
-#: ../midori/midori-app.c:1257 ../midori/midori-app.c:1260
+#: ../raphael/raphael-app.c:1257 ../raphael/raphael-app.c:1260
 msgid "[Addresses]"
 msgstr "[Directiones]"
 
-#: ../midori/midori-array.c:549
+#: ../raphael/raphael-array.c:549
 msgid "File not found."
 msgstr "File non trovate"
 
-#: ../midori/midori-array.c:574 ../midori/midori-array.c:613
-#: ../midori/midori-array.c:637 ../midori/midori-array.c:647
+#: ../raphael/raphael-array.c:574 ../raphael/raphael-array.c:613
+#: ../raphael/raphael-array.c:637 ../raphael/raphael-array.c:647
 msgid "Malformed document."
 msgstr "Documento mal formate."
 
-#: ../midori/midori-array.c:656
+#: ../raphael/raphael-array.c:656
 msgid "Unrecognized bookmark format."
 msgstr "Formato de signa-libro incognite."
 
-#: ../midori/midori-browser.c:322 ../midori/midori-browser.c:5364
+#: ../raphael/raphael-browser.c:322 ../raphael/raphael-browser.c:5364
 msgid "Go forward to the next page"
 msgstr "Ir al pagina sequente"
 
 #. i18n: Visit the following logical page, ie. in a forum or blog
-#: ../midori/midori-browser.c:329 ../midori/midori-browser.c:5372
+#: ../raphael/raphael-browser.c:329 ../raphael/raphael-browser.c:5372
 msgid "Go to the next sub-page"
 msgstr "Ir al sub-pagina sequente"
 
-#: ../midori/midori-browser.c:339
+#: ../raphael/raphael-browser.c:339
 msgid "Web Search…"
 msgstr "Cercar in le web"
 
-#: ../midori/midori-browser.c:443 ../midori/midori-browser.c:2095
-#: ../midori/midori-browser.c:5310 ../midori/midori-browser.c:5319
+#: ../raphael/raphael-browser.c:443 ../raphael/raphael-browser.c:2095
+#: ../raphael/raphael-browser.c:5310 ../raphael/raphael-browser.c:5319
 msgid "Reload the current page"
 msgstr "Recargar le pagina actual"
 
-#: ../midori/midori-browser.c:449 ../midori/midori-browser.c:5316
+#: ../raphael/raphael-browser.c:449 ../raphael/raphael-browser.c:5316
 msgid "Stop loading the current page"
 msgstr "Stoppar le carga del pagina"
 
-#: ../midori/midori-browser.c:539
+#: ../raphael/raphael-browser.c:539
 #, c-format
 msgid "Failed to update title: %s\n"
 msgstr "mancate ajornamento del titulo: %s\n"
 
-#: ../midori/midori-browser.c:579 ../midori/midori-browser.c:635
-#: ../midori/midori-browser.c:638 ../midori/midori-websettings.c:1502
+#: ../raphael/raphael-browser.c:579 ../raphael/raphael-browser.c:635
+#: ../raphael/raphael-browser.c:638 ../raphael/raphael-websettings.c:1502
 #, c-format
 msgid "Value '%s' is invalid for %s"
 msgstr "Le valor «%s» non es valide pro %s"
 
-#: ../midori/midori-browser.c:587 ../midori/midori-browser.c:658
-#: ../midori/midori-browser.c:6640
+#: ../raphael/raphael-browser.c:587 ../raphael/raphael-browser.c:658
+#: ../raphael/raphael-browser.c:6640
 #, c-format
 msgid "Unexpected setting '%s'"
 msgstr "Preparation impreviste '%s'"
 
-#: ../midori/midori-browser.c:595 ../midori/midori-browser.c:668
+#: ../raphael/raphael-browser.c:595 ../raphael/raphael-browser.c:668
 #, c-format
 msgid "Unexpected action '%s'."
 msgstr "Action impreviste '%s'."
 
-#: ../midori/midori-browser.c:752
+#: ../raphael/raphael-browser.c:752
 #, c-format
 msgid "%s (Private Browsing)"
 msgstr "%s (Navigation Private)"
 
-#: ../midori/midori-browser.c:805 ../midori/midori-browser.c:4066
+#: ../raphael/raphael-browser.c:805 ../raphael/raphael-browser.c:4066
 #, c-format
 msgid "Failed to insert new history item: %s\n"
 msgstr "Mancate insertion de nove elemento de historia: %s\n"
 
-#: ../midori/midori-browser.c:939
+#: ../raphael/raphael-browser.c:939
 msgid "Select [text]"
 msgstr "Seliger [text]"
 
-#: ../midori/midori-browser.c:968 ../panels/midori-bookmarks.c:148
-#: ../midori/midori-bookmarks-db.c:153
+#: ../raphael/raphael-browser.c:968 ../panels/raphael-bookmarks.c:148
+#: ../raphael/raphael-bookmarks-db.c:153
 msgid "Bookmarks"
 msgstr "Marcatores"
 
-#: ../midori/midori-browser.c:1189
+#: ../raphael/raphael-browser.c:1189
 msgid "New Folder"
 msgstr "Nove Dossier"
 
-#: ../midori/midori-browser.c:1189
+#: ../raphael/raphael-browser.c:1189
 msgid "Edit Folder"
 msgstr "Modificar le dossier"
 
-#: ../midori/midori-browser.c:1191
+#: ../raphael/raphael-browser.c:1191
 msgid "New Bookmark"
 msgstr "Nove Marcator"
 
-#: ../midori/midori-browser.c:1191
+#: ../raphael/raphael-browser.c:1191
 msgid "Edit Bookmark"
 msgstr "Modificar le marcator"
 
-#: ../midori/midori-browser.c:1224
+#: ../raphael/raphael-browser.c:1224
 msgid "Type a name for this bookmark, and choose where to keep it."
 msgstr "Scribe un nomine pro iste marcator e selige ubi conservar lo"
 
-#: ../midori/midori-browser.c:1226
+#: ../raphael/raphael-browser.c:1226
 msgid "Type a name for this folder, and choose where to keep it."
 msgstr "Scribe un nomine pro iste dossier e selige ubi conservar lo"
 
-#: ../midori/midori-browser.c:1282
+#: ../raphael/raphael-browser.c:1282
 msgid "Show in Bookmarks _Bar"
 msgstr "Monstrar in le _Barra de Signa-libros"
 
-#: ../midori/midori-browser.c:1290
+#: ../raphael/raphael-browser.c:1290
 msgid "Add to _Speed Dial"
 msgstr "Adder a _Speed Dial"
 
-#: ../midori/midori-browser.c:1380 ../midori/midori-browser.c:4671
+#: ../raphael/raphael-browser.c:1380 ../raphael/raphael-browser.c:4671
 msgid "Save file as"
 msgstr "Conservar file como"
 
-#: ../midori/midori-browser.c:1406
+#: ../raphael/raphael-browser.c:1406
 msgid "Save associated _resources"
 msgstr "Salvar le _ressources associate"
 
-#: ../midori/midori-browser.c:1780
+#: ../raphael/raphael-browser.c:1780
 msgid "A new window has been opened"
 msgstr "Un nove fenestra esseva aperite"
 
-#: ../midori/midori-browser.c:1783
+#: ../raphael/raphael-browser.c:1783
 msgid "A new tab has been opened"
 msgstr "Un nove scheda aperiva"
 
-#: ../midori/midori-browser.c:1843
+#: ../raphael/raphael-browser.c:1843
 msgid "Save file"
 msgstr "Conservar file"
 
-#: ../midori/midori-browser.c:2091 ../midori/midori-browser.c:5312
+#: ../raphael/raphael-browser.c:2091 ../raphael/raphael-browser.c:5312
 msgid "Reload page without caching"
 msgstr "recargar le pagina sin caching"
 
-#: ../midori/midori-browser.c:2740
+#: ../raphael/raphael-browser.c:2740
 msgid "Open file"
 msgstr "Aperir file"
 
-#: ../midori/midori-browser.c:2826
+#: ../raphael/raphael-browser.c:2826
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
@@ -366,24 +366,24 @@ msgstr ""
 "aggregator. Le proxime vice tu clicca le icone de dispensation de "
 "actualitates, illo essera addite automaticamente."
 
-#: ../midori/midori-browser.c:2832 ../extensions/feed-panel/main.c:350
+#: ../raphael/raphael-browser.c:2832 ../extensions/feed-panel/main.c:350
 msgid "New feed"
 msgstr "Nove folio"
 
-#: ../midori/midori-browser.c:2863 ../midori/midori-browser.c:5388
-#: ../panels/midori-bookmarks.c:760
+#: ../raphael/raphael-browser.c:2863 ../raphael/raphael-browser.c:5388
+#: ../panels/raphael-bookmarks.c:760
 msgid "Add a new bookmark"
 msgstr "Adder un nove marcator"
 
-#: ../midori/midori-browser.c:3350 ../midori/midori-searchaction.c:444
+#: ../raphael/raphael-browser.c:3350 ../raphael/raphael-searchaction.c:444
 msgid "Empty"
 msgstr "Vacue"
 
-#: ../midori/midori-browser.c:3666 ../midori/midori-browser.c:3667
+#: ../raphael/raphael-browser.c:3666 ../raphael/raphael-browser.c:3667
 msgid "Toggle text cursor navigation"
 msgstr "commutar le navigation del cursor del texto"
 
-#: ../midori/midori-browser.c:3669
+#: ../raphael/raphael-browser.c:3669
 msgid ""
 "Pressing F7 toggles Caret Browsing. When active, a text cursor appears in "
 "all websites."
@@ -391,99 +391,99 @@ msgstr ""
 "Pulsante F7 commuta le navigation Caret. Quando es active, appare un cursor "
 "de texto in cata sito web."
 
-#: ../midori/midori-browser.c:3672
+#: ../raphael/raphael-browser.c:3672
 msgid "_Enable Caret Browsing"
 msgstr "Habilitar (_Enable) le navigation Caret"
 
-#: ../midori/midori-browser.c:4381 ../panels/midori-bookmarks.c:1079
-#: ../panels/midori-history.c:738
+#: ../raphael/raphael-browser.c:4381 ../panels/raphael-bookmarks.c:1079
+#: ../panels/raphael-history.c:738
 msgid "Open all in _Tabs"
 msgstr "Aperir _Toto in le schedas"
 
-#: ../midori/midori-browser.c:4402 ../midori/midori-notebook.vala:366
-#: ../midori/midori-view.c:2501 ../panels/midori-bookmarks.c:1089
-#: ../panels/midori-history.c:746 ../extensions/feed-panel/feed-panel.c:504
+#: ../raphael/raphael-browser.c:4402 ../raphael/raphael-notebook.vala:366
+#: ../raphael/raphael-view.c:2501 ../panels/raphael-bookmarks.c:1089
+#: ../panels/raphael-history.c:746 ../extensions/feed-panel/feed-panel.c:504
 msgid "Open in New _Window"
 msgstr "Aperir in un nove fenestra (_Window)"
 
-#: ../midori/midori-browser.c:4505
+#: ../raphael/raphael-browser.c:4505
 msgid "Arora"
 msgstr "Arora"
 
-#: ../midori/midori-browser.c:4506
+#: ../raphael/raphael-browser.c:4506
 msgid "Kazehakase"
 msgstr "Kazehakase"
 
-#: ../midori/midori-browser.c:4507
+#: ../raphael/raphael-browser.c:4507
 msgid "Opera"
 msgstr "Opera"
 
-#: ../midori/midori-browser.c:4508
+#: ../raphael/raphael-browser.c:4508
 msgid "Konqueror"
 msgstr "Konqueror"
 
-#: ../midori/midori-browser.c:4509
+#: ../raphael/raphael-browser.c:4509
 msgid "Epiphany"
 msgstr "Epiphany"
 
-#: ../midori/midori-browser.c:4510
+#: ../raphael/raphael-browser.c:4510
 #, c-format
 msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
-#: ../midori/midori-browser.c:4511
+#: ../raphael/raphael-browser.c:4511
 msgid "Raphael 0.2.6"
 msgstr "Raphael 0.2.6"
 
-#: ../midori/midori-browser.c:4529
+#: ../raphael/raphael-browser.c:4529
 msgid "Import bookmarks…"
 msgstr "Importar marcatores..."
 
-#: ../midori/midori-browser.c:4532
+#: ../raphael/raphael-browser.c:4532
 msgid "_Import bookmarks"
 msgstr "_Importar le signa-libros"
 
-#: ../midori/midori-browser.c:4543
+#: ../raphael/raphael-browser.c:4543
 msgid "_Application:"
 msgstr "_Application:"
 
-#: ../midori/midori-browser.c:4608
+#: ../raphael/raphael-browser.c:4608
 msgid "Import from XBEL or HTML file"
 msgstr "Importar ex file XBEL o HTML"
 
-#: ../midori/midori-browser.c:4634
+#: ../raphael/raphael-browser.c:4634
 msgid "Import from a file"
 msgstr "Importar ex un file"
 
-#: ../midori/midori-browser.c:4646
+#: ../raphael/raphael-browser.c:4646
 msgid "Failed to import bookmarks"
 msgstr "Falta a importar le signa-libros"
 
-#: ../midori/midori-browser.c:4676
+#: ../raphael/raphael-browser.c:4676
 msgid "XBEL Bookmarks"
 msgstr "Signa-libros XBEL"
 
-#: ../midori/midori-browser.c:4681
+#: ../raphael/raphael-browser.c:4681
 msgid "Netscape Bookmarks"
 msgstr "Marcatores de Netscape"
 
-#: ../midori/midori-browser.c:4699
+#: ../raphael/raphael-browser.c:4699
 msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr "Raphael pote solmente exportar a XBEL (*.xbel) e a Netscape (*.html)"
 
-#: ../midori/midori-browser.c:4711
+#: ../raphael/raphael-browser.c:4711
 msgid "Failed to export bookmarks"
 msgstr "Fallite exportation del signa-libros"
 
-#: ../midori/midori-browser.c:4899
+#: ../raphael/raphael-browser.c:4899
 msgid "A lightweight web browser."
 msgstr "Un navigator legier."
 
-#: ../midori/midori-browser.c:4900
+#: ../raphael/raphael-browser.c:4900
 msgid "See about:version for version info."
 msgstr "Vide about:version pro le information del version"
 
-#: ../midori/midori-browser.c:4902
+#: ../raphael/raphael-browser.c:4902
 msgid ""
 "This library is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU Lesser General Public License as published by the "
@@ -495,7 +495,7 @@ msgstr ""
 "Free Software Foundation; sia le version 2.1 del Licentia, o (a vostre "
 "option) qualcunque version subsequente."
 
-#: ../midori/midori-browser.c:4933
+#: ../raphael/raphael-browser.c:4933
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -505,425 +505,425 @@ msgstr ""
 "  WebKit Team https://launchpad.net/~webkit-team\n"
 "  karm https://launchpad.net/~melo-o"
 
-#: ../midori/midori-browser.c:5191 ../midori/midori-browser.c:5432
+#: ../raphael/raphael-browser.c:5191 ../raphael/raphael-browser.c:5432
 msgid "_Duplicate Current Tab"
 msgstr "_Duplicar le scheda actual"
 
-#: ../midori/midori-browser.c:5226
+#: ../raphael/raphael-browser.c:5226
 msgid "_File"
 msgstr "_File"
 
-#: ../midori/midori-browser.c:5229
+#: ../raphael/raphael-browser.c:5229
 msgid "Open a new window"
 msgstr "Aperir un nove fenestra"
 
-#: ../midori/midori-browser.c:5232 ../midori/midori-notebook.vala:232
+#: ../raphael/raphael-browser.c:5232 ../raphael/raphael-notebook.vala:232
 msgid "Open a new tab"
 msgstr "Aperir un nove scheda"
 
-#: ../midori/midori-browser.c:5234
+#: ../raphael/raphael-browser.c:5234
 msgid "New P_rivate Browsing Window"
 msgstr "Nove F_enestra private"
 
-#: ../midori/midori-browser.c:5238
+#: ../raphael/raphael-browser.c:5238
 msgid "Open a file"
 msgstr "Aperir un file"
 
-#: ../midori/midori-browser.c:5240
+#: ../raphael/raphael-browser.c:5240
 msgid "_Save Page As…"
 msgstr "_Conservar pagina como..."
 
-#: ../midori/midori-browser.c:5241
+#: ../raphael/raphael-browser.c:5241
 msgid "Save to a file"
 msgstr "Salveguardar a un file"
 
-#: ../midori/midori-browser.c:5243
+#: ../raphael/raphael-browser.c:5243
 msgid "Add to Speed _dial"
 msgstr "Adder a Speed _dial"
 
-#: ../midori/midori-browser.c:5246
+#: ../raphael/raphael-browser.c:5246
 msgid "Subscribe to News _feed"
 msgstr "Subscriber al alimentation (_feed) del actualitates"
 
-#: ../midori/midori-browser.c:5252
+#: ../raphael/raphael-browser.c:5252
 msgid "_Close Tab"
 msgstr "_Clauder le scheda"
 
-#: ../midori/midori-browser.c:5253
+#: ../raphael/raphael-browser.c:5253
 msgid "Close the current tab"
 msgstr "Clauder le scheda currente"
 
-#: ../midori/midori-browser.c:5255
+#: ../raphael/raphael-browser.c:5255
 msgid "C_lose Window"
 msgstr "_Clauder fenestra"
 
-#: ../midori/midori-browser.c:5259
+#: ../raphael/raphael-browser.c:5259
 msgid "Print the current page"
 msgstr "Imprimer le pagina actual"
 
-#: ../midori/midori-browser.c:5261
+#: ../raphael/raphael-browser.c:5261
 msgid "Send Page Link Via Email"
 msgstr "Inviar le ligamine al pagina via email"
 
-#: ../midori/midori-browser.c:5264
+#: ../raphael/raphael-browser.c:5264
 msgid "Close a_ll Windows"
 msgstr "Clauder _tote le fenestras"
 
-#: ../midori/midori-browser.c:5267
+#: ../raphael/raphael-browser.c:5267
 msgid "_Edit"
 msgstr "_Modificar"
 
 #. i18n: Right-click on Location, Open an URL from the clipboard
-#: ../midori/midori-browser.c:5285
+#: ../raphael/raphael-browser.c:5285
 msgid "Paste and p_roceed"
 msgstr "Collar e p_roceder"
 
-#: ../midori/midori-browser.c:5294
+#: ../raphael/raphael-browser.c:5294
 msgid "_Find…"
 msgstr "_Cercar..."
 
-#: ../midori/midori-browser.c:5295
+#: ../raphael/raphael-browser.c:5295
 msgid "Find a word or phrase in the page"
 msgstr "Cercar un parola o phrase in le pagina"
 
-#: ../midori/midori-browser.c:5297
+#: ../raphael/raphael-browser.c:5297
 msgid "Find _Next"
 msgstr "Buscar _sequente"
 
-#: ../midori/midori-browser.c:5300
+#: ../raphael/raphael-browser.c:5300
 msgid "Find _Previous"
 msgstr "Cercar le  _Precedente"
 
-#: ../midori/midori-browser.c:5304
+#: ../raphael/raphael-browser.c:5304
 msgid "Configure the application preferences"
 msgstr "Configurar le preferentias del application"
 
-#: ../midori/midori-browser.c:5306
+#: ../raphael/raphael-browser.c:5306
 msgid "_View"
 msgstr "_Vider"
 
-#: ../midori/midori-browser.c:5307
+#: ../raphael/raphael-browser.c:5307
 msgid "_Toolbars"
 msgstr "Barras del instrumentos (_Toolbars)"
 
-#: ../midori/midori-browser.c:5322
+#: ../raphael/raphael-browser.c:5322
 msgid "Increase the zoom level"
 msgstr "Accrescer le nivello del zoom"
 
-#: ../midori/midori-browser.c:5325
+#: ../raphael/raphael-browser.c:5325
 msgid "Decrease the zoom level"
 msgstr "Decrescer le nivello del zoom"
 
-#: ../midori/midori-browser.c:5329 ../midori/midori-view.c:2506
+#: ../raphael/raphael-browser.c:5329 ../raphael/raphael-view.c:2506
 msgid "_Encoding"
 msgstr "Codificar (_Encoding)"
 
-#: ../midori/midori-browser.c:5331
+#: ../raphael/raphael-browser.c:5331
 msgid "View So_urce"
 msgstr "Vider le fonte (So_urce)"
 
-#: ../midori/midori-browser.c:5334
+#: ../raphael/raphael-browser.c:5334
 msgid "View _DOM Source"
 msgstr "Vider le fonte _DOM"
 
-#: ../midori/midori-browser.c:5337
+#: ../raphael/raphael-browser.c:5337
 msgid "Ca_ret Browsing"
 msgstr "Navigation Ca_ret"
 
-#: ../midori/midori-browser.c:5341
+#: ../raphael/raphael-browser.c:5341
 msgid "Toggle fullscreen view"
 msgstr "Excambiar le vista in plen schermo"
 
-#: ../midori/midori-browser.c:5343
+#: ../raphael/raphael-browser.c:5343
 msgid "Scroll _Left"
 msgstr "Rolar a _Leva"
 
-#: ../midori/midori-browser.c:5346
+#: ../raphael/raphael-browser.c:5346
 msgid "Scroll _Down"
 msgstr "Rolar a basso (_Down)"
 
-#: ../midori/midori-browser.c:5349
+#: ../raphael/raphael-browser.c:5349
 msgid "Scroll _Up"
 msgstr "Rolar s_Uper"
 
-#: ../midori/midori-browser.c:5352
+#: ../raphael/raphael-browser.c:5352
 msgid "Scroll _Right"
 msgstr "Rolar a de_Recta"
 
-#: ../midori/midori-browser.c:5355
+#: ../raphael/raphael-browser.c:5355
 msgid "_Readable"
 msgstr "_Legibile"
 
-#: ../midori/midori-browser.c:5358
+#: ../raphael/raphael-browser.c:5358
 msgid "_Go"
 msgstr "_Vader"
 
-#: ../midori/midori-browser.c:5361
+#: ../raphael/raphael-browser.c:5361
 msgid "Go back to the previous page"
 msgstr "Ir retro al pagina previe"
 
 #. i18n: Visit the previous logical page, ie. in a forum or blog
-#: ../midori/midori-browser.c:5368
+#: ../raphael/raphael-browser.c:5368
 msgid "Go to the previous sub-page"
 msgstr "Ir al sub-pagina previe"
 
-#: ../midori/midori-browser.c:5374
+#: ../raphael/raphael-browser.c:5374
 msgid "Next or Forward"
 msgstr "Sequente o Avante"
 
-#: ../midori/midori-browser.c:5375
+#: ../raphael/raphael-browser.c:5375
 msgid "Go to the next sub-page or next page in history"
 msgstr "Ir al sequente sub-pagina o al pagina sequente in le historia"
 
-#: ../midori/midori-browser.c:5377
+#: ../raphael/raphael-browser.c:5377
 msgid "_Homepage"
 msgstr "_Pagina initial"
 
-#: ../midori/midori-browser.c:5378
+#: ../raphael/raphael-browser.c:5378
 msgid "Go to your homepage"
 msgstr "Il al pagina initial"
 
-#: ../midori/midori-browser.c:5380
+#: ../raphael/raphael-browser.c:5380
 msgid "Empty Trash"
 msgstr "Vacuar corbe"
 
-#: ../midori/midori-browser.c:5383
+#: ../raphael/raphael-browser.c:5383
 msgid "Undo _Close Tab"
 msgstr "Disfacer le _Clauder scheda"
 
-#: ../midori/midori-browser.c:5390
+#: ../raphael/raphael-browser.c:5390
 msgid "Add a new _folder"
 msgstr "Adder un nove dossier"
 
-#: ../midori/midori-browser.c:5393
+#: ../raphael/raphael-browser.c:5393
 msgid "_Import bookmarks…"
 msgstr "_Importar le signa-libros…"
 
-#: ../midori/midori-browser.c:5396
+#: ../raphael/raphael-browser.c:5396
 msgid "_Export bookmarks…"
 msgstr "_Exportar le signa-libros…"
 
-#: ../midori/midori-browser.c:5399
+#: ../raphael/raphael-browser.c:5399
 msgid "_Manage Search Engines…"
 msgstr "_Manear le motores de recerca…"
 
-#: ../midori/midori-browser.c:5402
+#: ../raphael/raphael-browser.c:5402
 msgid "_Clear Private Data…"
 msgstr "_Cancellar le datos private…"
 
-#: ../midori/midori-browser.c:5405
+#: ../raphael/raphael-browser.c:5405
 msgid "_Inspect Page"
 msgstr "_Inspect Page"
 
-#: ../midori/midori-browser.c:5409
+#: ../raphael/raphael-browser.c:5409
 msgid "_Previous Tab"
 msgstr "Scheda _Previe"
 
-#: ../midori/midori-browser.c:5412
+#: ../raphael/raphael-browser.c:5412
 msgid "_Next Tab"
 msgstr "Scheda seque_Nte"
 
-#: ../midori/midori-browser.c:5414
+#: ../raphael/raphael-browser.c:5414
 msgid "Move Tab to _first position"
 msgstr "Mover le scheda al prime (_first) position"
 
-#: ../midori/midori-browser.c:5416
+#: ../raphael/raphael-browser.c:5416
 msgid "Move Tab _Backward"
 msgstr "Mover le scheda in retro (_Backward)"
 
-#: ../midori/midori-browser.c:5418
+#: ../raphael/raphael-browser.c:5418
 msgid "_Move Tab Forward"
 msgstr "_Mover le scheda in avante"
 
-#: ../midori/midori-browser.c:5420
+#: ../raphael/raphael-browser.c:5420
 msgid "Move Tab to _last position"
 msgstr "_Mover le scheda in ultime position"
 
-#: ../midori/midori-browser.c:5423
+#: ../raphael/raphael-browser.c:5423
 msgid "Focus _Current Tab"
 msgstr "Focus al schera _Currente"
 
-#: ../midori/midori-browser.c:5426
+#: ../raphael/raphael-browser.c:5426
 msgid "Focus _Next view"
 msgstr "Foco al vista seque_Nte"
 
-#: ../midori/midori-browser.c:5429
+#: ../raphael/raphael-browser.c:5429
 msgid "Only show the Icon of the _Current Tab"
 msgstr "Monstrar sol le icone del scheda _Currente"
 
-#: ../midori/midori-browser.c:5435
+#: ../raphael/raphael-browser.c:5435
 msgid "Close Ot_her Tabs"
 msgstr "Clauder le altrere (Ot_her) schedas"
 
-#: ../midori/midori-browser.c:5438
+#: ../raphael/raphael-browser.c:5438
 msgid "Open last _session"
 msgstr "Aperir le ultime _session"
 
-#: ../midori/midori-browser.c:5441
+#: ../raphael/raphael-browser.c:5441
 msgid "_Help"
 msgstr "_Adjuta"
 
-#: ../midori/midori-browser.c:5443
+#: ../raphael/raphael-browser.c:5443
 msgid "_Frequent Questions"
 msgstr "Questiones _Frequente"
 
-#: ../midori/midori-browser.c:5446
+#: ../raphael/raphael-browser.c:5446
 msgid "_Report a Problem…"
 msgstr "_Reportar un problema…"
 
-#: ../midori/midori-browser.c:5451 ../midori/midori-browser.c:6101
+#: ../raphael/raphael-browser.c:5451 ../raphael/raphael-browser.c:6101
 msgid "_Tools"
 msgstr "Ins_Trumentos"
 
-#: ../midori/midori-browser.c:5458
+#: ../raphael/raphael-browser.c:5458
 msgid "_Menubar"
 msgstr "Barra del _Menu"
 
-#: ../midori/midori-browser.c:5462
+#: ../raphael/raphael-browser.c:5462
 msgid "_Navigationbar"
 msgstr "Barra de _Navigation"
 
-#: ../midori/midori-browser.c:5466
+#: ../raphael/raphael-browser.c:5466
 msgid "Side_panel"
 msgstr "_pannello lateral"
 
-#: ../midori/midori-browser.c:5467
+#: ../raphael/raphael-browser.c:5467
 msgid "Sidepanel"
 msgstr "Pannello lateral"
 
-#: ../midori/midori-browser.c:5470
+#: ../raphael/raphael-browser.c:5470
 msgid "_Bookmarkbar"
 msgstr "_Barra del signa-libros"
 
-#: ../midori/midori-browser.c:5474
+#: ../raphael/raphael-browser.c:5474
 msgid "_Statusbar"
 msgstr "Barra de _Stato"
 
-#: ../midori/midori-browser.c:5482 ../midori/midori-websettings.c:230
+#: ../raphael/raphael-browser.c:5482 ../raphael/raphael-websettings.c:230
 msgid "_Automatic"
 msgstr "_Automatic"
 
-#: ../midori/midori-browser.c:5485 ../midori/midori-websettings.c:154
+#: ../raphael/raphael-browser.c:5485 ../raphael/raphael-websettings.c:154
 msgid "Chinese Traditional (BIG5)"
 msgstr "Chinese Traditional (BIG5)"
 
-#: ../midori/midori-browser.c:5488 ../midori/midori-websettings.c:155
+#: ../raphael/raphael-browser.c:5488 ../raphael/raphael-websettings.c:155
 msgid "Chinese Simplified (GB18030)"
 msgstr "Chinese Simplificate (GB18030)"
 
 #. i18n: A double underscore "__" is used to prevent the mnemonic
-#: ../midori/midori-browser.c:5492
+#: ../raphael/raphael-browser.c:5492
 msgid "Japanese (SHIFT__JIS)"
 msgstr "Japonese (SHIFT__JIS)"
 
-#: ../midori/midori-browser.c:5495 ../midori/midori-websettings.c:157
+#: ../raphael/raphael-browser.c:5495 ../raphael/raphael-websettings.c:157
 msgid "Korean (EUC-KR)"
 msgstr "Coreano (EUC-KR)"
 
-#: ../midori/midori-browser.c:5498 ../midori/midori-websettings.c:158
+#: ../raphael/raphael-browser.c:5498 ../raphael/raphael-websettings.c:158
 msgid "Russian (KOI8-R)"
 msgstr "Russo (KOI8-R)"
 
-#: ../midori/midori-browser.c:5501 ../midori/midori-websettings.c:159
+#: ../raphael/raphael-browser.c:5501 ../raphael/raphael-websettings.c:159
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../midori/midori-browser.c:5504 ../midori/midori-websettings.c:160
+#: ../raphael/raphael-browser.c:5504 ../raphael/raphael-websettings.c:160
 msgid "Western (ISO-8859-1)"
 msgstr "Occidental (ISO-8859-1)"
 
-#: ../midori/midori-browser.c:5507 ../midori/midori-websettings.c:161
-#: ../midori/midori-websettings.c:237 ../extensions/open-with.vala:159
+#: ../raphael/raphael-browser.c:5507 ../raphael/raphael-websettings.c:161
+#: ../raphael/raphael-websettings.c:237 ../extensions/open-with.vala:159
 #: ../extensions/open-with.vala:268
 msgid "Custom…"
 msgstr "personal…"
 
-#: ../midori/midori-browser.c:5821
+#: ../raphael/raphael-browser.c:5821
 #, c-format
 msgid "Failed to initialize history: %s"
 msgstr "Fallite initialisation del historia: %s"
 
-#: ../midori/midori-browser.c:6000
+#: ../raphael/raphael-browser.c:6000
 msgid "_Separator"
 msgstr "_Separator"
 
-#: ../midori/midori-browser.c:6007
+#: ../raphael/raphael-browser.c:6007
 msgid "_Location…"
 msgstr "_Location…"
 
-#: ../midori/midori-browser.c:6009
+#: ../raphael/raphael-browser.c:6009
 msgid "Open a particular location"
 msgstr "Aperir un location particular"
 
-#: ../midori/midori-browser.c:6010
+#: ../raphael/raphael-browser.c:6010
 msgid "Search or enter an address"
 msgstr "cercar o introducer un adresse"
 
-#: ../midori/midori-browser.c:6032
+#: ../raphael/raphael-browser.c:6032
 msgid "_Web Search…"
 msgstr "Recerca del _Web…"
 
-#: ../midori/midori-browser.c:6034
+#: ../raphael/raphael-browser.c:6034
 msgid "Run a web search"
 msgstr "Cercar in le Web"
 
-#: ../midori/midori-browser.c:6061
+#: ../raphael/raphael-browser.c:6061
 msgid "Reopen a previously closed tab or window"
 msgstr "Reaperir un scheda o fenestra clause antea"
 
-#: ../midori/midori-browser.c:6080
+#: ../raphael/raphael-browser.c:6080
 msgid "Show the saved bookmarks"
 msgstr "Monstrar le signa-libros salveguardate"
 
-#: ../midori/midori-browser.c:6115
+#: ../raphael/raphael-browser.c:6115
 msgid "_Tabs"
 msgstr "_Schedas"
 
-#: ../midori/midori-browser.c:6117
+#: ../raphael/raphael-browser.c:6117
 msgid "Show a list of all open tabs"
 msgstr "Monstrar un lista de omne le schedas aperte"
 
-#: ../midori/midori-browser.c:6134
+#: ../raphael/raphael-browser.c:6134
 msgid "_Menu"
 msgstr "_Menu"
 
-#: ../midori/midori-browser.c:6136
+#: ../raphael/raphael-browser.c:6136
 msgid "Menu"
 msgstr "Menu"
 
-#: ../midori/midori-extension.c:341
+#: ../raphael/raphael-extension.c:341
 #, c-format
 msgid "The configuration of the extension '%s' couldn't be loaded: %s\n"
 msgstr "Le configuration del extension '%s' non pote ser cargate: %s\n"
 
-#: ../midori/midori-extension.c:921 ../extensions/addons.c:1707
+#: ../raphael/raphael-extension.c:921 ../extensions/addons.c:1707
 #, c-format
 msgid "The configuration of the extension '%s' couldn't be saved: %s\n"
 msgstr "Le configuration del extension '%s' non pote ser salveguardate: %s\n"
 
-#: ../midori/midori-locationaction.c:1343
+#: ../raphael/raphael-locationaction.c:1343
 msgid "Export certificate"
 msgstr "Exportar un certificato"
 
-#: ../midori/midori-locationaction.c:1377
-#: ../midori/midori-locationaction.c:1495
+#: ../raphael/raphael-locationaction.c:1377
+#: ../raphael/raphael-locationaction.c:1495
 msgid "_Don't trust this website"
 msgstr "Non (_Don't) haber fiducia in ce sito web"
 
-#: ../midori/midori-locationaction.c:1379
-#: ../midori/midori-locationaction.c:1501
+#: ../raphael/raphael-locationaction.c:1379
+#: ../raphael/raphael-locationaction.c:1501
 msgid "_Trust this website"
 msgstr "Haber fiducia in ce sito web"
 
-#: ../midori/midori-locationaction.c:1381
+#: ../raphael/raphael-locationaction.c:1381
 msgid "_Export Certificate"
 msgstr "_Exportar le certificato"
 
-#: ../midori/midori-locationaction.c:1429
+#: ../raphael/raphael-locationaction.c:1429
 msgid "The signing certificate authority is not known."
 msgstr "Le autoritate que ha firmate le certificato non es note."
 
-#: ../midori/midori-locationaction.c:1431
+#: ../raphael/raphael-locationaction.c:1431
 msgid ""
 "The certificate does not match the expected identity of the site that it was "
 "retrieved from."
@@ -931,15 +931,15 @@ msgstr ""
 "Le certificato non concorda le provise identitate del sito ex le qual ha "
 "essite recuperate."
 
-#: ../midori/midori-locationaction.c:1433
+#: ../raphael/raphael-locationaction.c:1433
 msgid "The certificate's activation time is still in the future."
 msgstr "Le tempore de activation del certificato es adhuc in le futur."
 
-#: ../midori/midori-locationaction.c:1435
+#: ../raphael/raphael-locationaction.c:1435
 msgid "The certificate has expired"
 msgstr "Le certificate ha expirate"
 
-#: ../midori/midori-locationaction.c:1437
+#: ../raphael/raphael-locationaction.c:1437
 msgid ""
 "The certificate has been revoked according to the GTlsConnection's "
 "certificate revocation list."
@@ -947,234 +947,234 @@ msgstr ""
 "Le certificato ha essite revocate in accordo al lista de revocation de "
 "certificato de GTlsConnection."
 
-#: ../midori/midori-locationaction.c:1439
+#: ../raphael/raphael-locationaction.c:1439
 msgid "The certificate's algorithm is considered insecure."
 msgstr "Le algorithmo del certificato es considerate insecur."
 
-#: ../midori/midori-locationaction.c:1441
+#: ../raphael/raphael-locationaction.c:1441
 msgid "Some other error occurred validating the certificate."
 msgstr ""
 "Alcun altere error es occurrite durante le validation del certificato."
 
-#: ../midori/midori-locationaction.c:1505
-#: ../midori/midori-locationaction.c:1517
+#: ../raphael/raphael-locationaction.c:1505
+#: ../raphael/raphael-locationaction.c:1517
 msgid "_Export certificate"
 msgstr "_Exportar certificate"
 
-#: ../midori/midori-locationaction.c:1532
+#: ../raphael/raphael-locationaction.c:1532
 msgid "Self-signed"
 msgstr "Auto-firmate"
 
-#: ../midori/midori-locationaction.c:1603
+#: ../raphael/raphael-locationaction.c:1603
 msgid "Security details"
 msgstr "Detalios de securitate"
 
-#: ../midori/midori-locationaction.c:1899
+#: ../raphael/raphael-locationaction.c:1899
 msgid "Not verified"
 msgstr "Non verificate"
 
-#: ../midori/midori-locationaction.c:1905
+#: ../raphael/raphael-locationaction.c:1905
 msgid "Verified and encrypted connection"
 msgstr "Connexion verificate e cryptate"
 
-#: ../midori/midori-locationaction.c:1910
+#: ../raphael/raphael-locationaction.c:1910
 msgid "Open, unencrypted connection"
 msgstr "Aperir, connexion non cryptate"
 
-#: ../midori/midori-panel.c:314 ../midori/midori-panel.c:316
-#: ../midori/midori-panel.c:480 ../midori/midori-panel.c:483
+#: ../raphael/raphael-panel.c:314 ../raphael/raphael-panel.c:316
+#: ../raphael/raphael-panel.c:480 ../raphael/raphael-panel.c:483
 msgid "Align sidepanel to the right"
 msgstr "Alinear le pannello lateral a derecta"
 
-#: ../midori/midori-panel.c:326 ../midori/midori-panel.c:327
+#: ../raphael/raphael-panel.c:326 ../raphael/raphael-panel.c:327
 msgid "Close panel"
 msgstr "Clauder le pannello"
 
-#: ../midori/midori-panel.c:481 ../midori/midori-panel.c:484
+#: ../raphael/raphael-panel.c:481 ../raphael/raphael-panel.c:484
 msgid "Align sidepanel to the left"
 msgstr "Alinear le pannello lateral al leva"
 
-#: ../midori/midori-websettings.c:117 ../midori/midori-websettings.c:138
+#: ../raphael/raphael-websettings.c:117 ../raphael/raphael-websettings.c:138
 msgid "Show Speed Dial"
 msgstr "Monstrar Speed Dial"
 
-#: ../midori/midori-websettings.c:118 ../midori/midori-websettings.c:136
+#: ../raphael/raphael-websettings.c:118 ../raphael/raphael-websettings.c:136
 msgid "Show Homepage"
 msgstr "Monstrar pagina initial"
 
-#: ../midori/midori-websettings.c:119 ../midori/midori-frontend.c:382
+#: ../raphael/raphael-websettings.c:119 ../raphael/raphael-frontend.c:382
 msgid "Show last open tabs"
 msgstr "Monstrar le ultime schedas aperite"
 
-#: ../midori/midori-websettings.c:120 ../midori/midori-frontend.c:381
+#: ../raphael/raphael-websettings.c:120 ../raphael/raphael-frontend.c:381
 msgid "Show last tabs without loading"
 msgstr "Monstrar le ultime scheda sin lo cargar"
 
-#: ../midori/midori-websettings.c:135
+#: ../raphael/raphael-websettings.c:135
 msgid "Show Blank Page"
 msgstr "Monstrar Pagina Vacue"
 
-#: ../midori/midori-websettings.c:137
+#: ../raphael/raphael-websettings.c:137
 msgid "Show default Search Engine"
 msgstr "Monstra le motor de recerca ordinari"
 
-#: ../midori/midori-websettings.c:139
+#: ../raphael/raphael-websettings.c:139
 msgid "Show custom page"
 msgstr "Monstrar le pagina personal"
 
-#: ../midori/midori-websettings.c:156
+#: ../raphael/raphael-websettings.c:156
 msgid "Japanese (SHIFT_JIS)"
 msgstr "Japonese (SHIFT_JIS)"
 
-#: ../midori/midori-websettings.c:176
+#: ../raphael/raphael-websettings.c:176
 msgid "New tab"
 msgstr "Nove scheda"
 
-#: ../midori/midori-websettings.c:177
+#: ../raphael/raphael-websettings.c:177
 msgid "New window"
 msgstr "Nove fenestra"
 
-#: ../midori/midori-websettings.c:178
+#: ../raphael/raphael-websettings.c:178
 msgid "Current tab"
 msgstr "Scheda actual"
 
-#: ../midori/midori-websettings.c:193
+#: ../raphael/raphael-websettings.c:193
 msgid "Default"
 msgstr "Predefinite"
 
-#: ../midori/midori-websettings.c:194
+#: ../raphael/raphael-websettings.c:194
 msgid "Icons"
 msgstr "Icones"
 
-#: ../midori/midori-websettings.c:195
+#: ../raphael/raphael-websettings.c:195
 msgid "Small icons"
 msgstr "Icones parve"
 
-#: ../midori/midori-websettings.c:196
+#: ../raphael/raphael-websettings.c:196
 msgid "Text"
 msgstr "Texto"
 
-#: ../midori/midori-websettings.c:197
+#: ../raphael/raphael-websettings.c:197
 msgid "Icons and text"
 msgstr "Icones e texto"
 
-#: ../midori/midori-websettings.c:198
+#: ../raphael/raphael-websettings.c:198
 msgid "Text beside icons"
 msgstr "Texto al latere del icones"
 
-#: ../midori/midori-websettings.c:213
+#: ../raphael/raphael-websettings.c:213
 msgid "Automatic (GNOME or environment)"
 msgstr "Automatic (GNOME o entorno)"
 
-#: ../midori/midori-websettings.c:214
+#: ../raphael/raphael-websettings.c:214
 msgid "HTTP proxy server"
 msgstr "Servitor proxy HTTP"
 
-#: ../midori/midori-websettings.c:215
+#: ../raphael/raphael-websettings.c:215
 msgid "No proxy server"
 msgstr "Nulle servitor proxy"
 
-#: ../midori/midori-websettings.c:232
+#: ../raphael/raphael-websettings.c:232
 msgid "Chrome"
 msgstr "Chrome"
 
-#: ../midori/midori-websettings.c:233
+#: ../raphael/raphael-websettings.c:233
 msgid "Safari"
 msgstr "Safari"
 
-#: ../midori/midori-websettings.c:234
+#: ../raphael/raphael-websettings.c:234
 msgid "iPhone"
 msgstr "iPhone"
 
-#: ../midori/midori-websettings.c:235
+#: ../raphael/raphael-websettings.c:235
 msgid "Firefox"
 msgstr "Firefox"
 
-#: ../midori/midori-websettings.c:236
+#: ../raphael/raphael-websettings.c:236
 msgid "Internet Explorer"
 msgstr "Internet Explorer"
 
-#: ../midori/midori-websettings.c:318
+#: ../raphael/raphael-websettings.c:318
 msgid "The style of the toolbar"
 msgstr "Le stilo del barra del instrumentos"
 
-#: ../midori/midori-websettings.c:502
+#: ../raphael/raphael-websettings.c:502
 msgid "Always use my font choices"
 msgstr "Sempre usar le electiones de mi typo de characteres"
 
-#: ../midori/midori-websettings.c:503
+#: ../raphael/raphael-websettings.c:503
 msgid "Override fonts picked by websites with user preferences"
 msgstr ""
 "Supplantar le typos de character  extrahite ex le sitos web con le "
 "preferentias del usator"
 
-#: ../midori/midori-websettings.c:1447 ../midori/midori-websettings.c:1453
+#: ../raphael/raphael-websettings.c:1447 ../raphael/raphael-websettings.c:1453
 #, c-format
 msgid "The configuration couldn't be loaded: %s\n"
 msgstr "Le configuration non pote ser cargate: %s\n"
 
-#: ../midori/midori-websettings.c:1507 ../midori/midori-websettings.c:1636
+#: ../raphael/raphael-websettings.c:1507 ../raphael/raphael-websettings.c:1636
 #, c-format
 msgid "Invalid configuration value '%s'"
 msgstr "Valor '%s' del configuration non valide"
 
-#: ../midori/midori-tab.vala:157
+#: ../raphael/raphael-tab.vala:157
 #, c-format
 msgid "Failed to inject stylesheet: %s"
 msgstr "Falta a injectar le folio de stilo: %s"
 
-#: ../midori/midori-notebook.vala:371
+#: ../raphael/raphael-notebook.vala:371
 msgid "Show Tab _Label"
 msgstr "Monstrar le etiquetta (_Label) del scheda"
 
-#: ../midori/midori-notebook.vala:371
+#: ../raphael/raphael-notebook.vala:371
 msgid "Show Tab _Icon Only"
 msgstr "Monstrar sol le _icone del scheda"
 
-#: ../midori/midori-notebook.vala:376
+#: ../raphael/raphael-notebook.vala:376
 msgid "Close Tab to the R_ight"
 msgid_plural "Close Tabs to the R_ight"
 msgstr[0] "Clauder le scheda al derecta (R_ight)"
 msgstr[1] "Clauder le schedas al derecta (R_ight)"
 
-#: ../midori/midori-notebook.vala:388
+#: ../raphael/raphael-notebook.vala:388
 msgid "Close Ot_her Tab"
 msgid_plural "Close Ot_her Tabs"
 msgstr[0] "Clauder un altere (Ot_her) scheda"
 msgstr[1] "Clauder le altere (Ot_her) schedas"
 
-#: ../midori/midori-view.c:627 ../midori/midori-view.c:755
+#: ../raphael/raphael-view.c:627 ../raphael/raphael-view.c:755
 msgid "Trust this website"
 msgstr "Haber fiducia in ce sito web"
 
-#: ../midori/midori-view.c:753
+#: ../raphael/raphael-view.c:753
 msgid "Security unknown"
 msgstr "Securitate incognite"
 
-#: ../midori/midori-view.c:1042
+#: ../raphael/raphael-view.c:1042
 #, c-format
 msgid "%s wants to save an HTML5 database."
 msgstr "%s vole salvar un base de datos HTML5."
 
-#: ../midori/midori-view.c:1046 ../midori/midori-view.c:1077
+#: ../raphael/raphael-view.c:1046 ../raphael/raphael-view.c:1077
 msgid "_Deny"
 msgstr "_Denegar"
 
-#: ../midori/midori-view.c:1046 ../midori/midori-view.c:1077
+#: ../raphael/raphael-view.c:1046 ../raphael/raphael-view.c:1077
 msgid "_Allow"
 msgstr "L_Assar"
 
-#: ../midori/midori-view.c:1073
+#: ../raphael/raphael-view.c:1073
 #, c-format
 msgid "%s wants to know your location."
 msgstr "%s vole cognoscer tu position."
 
-#: ../midori/midori-view.c:1231
+#: ../raphael/raphael-view.c:1231
 #, c-format
 msgid "You are not connected to a network"
 msgstr "Tu non es connexe al rete"
 
-#: ../midori/midori-view.c:1232
+#: ../raphael/raphael-view.c:1232
 #, c-format
 msgid ""
 "Your computer must be connected to a network to reach “%s”. Connect to a "
@@ -1183,12 +1183,12 @@ msgstr ""
 "Tu computator debe ser connexe a un rete pro attinger “%s”. Associa a un "
 "puncto de accesso o attacca un cablo de rete e reproba."
 
-#: ../midori/midori-view.c:1241
+#: ../raphael/raphael-view.c:1241
 #, c-format
 msgid "You are not connected to the Internet"
 msgstr "Tu non es connexe a Internet"
 
-#: ../midori/midori-view.c:1242
+#: ../raphael/raphael-view.c:1242
 #, c-format
 msgid ""
 "Your computer appears to be connected to a network, but can't reach “%s”. "
@@ -1197,12 +1197,12 @@ msgstr ""
 "Tu computator sembla ser connexe a un rete, ma non pote attinger “%s”. "
 "Controla tu configurationes de rete e reproba."
 
-#: ../midori/midori-view.c:1248
+#: ../raphael/raphael-view.c:1248
 #, c-format
 msgid "Raphael can't find the page you're looking for"
 msgstr "Raphael non pote trovar le pagina que tu cerca"
 
-#: ../midori/midori-view.c:1249
+#: ../raphael/raphael-view.c:1249
 #, c-format
 msgid ""
 "The page located at “%s” cannot be found. Check the web address for "
@@ -1211,203 +1211,203 @@ msgstr ""
 "Le pagina locate al “%s” non pote ser trovate. Controla le adresse web pro "
 "parolas con errores orthographic e reproba."
 
-#: ../midori/midori-view.c:1256
+#: ../raphael/raphael-view.c:1256
 msgid "Try Again"
 msgstr "Reprobar"
 
-#: ../midori/midori-view.c:1386
+#: ../raphael/raphael-view.c:1386
 #, c-format
 msgid "Oops - %s"
 msgstr "Oops - %s"
 
-#: ../midori/midori-view.c:1387
+#: ../raphael/raphael-view.c:1387
 #, c-format
 msgid "Something went wrong with '%s'."
 msgstr "Alco ha capitate improprie con '%s'."
 
-#: ../midori/midori-view.c:1389
+#: ../raphael/raphael-view.c:1389
 msgid "Try again"
 msgstr "Reprobar"
 
-#: ../midori/midori-view.c:1536 ../midori/midori-view.c:2418
+#: ../raphael/raphael-view.c:1536 ../raphael/raphael-view.c:2418
 #, c-format
 msgid "Send a message to %s"
 msgstr "Mandar un message a %s"
 
-#: ../midori/midori-view.c:2334
+#: ../raphael/raphael-view.c:2334
 msgid "Add _search engine..."
 msgstr "Adder un motor de recerca (_search)..."
 
-#: ../midori/midori-view.c:2349
+#: ../raphael/raphael-view.c:2349
 msgid "Open _Link"
 msgstr "Aperir un _Ligamine"
 
-#: ../midori/midori-view.c:2356
+#: ../raphael/raphael-view.c:2356
 msgid "Open Link in New _Tab"
 msgstr "Aperir un ligamine in un nove scheda (_Tab)"
 
-#: ../midori/midori-view.c:2362
+#: ../raphael/raphael-view.c:2362
 msgid "Open Link in _Foreground Tab"
 msgstr "Aperir un ligamine in le scheda in prime plano (_Foreground)"
 
-#: ../midori/midori-view.c:2362
+#: ../raphael/raphael-view.c:2362
 msgid "Open Link in _Background Tab"
 msgstr "Aperir un ligamine in le scheda de fundo (_Background)"
 
-#: ../midori/midori-view.c:2364
+#: ../raphael/raphael-view.c:2364
 msgid "Open Link in New _Window"
 msgstr "Aperir le ligamine in un nove fenestra (_W)"
 
-#: ../midori/midori-view.c:2368
+#: ../raphael/raphael-view.c:2368
 msgid "Copy Link de_stination"
 msgstr "Copiar le ligamine de de_stination"
 
 #. GTK_STOCK_SAVE_AS is lacking the underline
-#: ../midori/midori-view.c:2374
+#: ../raphael/raphael-view.c:2374
 msgid "Save _As…"
 msgstr "Salvar como (_As…)"
 
-#: ../midori/midori-view.c:2386
+#: ../raphael/raphael-view.c:2386
 msgid "Open _Image in New Window"
 msgstr "Aperir un _Imagine in un nove fenestra"
 
-#: ../midori/midori-view.c:2386
+#: ../raphael/raphael-view.c:2386
 msgid "Open _Image in New Tab"
 msgstr "Aperir un _Imagine in un nove scheda"
 
-#: ../midori/midori-view.c:2389
+#: ../raphael/raphael-view.c:2389
 msgid "Copy Im_age"
 msgstr "Copiar Im_agine"
 
-#: ../midori/midori-view.c:2391
+#: ../raphael/raphael-view.c:2391
 msgid "Save I_mage"
 msgstr "Salvar I_magine"
 
-#: ../midori/midori-view.c:2397
+#: ../raphael/raphael-view.c:2397
 msgid "Copy Video _Address"
 msgstr "Copiar le _Adresse Video"
 
-#: ../midori/midori-view.c:2399
+#: ../raphael/raphael-view.c:2399
 msgid "Download _Video"
 msgstr "Discargar le _Video"
 
-#: ../midori/midori-view.c:2427
+#: ../raphael/raphael-view.c:2427
 msgid "Open Address in New _Tab"
 msgstr "Aperir le adresse in un nove scheda (_Tab)"
 
-#: ../midori/midori-view.c:2437
+#: ../raphael/raphael-view.c:2437
 msgid "Search _with"
 msgstr "Cercar con (_with)"
 
-#: ../midori/midori-view.c:2468
+#: ../raphael/raphael-view.c:2468
 msgid "_Search the Web"
 msgstr "Re_Cercar in le Web"
 
-#: ../midori/midori-view.c:2498
+#: ../raphael/raphael-view.c:2498
 msgid "Open _Frame in New Tab"
 msgstr "Aperir un quadro (_Frame) in le nove scheda"
 
-#: ../midori/midori-view.c:2531
+#: ../raphael/raphael-view.c:2531
 msgid "Inspect _Element"
 msgstr "Inspectar le _Elemento"
 
-#: ../midori/midori-view.c:2776
+#: ../raphael/raphael-view.c:2776
 #, c-format
 msgid "Open or download file from %s"
 msgstr "Aperir o discargar un file ex le %s"
 
-#: ../midori/midori-view.c:2872 ../midori/midori-view.c:2875
+#: ../raphael/raphael-view.c:2872 ../raphael/raphael-view.c:2875
 #, c-format
 msgid "File Name: %s"
 msgstr "Nomine del file: %s"
 
-#: ../midori/midori-view.c:2881
+#: ../raphael/raphael-view.c:2881
 #, c-format
 msgid "File Type: '%s'"
 msgstr "Typo de file: '%s'"
 
-#: ../midori/midori-view.c:2883
+#: ../raphael/raphael-view.c:2883
 #, c-format
 msgid "File Type: %s ('%s')"
 msgstr "Typo de file: %s ('%s')"
 
-#: ../midori/midori-view.c:2919
+#: ../raphael/raphael-view.c:2919
 #, c-format
 msgid "Size: %s"
 msgstr "Dimension: %s"
 
 #. i18n: A file open dialog title, ie. "Open http://fila.com/manual.tgz"
-#: ../midori/midori-view.c:2927 ../midori/midori-view.c:2929
+#: ../raphael/raphael-view.c:2927 ../raphael/raphael-view.c:2929
 #, c-format
 msgid "Open %s"
 msgstr "Aperir %s"
 
-#: ../midori/midori-view.c:3467
+#: ../raphael/raphael-view.c:3467
 #, c-format
 msgid "Inspect page - %s"
 msgstr "Inspectar le pagina - %s"
 
-#: ../midori/midori-view.c:3941
+#: ../raphael/raphael-view.c:3941
 msgid "Page loading delayed:"
 msgstr "Cargamento de pagina retardate:"
 
-#: ../midori/midori-view.c:3942
+#: ../raphael/raphael-view.c:3942
 msgid "Loading delayed either due to a recent crash or startup preferences."
 msgstr ""
 "Cargamento retardate debite o a un recente crac o al preferentias de "
 "lanceamento initial."
 
-#: ../midori/midori-view.c:3944
+#: ../raphael/raphael-view.c:3944
 msgid "Load Page"
 msgstr "Cargar pagina"
 
-#: ../midori/midori-view.c:4111
+#: ../raphael/raphael-view.c:4111
 msgid "Blank page"
 msgstr "Vacuar pagina"
 
 #. i18n: word stem of "previous page" type links, case is not important
-#: ../midori/midori-view.c:4741
+#: ../raphael/raphael-view.c:4741
 msgid "previous"
 msgstr "previe"
 
 #. i18n: word stem of "next page" type links, case is not important
-#: ../midori/midori-view.c:4760
+#: ../raphael/raphael-view.c:4760
 msgid "next"
 msgstr "sequente"
 
-#: ../midori/midori-view.c:4774
+#: ../raphael/raphael-view.c:4774
 msgid "Print background images"
 msgstr "Stampar le imagines del fundo"
 
-#: ../midori/midori-view.c:4775
+#: ../raphael/raphael-view.c:4775
 msgid "Whether background images should be printed"
 msgstr "Si le imagines del fundo debe ser stampate"
 
-#: ../midori/midori-view.c:4817
+#: ../raphael/raphael-view.c:4817
 msgid "Features"
 msgstr "Functionalitates"
 
 #. i18n: Download tooltip (size): 4KB of 43MB
-#: ../midori/midori-download.vala:66
+#: ../raphael/raphael-download.vala:66
 #, c-format
 msgid "%s of %s"
 msgstr "%s de %s"
 
-#: ../midori/midori-download.vala:82
+#: ../raphael/raphael-download.vala:82
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d hora"
 msgstr[1] "%d horas"
 
-#: ../midori/midori-download.vala:83
+#: ../raphael/raphael-download.vala:83
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuta"
 msgstr[1] "%d minutas"
 
-#: ../midori/midori-download.vala:84
+#: ../raphael/raphael-download.vala:84
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -1415,27 +1415,27 @@ msgstr[0] "%d secunda"
 msgstr[1] "%d secundas"
 
 #. i18n: Download tooltip (estimated time) : - 1 hour, 5 minutes remaning
-#: ../midori/midori-download.vala:99
+#: ../raphael/raphael-download.vala:99
 #, c-format
 msgid " - %s remaining"
 msgstr " - %s restante"
 
 #. i18n: Unknown number of bytes, used for transfer rate like ?B/s
-#: ../midori/midori-download.vala:116
+#: ../raphael/raphael-download.vala:116
 msgid "?B"
 msgstr "?B"
 
 #. i18n: Download tooltip (transfer rate): (130KB/s)
-#: ../midori/midori-download.vala:118 ../midori/midori-download.vala:132
+#: ../raphael/raphael-download.vala:118 ../raphael/raphael-download.vala:132
 #, c-format
 msgid " (%s/s)"
 msgstr " (%s/s)"
 
-#: ../midori/midori-download.vala:259
+#: ../raphael/raphael-download.vala:259
 msgid "The downloaded file is erroneous."
 msgstr "Le file discargate es erronee."
 
-#: ../midori/midori-download.vala:260
+#: ../raphael/raphael-download.vala:260
 msgid ""
 "The checksum provided with the link did not match. This means the file is "
 "probably incomplete or was modified afterwards."
@@ -1443,154 +1443,154 @@ msgstr ""
 "Le summa de controlo providite con le ligamine non concorda. Isto significa "
 "que le file es probabilemente incomplete o ha essite modificate depost."
 
-#: ../midori/midori-download.vala:419
+#: ../raphael/raphael-download.vala:419
 #, c-format
 msgid "The file \"%s\" can't be saved in this folder."
 msgstr "Le file \"%s\" non pote ser salveguardate in ce plica."
 
-#: ../midori/midori-download.vala:421
+#: ../raphael/raphael-download.vala:421
 msgid "You don't have permission to write in this location."
 msgstr "Tu non detene licentia a scriber in ce loco"
 
-#: ../midori/midori-download.vala:424
+#: ../raphael/raphael-download.vala:424
 #, c-format
 msgid "There is not enough free space to download \"%s\"."
 msgstr "Il non ha bastante spatio libere pro discargar \"%s\""
 
-#: ../midori/midori-download.vala:426
+#: ../raphael/raphael-download.vala:426
 #, c-format
 msgid "The file needs %s but only %s are left."
 msgstr "Le file necessita %s ma sol %s es restante."
 
-#: ../midori/midori-speeddial.vala:188
+#: ../raphael/raphael-speeddial.vala:188
 msgid "Speed Dial"
 msgstr "Speed Dial"
 
-#: ../midori/midori-speeddial.vala:189 ../midori/midori-speeddial.vala:268
+#: ../raphael/raphael-speeddial.vala:189 ../raphael/raphael-speeddial.vala:268
 msgid "Click to add a shortcut"
 msgstr "Cliccar pro adder un via-breve"
 
-#: ../midori/midori-speeddial.vala:190
+#: ../raphael/raphael-speeddial.vala:190
 msgid "Enter shortcut address"
 msgstr "Inserer le adresse del via-breve"
 
-#: ../midori/midori-speeddial.vala:191
+#: ../raphael/raphael-speeddial.vala:191
 msgid "Are you sure you want to delete this shortcut?"
 msgstr "Desira tu vermente deler ce via-breve?"
 
-#: ../midori/midori-preferences.c:287
+#: ../raphael/raphael-preferences.c:287
 msgid "Startup"
 msgstr "Initio"
 
-#: ../midori/midori-preferences.c:289
+#: ../raphael/raphael-preferences.c:289
 msgid "When Raphael starts:"
 msgstr "Ubi Raphael initia:"
 
-#: ../midori/midori-preferences.c:294
+#: ../raphael/raphael-preferences.c:294
 msgid "Homepage:"
 msgstr "Pagina initial"
 
-#: ../midori/midori-preferences.c:302
+#: ../raphael/raphael-preferences.c:302
 msgid "Use _current page"
 msgstr "Usar le pagina  _currente"
 
-#: ../midori/midori-preferences.c:306
+#: ../raphael/raphael-preferences.c:306
 msgid "Use current page as homepage"
 msgstr "Usar le pagina actual como pagina initial"
 
 #. Page "Appearance"
-#: ../midori/midori-preferences.c:315
+#: ../raphael/raphael-preferences.c:315
 msgid "Fonts"
 msgstr "Typos de charattere"
 
-#: ../midori/midori-preferences.c:317
+#: ../raphael/raphael-preferences.c:317
 msgid "Proportional Font Family"
 msgstr "Familia de typo de charactere proportional"
 
-#: ../midori/midori-preferences.c:321
+#: ../raphael/raphael-preferences.c:321
 msgid "The default font family used to display text"
 msgstr ""
 "Le familia de typo de character usate ordinarimente pro monstrar le texto"
 
-#: ../midori/midori-preferences.c:324
+#: ../raphael/raphael-preferences.c:324
 msgid "The default font size used to display text"
 msgstr ""
 "Le dimension ordinari del typo de characteres usate pro exponer le texto"
 
-#: ../midori/midori-preferences.c:326
+#: ../raphael/raphael-preferences.c:326
 msgid "Fixed-width Font Family"
 msgstr "Familia de typo de character a largessa fixe"
 
-#: ../midori/midori-preferences.c:330
+#: ../raphael/raphael-preferences.c:330
 msgid "The font family used to display fixed-width text"
 msgstr ""
 "Le familia de typo de character a largessa fixe usate pro exponer le texto"
 
-#: ../midori/midori-preferences.c:333
+#: ../raphael/raphael-preferences.c:333
 msgid "The font size used to display fixed-width text"
 msgstr ""
 "Le dimension del typo de character a largessa fixe usate pro exponer le texto"
 
-#: ../midori/midori-preferences.c:335
+#: ../raphael/raphael-preferences.c:335
 msgid "Minimum Font Size"
 msgstr "Dimension minime del typo de characteres"
 
-#: ../midori/midori-preferences.c:339
+#: ../raphael/raphael-preferences.c:339
 msgid "The minimum font size used to display text"
 msgstr ""
 "Le dimension minime del typo de characteres usate pro monstrar le texto"
 
-#: ../midori/midori-preferences.c:343
+#: ../raphael/raphael-preferences.c:343
 msgid "Preferred Encoding"
 msgstr "Codification preferite"
 
 #. Page "Behavior"
-#: ../midori/midori-preferences.c:350
+#: ../raphael/raphael-preferences.c:350
 msgid "Behavior"
 msgstr "Comportamento"
 
-#: ../midori/midori-preferences.c:353 ../extensions/statusbar-features.c:155
+#: ../raphael/raphael-preferences.c:353 ../extensions/statusbar-features.c:155
 msgid "Load images automatically"
 msgstr "Cargar le imagines automaticamente"
 
-#: ../midori/midori-preferences.c:356
+#: ../raphael/raphael-preferences.c:356
 msgid "Enable Spell Checking"
 msgstr "Habilita corrector orthographic"
 
-#: ../midori/midori-preferences.c:370 ../extensions/statusbar-features.c:162
+#: ../raphael/raphael-preferences.c:370 ../extensions/statusbar-features.c:162
 msgid "Enable scripts"
 msgstr "Activar le scripts"
 
-#: ../midori/midori-preferences.c:373
+#: ../raphael/raphael-preferences.c:373
 msgid "Enable WebGL support"
 msgstr "Activar le supporto WebGL"
 
-#: ../midori/midori-preferences.c:390
+#: ../raphael/raphael-preferences.c:390
 msgid "Zoom Text and Images"
 msgstr "Facer zoom del texto e del imagines"
 
-#: ../midori/midori-preferences.c:393
+#: ../raphael/raphael-preferences.c:393
 msgid "Allow scripts to open popups"
 msgstr "Lassar le scripts aperir le popups"
 
-#: ../midori/midori-preferences.c:394
+#: ../raphael/raphael-preferences.c:394
 msgid "Whether scripts are allowed to open popup windows automatically"
 msgstr ""
 "Si al scripts es consentite aperir fenestras per apparition automatic"
 
-#: ../midori/midori-preferences.c:396
+#: ../raphael/raphael-preferences.c:396
 msgid "Default Zoom Level"
 msgstr "Grado ordinari de zoom"
 
-#: ../midori/midori-preferences.c:400
+#: ../raphael/raphael-preferences.c:400
 msgid "Initial factor to enlarge newly opened tabs by"
 msgstr "Factor initial per le qual aggrandir le nove schedas aperite"
 
-#: ../midori/midori-preferences.c:404
+#: ../raphael/raphael-preferences.c:404
 msgid "Preferred languages"
 msgstr "Linguas preferite"
 
-#: ../midori/midori-preferences.c:408
+#: ../raphael/raphael-preferences.c:408
 msgid ""
 "A comma separated list of languages preferred for rendering multilingual "
 "webpages, for example \"de\", \"ru,nl\" or \"en-us;q=1.0, fr-fr;q=0.667\""
@@ -1599,108 +1599,108 @@ msgstr ""
 "web multilingual, per exemplo \"de\", \"ru,nl\" o \"en-us;q=1.0, fr-"
 "fr;q=0.667"
 
-#: ../midori/midori-preferences.c:410
+#: ../raphael/raphael-preferences.c:410
 msgid "Save downloaded files to:"
 msgstr "Conservar files discargate como:"
 
 #. Page "Interface"
-#: ../midori/midori-preferences.c:417
+#: ../raphael/raphael-preferences.c:417
 msgid "Browsing"
 msgstr "Navigation"
 
-#: ../midori/midori-preferences.c:424
+#: ../raphael/raphael-preferences.c:424
 msgid "Theme:"
 msgstr "Thema:"
 
-#: ../midori/midori-preferences.c:458
+#: ../raphael/raphael-preferences.c:458
 msgid "Toolbar Style:"
 msgstr "Stilo del barra de instrumentos:"
 
-#: ../midori/midori-preferences.c:463
+#: ../raphael/raphael-preferences.c:463
 msgid "Open new pages in:"
 msgstr "Aperir nove paginas in:"
 
-#: ../midori/midori-preferences.c:467
+#: ../raphael/raphael-preferences.c:467
 msgid "New tab behavior:"
 msgstr "Nove comportamento de scheda:"
 
-#: ../midori/midori-preferences.c:472
+#: ../raphael/raphael-preferences.c:472
 msgid "Close Buttons on Tabs"
 msgstr "Clauder le buttones sur le schedas"
 
-#: ../midori/midori-preferences.c:475
+#: ../raphael/raphael-preferences.c:475
 msgid "Open Tabs next to Current"
 msgstr "Aperir le schedas sequente al actual"
 
-#: ../midori/midori-preferences.c:476
+#: ../raphael/raphael-preferences.c:476
 msgid ""
 "Whether to open new tabs next to the current tab or after the last one"
 msgstr "Si aperir nove schedas sequente al scheda actual o post lo ultime"
 
-#: ../midori/midori-preferences.c:479
+#: ../raphael/raphael-preferences.c:479
 msgid "Open tabs in the background"
 msgstr "Aperir schedas in le fundo"
 
 #. Page "Network"
-#: ../midori/midori-preferences.c:483
+#: ../raphael/raphael-preferences.c:483
 msgid "Network"
 msgstr "Rete"
 
-#: ../midori/midori-preferences.c:485
+#: ../raphael/raphael-preferences.c:485
 msgid "Proxy server"
 msgstr "Servitor proxy"
 
-#: ../midori/midori-preferences.c:490
+#: ../raphael/raphael-preferences.c:490
 msgid "URI"
 msgstr "URI"
 
-#: ../midori/midori-preferences.c:498
+#: ../raphael/raphael-preferences.c:498
 msgid "Port"
 msgstr "Porto"
 
-#: ../midori/midori-preferences.c:510
+#: ../raphael/raphael-preferences.c:510
 msgid "Supported proxy types:"
 msgstr "Typos de proxy supportate:"
 
 #. TODO: Preserve page icons of search engines and merge privacy items
-#: ../midori/midori-preferences.c:528 ../midori/midori-privatedata.c:383
+#: ../raphael/raphael-preferences.c:528 ../raphael/raphael-privatedata.c:383
 msgid "Web Cache"
 msgstr "Memoria tampon del Web"
 
-#: ../midori/midori-preferences.c:529 ../midori/midori-preferences.c:533
+#: ../raphael/raphael-preferences.c:529 ../raphael/raphael-preferences.c:533
 msgid "The maximum size of cached pages on disk"
 msgstr "Le maxime dimension de paginas tampon reservate in le disco"
 
-#: ../midori/midori-preferences.c:535
+#: ../raphael/raphael-preferences.c:535
 msgid "MB"
 msgstr "MB"
 
 #. i18n: This refers to an application, not the 'user agent' string
-#: ../midori/midori-preferences.c:541
+#: ../raphael/raphael-preferences.c:541
 msgid "Identify as"
 msgstr "Identificar como"
 
-#: ../midori/midori-preferences.c:559
+#: ../raphael/raphael-preferences.c:559
 msgid "Privacy"
 msgstr "Intimitate"
 
-#: ../midori/midori-preferences.c:561
+#: ../raphael/raphael-preferences.c:561
 msgid "Delete old Cookies after:"
 msgstr "Deler le cookies vetule post:"
 
-#: ../midori/midori-preferences.c:563 ../midori/midori-preferences.c:566
+#: ../raphael/raphael-preferences.c:563 ../raphael/raphael-preferences.c:566
 msgid "The maximum number of days to save cookies for"
 msgstr "Le maxime numero de dies pro mantener le cookies"
 
-#: ../midori/midori-preferences.c:569
+#: ../raphael/raphael-preferences.c:569
 msgid "Only accept Cookies from sites you visit"
 msgstr "Sol acceptar cookies ex le sitos que tu visita"
 
-#: ../midori/midori-preferences.c:570
+#: ../raphael/raphael-preferences.c:570
 msgid "Block cookies sent by third-party websites"
 msgstr "Blocar le cookies inviate per sitos web de tertie parte"
 
-#: ../midori/midori-preferences.c:574
+#: ../raphael/raphael-preferences.c:574
 msgid ""
 "Cookies store login data, saved games, or user profiles for advertisement "
 "purposes."
@@ -1708,139 +1708,139 @@ msgstr ""
 "Le cookies salva datos de apertura de session, jocos salveguardate, o "
 "profilos de usator pro propositos de annuncio."
 
-#: ../midori/midori-preferences.c:581
+#: ../raphael/raphael-preferences.c:581
 msgid "Enable offline web application cache"
 msgstr "Activar le memoria tampon del application web foras de linea"
 
-#: ../midori/midori-preferences.c:584
+#: ../raphael/raphael-preferences.c:584
 msgid "Enable HTML5 local storage support"
 msgstr "Activar le supporto al immagazinage local HTML5"
 
 #. i18n: Reworded: Shorten details propagated when going to another page
-#: ../midori/midori-preferences.c:588
+#: ../raphael/raphael-preferences.c:588
 msgid "Strip referrer details sent to websites"
 msgstr "Spoliar del detalios de referente inviate al sitos web"
 
 #. i18n: Referer here is not a typo but a technical term
-#: ../midori/midori-preferences.c:590
+#: ../raphael/raphael-preferences.c:590
 msgid "Whether the \"Referer\" header should be shortened to the hostname"
 msgstr "Si le titulo del \"Referer\" debe ser accurtate al nomine del host"
 
-#: ../midori/midori-preferences.c:593
+#: ../raphael/raphael-preferences.c:593
 msgid "Delete pages from history after:"
 msgstr "Deler le paginas del historia post:"
 
-#: ../midori/midori-preferences.c:595 ../midori/midori-preferences.c:598
+#: ../raphael/raphael-preferences.c:595 ../raphael/raphael-preferences.c:598
 msgid "The maximum number of days to save the history for"
 msgstr "Le numero maxime de dies pro reservar le historia"
 
-#: ../midori/midori-preferences.c:634 ../panels/midori-extensions.c:90
+#: ../raphael/raphael-preferences.c:634 ../panels/raphael-extensions.c:90
 msgid "Extensions"
 msgstr "Extensiones"
 
-#: ../midori/midori-searchaction.c:453
+#: ../raphael/raphael-searchaction.c:453
 msgid "_Manage Search Engines"
 msgstr "_Manear le motores de recerca"
 
-#: ../midori/midori-searchaction.c:1059
+#: ../raphael/raphael-searchaction.c:1059
 msgid "Add search engine"
 msgstr "Adder motor de recerca"
 
-#: ../midori/midori-searchaction.c:1059
+#: ../raphael/raphael-searchaction.c:1059
 msgid "Edit search engine"
 msgstr "Modificar le motor de recerca"
 
-#: ../midori/midori-searchaction.c:1087
+#: ../raphael/raphael-searchaction.c:1087
 msgid "_Name:"
 msgstr "_Nomine:"
 
-#: ../midori/midori-searchaction.c:1102
+#: ../raphael/raphael-searchaction.c:1102
 msgid "_Description:"
 msgstr "_Description:"
 
-#: ../midori/midori-searchaction.c:1115 ../extensions/feed-panel/main.c:362
+#: ../raphael/raphael-searchaction.c:1115 ../extensions/feed-panel/main.c:362
 msgid "_Address:"
 msgstr "_Direction:"
 
-#: ../midori/midori-searchaction.c:1130
+#: ../raphael/raphael-searchaction.c:1130
 msgid "_Token:"
 msgstr "Indicio (_Token):"
 
-#: ../midori/midori-searchaction.c:1420
+#: ../raphael/raphael-searchaction.c:1420
 msgid "Manage Search Engines"
 msgstr "Gerer le motores de recerca"
 
-#: ../midori/midori-searchaction.c:1520
+#: ../raphael/raphael-searchaction.c:1520
 msgid "Use as _default"
 msgstr "Usar como pre_definite"
 
-#: ../midori/midori-searchaction.c:1631
+#: ../raphael/raphael-searchaction.c:1631
 #, c-format
 msgid "The search engines couldn't be loaded. %s\n"
 msgstr "Le motores de recerca non pote ser cargate. %s\n"
 
-#: ../midori/midori-searchaction.c:1686
+#: ../raphael/raphael-searchaction.c:1686
 #, c-format
 msgid "The search engines couldn't be saved. %s"
 msgstr "Le motores de recerca non pote ser salvate. %s"
 
-#: ../midori/midori-historycompletion.vala:17
+#: ../raphael/raphael-historycompletion.vala:17
 msgid "Bookmarks and History"
 msgstr "Signa-libros e Historia"
 
-#: ../midori/midori-historydatabase.vala:28
+#: ../raphael/raphael-historydatabase.vala:28
 #, c-format
 msgid "Search for %s"
 msgstr "Cercar pro %s"
 
-#: ../midori/midori-historydatabase.vala:63
-#: ../midori/midori-historydatabase.vala:96
+#: ../raphael/raphael-historydatabase.vala:63
+#: ../raphael/raphael-historydatabase.vala:96
 #, c-format
 msgid "Failed to select from history: %s"
 msgstr "Falta a eliger ex historia: %s"
 
-#: ../midori/midori-searchcompletion.vala:20
-#: ../midori/midori-searchcompletion.vala:57
+#: ../raphael/raphael-searchcompletion.vala:20
+#: ../raphael/raphael-searchcompletion.vala:57
 msgid "Search with…"
 msgstr "Cercar con…"
 
-#: ../midori/midori-searchcompletion.vala:47
+#: ../raphael/raphael-searchcompletion.vala:47
 #, c-format
 msgid "Search with %s"
 msgstr "Cercar con %s"
 
-#: ../midori/sokoke.c:234 ../midori/sokoke.c:254
-#: ../midori/midori-frontend.c:325
+#: ../raphael/sokoke.c:234 ../raphael/sokoke.c:254
+#: ../raphael/raphael-frontend.c:325
 msgid "Could not run external program."
 msgstr "Impossibile facer girar un programma externe."
 
-#: ../midori/sokoke.c:444
+#: ../raphael/sokoke.c:444
 msgid "Invalid URI"
 msgstr "URI non valide"
 
 #. i18n: A panel at the bottom, to search text in pages
-#: ../toolbars/midori-findbar.c:233
+#: ../toolbars/raphael-findbar.c:233
 msgid "_Inline Find:"
 msgstr "Cercar _Inline:"
 
-#: ../toolbars/midori-findbar.c:251
+#: ../toolbars/raphael-findbar.c:251
 msgid "Previous"
 msgstr "Precedente"
 
-#: ../toolbars/midori-findbar.c:257
+#: ../toolbars/raphael-findbar.c:257
 msgid "Next"
 msgstr "Sequente"
 
-#: ../toolbars/midori-findbar.c:261
+#: ../toolbars/raphael-findbar.c:261
 msgid "Match Case"
 msgstr "Concordar le majuscule"
 
-#: ../toolbars/midori-findbar.c:270
+#: ../toolbars/raphael-findbar.c:270
 msgid "Close Findbar"
 msgstr "Clauder le barra de recerca"
 
 #. i18n: [n] bookmark(s)
-#: ../panels/midori-bookmarks.c:632
+#: ../panels/raphael-bookmarks.c:632
 #, c-format
 msgid "%d bookmark"
 msgid_plural "%d bookmarks"
@@ -1848,7 +1848,7 @@ msgstr[0] "%d signa-libro"
 msgstr[1] "%d signa-libros"
 
 #. i18n: [n] subfolder(s)
-#: ../panels/midori-bookmarks.c:642
+#: ../panels/raphael-bookmarks.c:642
 #, c-format
 msgid "%d subfolder"
 msgid_plural "%d subfolders"
@@ -1856,119 +1856,119 @@ msgstr[0] "%d sub-plica"
 msgstr[1] "%d sub-plicas"
 
 #. i18n: Empty folder
-#: ../panels/midori-bookmarks.c:667
+#: ../panels/raphael-bookmarks.c:667
 #, c-format
 msgid "Empty folder"
 msgstr "Dossier vacue"
 
 #. i18n: Folder containing [[n] folder(s)] and no bookmark
-#: ../panels/midori-bookmarks.c:670
+#: ../panels/raphael-bookmarks.c:670
 #, c-format
 msgid "Folder containing %s and no bookmark"
 msgstr "Plica continente %s e nulle signa-libro"
 
 #. i18n: Folder containing [[n] bookmark(s)]
-#: ../panels/midori-bookmarks.c:674
+#: ../panels/raphael-bookmarks.c:674
 #, c-format
 msgid "Folder containing %s"
 msgstr "Plica continente %s"
 
 #. i18n: Folder containing [[n] bookmark(s)] and [[n] folder(s)]
-#: ../panels/midori-bookmarks.c:677
+#: ../panels/raphael-bookmarks.c:677
 #, c-format
 msgid "Folder containing %s and %s"
 msgstr "Plica continente %s e le %s"
 
 #. i18n: Bookmark leading to: [bookmark uri]
-#: ../panels/midori-bookmarks.c:688
+#: ../panels/raphael-bookmarks.c:688
 #, c-format
 msgid "Bookmark leading to: %s"
 msgstr "Signa-libro conducente a: %s"
 
 #. i18n: [[n] folder(s)] and no bookmark
-#: ../panels/midori-bookmarks.c:702
+#: ../panels/raphael-bookmarks.c:702
 #, c-format
 msgid "%s and no bookmark"
 msgstr "%s e nulle signa-libro"
 
 #. i18n: [[n] bookmark(s)] and [[n] folder(s)]
-#: ../panels/midori-bookmarks.c:708
+#: ../panels/raphael-bookmarks.c:708
 #, c-format
 msgid "%s and %s"
 msgstr "%s e %s"
 
-#: ../panels/midori-bookmarks.c:768
+#: ../panels/raphael-bookmarks.c:768
 msgid "Edit the selected bookmark"
 msgstr "Rediger le signa-libro seligite"
 
-#: ../panels/midori-bookmarks.c:776
+#: ../panels/raphael-bookmarks.c:776
 msgid "Delete the selected bookmark"
 msgstr "Deler le signa-libro seligite"
 
-#: ../panels/midori-bookmarks.c:792
+#: ../panels/raphael-bookmarks.c:792
 msgid "Add a new folder"
 msgstr "Adder un nove dossier"
 
-#: ../panels/midori-bookmarks.c:923 ../panels/midori-history.c:575
+#: ../panels/raphael-bookmarks.c:923 ../panels/raphael-history.c:575
 msgid "<i>Separator</i>"
 msgstr "<i>Separator</i>"
 
-#: ../panels/midori-bookmarks.c:1087 ../panels/midori-history.c:744
+#: ../panels/raphael-bookmarks.c:1087 ../panels/raphael-history.c:744
 #: ../extensions/feed-panel/feed-panel.c:502
 msgid "Open in New _Tab"
 msgstr "Aperir in un Nove _Scheda"
 
 #. Create the filter entry
-#: ../panels/midori-bookmarks.c:1352
+#: ../panels/raphael-bookmarks.c:1352
 msgid "Search Bookmarks"
 msgstr "Cercar signa-libros"
 
-#: ../panels/midori-history.c:111
+#: ../panels/raphael-history.c:111
 msgid "History"
 msgstr "Historia"
 
-#: ../panels/midori-history.c:133
+#: ../panels/raphael-history.c:133
 msgid "Today"
 msgstr "Hodie"
 
-#: ../panels/midori-history.c:135
+#: ../panels/raphael-history.c:135
 msgid "Yesterday"
 msgstr "Heri"
 
-#: ../panels/midori-history.c:137
+#: ../panels/raphael-history.c:137
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "%d die retro"
 msgstr[1] "%d dies retro"
 
-#: ../panels/midori-history.c:140
+#: ../panels/raphael-history.c:140
 msgid "A week ago"
 msgstr "Un septimana retro"
 
-#: ../panels/midori-history.c:185
+#: ../panels/raphael-history.c:185
 #, c-format
 msgid "Failed to remove history item: %s\n"
 msgstr "Fallite a remover un elemento del historia: %s\n"
 
-#: ../panels/midori-history.c:312
+#: ../panels/raphael-history.c:312
 msgid "Are you sure you want to remove all history items?"
 msgstr "Desira tu vermente remover tote le elementos del historia?"
 
-#: ../panels/midori-history.c:358
+#: ../panels/raphael-history.c:358
 msgid "Bookmark the selected history item"
 msgstr "Poner un signa-libro al elemento seligite del historia"
 
-#: ../panels/midori-history.c:367
+#: ../panels/raphael-history.c:367
 msgid "Delete the selected history item"
 msgstr "Deler le elemento seligite del historia"
 
-#: ../panels/midori-history.c:375
+#: ../panels/raphael-history.c:375
 msgid "Clear the entire history"
 msgstr "Clarar le integre historia"
 
 #. Create the filter entry
-#: ../panels/midori-history.c:926
+#: ../panels/raphael-history.c:926
 msgid "Search History"
 msgstr "Historia de cerca"
 
@@ -2037,11 +2037,11 @@ msgstr "1 anno"
 msgid "Preferences for %s"
 msgstr "Preferentias pro %s"
 
-#: ../katze/midori-uri.vala:212
+#: ../katze/raphael-uri.vala:212
 msgid "MD5-Checksum:"
 msgstr "MD5-Summa de controlo:"
 
-#: ../katze/midori-uri.vala:219
+#: ../katze/raphael-uri.vala:219
 msgid "SHA1-Checksum:"
 msgstr "SHA1-Summa de controlo:"
 
@@ -3069,85 +3069,85 @@ msgid "Easily edit the toolbar layout"
 msgstr "Modificar facilemente le disposition del barra de instrumentos"
 
 #. i18n: Dialog: Clear Private Data, in the Tools menu
-#: ../midori/midori-privatedata.c:192
+#: ../raphael/raphael-privatedata.c:192
 msgid "Clear Private Data"
 msgstr "Clarar le datos private"
 
-#: ../midori/midori-privatedata.c:196
+#: ../raphael/raphael-privatedata.c:196
 msgid "_Clear private data"
 msgstr "_Clarar le datos private"
 
-#: ../midori/midori-privatedata.c:212
+#: ../raphael/raphael-privatedata.c:212
 msgid "Clear the following data:"
 msgstr "Clarar le datos sequente"
 
-#: ../midori/midori-privatedata.c:222
+#: ../raphael/raphael-privatedata.c:222
 msgid "Last open _tabs"
 msgstr "Le ultime schedas (_tabs) aperite"
 
-#: ../midori/midori-privatedata.c:255
+#: ../raphael/raphael-privatedata.c:255
 msgid "Clear private data when _quitting Midori"
 msgstr "Clarar le datos private lassante (_quitting) Midori"
 
 #. i18n: Logins and passwords in websites and web forms
-#: ../midori/midori-privatedata.c:378
+#: ../raphael/raphael-privatedata.c:378
 msgid "Saved logins and _passwords"
 msgstr "Salveguardate le connexiones e le contrasignos _passwords"
 
-#: ../midori/midori-privatedata.c:380
+#: ../raphael/raphael-privatedata.c:380
 msgid "Cookies and Website data"
 msgstr "Cookies e datos del sito web"
 
-#: ../midori/midori-privatedata.c:385
+#: ../raphael/raphael-privatedata.c:385
 msgid "Website icons"
 msgstr "Icones de sito web"
 
-#: ../midori/midori-viewcompletion.vala:18
+#: ../raphael/raphael-viewcompletion.vala:18
 msgid "Open tabs"
 msgstr "Aperir schedas"
 
-#: ../midori/midori-viewcompletion.vala:80
+#: ../raphael/raphael-viewcompletion.vala:80
 msgid "More open tabs…"
 msgstr "Plus de schedas aperte…"
 
-#: ../midori/midori-history.c:27
+#: ../raphael/raphael-history.c:27
 #, c-format
 msgid "Failed to clear history: %s\n"
 msgstr "Falta a clarar le chronologia: %s\n"
 
 #. i18n: Couldn't remove items that are older than n days
-#: ../midori/midori-history.c:73
+#: ../raphael/raphael-history.c:73
 #, c-format
 msgid "Failed to remove old history items: %s\n"
 msgstr "Falta a remover le elementos ancian del chronologia: %s\n"
 
-#: ../midori/midori-bookmarks-db.c:525
+#: ../raphael/raphael-bookmarks-db.c:525
 #, c-format
 msgid "Failed to add bookmark item: %s\n"
 msgstr "Falta a adder le elemento del signa-libro: %s\n"
 
-#: ../midori/midori-bookmarks-db.c:580
+#: ../raphael/raphael-bookmarks-db.c:580
 #, c-format
 msgid "Failed to update bookmark: %s\n"
 msgstr "Falta a ajornar le signa-libro: %s\n"
 
-#: ../midori/midori-bookmarks-db.c:616
+#: ../raphael/raphael-bookmarks-db.c:616
 #, c-format
 msgid "Failed to remove bookmark item: %s\n"
 msgstr "Falta a remover le elemento del signa-libro: %s\n"
 
-#: ../midori/midori-session.c:362
+#: ../raphael/raphael-session.c:362
 #, c-format
 msgid "The configuration couldn't be saved. %s"
 msgstr "Le configuration non pote ser salveguardate. %s"
 
 #. i18n: Trash, or wastebin, containing closed tabs
-#: ../midori/midori-frontend.c:154
+#: ../raphael/raphael-frontend.c:154
 #, c-format
 msgid "The trash couldn't be saved. %s"
 msgstr "Le immunditia non pote ser salveguardate. %s"
 
-#: ../midori/midori-frontend.c:353
+#: ../raphael/raphael-frontend.c:353
 #, c-format
 msgid ""
 "Raphael crashed the last time it was opened. You can report the problem at %s."
@@ -3155,59 +3155,59 @@ msgstr ""
 "Raphael collabeva le ultime vice illo ha essite aperte. Tu pote reportar le "
 "problema a %s."
 
-#: ../midori/midori-frontend.c:362
+#: ../raphael/raphael-frontend.c:362
 msgid "Modify _preferences"
 msgstr "Modificar le _preferentias"
 
-#: ../midori/midori-frontend.c:366
+#: ../raphael/raphael-frontend.c:366
 msgid "Disable all _extensions"
 msgstr "Disactivar tote le _extensiones"
 
-#: ../midori/midori-frontend.c:375
+#: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
 msgstr "Monstrar un fenestra de dialogo post que Raphael ha collabite"
 
-#: ../midori/midori-frontend.c:380
+#: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
 msgstr "Rejectar le schedas vetule"
 
-#: ../midori/midori-frontend.c:388
+#: ../raphael/raphael-frontend.c:388
 msgid "Show last crash _log"
 msgstr "Monstrar le registro (_log) del ultime collapso"
 
-#: ../midori/midori-frontend.c:401
+#: ../raphael/raphael-frontend.c:401
 msgid "Run in _debugger"
 msgstr "Facer fluer le chassator de errores (_debugger)"
 
-#: ../midori/midori-frontend.c:479
+#: ../raphael/raphael-frontend.c:479
 msgid "An instance of Raphael is already running but not responding.\n"
 msgstr "Un instantia de Raphael es ja currente ma non responde.\n"
 
-#: ../midori/midori-frontend.c:516
+#: ../raphael/raphael-frontend.c:516
 #, c-format
 msgid "Bookmarks couldn't be loaded: %s\n"
 msgstr "Le signa-libros non pote ser cargate: %s\n"
 
-#: ../midori/midori-frontend.c:531
+#: ../raphael/raphael-frontend.c:531
 #, c-format
 msgid "The session couldn't be loaded: %s\n"
 msgstr "Le session non pote ser cargate: %s\n"
 
-#: ../midori/midori-frontend.c:547
+#: ../raphael/raphael-frontend.c:547
 #, c-format
 msgid "The trash couldn't be loaded: %s\n"
 msgstr "Le immunditia non pote ser cargate: %s\n"
 
-#: ../midori/midori-frontend.c:555
+#: ../raphael/raphael-frontend.c:555
 #, c-format
 msgid "The history couldn't be loaded: %s\n"
 msgstr "Le chronologia non pote ser cargate: %s\n"
 
-#: ../midori/midori-frontend.c:566
+#: ../raphael/raphael-frontend.c:566
 msgid "The following errors occured:"
 msgstr "Le sequente errores ha occurrite:"
 
-#: ../midori/midori-frontend.c:571
+#: ../raphael/raphael-frontend.c:571
 msgid "_Ignore"
 msgstr "_Ignorar"
 
@@ -3679,7 +3679,7 @@ msgstr "Medios Web in reproduction"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Raphael using org.midori.mediaHerald"
+"in Raphael using org.raphael.mediaHerald"
 msgstr ""
 "Compartir 'youtube, vimeo, dailymotion, coub e zippcast' que tu es "
-"reproducente in Raphael per org.midori.mediaHerald"
+"reproducente in Raphael per org.raphael.mediaHerald"
