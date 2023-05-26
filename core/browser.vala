@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public interface BrowserActivatable : Object {
         public abstract Browser browser { owned get; set; }
         public abstract void activate ();
@@ -456,7 +456,7 @@ namespace Midori {
                 return propagate_key_event (event);
             }
 			// Default behaviour for navigation bar
-            if (get_focus () is Midori.Urlbar) {
+            if (get_focus () is Raphael.Urlbar) {
                 if (navigationbar.urlbar.key_press_event (event)) {
                     return true;
                 }

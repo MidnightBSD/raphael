@@ -19,18 +19,18 @@ msgstr ""
 "X-Generator: Launchpad (build 18474)\n"
 "Language: ja\n"
 
-#: ../data/midori.desktop.in.h:1 ../midori/main.c:142
-#: ../midori/midori-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+#: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
+#: ../raphael/raphael-websettings.c:231
+msgid "Raphael"
+msgstr "Raphael"
 
-#: ../data/midori.desktop.in.h:2
+#: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
 msgstr "ウェブブラウザー"
 
-#: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Midori ウェブブラウザー"
+#: ../data/raphael.desktop.in.h:3
+msgid "Raphael Web Browser"
+msgstr "Raphael ウェブブラウザー"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,8 +53,8 @@ msgid "New Private Browsing Window"
 msgstr "新しいプライベートブラウジングウィンドウ"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori プライベートブラウジング"
+msgid "Raphael Private Browsing"
+msgstr "Raphael プライベートブラウジング"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -151,8 +151,8 @@ msgstr "PATTERN"
 # CLI --help
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "非アクティブになって SECONDS 秒後に Midori をリセットする"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "非アクティブになって SECONDS 秒後に Raphael をリセットする"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -369,12 +369,12 @@ msgstr "ファイルを開く"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "上記 URI を使用するにはフィードリーダーを開いてください。通常「新規に購読」、「新規ニュースフィード」などのメニューやボタンがあります。\n"
-"もしくは Midori "
+"もしくは Raphael "
 "の設定のアプリケーションタブでフィードリーダーを指定してください。次にニュースフィードアイコンをクリックした時に自動的に追加されます。"
 
 #: ../midori/midori-browser.c:2832 ../extensions/feed-panel/main.c:350
@@ -442,8 +442,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -478,8 +478,8 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape ブックマーク"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "Midori は XBEL (*.xbel) および Netscape (*.html) へのみエクスポートできます"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "Raphael は XBEL (*.xbel) および Netscape (*.html) へのみエクスポートできます"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1217,7 +1217,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr ""
 
 #: ../midori/midori-view.c:1249
@@ -1494,8 +1494,8 @@ msgid "Startup"
 msgstr "起動"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Midori を起動した時:"
+msgid "When Raphael starts:"
+msgstr "Raphael を起動した時:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2284,8 +2284,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "カッコ内のバージョン番号は実行中に使用されているバージョンを表しています。"
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori はあらゆる個人データを保存しません:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael はあらゆる個人データを保存しません:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2300,8 +2300,8 @@ msgid "HTML5 storage, local database and application caches are disabled."
 msgstr "HTML5 ストレージ、ローカルデータベース、およびアプリケーションキャッシュは無効になります。"
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori はウェブサイトによるユーザーのトラッキングを阻止します:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael はウェブサイトによるユーザーのトラッキングを阻止します:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2789,16 +2789,16 @@ msgid "Browser window"
 msgstr "ブラウザーウィンドウ"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "このビューが所属する Midori ブラウザーインスタンスです"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "このビューが所属する Raphael ブラウザーインスタンスです"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "ビュー"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
-msgstr "このビューが所属する Midori ビューインスタンスです"
+msgid "The Raphael view instance this view belongs to"
+msgstr "このビューが所属する Raphael ビューインスタンスです"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2868,8 +2868,8 @@ msgstr "エクステンションインスタンス"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "このエクステンションのための Midori エクステンションインスタンスです"
+msgid "The Raphael extension instance for this extension"
+msgstr "このエクステンションのための Raphael エクステンションインスタンスです"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2878,8 +2878,8 @@ msgstr "アプリケーションインスタンス"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "このエクステンションが属する Midori アプリケーションインスタンスです"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "このエクステンションが属する Raphael アプリケーションインスタンスです"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2938,8 +2938,8 @@ msgstr "マウスジェスチャ"
 
 # description
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "マウスの操作で Midori を制御します"
+msgid "Control Raphael by moving the mouse"
+msgstr "マウスの操作で Raphael を制御します"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3088,8 +3088,8 @@ msgid "Last open _tabs"
 msgstr "最後に開いたタブ(_T)"
 
 #: ../midori/midori-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Midori 終了時にプライベートデータをクリアする(_Q)"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Raphael 終了時にプライベートデータをクリアする(_Q)"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3152,8 +3152,8 @@ msgstr "ゴミ箱を保存できませんでした。%s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
-msgstr "Midori は最後に開いた時にクラッシュしたようです。この問題を報告する場合は %s までおねがいします。"
+"Raphael crashed the last time it was opened. You can report the problem at %s."
+msgstr "Raphael は最後に開いた時にクラッシュしたようです。この問題を報告する場合は %s までおねがいします。"
 
 #: ../midori/midori-frontend.c:362
 msgid "Modify _preferences"
@@ -3165,8 +3165,8 @@ msgstr "すべてのエクステンションを無効にする(_E)"
 
 # tooltip
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Midori がクラッシュした後の起動時にダイアログを表示します"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Raphael がクラッシュした後の起動時にダイアログを表示します"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3181,8 +3181,8 @@ msgid "Run in _debugger"
 msgstr "デバッガー上で起動(_D)"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Midori のインスタンスはすでに実行中ですが応答がありません。\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Raphael のインスタンスはすでに実行中ですが応答がありません。\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3330,9 +3330,9 @@ msgstr "有効期限"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
-"個別に構成されていないドメインに対して使用するポリシーです。Midori 設定内で設定された全体の Cokkie "
+"個別に構成されていないドメインに対して使用するポリシーです。Raphael 設定内で設定された全体の Cokkie "
 "ポリシーから更に制限するために動作します。"
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3350,8 +3350,8 @@ msgstr "%s のアプリケーションアイコンの取得に失敗しました
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3454,12 +3454,12 @@ msgid "Some files are being downloaded"
 msgstr "ファイルのダウンロード中です"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "Midori を終了(_Q)"
+msgid "_Quit Raphael"
+msgstr "Raphael を終了(_Q)"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Midori を終了すると転送がキャンセルされます。"
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Raphael を終了すると転送がキャンセルされます。"
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3668,5 +3668,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""

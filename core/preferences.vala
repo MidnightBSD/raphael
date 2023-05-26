@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public interface PreferencesActivatable : Object {
         public abstract Preferences preferences { owned get; set; }
         public abstract void activate ();

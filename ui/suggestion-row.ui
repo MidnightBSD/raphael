@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriSuggestionRow" parent="GtkListBoxRow">
+  <template class="RaphaelSuggestionRow" parent="GtkListBoxRow">
     <property name="can-focus">no</property>
     <property name="visible">yes</property>
     <child>
@@ -9,7 +9,7 @@
         <property name="margin">4</property>
         <property name="visible">yes</property>
         <child>
-          <object class="MidoriFavicon" id="icon">
+          <object class="RaphaelFavicon" id="icon">
             <!-- menu -->
             <property name="icon-size">1</property>
             <property name="valign">center</property>

@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public class Switcher : Gtk.Box {
         HashTable<Gtk.Widget, Tally> buttons;
         public Gtk.Stack? stack { get; set; }

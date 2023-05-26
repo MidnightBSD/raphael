@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     [GtkTemplate (ui = "/ui/suggestion-row.ui")]
     public class SuggestionRow : Gtk.ListBoxRow {
         public DatabaseItem item { get; protected set; }

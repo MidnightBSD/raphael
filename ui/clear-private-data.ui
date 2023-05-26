@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriClearPrivateData" parent="GtkDialog">
+  <template class="RaphaelClearPrivateData" parent="GtkDialog">
     <property name="modal">yes</property>
     <property name="resizable">no</property>
     <property name="title" translatable="yes">Clear Private Data</property>

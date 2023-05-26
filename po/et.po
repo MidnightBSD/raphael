@@ -30,8 +30,8 @@ msgid "Web Browser"
 msgstr "Veebibrauser"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Midori veebibrauser"
+msgid "Raphael Web Browser"
+msgstr "Raphael veebibrauser"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -54,8 +54,8 @@ msgid "New Private Browsing Window"
 msgstr "Uus privaatne aken"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori privaatne lehitsemine"
+msgid "Raphael Private Browsing"
+msgstr "Raphael privaatne lehitsemine"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -141,8 +141,8 @@ msgstr "PATTERN"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Midori taaskäivitama pärast SECONDS sekundilist tegevusetust"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Raphael taaskäivitama pärast SECONDS sekundilist tegevusetust"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -433,8 +433,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -469,9 +469,9 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape järjehoidjad"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Midori järjehoidjad saavad olla ainult XBEL (*.xbel) või Netscape (*.html) "
+"Raphael järjehoidjad saavad olla ainult XBEL (*.xbel) või Netscape (*.html) "
 "vormingus"
 
 #: ../midori/midori-browser.c:4711
@@ -1201,8 +1201,8 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori ei oska leida lehte mida sa otsid"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael ei oska leida lehte mida sa otsid"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1485,8 +1485,8 @@ msgid "Startup"
 msgstr "Käivitamine"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Midori käivitamisel:"
+msgid "When Raphael starts:"
+msgstr "Raphael käivitamisel:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2253,8 +2253,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "Sulgudes olevad numbrid näitavad käivitatava rakenduse versiooni."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori ei salvesta  isiklikke andmeid:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael ei salvesta  isiklikke andmeid:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2269,8 +2269,8 @@ msgid "HTML5 storage, local database and application caches are disabled."
 msgstr "HTML5 ja kohalik andmebaas on keelatud, rakenduste vahemälu keelatud"
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori takistab veebilehtedel kasutaja jälitamise:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael takistab veebilehtedel kasutaja jälitamise:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2774,16 +2774,16 @@ msgid "Browser window"
 msgstr "Brauseri aken"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "Midori brauseri juhtum kuulub"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "Raphael brauseri juhtum kuulub"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "Vaade"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
-msgstr "Midori vaate juhtum kuulub"
+msgid "The Raphael view instance this view belongs to"
+msgstr "Raphael vaate juhtum kuulub"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2855,8 +2855,8 @@ msgstr "Pluginad"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "Midori plugin selle plugina jaoks"
+msgid "The Raphael extension instance for this extension"
+msgstr "Raphael plugin selle plugina jaoks"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2865,8 +2865,8 @@ msgstr "Rakenduse aste"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Midori rakenduse aste, mis kuulub -"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Raphael rakenduse aste, mis kuulub -"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2926,8 +2926,8 @@ msgid "Mouse Gestures"
 msgstr "Hiirega lehitsemine"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Midori kasutamine hiire liigutuste ja klahvidega"
+msgid "Control Raphael by moving the mouse"
+msgstr "Raphael kasutamine hiire liigutuste ja klahvidega"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3135,9 +3135,9 @@ msgstr "Prügi ei saanud salvestada. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori lõpetas eelmine kord ootamatult töötamise. Sellest veast saad sa "
+"Raphael lõpetas eelmine kord ootamatult töötamise. Sellest veast saad sa "
 "teada asukohta %s."
 
 #: ../midori/midori-frontend.c:362
@@ -3149,8 +3149,8 @@ msgid "Disable all _extensions"
 msgstr "Keela kõik _pluginad"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Dialoogi näitamine pärast Midori kokkujooksmist"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Dialoogi näitamine pärast Raphael kokkujooksmist"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3165,8 +3165,8 @@ msgid "Run in _debugger"
 msgstr "Käivita _veaotsijaga"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Midori juba töötab, kuid ei vasta.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Raphael juba töötab, kuid ei vasta.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3320,7 +3320,7 @@ msgstr "Aegumise tähtaeg"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr "Õigused domeenidele, mida ei seadistata individuaalselt."
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3338,8 +3338,8 @@ msgstr "Ikooni hankimine rakenduse %s: %s jaoks ebaõnnestus"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3446,7 +3446,7 @@ msgid "_Quit Midori"
 msgstr "_Välju"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
+msgid "The transfers will be cancelled if Raphael quits."
 msgstr "Allalaadimised katkestatakse väljumisel."
 
 #: ../extensions/transfers.vala:568
@@ -3661,7 +3661,7 @@ msgstr "Mängib veebimeeida"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "Kui tahate jagada 'youtube, vimeo, dailymotion, coub and zippcast' mis "
-"mängib Midori sees, siis kasutage org.midori.mediaHerald"
+"mängib Raphael sees, siis kasutage org.midori.mediaHerald"

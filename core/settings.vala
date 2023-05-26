@@ -9,8 +9,8 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
-    [CCode (cprefix = "MIDORI_STARTUP_")]
+namespace Raphael {
+    [CCode (cprefix = "RAPHAEL_STARTUP_")]
     public enum StartupType {
         SPEED_DIAL,
         HOMEPAGE,
@@ -18,7 +18,7 @@ namespace Midori {
         DELAYED_PAGES
     }
 
-    [CCode (cprefix = "MIDORI_PROXY_")]
+    [CCode (cprefix = "RAPHAEL_PROXY_")]
     public enum ProxyType {
         AUTOMATIC,
         HTTP,
@@ -62,7 +62,7 @@ namespace Midori {
 
         // Note: Speed Dial is saved as Blank Page for compatibility reasons
         public StartupType load_on_startup { get {
-            var startup = get_string ("settings", "load-on-startup", "MIDORI_STARTUP_LAST_OPEN_PAGES");
+            var startup = get_string ("settings", "load-on-startup", "RAPHAEL_STARTUP_LAST_OPEN_PAGES");
             if (startup.has_suffix ("BLANK_PAGE")) {
                 return StartupType.SPEED_DIAL;
             } else if (startup.has_suffix ("HOMEPAGE")) {
@@ -71,8 +71,8 @@ namespace Midori {
                 return StartupType.LAST_OPEN_PAGES;
             }
         } set {
-            var startup = value == StartupType.SPEED_DIAL ? "MIDORI_STARTUP_BLANK_PAGE" : value.to_string ();
-            set_string ("settings", "load-on-startup", startup, "MIDORI_STARTUP_LAST_OPEN_PAGES");
+            var startup = value == StartupType.SPEED_DIAL ? "RAPHAEL_STARTUP_BLANK_PAGE" : value.to_string ();
+            set_string ("settings", "load-on-startup", startup, "RAPHAEL_STARTUP_LAST_OPEN_PAGES");
         } }
 
         public bool enable_spell_checking { get {
@@ -120,9 +120,9 @@ namespace Midori {
                Keywords are percent-encoded. If the URI contains a %s
                the keywords are inserted there, otherwise appended. */
             string escaped = keywords != null ? Uri.escape_string (keywords, ":/", true) : "";
-            // Allow DuckDuckGo to distinguish Midori and in turn share revenue
+            // Allow DuckDuckGo to distinguish Raphael and in turn share revenue
             if (uri == "https://duckduckgo.com/?q=%s") {
-                return "https://duckduckgo.com/?q=%s&t=midori".printf (escaped);
+                return "https://duckduckgo.com/?q=%s&t=raphael".printf (escaped);
             } else if (uri.str ("%s") != null) {
                 return uri.printf (escaped);
             }
@@ -155,7 +155,7 @@ namespace Midori {
         } }
 
         public ProxyType proxy_type { get {
-            var proxy = get_string ("settings", "proxy-type", "MIDORI_PROXY_AUTOMATIC");
+            var proxy = get_string ("settings", "proxy-type", "RAPHAEL_PROXY_AUTOMATIC");
             if (proxy.has_suffix ("AUTOMATIC")) {
                 return ProxyType.AUTOMATIC;
             } else if (proxy.has_suffix ("HTTP")) {
@@ -164,7 +164,7 @@ namespace Midori {
                 return ProxyType.NONE;
             }
         } set {
-            set_string ("settings", "proxy-type", value.to_string (), "MIDORI_PROXY_AUTOMATIC");
+            set_string ("settings", "proxy-type", value.to_string (), "RAPHAEL_PROXY_AUTOMATIC");
         } }
         public string http_proxy { owned get {
             return get_string ("settings", "http-proxy", "");

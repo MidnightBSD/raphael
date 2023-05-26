@@ -56,7 +56,7 @@ Install dependencies on Fedora:
 
     sudo dnf install gcc cmake intltool vala libsoup-devel sqlite-devel webkit2gtk3-devel gcr-devel json-glib-devel libpeas-devel libarchive-devel libxml2-devel
 
-Use CMake to build Midori:
+Use CMake to build Raphael:
 
     mkdir _build
     cd _build
@@ -66,9 +66,9 @@ Use CMake to build Midori:
 
 > **Spoilers:** Pass `-G Ninja` to CMake to use [Ninja](http://martine.github.io/ninja) instead of make (install `ninja-build` on Ubuntu/ Debian).
 
-Midori can be **run without being installed**.
+Raphael can be **run without being installed**.
 
-    _build/midori
+    _build/raphael
 
 # Testing
 
@@ -108,16 +108,16 @@ Add release to `data/org.midnightbsd.Raphael.appdata.xml.in`.
 
 Testing an installed release may reveal crashers or memory corruption which require investigating from a local build and obtaining a stacktrace (backtrace, crash log).
 
-    gdb _build/midori
+    gdb _build/raphael
     run
     …
     bt
 
 If the problem is a warning, not a crash GLib has a handy feature
 
-    env G_MESSAGES_DEBUG=all gdb _build/midori
+    env G_MESSAGES_DEBUG=all gdb _build/raphael
 
-On Windows you can open the folder where Midori is installed and double-click gdb.exe which opens a command window:
+On Windows you can open the folder where Raphael is installed and double-click gdb.exe which opens a command window:
 
     file raphael.exe
     run
@@ -142,7 +142,7 @@ If these work, you may need to get your user added to the video group on your OS
 
 ## Coding style and quality
 
-Midori code should in general have:
+Raphael code should in general have:
 
   * 4 space indentation, no tabs
   * Between 80 to 120 columns
@@ -347,11 +347,11 @@ Once built and tested you can assemble the Midori archive with a helper script
 
 32-bit build:
 
-    env MINGW_PREFIX="/usr/i686-w64-mingw32/sys-root/mingw" ./win32/makedist/makedist.midori
+    env MINGW_PREFIX="/usr/i686-w64-mingw32/sys-root/mingw" ./win32/makedist/makedist.raphael
 
 64-bit build:
 
-    env MINGW_PREFIX="/usr/x86_64-w64-mingw32/sys-root/mingw/" ./win32/makedist/makedist.midori x64
+    env MINGW_PREFIX="/usr/x86_64-w64-mingw32/sys-root/mingw/" ./win32/makedist/makedist.raphael x64
 
 ### Testing
 

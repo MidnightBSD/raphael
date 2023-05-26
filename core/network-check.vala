@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     [GtkTemplate (ui = "/ui/network-check.ui")]
     public class NetworkCheck : Gtk.ActionBar {
         [GtkChild]

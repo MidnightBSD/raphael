@@ -29,7 +29,7 @@ msgid "Web Browser"
 msgstr "Verkkoselain"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
+msgid "Raphael Web Browser"
 msgstr "Midori-verkkoselain"
 
 #: ../data/midori.desktop.in.h:4
@@ -53,7 +53,7 @@ msgid "New Private Browsing Window"
 msgstr "Uusi yksityisen selauksen ikkuna"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
+msgid "Raphael Private Browsing"
 msgstr "Midori-yksityisselaus"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
@@ -141,7 +141,7 @@ msgstr "LAUSEKE"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr "Palaa alkutilaan, kun käyttämättä SEKUNNIT sekuntia"
 
 #: ../midori/main.c:111
@@ -433,8 +433,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -469,9 +469,9 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape-kirjanmerkit"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Midori voi viedä kirjanmerkkejä ainoastaan XBEL (*.xbel)- ja Netscape "
+"Raphael voi viedä kirjanmerkkejä ainoastaan XBEL (*.xbel)- ja Netscape "
 "(*.html) -muotoisina"
 
 #: ../midori/midori-browser.c:4711
@@ -1201,8 +1201,8 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori ei löydä pyytämääsi sivua"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael ei löydä pyytämääsi sivua"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1482,8 +1482,8 @@ msgid "Startup"
 msgstr "Käynnistys"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Kun Midori käynnistyy:"
+msgid "When Raphael starts:"
+msgstr "Kun Raphael käynnistyy:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2252,8 +2252,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "Versio numero sulkeissa kertoo version joka on käytössä runtimessä."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori ei tallenna mitään henkilökohtaisia tietoja:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael ei tallenna mitään henkilökohtaisia tietoja:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2270,8 +2270,8 @@ msgstr ""
 "ovat pois käytöstä."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori estää verkkosivustoja jäljittämästä käyttäjää:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael estää verkkosivustoja jäljittämästä käyttäjää:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2763,7 +2763,7 @@ msgid "Browser window"
 msgstr "Selainikkuna"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2771,7 +2771,7 @@ msgid "View"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2843,7 +2843,7 @@ msgstr ""
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
+msgid "The Raphael extension instance for this extension"
 msgstr ""
 
 #: ../extensions/nojs/nojs.c:723
@@ -2853,7 +2853,7 @@ msgstr ""
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
+msgid "The Raphael application instance this extension belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs.c:730
@@ -2912,7 +2912,7 @@ msgid "Mouse Gestures"
 msgstr "Hiirieleet"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
+msgid "Control Raphael by moving the mouse"
 msgstr "Ohjaa Midoria hiiren liikkeillä"
 
 #: ../extensions/shortcuts.c:109
@@ -3058,7 +3058,7 @@ msgstr "Viim_eksi avoinna olleet välilehdet"
 
 #: ../midori/midori-privatedata.c:255
 msgid "Clear private data when _quitting Midori"
-msgstr "Poista yksityisyystiedot, kun _Midori suljetaan"
+msgstr "Poista yksityisyystiedot, kun _Raphael suljetaan"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3121,9 +3121,9 @@ msgstr "Roskakorin tallennus epäonnistui. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori kaatui viimeisimmällä käynnistyskerralla. Voit ilmoittaa ongelmasta - "
+"Raphael kaatui viimeisimmällä käynnistyskerralla. Voit ilmoittaa ongelmasta - "
 "%s."
 
 #: ../midori/midori-frontend.c:362
@@ -3135,8 +3135,8 @@ msgid "Disable all _extensions"
 msgstr "Poista kaikki laaje_nnukset käytöstä"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Näytä dialogi, jos Midori on kaatunut"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Näytä dialogi, jos Raphael on kaatunut"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3151,8 +3151,8 @@ msgid "Run in _debugger"
 msgstr "Suorita _vianjäljittimessä"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Midori on jo käynnissä, muttei vastaa.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Raphael on jo käynnissä, muttei vastaa.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3303,7 +3303,7 @@ msgstr "Vanhenemispäivä"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3321,8 +3321,8 @@ msgstr ""
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3429,8 +3429,8 @@ msgid "_Quit Midori"
 msgstr "_Lopeta Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Lataukset perutaan, jos Midori lopetetaan."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Lataukset perutaan, jos Raphael lopetetaan."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3641,7 +3641,7 @@ msgstr "\"Nyt toistetaan\"-mediatiedot"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "Jaa tiedot Midorissa toistettavista Youtube-, Vimeo-, Dailymotion-, Coub- ja "
 "Zippcast-medioista käyttäen \"org.midori.mediaHerald\"-ominaisuutta"

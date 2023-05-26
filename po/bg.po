@@ -30,7 +30,7 @@ msgid "Web Browser"
 msgstr "Уеб Браузър"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
+msgid "Raphael Web Browser"
 msgstr "Уеб браузър Midori"
 
 #: ../data/midori.desktop.in.h:4
@@ -54,7 +54,7 @@ msgid "New Private Browsing Window"
 msgstr "Нов прозорец за поверително сърфиране"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
+msgid "Raphael Private Browsing"
 msgstr "Мидори (поверителен режим)"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
@@ -140,8 +140,8 @@ msgstr "ШАБЛОН"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Рестартиране на Midori след СЕКУНДИ секунди бездействие"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Рестартиране на Raphael след СЕКУНДИ секунди бездействие"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -363,7 +363,7 @@ msgstr ""
 "За да използвате данните от URI, отворете програмата за четене на новини. "
 "Това обикновено е лента от менюто или бутон с име \"Нов абонамент\", \"Нова "
 "емисия новини\" или нещо подобно.\n"
-"От настройките на Midori също можете да зададете програма за четене на "
+"От настройките на Raphael също можете да зададете програма за четене на "
 "новини. В такъв случай, следващият път, когато кликнете въру иконата за "
 "емисия новини, тя ще бъде добавена автоматично."
 
@@ -433,8 +433,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -469,9 +469,9 @@ msgid "Netscape Bookmarks"
 msgstr "Отметки Netscape"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Midori може да запазва отметки само във формати XBEL (*.xbel) и Netscape "
+"Raphael може да запазва отметки само във формати XBEL (*.xbel) и Netscape "
 "(*.html)"
 
 #: ../midori/midori-browser.c:4711
@@ -1203,7 +1203,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr "Мидори не може да намери търсената от вас страница"
 
 #: ../midori/midori-view.c:1249
@@ -1487,7 +1487,7 @@ msgid "Startup"
 msgstr "Стартиране"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
+msgid "When Raphael starts:"
 msgstr "При стартиране на Midori:"
 
 #: ../midori/midori-preferences.c:294
@@ -2263,8 +2263,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "Числата в скобите показват ползваната в момента версия."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori не можа да запази някои от личните данни:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael не можа да запази някои от личните данни:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2281,8 +2281,8 @@ msgstr ""
 "изключени."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori предотвратява следенето на потребителя от уеб страници:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael предотвратява следенето на потребителя от уеб страници:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2789,7 +2789,7 @@ msgid "Browser window"
 msgstr "Прозорец на Браузъра"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr "Мидори браузър-ът, на който този изглед принадлежи"
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2797,7 +2797,7 @@ msgid "View"
 msgstr "Изглед"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr "Мидори изгледа, на който този изглед принадлежи"
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2870,8 +2870,8 @@ msgstr "Примерно разширение"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "Примерно разширение на Midori за това разширение"
+msgid "The Raphael extension instance for this extension"
+msgstr "Примерно разширение на Raphael за това разширение"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2880,8 +2880,8 @@ msgstr "Примерна програма"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Примерното Midori разширение принадлежи към"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Примерното Raphael разширение принадлежи към"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2942,8 +2942,8 @@ msgid "Mouse Gestures"
 msgstr "Жестове с мишката"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Управление на Midori с преместване на мишката"
+msgid "Control Raphael by moving the mouse"
+msgstr "Управление на Raphael с преместване на мишката"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3151,9 +3151,9 @@ msgstr "Съдържанието на кошчето не може да бъде
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori даде грешка при последното отваряне. Може да докладвате проблема на "
+"Raphael даде грешка при последното отваряне. Може да докладвате проблема на "
 "%s."
 
 #: ../midori/midori-frontend.c:362
@@ -3165,7 +3165,7 @@ msgid "Disable all _extensions"
 msgstr "Изключване на всички разширения"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
+msgid "Show a dialog after Raphael crashed"
 msgstr ""
 "Показване на прозорец за действие при аварийно спиране на работата на Midori"
 
@@ -3182,7 +3182,7 @@ msgid "Run in _debugger"
 msgstr "Стартирай отстраняване на грашката"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
 msgstr "Модори вече е стартиран но не отговаря.\n"
 
 #: ../midori/midori-frontend.c:516
@@ -3337,7 +3337,7 @@ msgstr "Срок на валидност"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Решение за ползване при източници, които не са единично настроени. Това още "
 "ще ограничи решенията за общите бисквити в настройките на Мидори."
@@ -3357,8 +3357,8 @@ msgstr "Неуспех при изтеглянето на иконата на п
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3465,8 +3465,8 @@ msgid "_Quit Midori"
 msgstr "Затваряне на Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Прехвърлянията ще бъдат отменени, ако Midori бъде затворен."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Прехвърлянията ще бъдат отменени, ако Raphael бъде затворен."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3684,7 +3684,7 @@ msgstr "Уебмедията се възпроизвежда"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "Сподели 'youtube, vimeo, dailymotion, coub and zippcast' които слушаш в "
 "Мидори използвайки org.midori.mediaHerald"

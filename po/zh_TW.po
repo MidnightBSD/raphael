@@ -29,8 +29,8 @@ msgid "Web Browser"
 msgstr "網頁瀏覽器"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Midori 網頁瀏覽器"
+msgid "Raphael Web Browser"
+msgstr "Raphael 網頁瀏覽器"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,8 +53,8 @@ msgid "New Private Browsing Window"
 msgstr "新增私人瀏覽視窗"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori 私密瀏覽"
+msgid "Raphael Private Browsing"
+msgstr "Raphael 私密瀏覽"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -139,7 +139,7 @@ msgstr "PATTERN"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr "在 SECONDS 秒不活動後重設 Midori"
 
 #: ../midori/main.c:111
@@ -360,7 +360,7 @@ msgid ""
 "automatically."
 msgstr ""
 "若要使用上方的 URI，請開啟新聞匯流器。通常都會有個名為「新聞訂閱」、「新聞 Feed」等類似的選單或按鈕。\n"
-"或者前往 Midori 中「偏好設定」的「應用程式」內，並選取一個新聞匯流器。下一次您按下新聞饋流按鈕時，它就會被自動加入。"
+"或者前往 Raphael 中「偏好設定」的「應用程式」內，並選取一個新聞匯流器。下一次您按下新聞饋流按鈕時，它就會被自動加入。"
 
 #: ../midori/midori-browser.c:2832 ../extensions/feed-panel/main.c:350
 msgid "New feed"
@@ -426,8 +426,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -462,8 +462,8 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape 書籤"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "Midori 僅能匯出為 XBEL (*.xbel) 與 Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "Raphael 僅能匯出為 XBEL (*.xbel) 與 Netscape (*.html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1179,8 +1179,8 @@ msgstr "您的電腦似乎有連上網路，但卻無法訪問「%s」。請檢�
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori 找不到您所要的網頁"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael 找不到您所要的網頁"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1454,8 +1454,8 @@ msgid "Startup"
 msgstr "啟動"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "當 Midori 啟動時："
+msgid "When Raphael starts:"
+msgstr "當 Raphael 啟動時："
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2214,8 +2214,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "中括號內的版本編號顯示執行時期使用的版本。"
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori 不會儲存任何個人資料；"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael 不會儲存任何個人資料；"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2230,8 +2230,8 @@ msgid "HTML5 storage, local database and application caches are disabled."
 msgstr "HTML 5 儲存、本地端資料庫、應用程式快取等皆已停用。"
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori 防止下列網站追蹤使用者："
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael 防止下列網站追蹤使用者："
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2721,16 +2721,16 @@ msgid "Browser window"
 msgstr "瀏覽器視窗"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "此檢視所屬的 Midori 瀏覽器實體"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "此檢視所屬的 Raphael 瀏覽器實體"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "檢視"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
-msgstr "此檢視所屬的 Midori 檢視實體"
+msgid "The Raphael view instance this view belongs to"
+msgstr "此檢視所屬的 Raphael 檢視實體"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2800,8 +2800,8 @@ msgstr "擴充套件實體"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "此擴充套件的 Midori 擴充套件實體"
+msgid "The Raphael extension instance for this extension"
+msgstr "此擴充套件的 Raphael 擴充套件實體"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2810,7 +2810,7 @@ msgstr "應用程式實體"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
+msgid "The Raphael application instance this extension belongs to"
 msgstr "此擴充套件所屬的 Midiri 應用程式實體"
 
 #: ../extensions/nojs/nojs.c:730
@@ -2869,7 +2869,7 @@ msgid "Mouse Gestures"
 msgstr "滑鼠手勢"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
+msgid "Control Raphael by moving the mouse"
 msgstr "藉由移動滑鼠來控制 Midori"
 
 #: ../extensions/shortcuts.c:109
@@ -3013,7 +3013,7 @@ msgstr "上次開啟頁面(_T)"
 
 #: ../midori/midori-privatedata.c:255
 msgid "Clear private data when _quitting Midori"
-msgstr "當退出 Midori 時清除隱私資料(_Q)"
+msgstr "當退出 Raphael 時清除隱私資料(_Q)"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3076,8 +3076,8 @@ msgstr "無法儲存回收筒。%s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
-msgstr "Midori 似乎於上次開啟時發生當機。您可以前往 %s 回報該問題。"
+"Raphael crashed the last time it was opened. You can report the problem at %s."
+msgstr "Raphael 似乎於上次開啟時發生當機。您可以前往 %s 回報該問題。"
 
 #: ../midori/midori-frontend.c:362
 msgid "Modify _preferences"
@@ -3088,8 +3088,8 @@ msgid "Disable all _extensions"
 msgstr "停用所有擴充套件(_E)"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Midori 當機之後顯示對話窗"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Raphael 當機之後顯示對話窗"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3104,8 +3104,8 @@ msgid "Run in _debugger"
 msgstr "在除錯器中執行(_D)"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Midori 的實體已經在執行中但沒有回應。\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Raphael 的實體已經在執行中但沒有回應。\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3252,8 +3252,8 @@ msgstr "過期日"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
-msgstr "針對網域的使用方針並未個別設定。這只能進一步限制 Midori 設定中的全域訊餅方針。"
+"further restrict the global cookie policy set in Raphael settings."
+msgstr "針對網域的使用方針並未個別設定。這只能進一步限制 Raphael 設定中的全域訊餅方針。"
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3270,8 +3270,8 @@ msgstr "無法擷取 %s 中的應用程式圖示：%s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3378,7 +3378,7 @@ msgid "_Quit Midori"
 msgstr "退出 Midori(_Q)"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
+msgid "The transfers will be cancelled if Raphael quits."
 msgstr "若退出 Midori，將會取消傳輸作業。"
 
 #: ../extensions/transfers.vala:568
@@ -3589,7 +3589,7 @@ msgstr "現正播放中的網頁媒體"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "使用 org.midori.mediaHerald 來分享您在 Midora "
 "中播放的「Youtube、Vimeo、Dailymottion、Coub、Zippcast」等影片。"

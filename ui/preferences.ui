@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriPreferences" parent="GtkDialog">
+  <template class="RaphaelPreferences" parent="GtkDialog">
     <property name="modal">yes</property>
     <property name="resizable">no</property>
     <child type="titlebar">

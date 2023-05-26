@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     [GtkTemplate (ui = "/ui/tally.ui")]
     public class Tally : Gtk.EventBox {
         public Tab tab { get; protected set; }

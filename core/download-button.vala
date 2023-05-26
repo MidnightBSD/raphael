@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     [GtkTemplate (ui = "/ui/download-button.ui")]
     public class DownloadButton : Gtk.Button {
         public virtual signal void show_downloads () {

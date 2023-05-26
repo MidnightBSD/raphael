@@ -30,8 +30,8 @@ msgid "Web Browser"
 msgstr "Webböngésző"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Midori webböngésző"
+msgid "Raphael Web Browser"
+msgstr "Raphael webböngésző"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -54,8 +54,8 @@ msgid "New Private Browsing Window"
 msgstr "Új privát böngészési ablak"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori privát böngészés"
+msgid "Raphael Private Browsing"
+msgstr "Raphael privát böngészés"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -142,8 +142,8 @@ msgstr "MINTA"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "A Midori visszaállítása ennyi MÁSODPERC inaktivitás után"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "A Raphael visszaállítása ennyi MÁSODPERC inaktivitás után"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -436,8 +436,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -472,9 +472,9 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape könyvjelzők"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"A Midori csak XBEL (*.xbel) és Netscape (*.html) formátumba tud exportálni"
+"A Raphael csak XBEL (*.xbel) és Netscape (*.html) formátumba tud exportálni"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -495,7 +495,7 @@ msgid ""
 "Free Software Foundation; either version 2.1 of the License, or (at your "
 "option) any later version."
 msgstr ""
-"A Midori szabad szoftver, terjesztheti és/vagy módosíthatja a Free Software "
+"A Raphael szabad szoftver, terjesztheti és/vagy módosíthatja a Free Software "
 "Foundation által kiadott GNU Lesser General Public License 2.1 (vagy bármely "
 "későbbi) változatában foglaltak alapján."
 
@@ -1210,7 +1210,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr ""
 
 #: ../midori/midori-view.c:1249
@@ -1492,8 +1492,8 @@ msgid "Startup"
 msgstr "Indítás"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "A Midori indulásakor:"
+msgid "When Raphael starts:"
+msgstr "A Raphael indulásakor:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2266,8 +2266,8 @@ msgstr ""
 "használt verziót."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "A Midori nem tárol személyes adatokat:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "A Raphael nem tárol személyes adatokat:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2284,8 +2284,8 @@ msgstr ""
 "tiltva."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "A Midori megakadályozza, hogy a weboldalak kövessék a felhasználót:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "A Raphael megakadályozza, hogy a weboldalak kövessék a felhasználót:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2767,7 +2767,7 @@ msgid "Browser window"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2775,7 +2775,7 @@ msgid "View"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2846,8 +2846,8 @@ msgstr "Kiterjesztés példány"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "A Midori kiterjesztés példány ehhez a kiterjesztéshez"
+msgid "The Raphael extension instance for this extension"
+msgstr "A Raphael kiterjesztés példány ehhez a kiterjesztéshez"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2856,8 +2856,8 @@ msgstr "Alkalmazás példány"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Ehhez a kiterjesztéshez tartozó Midori alkalmazás példány"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Ehhez a kiterjesztéshez tartozó Raphael alkalmazás példány"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2917,8 +2917,8 @@ msgid "Mouse Gestures"
 msgstr "Egérgesztusok"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "A Midori irányítása az egér mozgatásával"
+msgid "Control Raphael by moving the mouse"
+msgstr "A Raphael irányítása az egér mozgatásával"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3126,9 +3126,9 @@ msgstr "A Kuka nem menthető. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"A Midori összeomlott a legutóbbi megnyitáskor. Itt jelentheti a problémát: "
+"A Raphael összeomlott a legutóbbi megnyitáskor. Itt jelentheti a problémát: "
 "%s."
 
 #: ../midori/midori-frontend.c:362
@@ -3140,8 +3140,8 @@ msgid "Disable all _extensions"
 msgstr "Minden _kiterjesztés letiltása"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Párbeszédablak megjelenítése a Midori összeomlása után"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Párbeszédablak megjelenítése a Raphael összeomlása után"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3156,8 +3156,8 @@ msgid "Run in _debugger"
 msgstr "Futtatás a _hibakeresőben"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "A Midori egy példánya már fut, de nem válaszol.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "A Raphael egy példánya már fut, de nem válaszol.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3304,7 +3304,7 @@ msgstr "Lejárat dátuma"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3322,8 +3322,8 @@ msgstr "Nem sikerült letölteni az alkalmazásikont itt: %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3431,7 +3431,7 @@ msgid "_Quit Midori"
 msgstr "_Kilépés a Midoriból"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
+msgid "The transfers will be cancelled if Raphael quits."
 msgstr "Az átvitel meg fog szakadni, ha kilép a Midoriból."
 
 #: ../extensions/transfers.vala:568
@@ -3640,5 +3640,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""

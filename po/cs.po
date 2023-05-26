@@ -24,16 +24,16 @@ msgstr ""
 
 #: ../data/midori.desktop.in.h:1 ../midori/main.c:142
 #: ../midori/midori-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/midori.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Internetový prohlížeč"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Internetový prohlížeč Midori"
+msgid "Raphael Web Browser"
+msgstr "Internetový prohlížeč Raphael"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -56,8 +56,8 @@ msgid "New Private Browsing Window"
 msgstr "Nové okno soukromého prohlížení"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori - soukromé prohlížení"
+msgid "Raphael Private Browsing"
+msgstr "Raphael - soukromé prohlížení"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -142,8 +142,8 @@ msgstr "REGVÝRAZ"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Restartovat aplikaci Midori po SEKUNDY sekund neaktivity"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Restartovat aplikaci Raphael po SEKUNDY sekund neaktivity"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -358,13 +358,13 @@ msgstr "Otevřít soubor"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Použijete-li výše uvedenou adresu URI, otevře se agregátor zpráv (čtečka "
 "RSS). Obvykle se v něm nachází položka nabídky nebo tlačítko \"Nový kanál\" "
-"(nebo s podobným názvem). Další možností je změna nastavení aplikace Midori "
+"(nebo s podobným názvem). Další možností je změna nastavení aplikace Raphael "
 "(Upravit -> Nastavení -> záložka Aplikace, položka Čtečka RSS). Dalším "
 "kliknutím na ikonu RSS přidáte kanál přímo do čtečky."
 
@@ -434,8 +434,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -470,9 +470,9 @@ msgid "Netscape Bookmarks"
 msgstr "Záložky z aplikace Netscape"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Z aplikace Midori lze exportovat záložky pouze ve formátech XBEL (*.xbel) a "
+"Z aplikace Raphael lze exportovat záložky pouze ve formátech XBEL (*.xbel) a "
 "Netscape (*.html)"
 
 #: ../midori/midori-browser.c:4711
@@ -1202,7 +1202,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr ""
 
 #: ../midori/midori-view.c:1249
@@ -1487,8 +1487,8 @@ msgid "Startup"
 msgstr "Při spuštění"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Po spuštění aplikace Midori:"
+msgid "When Raphael starts:"
+msgstr "Po spuštění aplikace Raphael:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2262,8 +2262,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "Čísla verzí v závorce jsou verze použité při běhu programu."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Aplikace Midori neukládá žádné osobní údaje:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Aplikace Raphael neukládá žádné osobní údaje:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2278,8 +2278,8 @@ msgid "HTML5 storage, local database and application caches are disabled."
 msgstr "Zakázáno úložiště HTML5, lokální databáze a aplikační mezipaměťi."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Aplikace Midori zabraňuje webovým stránkám sledovat uživatele:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Aplikace Raphael zabraňuje webovým stránkám sledovat uživatele:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2759,7 +2759,7 @@ msgid "Browser window"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2767,7 +2767,7 @@ msgid "View"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2838,7 +2838,7 @@ msgstr "Instance rozšíření"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
+msgid "The Raphael extension instance for this extension"
 msgstr "Instance rozšíření pro toto rozšíření"
 
 #: ../extensions/nojs/nojs.c:723
@@ -2848,8 +2848,8 @@ msgstr "Instance aplikace"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Instance aplikace Midori tohoto rozšíření náleží"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Instance aplikace Raphael tohoto rozšíření náleží"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2907,8 +2907,8 @@ msgid "Mouse Gestures"
 msgstr "Gesta myší"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Ovládat aplikaci Midori pomocí myši"
+msgid "Control Raphael by moving the mouse"
+msgstr "Ovládat aplikaci Raphael pomocí myši"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3052,8 +3052,8 @@ msgid "Last open _tabs"
 msgstr "Naposledy otevřené _karty"
 
 #: ../midori/midori-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Vymazat _osobní data při ukončení aplikace Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Vymazat _osobní data při ukončení aplikace Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3116,7 +3116,7 @@ msgstr "Seznam zavřených karet nelze uložit. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
 
 #: ../midori/midori-frontend.c:362
@@ -3128,8 +3128,8 @@ msgid "Disable all _extensions"
 msgstr "Zakázat všechna _rozšíření"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Zobrazit dialog po pádu aplikace Midori"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Zobrazit dialog po pádu aplikace Raphael"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3144,8 +3144,8 @@ msgid "Run in _debugger"
 msgstr "Spustit v _debuggeru"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Instance aplikace Midori je již spuštěna, ale neodpovídá.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Instance aplikace Raphael je již spuštěna, ale neodpovídá.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3297,7 +3297,7 @@ msgstr "Vyprší dne"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3315,7 +3315,7 @@ msgstr ""
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
+msgid "Raphael (%s)"
 msgstr ""
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
@@ -3419,12 +3419,12 @@ msgid "Some files are being downloaded"
 msgstr "Některé soubory se stále stahují"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "U_končit aplikaci Midori"
+msgid "_Quit Raphael"
+msgstr "U_končit aplikaci Raphael"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Pokud bude aplikace Midori ukončena, stahování se stornuje."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Pokud bude aplikace Raphael ukončena, stahování se stornuje."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3632,5 +3632,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""

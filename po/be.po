@@ -21,16 +21,16 @@ msgstr ""
 
 #: ../data/midori.desktop.in.h:1 ../midori/main.c:142
 #: ../midori/midori-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/midori.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Вэб-браўзер"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Вэб-браўзер Midori"
+msgid "Raphael Web Browser"
+msgstr "Вэб-браўзер Raphael"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,8 +53,8 @@ msgid "New Private Browsing Window"
 msgstr "Акно прыватнага аглядання"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori (Прыватнае агляданне)"
+msgid "Raphael Private Browsing"
+msgstr "Raphael (Прыватнае агляданне)"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -139,8 +139,8 @@ msgstr "ПРЫКЛАД"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Скінуць Midori пасля СЕКУНД секундаў неактыўнасці"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Скінуць Raphael пасля СЕКУНД секундаў неактыўнасці"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -356,13 +356,13 @@ msgstr "Адкрыць файл"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Каб скарыстацца URI-спасылкай вышэй, адкрыйце агрэгатар навін. Звычайна ў ім "
 "ёсць меню ці кнопка \"Дадаць падпіску\", \"Новы канал\" ці падобнае.\n"
-"Іначай, зайдзіце ў Настройкі, Праграмы ў Midori, і выберыце Агрэгатар навін. "
+"Іначай, зайдзіце ў Настройкі, Праграмы ў Raphael, і выберыце Агрэгатар навін. "
 "Калі ў наступны раз вы націснеце на значок канала навін, ён дадасца "
 "аўтаматычна."
 
@@ -432,8 +432,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -468,9 +468,9 @@ msgid "Netscape Bookmarks"
 msgstr "Закладкі Netscape"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Midori можа экспартаваць толькі ў XBEL (*.xbel) або Netscape (*.html)"
+"Raphael можа экспартаваць толькі ў XBEL (*.xbel) або Netscape (*.html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1201,8 +1201,8 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori не можа знайсці старонку, якую вы шукаеце"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael не можа знайсці старонку, якую вы шукаеце"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1487,8 +1487,8 @@ msgid "Startup"
 msgstr "Запуск"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Па запуску Midori:"
+msgid "When Raphael starts:"
+msgstr "Па запуску Raphael:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2261,8 +2261,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "Нумары версій у дужках паказваюць версіі, ужытыя пры запуску."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori не запісвае ніякіх асабовых звестак:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael не запісвае ніякіх асабовых звестак:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2277,8 +2277,8 @@ msgid "HTML5 storage, local database and application caches are disabled."
 msgstr "HTML5-сховішчы, лакальныя базы звестак і праграмныя кэшы адключаны."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori забараняе вэб-пляцоўкам асочваць карыстальніка:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael забараняе вэб-пляцоўкам асочваць карыстальніка:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2775,16 +2775,16 @@ msgid "Browser window"
 msgstr "Акно браўзера"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "Экзэмпляр браўзера Midori, якому належыць гэты від"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "Экзэмпляр браўзера Raphael, якому належыць гэты від"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "Від"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
-msgstr "Экзэмпляр віда Midori, якому належыць гэты від"
+msgid "The Raphael view instance this view belongs to"
+msgstr "Экзэмпляр віда Raphael, якому належыць гэты від"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2856,8 +2856,8 @@ msgstr "Экзэмпляр прыстаўкі"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "Экзэмпляр прыстаўкі Midori для гэтай прыстаўкі"
+msgid "The Raphael extension instance for this extension"
+msgstr "Экзэмпляр прыстаўкі Raphael для гэтай прыстаўкі"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2866,8 +2866,8 @@ msgstr "Экзэмпляр праграмы"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Экзэмпляр праграмы Midori, якой належыць гэта прыстаўка"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Экзэмпляр праграмы Raphael, якой належыць гэта прыстаўка"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2928,8 +2928,8 @@ msgid "Mouse Gestures"
 msgstr "Жэсты мышшу"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Кіраванне Midori рухамі мышы"
+msgid "Control Raphael by moving the mouse"
+msgstr "Кіраванне Raphael рухамі мышы"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3074,8 +3074,8 @@ msgid "Last open _tabs"
 msgstr "Апошнія адкрытыя карткі"
 
 #: ../midori/midori-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "С_ціраць асабовыя звесткі пры выхадзе з Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "С_ціраць асабовыя звесткі пры выхадзе з Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3138,9 +3138,9 @@ msgstr "Немагчыма запісаць гэту сметніцу. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori ўпаў падчас апошняга адкрыцця. Вы можаце паведаміць пра памылку на %s."
+"Raphael ўпаў падчас апошняга адкрыцця. Вы можаце паведаміць пра памылку на %s."
 
 #: ../midori/midori-frontend.c:362
 msgid "Modify _preferences"
@@ -3151,7 +3151,7 @@ msgid "Disable all _extensions"
 msgstr "Выключыць _усе прыстаўкі"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
+msgid "Show a dialog after Raphael crashed"
 msgstr "Паказваць гэты дыялог пасля аварыйнага завяршэння Midori"
 
 #: ../midori/midori-frontend.c:380
@@ -3167,8 +3167,8 @@ msgid "Run in _debugger"
 msgstr "З_апусціць у дэбагеры"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Экзэмпляр Midori ўжо запушчаны, але не адказвае.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Экзэмпляр Raphael ўжо запушчаны, але не адказвае.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3322,7 +3322,7 @@ msgstr "Прыдатны да"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Палітыка для несканфігураваных індывідуальна даменаў. Дзейнічае толькі як "
 "узмацненне строгасці глабальнай палітыкі для кукаў у настройках Midori."
@@ -3342,8 +3342,8 @@ msgstr "Атрыманне значка праграмы схібіла ў %s: %
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3450,7 +3450,7 @@ msgid "_Quit Midori"
 msgstr "Вы_йсці з Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
+msgid "The transfers will be cancelled if Raphael quits."
 msgstr "Перасыланні будуць скасаваныя, калі выйсці з Midori."
 
 #: ../extensions/transfers.vala:568
@@ -3665,7 +3665,7 @@ msgstr "Вэб-медыя, што зараз іграе"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "Падзяліцца 'youtube, vimeo, dailymotion, coub і zippcast' што зараз іграе ў "
-"Midori праз org.midori.mediaHerald"
+"Raphael праз org.midori.mediaHerald"

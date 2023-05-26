@@ -1,12 +1,12 @@
-# Lithuanian translations for midori package.
+# Lithuanian translations for raphael package.
 # Copyright (C) 2008 THE midori'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the midori package.
+# This file is distributed under the same license as the raphael package.
 # Ričardas Vasiulis <ricardas.v@inbox.lt> 2010
 # Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: midori 0.4\n"
+"Project-Id-Version: raphael 0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-11 22:56-0400\n"
 "PO-Revision-Date: 2018-04-14 06:01+0000\n"
@@ -23,18 +23,18 @@ msgstr ""
 "X-Poedit-Language: Lithuanian\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../data/midori.desktop.in.h:1 ../midori/main.c:142
+#: ../data/raphael.desktop.in.h:1 ../midori/main.c:142
 #: ../midori/midori-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/midori.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Saityno naršyklė"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Interneto naršyklė Midori"
+msgid "Raphael Web Browser"
+msgstr "Interneto naršyklė Raphael"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -57,8 +57,8 @@ msgid "New Private Browsing Window"
 msgstr "Naujas privataus naršymo langas"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori privatus naršymas"
+msgid "Raphael Private Browsing"
+msgstr "Raphael privatus naršymas"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -144,8 +144,8 @@ msgstr "ŠABLONAS"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Atstatyti Midori po SEKUNDŽIŲ neaktyvumo"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Atstatyti Raphael po SEKUNDŽIŲ neaktyvumo"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -360,14 +360,14 @@ msgstr "Atverti failą"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Norėdami naudoti aukščiau esantį URI, atverkite sklaidos kanalų skaitytuvę. "
 "Dažniausiai, programos meniu yra elementas ar mygtukas \"Nauja "
 "prenumerata\", \"Naujas sklaidos kanalas\" ar kažkas panašaus.\n"
-"Kitu atveju, pereikite į Nuostatas, Midori programas ir pasirinkite Naujienų "
+"Kitu atveju, pereikite į Nuostatas, Raphael programas ir pasirinkite Naujienų "
 "skaitytuvę. Kitą kartą jums spustelėjus ant kanalo piktogramos, jis bus "
 "pridėtas automatiškai."
 
@@ -437,8 +437,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -473,8 +473,8 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape žymelės"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "Midori gali eksportuoti tik į xbel (*. xbel) ir Netscape (*. html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "Raphael gali eksportuoti tik į xbel (*. xbel) ir Netscape (*. html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1210,8 +1210,8 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori negali rasti jūsų ieškomo puslapio"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael negali rasti jūsų ieškomo puslapio"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1497,8 +1497,8 @@ msgid "Startup"
 msgstr "Paleistis"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Paleidžiant Midori:"
+msgid "When Raphael starts:"
+msgstr "Paleidžiant Raphael:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2273,8 +2273,8 @@ msgstr ""
 "Versijų numeriai skliaustuose rodo vykdymo laiku naudojamas versijas."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori nesaugo jokių asmeninių duomenų:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael nesaugo jokių asmeninių duomenų:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2290,8 +2290,8 @@ msgstr ""
 "HTML5 saugykla, vietinė duomenų bazė ir programos podėliai yra išjungti."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori neleidžia tinklalapiams sekti naudotojo:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael neleidžia tinklalapiams sekti naudotojo:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2792,16 +2792,16 @@ msgid "Browser window"
 msgstr "Naršyklės langas"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "Midori naršyklės egzempliorius, kuriam priklauso šis rodinys"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "Raphael naršyklės egzempliorius, kuriam priklauso šis rodinys"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "Rodinys"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
-msgstr "Midori rodinio egzempliorius, kuriam priklauso šis rodinys"
+msgid "The Raphael view instance this view belongs to"
+msgstr "Raphael rodinio egzempliorius, kuriam priklauso šis rodinys"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2873,8 +2873,8 @@ msgstr "Plėtinio egzempliorius"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "Midori plėtinio egzempliorius šiam plėtiniui"
+msgid "The Raphael extension instance for this extension"
+msgstr "Raphael plėtinio egzempliorius šiam plėtiniui"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2883,8 +2883,8 @@ msgstr "Programos egzempliorius"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Midori programos egzempliorius, kuriam priklauso šis plėtinys"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Raphael programos egzempliorius, kuriam priklauso šis plėtinys"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2944,8 +2944,8 @@ msgid "Mouse Gestures"
 msgstr "Pelės gestai"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Valdykite Midori pelės judesiais"
+msgid "Control Raphael by moving the mouse"
+msgstr "Valdykite Raphael pelės judesiais"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3090,8 +3090,8 @@ msgid "Last open _tabs"
 msgstr "Paskutinės atvertos _kortelės"
 
 #: ../midori/midori-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Išvalyti privačius duomenis, užveriant Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Išvalyti privačius duomenis, užveriant Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3154,9 +3154,9 @@ msgstr "Nepavyko įrašyti šiukšlinės. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Paskutinį kartą atvėrus Midori, ji užstrigo. Jūs galite pranešti apie "
+"Paskutinį kartą atvėrus Raphael, ji užstrigo. Jūs galite pranešti apie "
 "problemą %s."
 
 #: ../midori/midori-frontend.c:362
@@ -3168,8 +3168,8 @@ msgid "Disable all _extensions"
 msgstr "Išjungti _visus plėtinius"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Rodyti dialogo langą po Midori strigties"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Rodyti dialogo langą po Raphael strigties"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3184,8 +3184,8 @@ msgid "Run in _debugger"
 msgstr "Vykdyti _derinimo programoje"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Midori egzempliorius jau yra vykdomas, tačiau neatsako.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Raphael egzempliorius jau yra vykdomas, tačiau neatsako.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3340,10 +3340,10 @@ msgstr "Galioja iki"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Sritims naudojama politika nėra atskirai sukonfigūruota. Tai tik dar labiau "
-"apriboja Midori nustatymuose nustatytą visuotinę slapukų politiką."
+"apriboja Raphael nustatymuose nustatytą visuotinę slapukų politiką."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3360,8 +3360,8 @@ msgstr "Nepavyko gauti programos piktogramos %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3464,12 +3464,12 @@ msgid "Some files are being downloaded"
 msgstr "Kai kurie failai yra atsisiunčiami"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Išeiti iš Midori"
+msgid "_Quit Raphael"
+msgstr "_Išeiti iš Raphael"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Jeigu išeisite iš Midori, visi persiuntimai bus atšaukti."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Jeigu išeisite iš Raphael, visi persiuntimai bus atšaukti."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3685,7 +3685,7 @@ msgstr "Saityno medijos bendrinimas"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
-"Bendrinti jūsų programoje Midori atkuriamus \"youtube, vimeo, dailymotion, "
+"Bendrinti jūsų programoje Raphael atkuriamus \"youtube, vimeo, dailymotion, "
 "coub ir zippcast\", naudojant org.midori.mediaHerald"

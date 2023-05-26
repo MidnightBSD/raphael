@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriTally" parent="GtkEventBox">
+  <template class="RaphaelTally" parent="GtkEventBox">
     <style>
         <class name="tab"/>
     </style>
@@ -8,7 +8,7 @@
         <property name="orientation">horizontal</property>
         <property name="visible">yes</property>
         <child>
-          <object class="MidoriFavicon" id="favicon">
+          <object class="RaphaelFavicon" id="favicon">
             <!-- menu -->
             <property name="icon-size">1</property>
             <property name="visible">yes</property>

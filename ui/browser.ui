@@ -14,7 +14,7 @@
       <widget name="navigationbar"/>
     </widgets>
   </object>
-  <template class="MidoriBrowser" parent="GtkApplicationWindow">
+  <template class="RaphaelBrowser" parent="GtkApplicationWindow">
     <child type="titlebar">
       <object class="GtkPaned">
         <property name="visible">yes</property>
@@ -47,7 +47,7 @@
                 <property name="vscrollbar-policy">never</property>
                 <property name="visible">yes</property>
                 <child>
-                  <object class="MidoriSwitcher">
+                  <object class="RaphaelSwitcher">
                     <property name="orientation">horizontal</property>
                     <property name="stack">tabs</property>
                     <property name="visible">yes</property>
@@ -105,7 +105,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="MidoriDownloadButton" id="downloads">
+                  <object class="RaphaelDownloadButton" id="downloads">
                     <property name="valign">center</property>
                   </object>
                 </child>
@@ -153,12 +153,12 @@
                 <property name="orientation">vertical</property>
                 <property name="visible">yes</property>
                 <child>
-                  <object class="MidoriNavigationbar" id="navigationbar">
+                  <object class="RaphaelNavigationbar" id="navigationbar">
                     <property name="visible">yes</property>
                   </object>
                 </child>
                 <child>
-                  <object class="MidoriNetworkCheck">
+                  <object class="RaphaelNetworkCheck">
                   </object>
                 </child>
                 <child>
@@ -201,7 +201,7 @@
                       </object>
                     </child>
                     <child type="overlay">
-                      <object class="MidoriStatusbar" id="statusbar">
+                      <object class="RaphaelStatusbar" id="statusbar">
                         <property name="halign">end</property>
                         <property name="valign">end</property>
                         <property name="margin">0</property>

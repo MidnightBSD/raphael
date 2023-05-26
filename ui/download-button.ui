@@ -42,7 +42,7 @@
       </object>
     </child>
   </object>
-  <template class="MidoriDownloadButton" parent="GtkButton">
+  <template class="RaphaelDownloadButton" parent="GtkButton">
     <property name="focus-on-click">no</property>
     <property name="action-name">win.show-downloads</property>
     <property name="tooltip-text" translatable="yes">View downloaded files</property>

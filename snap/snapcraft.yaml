@@ -59,7 +59,7 @@ slots:
     bus: session
 
 parts:
-  midori:
+  raphael:
     plugin: cmake
     configflags:
       - -DCMAKE_INSTALL_DATADIR=/usr/share
@@ -103,9 +103,9 @@ parts:
       - pulseaudio-module-x11
       - libmirclient9
     organize:
-      lib/girepository-1.0/Midori-0.6.typelib: usr/lib/girepository-1.0/Midori-0.6.typelib
+      lib/girepository-1.0/Raphael-0.6.typelib: usr/lib/girepository-1.0/Raphael-0.6.typelib
     stage:
-      - -usr/share/gir-1.0/Midori-0.6.gir
+      - -usr/share/gir-1.0/Raphael-0.6.gir
       - -usr/lib/*/libcups.so.2
       - -usr/share/doc/libcups2/changelog.Debian.gz
       - -usr/lib/*/libsoup-2.4.so.1.7.0

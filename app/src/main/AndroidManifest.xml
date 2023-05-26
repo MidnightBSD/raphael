@@ -11,7 +11,7 @@
             android:allowBackup="true"
             android:usesCleartextTraffic="true"
             android:label="@string/appName"
-            android:icon="@drawable/ic_midori"
+            android:icon="@drawable/ic_raphael"
             android:supportsRtl="true"
             android:theme="@style/AppTheme" tools:targetApi="m">
         <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing"

@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     [GtkTemplate (ui = "/ui/navigationbar.ui")]
     public class Navigationbar : Gtk.ActionBar {
         [GtkChild]

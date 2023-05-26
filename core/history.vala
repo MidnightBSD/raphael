@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public class HistoryDatabase : Database {
         static HistoryDatabase? _default = null;
         static HistoryDatabase? _default_incognito = null;

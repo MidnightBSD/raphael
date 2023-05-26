@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public errordomain DatabaseError {
         OPEN,
         NAMING,

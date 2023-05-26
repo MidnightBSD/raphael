@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriNetworkCheck" parent="GtkActionBar">
+  <template class="RaphaelNetworkCheck" parent="GtkActionBar">
     <child type="center">
       <object class="GtkLabel">
         <property name="label" translatable="yes">The network requires a login to access the Internet.</property>

@@ -31,7 +31,7 @@ msgid "Web Browser"
 msgstr "Прегледник мреже"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
+msgid "Raphael Web Browser"
 msgstr "Прегледник мреже Мидори"
 
 #: ../data/midori.desktop.in.h:4
@@ -55,7 +55,7 @@ msgid "New Private Browsing Window"
 msgstr "Нови прозор безличног прегледања"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
+msgid "Raphael Private Browsing"
 msgstr "Мидоријево безлично прегледање"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
@@ -141,7 +141,7 @@ msgstr "ОБРАЗАЦ"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr "Поново покреће Мидори након СЕКУНДЕ секунди мировања"
 
 #: ../midori/main.c:111
@@ -433,7 +433,7 @@ msgid "Firefox (%s)"
 msgstr "Фајерфокс (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
+msgid "Raphael 0.2.6"
 msgstr "Мидори 0.2.6"
 
 #: ../midori/midori-browser.c:4529
@@ -469,7 +469,7 @@ msgid "Netscape Bookmarks"
 msgstr "Нетскејпове забелешке"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr "Мидори може само да извезе у ИксБЕЛ (*.xbel) и Нетскејп (*.html)"
 
 #: ../midori/midori-browser.c:4711
@@ -1202,7 +1202,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr "Мидори није успео да пронађе то што тражите"
 
 #: ../midori/midori-view.c:1249
@@ -1492,7 +1492,7 @@ msgid "Startup"
 msgstr "Покретање"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
+msgid "When Raphael starts:"
 msgstr "Када се Мидори покрене:"
 
 #: ../midori/midori-preferences.c:294
@@ -2273,7 +2273,7 @@ msgstr ""
 "Бројеви издања у заградама приказују издање коришћено за време покретања."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
+msgid "Raphael doesn't store any personal data:"
 msgstr "Мидори не чува никакве личне податке:"
 
 #: ../extensions/about.vala:178
@@ -2291,7 +2291,7 @@ msgstr ""
 "искључена."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
+msgid "Raphael prevents websites from tracking the user:"
 msgstr "Мидори спречава мрежне странице да прате корисника:"
 
 #: ../extensions/about.vala:182
@@ -2796,7 +2796,7 @@ msgid "Browser window"
 msgstr "Прозор прегледника"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr "Примерак програма Мидори коме овај приказ припада"
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2804,7 +2804,7 @@ msgid "View"
 msgstr "Приказ"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr "Примерак програма Мидори коме овај приказ припада"
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2877,7 +2877,7 @@ msgstr "Примерак проширења"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
+msgid "The Raphael extension instance for this extension"
 msgstr "Примерак проширења Мидорија за ово проширење"
 
 #: ../extensions/nojs/nojs.c:723
@@ -2887,7 +2887,7 @@ msgstr "Примерак програма"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
+msgid "The Raphael application instance this extension belongs to"
 msgstr "Примерак програма Мидори коме ово проширење припада"
 
 #: ../extensions/nojs/nojs.c:730
@@ -2948,7 +2948,7 @@ msgid "Mouse Gestures"
 msgstr "Гестови миша"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
+msgid "Control Raphael by moving the mouse"
 msgstr "Управља Мидоријем помоћу миша"
 
 #: ../extensions/shortcuts.c:109
@@ -3158,7 +3158,7 @@ msgstr "Нисам успео да сачувам документ. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
 "Мидори се срушио приликом последњег покретања. Можете пријавити потешкоће на "
 "%s."
@@ -3172,7 +3172,7 @@ msgid "Disable all _extensions"
 msgstr "Онемогући сва п_роширења"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
+msgid "Show a dialog after Raphael crashed"
 msgstr "Приказује прозорче након пада Мидорија"
 
 #: ../midori/midori-frontend.c:380
@@ -3188,7 +3188,7 @@ msgid "Run in _debugger"
 msgstr "Покрени уз _праћење грешака"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
 msgstr "Један примерак Мидорија је већ покренут али не даје одзив.\n"
 
 #: ../midori/midori-frontend.c:516
@@ -3343,7 +3343,7 @@ msgstr "Дан истека"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Смернице за коришћење области који нису појединачно подешене. Има улогу само "
 "за будуће опште смернице прихватања колачића у поставкама Мидорија."
@@ -3363,7 +3363,7 @@ msgstr "Нисам успео да добавим иконицу програм�
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
+msgid "Raphael (%s)"
 msgstr "Мидори (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
@@ -3471,7 +3471,7 @@ msgid "_Quit Midori"
 msgstr "_Напусти Мидори"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
+msgid "The transfers will be cancelled if Raphael quits."
 msgstr "Преноси ће бити отказани ако затворите Мидори."
 
 #: ../extensions/transfers.vala:568
@@ -3687,7 +3687,7 @@ msgstr "Сада се изводи мрежни садржај"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "Делите ствари са Јутуба, Вимеа, Дејлимоушна, Куба и Зипкаста које изводи "
 "Мидори користећи org.midori.mediaHerald"

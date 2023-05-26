@@ -1,14 +1,14 @@
-# Catalan translations for midori package
-# Traduccions al català del paquet «midori».
+# Catalan translations for raphael package
+# Traduccions al català del paquet «raphael».
 # Copyright (C) 2009 THE midori'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the midori package.
+# This file is distributed under the same license as the raphael package.
 # Pol Ruzafa <kiari62@gmail.com>, 2011.
 # Carles Muñoz Gorriz <carlesmu@internautas.org>, 2009-2010, 2012.
 # Harald Servat <redcrash@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: midori\n"
+"Project-Id-Version: raphael\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-11 22:56-0400\n"
 "PO-Revision-Date: 2015-07-13 12:15+0000\n"
@@ -24,32 +24,32 @@ msgstr ""
 "X-Poedit-Language: Catalan\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../data/midori.desktop.in.h:1 ../midori/main.c:142
-#: ../midori/midori-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+#: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
+#: ../raphael/raphael-websettings.c:231
+msgid "Raphael"
+msgstr "Raphael"
 
-#: ../data/midori.desktop.in.h:2
+#: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Navegador web"
 
-#: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Navegador web Midori"
+#: ../data/raphael.desktop.in.h:3
+msgid "Raphael Web Browser"
+msgstr "Navegador web Raphael"
 
-#: ../data/midori.desktop.in.h:4
+#: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
 msgstr "Navegueu pel web"
 
-#: ../data/midori.desktop.in.h:5
+#: ../data/raphael.desktop.in.h:5
 msgid "Internet;WWW;Explorer"
 msgstr "Internet;WWW;Explorador"
 
-#: ../data/midori.desktop.in.h:6 ../midori/midori-browser.c:1783
+#: ../data/raphael.desktop.in.h:6 ../raphael/raphael-browser.c:1783
 msgid "New Tab"
 msgstr "Pestanya nova"
 
-#: ../data/midori.desktop.in.h:7 ../midori/midori-browser.c:1780
+#: ../data/raphael.desktop.in.h:7 ../raphael/raphael-browser.c:1780
 msgid "New Window"
 msgstr "Finestra nova"
 
@@ -58,8 +58,8 @@ msgid "New Private Browsing Window"
 msgstr "Nova finestra privada de navegació"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Navegació privada de Midori"
+msgid "Raphael Private Browsing"
+msgstr "Navegació privada de Raphael"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -145,8 +145,8 @@ msgstr "PATRÓ"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Reinicia el Midori després de SEGONS segons d'activitat"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Reinicia el Raphael després de SEGONS segons d'activitat"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -361,14 +361,14 @@ msgstr "Obre un fitxer"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Per utilitzar l'URI que hi ha a dalt, obriu un agregador de notícies. "
 "Normalment hi ha un botó de «Nova subscripció», «Noves notícies» o "
 "similars.\n"
-"Alternativament, aneu a «Preferències»/«Aplicacions» al Midori i seleccioneu "
+"Alternativament, aneu a «Preferències»/«Aplicacions» al Raphael i seleccioneu "
 "un agregador de notícies. El proper cop que cliqueu a la icona de les "
 "notícies, s'agregarà automàticament."
 
@@ -440,8 +440,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -476,8 +476,8 @@ msgid "Netscape Bookmarks"
 msgstr "Adreces d'interés del Netscape"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "El Midori només pot exportar a XBEL (*.xbel) i Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "El Raphael només pot exportar a XBEL (*.xbel) i Netscape (*.html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1213,7 +1213,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr ""
 
 #: ../midori/midori-view.c:1249
@@ -1495,8 +1495,8 @@ msgid "Startup"
 msgstr "Inicialització"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Quan el Midori s'inicia:"
+msgid "When Raphael starts:"
+msgstr "Quan el Raphael s'inicia:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2270,8 +2270,8 @@ msgstr ""
 "al temps d'execució."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "El Midori no desa cap informació personal:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "El Raphael no desa cap informació personal:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2288,8 +2288,8 @@ msgstr ""
 "l'aplicació estan desactivats."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "El Midori evita que els llocs webs controlin l'usuari:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "El Raphael evita que els llocs webs controlin l'usuari:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2783,7 +2783,7 @@ msgid "Browser window"
 msgstr "Finestra del navegador"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2791,7 +2791,7 @@ msgid "View"
 msgstr "Vista"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2865,8 +2865,8 @@ msgstr "Instància d'extensió"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "La instància de l'extensió Midori per aquesta extensió"
+msgid "The Raphael extension instance for this extension"
+msgstr "La instància de l'extensió Raphael per aquesta extensió"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2875,7 +2875,7 @@ msgstr "Instància d'aplicació"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
+msgid "The Raphael application instance this extension belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs.c:730
@@ -2936,8 +2936,8 @@ msgid "Mouse Gestures"
 msgstr "Gesticulacions de ratolí"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Controleu el Midori emprant el ratolí"
+msgid "Control Raphael by moving the mouse"
+msgstr "Controleu el Raphael emprant el ratolí"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3081,8 +3081,8 @@ msgid "Last open _tabs"
 msgstr "Mostra les darreres pes_tanyes obertes"
 
 #: ../midori/midori-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Neteja les dades provades al _sortir del Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Neteja les dades provades al _sortir del Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3145,9 +3145,9 @@ msgstr "No s'han pogut desar les pestanyes tancades recentment. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"El Midori va fallar el darrer cop que es va obrir. Podeu informar del "
+"El Raphael va fallar el darrer cop que es va obrir. Podeu informar del "
 "problema a %s."
 
 #: ../midori/midori-frontend.c:362
@@ -3159,8 +3159,8 @@ msgid "Disable all _extensions"
 msgstr "Desactiva totes les _extensions"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Mostra un diàleg quan el Midori falli"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Mostra un diàleg quan el Raphael falli"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3175,9 +3175,9 @@ msgid "Run in _debugger"
 msgstr "Executa en el depura_dor"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
 msgstr ""
-"Ja s'està executant una altra instància del Midori, però no respon.\n"
+"Ja s'està executant una altra instància del Raphael, però no respon.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3328,11 +3328,11 @@ msgstr "Data d'expiració"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "La política a fer servir per dominis no està configurada de forma "
 "individual. Això només actua per restringir la política global de galetes "
-"declarada en la configuració de Midori."
+"declarada en la configuració de Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3349,8 +3349,8 @@ msgstr ""
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3453,12 +3453,12 @@ msgid "Some files are being downloaded"
 msgstr "S'estan baixant fitxers"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Surt del Midori"
+msgid "_Quit Raphael"
+msgstr "_Surt del Raphael"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Les transferències es cancel·laran si surtiu del Midori."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Les transferències es cancel·laran si surtiu del Raphael."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3668,5 +3668,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""

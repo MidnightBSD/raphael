@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriAbout" parent="GtkAboutDialog">
+  <template class="RaphaelAbout" parent="GtkAboutDialog">
     <property name="modal">yes</property>
     <property name="copyright" translatable="yes">
       2023 Lucas Holt

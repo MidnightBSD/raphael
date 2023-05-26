@@ -25,15 +25,15 @@ msgstr ""
 #: ../data/midori.desktop.in.h:1 ../midori/main.c:142
 #: ../midori/midori-websettings.c:231
 msgid "Midori"
-msgstr "Midori 浏览器"
+msgstr "Raphael 浏览器"
 
 #: ../data/midori.desktop.in.h:2
 msgid "Web Browser"
 msgstr "网络浏览器"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Midori 网络浏览器"
+msgid "Raphael Web Browser"
+msgstr "Raphael 网络浏览器"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -56,8 +56,8 @@ msgid "New Private Browsing Window"
 msgstr "新建私人浏览窗口"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori 私人浏览"
+msgid "Raphael Private Browsing"
+msgstr "Raphael 私人浏览"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -142,7 +142,7 @@ msgstr "类型"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr "SECONDS 秒内无响应则重置 Midori"
 
 #: ../midori/main.c:111
@@ -363,7 +363,7 @@ msgid ""
 "automatically."
 msgstr ""
 "使用上面的 URI 打开一个新闻聚合器。通常有类似 “新建订阅”、 “新建新闻源” 的菜单或按钮。\n"
-"您也可以进入 Midori 的首选项中，选择一个新的新闻聚合器。您下次点击新闻源图标时，将会自动添加。"
+"您也可以进入 Raphael 的首选项中，选择一个新的新闻聚合器。您下次点击新闻源图标时，将会自动添加。"
 
 #: ../midori/midori-browser.c:2832 ../extensions/feed-panel/main.c:350
 msgid "New feed"
@@ -429,8 +429,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox(%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -465,8 +465,8 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape 书签"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "Midori 只能导出为 XBEL(*.xbel) 和 Netscape(*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "Raphael 只能导出为 XBEL(*.xbel) 和 Netscape(*.html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1196,8 +1196,8 @@ msgstr "您的电脑似乎已接入网络，但无法访问 “%s”，请检查
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori 找不到您想要的网页"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael 找不到您想要的网页"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1471,8 +1471,8 @@ msgid "Startup"
 msgstr "启动"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Midori 启动时："
+msgid "When Raphael starts:"
+msgstr "Raphael 启动时："
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2231,8 +2231,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "在括号中的版本号显示运行时的版本。"
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori 没有存储任何个人数据："
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael 没有存储任何个人数据："
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2247,8 +2247,8 @@ msgid "HTML5 storage, local database and application caches are disabled."
 msgstr "已禁用 HTML5 存储、本地数据库和应用程序缓存。"
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori 阻止网站追踪用户："
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael 阻止网站追踪用户："
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2738,16 +2738,16 @@ msgid "Browser window"
 msgstr "浏览器窗口"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "此视图所属的 Midori 浏览器实例"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "此视图所属的 Raphael 浏览器实例"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "视图"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
-msgstr "此视图所属的 Midori 视图实例"
+msgid "The Raphael view instance this view belongs to"
+msgstr "此视图所属的 Raphael 视图实例"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2817,8 +2817,8 @@ msgstr "扩展程序实例"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "这个扩展程序的 Midori 扩展程序实例"
+msgid "The Raphael extension instance for this extension"
+msgstr "这个扩展程序的 Raphael 扩展程序实例"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2827,8 +2827,8 @@ msgstr "应用程序实例"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "这个扩展程序属于 Midori 应用程序实例"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "这个扩展程序属于 Raphael 应用程序实例"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2886,7 +2886,7 @@ msgid "Mouse Gestures"
 msgstr "鼠标手势"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
+msgid "Control Raphael by moving the mouse"
 msgstr "通过移动鼠标控制 Midori"
 
 #: ../extensions/shortcuts.c:109
@@ -3030,7 +3030,7 @@ msgstr "上次打开的标签(_T)"
 
 #: ../midori/midori-privatedata.c:255
 msgid "Clear private data when _quitting Midori"
-msgstr "退出 Midori 时清除隐私数据(_Q)"
+msgstr "退出 Raphael 时清除隐私数据(_Q)"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../midori/midori-privatedata.c:378
@@ -3093,8 +3093,8 @@ msgstr "未能保存回收站。%s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
-msgstr "Midori 上次在打开后崩溃了。你可以到 %s 报告问题。"
+"Raphael crashed the last time it was opened. You can report the problem at %s."
+msgstr "Raphael 上次在打开后崩溃了。你可以到 %s 报告问题。"
 
 #: ../midori/midori-frontend.c:362
 msgid "Modify _preferences"
@@ -3105,8 +3105,8 @@ msgid "Disable all _extensions"
 msgstr "禁用所有扩展(_E)"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Midori 崩溃后显示对话框"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Raphael 崩溃后显示对话框"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3121,8 +3121,8 @@ msgid "Run in _debugger"
 msgstr "在调试器内运行(_D)"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "已有一个 Midori 实例在运行但无响应。\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "已有一个 Raphael 实例在运行但无响应。\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3269,8 +3269,8 @@ msgstr "过期日期"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
-msgstr "域名所用的策略没有单独设定。这只是进一步限制 Midori 设置中的的全局Cookie策略。"
+"further restrict the global cookie policy set in Raphael settings."
+msgstr "域名所用的策略没有单独设定。这只是进一步限制 Raphael 设置中的的全局Cookie策略。"
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3287,8 +3287,8 @@ msgstr "无法获取应用程序图标 - %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3395,8 +3395,8 @@ msgid "_Quit Midori"
 msgstr "退出 Midori(_Q)"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "如果退出 Midori 则取消传输。"
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "如果退出 Raphael 则取消传输。"
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3606,7 +3606,7 @@ msgstr "网页媒体正在播放"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
-"通过 org.midori.mediaHerald 来分享正在 Midori 中播放的 "
+"通过 org.midori.mediaHerald 来分享正在 Raphael 中播放的 "
 "Youtube、Vimeo、Dailymotion、Coub、Zippcast 视频。"

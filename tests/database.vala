@@ -12,7 +12,7 @@
 class DatabaseTest {
     public static void test_bind () {
         try {
-            var database = new Midori.Database ();
+            var database = new Raphael.Database ();
             database.exec ("CREATE TABLE cats (cat text, favorite text)");
             database.exec ("INSERT INTO cats (cat, favorite) VALUES ('Henry', 'pillow')");
             var statement = database.prepare ("SELECT cat FROM cats WHERE favorite = :toy");
@@ -20,7 +20,7 @@ class DatabaseTest {
             // Missing : should throw an error
             assert_not_reached ();
         } catch (Error error) {
-            var expected = new Midori.DatabaseError.TYPE ("");
+            var expected = new Raphael.DatabaseError.TYPE ("");
             assert_true (error.domain == expected.domain);
             assert_true (error.code == expected.code);
         }
@@ -37,8 +37,8 @@ class DatabaseTest {
 
     public static async void test_insert_delete_async () {
         try {
-            var database = new Midori.Database ();
-            var item = new Midori.DatabaseItem ("http://example.com", "Example", 0);
+            var database = new Raphael.Database ();
+            var item = new Raphael.DatabaseItem ("http://example.com", "Example", 0);
             yield database.insert (item);
             assert_true (item.database == database);
             assert_true (item in database);

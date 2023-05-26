@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public interface AppActivatable : Peas.ExtensionBase {
         public abstract App app { owned get; set; }
         public abstract void activate ();
@@ -31,7 +31,7 @@ namespace Midori {
             { "single-app", 'S', 0, OptionArg.NONE, ref single_app, N_("With --app, prefer currently open browser window (if any)"), null },
             { "execute", 'e', 0, OptionArg.STRING_ARRAY, ref execute, N_("Execute the specified command"), null },
             { "help-execute", 0, 0, OptionArg.NONE, ref help_execute, N_("List available commands to execute with -e/ --execute"), null },
-            { "inactivity-reset", 'i', 0, OptionArg.INT, ref inactivity_reset, N_("Reset Midori after SECONDS seconds of inactivity"), N_("SECONDS") },
+            { "inactivity-reset", 'i', 0, OptionArg.INT, ref inactivity_reset, N_("Reset Raphael after SECONDS seconds of inactivity"), N_("SECONDS") },
             { "private", 'p', 0, OptionArg.NONE, ref incognito, N_("Private browsing, no changes are saved"), null },
             { "version", 'V', 0, OptionArg.NONE, ref version, N_("Display version number"), null },
             { null }
@@ -349,7 +349,7 @@ namespace Midori {
                     description += "<li>%s</li>".printf (suggestion);
                 }
                 description += "</ul>";
-                description += "<b>%s</b><br>".printf (_("Midori prevents websites from tracking the user:"));
+                description += "<b>%s</b><br>".printf (_("Raphael prevents websites from tracking the user:"));
                 description += "<ul>";
                 foreach (var note in notes) {
                     description += "<li>%s</li>".printf (note);
@@ -361,7 +361,7 @@ namespace Midori {
                                                              ResourceLookupFlags.NONE).get_data ())
                     .replace ("{title}", _("Private Browsing"))
                     .replace ("{icon}", "user-not-tracked")
-                    .replace ("{message}", _("Midori doesn't store any personal data:"))
+                    .replace ("{message}", _("Raphael doesn't store any personal data:"))
                     .replace ("{description}", description)
                     .replace ("{tryagain}", "")
                     .replace ("{stylesheet}", stylesheet);

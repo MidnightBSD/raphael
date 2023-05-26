@@ -1,6 +1,6 @@
-# Romanian translation for Midori
+# Romanian translation for Raphael
 # Copyright (C) 2009-2014 THE Midori'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Midori package.
+# This file is distributed under the same license as the Raphael package.
 # Igor Știrbu <igor.stirbu@gmail.com> 2009.
 # Mișu Moldovan <dumol@l10n.ro> 2009-2014.
 # Andrei Popescu <andreimpopescu@gmail.com> 2010.
@@ -24,16 +24,16 @@ msgstr ""
 
 #: ../data/midori.desktop.in.h:1 ../midori/main.c:142
 #: ../midori/midori-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/midori.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Navigator web"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Navigatorul web Midori"
+msgid "Raphael Web Browser"
+msgstr "Navigatorul web Raphael"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -56,8 +56,8 @@ msgid "New Private Browsing Window"
 msgstr "Fereastră nouă de navigare privată"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Navigare privată cu Midori"
+msgid "Raphael Private Browsing"
+msgstr "Navigare privată cu Raphael"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -144,8 +144,8 @@ msgstr "MODEL"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Repornește Midori după un număr de SECUNDE de inactivitate"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Repornește Raphael după un număr de SECUNDE de inactivitate"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -362,14 +362,14 @@ msgstr "Deschidere fișier"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Pentru a utiliza adresa URI de mai sus, deschideți un agregator de știri și "
 "adăugați-o ca o „Subscriere nouă”, ori un „Nou flux de știri”.\n"
 "Alternativ, puteți selecta un agregator de știri în secțiunea „Navigare” a "
-"preferințelor Midori. Data viitoare când veți mai da clic pe iconița unui "
+"preferințelor Raphael. Data viitoare când veți mai da clic pe iconița unui "
 "flux de știri, acesta va fi adăugat automat."
 
 #: ../midori/midori-browser.c:2832 ../extensions/feed-panel/main.c:350
@@ -438,8 +438,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -474,8 +474,8 @@ msgid "Netscape Bookmarks"
 msgstr "Favorite Netscape"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "Midori exportă doar în formatele XBEL (*.xbel) sau Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "Raphael exportă doar în formatele XBEL (*.xbel) sau Netscape (*.html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1207,7 +1207,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr ""
 
 #: ../midori/midori-view.c:1249
@@ -1361,7 +1361,7 @@ msgstr "Încărcarea paginii a fost întârziată:"
 msgid "Loading delayed either due to a recent crash or startup preferences."
 msgstr ""
 "Încărcarea a fost întârziată din cauza unei terminări premature ori pentru "
-"că așa ați optat în preferințele Midori."
+"că așa ați optat în preferințele Raphael."
 
 #: ../midori/midori-view.c:3944
 msgid "Load Page"
@@ -1494,8 +1494,8 @@ msgstr "Pornire"
 
 # dumol: Truc pentru a micșora lățimea ferestrei cu preferințe
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "La pornirea Midori arată:"
+msgid "When Raphael starts:"
+msgstr "La pornirea Raphael arată:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2274,8 +2274,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "Cifrele dintre paranteze arată versiunile utilizate curent."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori nu stochează niciun fel de date personale:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael nu stochează niciun fel de date personale:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2292,8 +2292,8 @@ msgstr ""
 "dezactivate."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori previne urmărirea utilizatorilor pe Internet:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael previne urmărirea utilizatorilor pe Internet:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2787,17 +2787,17 @@ msgid "Browser window"
 msgstr "Fereastra navigatorului"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "Instanța navigatorului Midori căreia îi aparține această vizualizare"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "Instanța navigatorului Raphael căreia îi aparține această vizualizare"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "Vizualizare"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr ""
-"Instanța de vizualizare Midori căreia îi aparține această vizualizare"
+"Instanța de vizualizare Raphael căreia îi aparține această vizualizare"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2870,8 +2870,8 @@ msgstr "Instanța extensiei"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "Instanța extensiei Midori pentru această extensie"
+msgid "The Raphael extension instance for this extension"
+msgstr "Instanța extensiei Raphael pentru această extensie"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2880,8 +2880,8 @@ msgstr "Instanța programului"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Instanța programului Midori căreia îi aparține această extensie"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Instanța programului Raphael căreia îi aparține această extensie"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2941,8 +2941,8 @@ msgid "Mouse Gestures"
 msgstr "Gesturi de maus"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Controlați Midori prin gesturi de maus"
+msgid "Control Raphael by moving the mouse"
+msgstr "Controlați Raphael prin gesturi de maus"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3152,9 +3152,9 @@ msgstr "Nu s-a putut salva gunoiul. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Se pare că Midori s-a terminat prematur la ultima pornire. Puteți raporta "
+"Se pare că Raphael s-a terminat prematur la ultima pornire. Puteți raporta "
 "problema la %s."
 
 #: ../midori/midori-frontend.c:362
@@ -3166,7 +3166,7 @@ msgid "Disable all _extensions"
 msgstr "_Dezactivează extensiile"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
+msgid "Show a dialog after Raphael crashed"
 msgstr "Arată o fereastră de depanare la pornirea după o terminare prematură"
 
 #: ../midori/midori-frontend.c:380
@@ -3182,9 +3182,9 @@ msgid "Run in _debugger"
 msgstr "Pornește în _debugger"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
 msgstr ""
-"O instanță a programului Midori este deja pornită, dar nu răspunde.\n"
+"O instanță a programului Raphael este deja pornită, dar nu răspunde.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3339,7 +3339,7 @@ msgstr "Data expirării"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Regula de utilizat pentru domeniile ce nu au fost configurate individual. "
 "Această regulă poate restrânge politica globală pentru gestionarea cookie-"
@@ -3360,8 +3360,8 @@ msgstr "Nu s-a obține iconița programului în %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3468,7 +3468,7 @@ msgid "_Quit Midori"
 msgstr "În_chidere Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
+msgid "The transfers will be cancelled if Raphael quits."
 msgstr "Dacă închideți Midori, se vor pierde descărcările curente."
 
 #: ../extensions/transfers.vala:568
@@ -3679,5 +3679,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""

@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriNavigationbar" parent="GtkActionBar">
+  <template class="RaphaelNavigationbar" parent="GtkActionBar">
     <child>
       <object class="GtkBox" id="actionbox">
         <property name="orientation">horizontal</property>
@@ -79,7 +79,7 @@
       </object>
     </child>
     <child type="center">
-      <object class="MidoriUrlbar" id="urlbar">
+      <object class="RaphaelUrlbar" id="urlbar">
         <!-- expand has no effect, int.MAX doesn't work -->
         <property name="max-width-chars">300</property>
         <property name="visible">yes</property>

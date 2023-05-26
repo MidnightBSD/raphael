@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public interface TabActivatable : Peas.ExtensionBase {
         public abstract Tab tab { owned get; set; }
         public abstract void activate ();
@@ -224,7 +224,7 @@ namespace Midori {
             } else {
                 try {
                     monitor.can_reach (NetworkAddress.parse_uri (Config.PROJECT_WEBSITE, 80));
-                    title = _("Midori can't find the page you're looking for");
+                    title = _("Raphael can't find the page you're looking for");
                     message = _("The page located at “%s” cannot be found. " +
                                 "Check the web address for misspelled words and try again.").printf (hostname);
                 } catch (Error error) {

@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public const DebugKey[] keys = {
         { "historydatabase", DebugFlags.HISTORY },
     };
@@ -21,16 +21,16 @@ namespace Midori {
 
     public interface Loggable : Object {
         public string domain { owned get {
-            string? _domain = get_data<string> ("midori-domain");
+            string? _domain = get_data<string> ("raphael-domain");
             if (_domain == null) {
                 _domain = get_type ().name ().substring (6, -1).down ();
-                set_data<string> ("midori-domain", _domain);
+                set_data<string> ("raphael-domain", _domain);
             }
             return _domain;
         } }
 
         public bool logging { owned get {
-            bool? _logging = get_data<bool?> ("midori-logging");
+            bool? _logging = get_data<bool?> ("raphael-logging");
             if (_logging == null) {
                 uint flag = int.MAX;
                 foreach (var key in keys) {
@@ -41,7 +41,7 @@ namespace Midori {
                 string debug_string = Environment.get_variable ("G_MESSAGES_DEBUG");
                 uint flags = parse_debug_string (debug_string, keys);
                 _logging = (flags & flag) != 0;
-                set_data<bool?> ("midori-logging", _logging);
+                set_data<bool?> ("raphael-logging", _logging);
             }
             return _logging;
         } }

@@ -9,9 +9,9 @@
  See the file COPYING for the full license text.
 */
 
-Midori.Plugins? plugins;
+Raphael.Plugins? plugins;
 public void webkit_web_extension_initialize_with_user_data (WebKit.WebExtension extension, Variant user_data) {
-    plugins = Midori.Plugins.get_default (user_data.get_string ());
+    plugins = Raphael.Plugins.get_default (user_data.get_string ());
     extension.page_created.connect ((page) => {
         page.document_loaded.connect (() => {
             try {
@@ -33,7 +33,7 @@ public void webkit_web_extension_initialize_with_user_data (WebKit.WebExtension 
                         uri = soup_uri.to_string (false);
                     }
                     debug ("Found thumbnail for %s: %s", page.uri, uri);
-                    var history = Midori.HistoryDatabase.get_default ();
+                    var history = Raphael.HistoryDatabase.get_default ();
                     history.prepare ("UPDATE %s SET image = :image WHERE uri = :uri".printf (history.table),
                                      ":image", typeof (string), uri,
                                      ":uri", typeof (string), page.uri).exec ();

@@ -3,7 +3,7 @@ var promises = [];
 var last_promise = 0;
 var m = function (fn, args, cb) {
     var promise = new Promise (function (resolve, reject) {
-        window.webkit.messageHandlers.midori.postMessage ({fn: fn, args: args, promise: last_promise});
+        window.webkit.messageHandlers.raphael.postMessage ({fn: fn, args: args, promise: last_promise});
         last_promise = promises.push({resolve: resolve, reject: reject});
     });
     return promise;

@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     public class Plugins : Peas.Engine, Loggable {
         public string builtin_path { get; construct set; }
 
@@ -53,7 +53,7 @@ namespace Midori {
          */
         public Peas.ExtensionSet plug<T> (string name, Object object) {
             var extensions = new Peas.ExtensionSet (this, typeof (T), name, object, null);
-            object.set_data<Object> ("midori-plug", extensions);
+            object.set_data<Object> ("raphael-plug", extensions);
             return extensions;
         }
     }

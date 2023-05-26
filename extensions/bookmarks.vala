@@ -10,16 +10,16 @@
 */
 
 namespace Bookmarks {
-    class BookmarksDatabase : Midori.Database {
+    class BookmarksDatabase : Raphael.Database {
         static BookmarksDatabase? _default = null;
-        public static BookmarksDatabase get_default () throws Midori.DatabaseError {
+        public static BookmarksDatabase get_default () throws Raphael.DatabaseError {
             if (_default == null) {
                 _default = new BookmarksDatabase ();
             }
             return _default;
         }
 
-        BookmarksDatabase () throws Midori.DatabaseError {
+        BookmarksDatabase () throws Raphael.DatabaseError {
             Object (path: "bookmarks.db");
             init ();
         }

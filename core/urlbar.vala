@@ -9,7 +9,7 @@
  See the file COPYING for the full license text.
 */
 
-namespace Midori {
+namespace Raphael {
     [GtkTemplate (ui = "/ui/urlbar.ui")]
     public class Urlbar : Gtk.Entry {
         public string? key { get; protected set; }

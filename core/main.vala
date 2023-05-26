@@ -10,6 +10,6 @@
 */
 
 static int main (string[] args) {
-    var app = new Midori.App ();
+    var app = new Raphael.App ();
     return app.run (args);
 }

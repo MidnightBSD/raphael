@@ -28,7 +28,7 @@ msgid "Web Browser"
 msgstr "Pelayar Web"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
+msgid "Raphael Web Browser"
 msgstr "Pelayar Web Midori"
 
 #: ../data/midori.desktop.in.h:4
@@ -52,7 +52,7 @@ msgid "New Private Browsing Window"
 msgstr "Tetingkap Pelayar Peribadi Baru"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
+msgid "Raphael Private Browsing"
 msgstr "Pelayar Peribadi Midori"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
@@ -138,8 +138,8 @@ msgstr "CORAK"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Tetap semula Midori selepas SECONDS saat ketidakaktifan"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Tetap semula Raphael selepas SECONDS saat ketidakaktifan"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -430,8 +430,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -466,8 +466,8 @@ msgid "Netscape Bookmarks"
 msgstr "Tanda Buku Netscape"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "Midori hanya boleh eksport ke XBEL (*.xbel) dan Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "Raphael hanya boleh eksport ke XBEL (*.xbel) dan Netscape (*.html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1193,8 +1193,8 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori tidak dapat mencari halaman yang anda sedang cari"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael tidak dapat mencari halaman yang anda sedang cari"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1476,8 +1476,8 @@ msgid "Startup"
 msgstr "Permulaan"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Bila Midori bermula:"
+msgid "When Raphael starts:"
+msgstr "Bila Raphael bermula:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2251,8 +2251,8 @@ msgstr ""
 "Nombor versi dalam kurungan paparkan versi yang digunakan pada masa jalan,"
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori tidak menyimpan sebarang data peribadi:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael tidak menyimpan sebarang data peribadi:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2268,8 +2268,8 @@ msgstr ""
 "Sotrin, pangkalan data setempat dan cache aplikasi HTML5 dilumpuhkan."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori menghalang laman sesawang daripad menjejak pengguna:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael menghalang laman sesawang daripad menjejak pengguna:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2767,15 +2767,15 @@ msgid "Browser window"
 msgstr "Tetingkap pelayar"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "Kejadian pelayar Midori bagi paparan ini milik"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "Kejadian pelayar Raphael bagi paparan ini milik"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "Lihat"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr "Kejadian paparan Midoeri bagi paparan ini milik"
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2848,8 +2848,8 @@ msgstr "Kejadian sambungan"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "Kejadian sambungan Midori untuk sambungan ini"
+msgid "The Raphael extension instance for this extension"
+msgstr "Kejadian sambungan Raphael untuk sambungan ini"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2858,8 +2858,8 @@ msgstr "Kejadian aplikasi"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "Kejadian aplikasi Midori yang mana sambungan ini miliki"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "Kejadian aplikasi Raphael yang mana sambungan ini miliki"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -2921,8 +2921,8 @@ msgid "Mouse Gestures"
 msgstr "Gerakan Tetikus"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Kawal Midori dengan menggerakkan tetikus"
+msgid "Control Raphael by moving the mouse"
+msgstr "Kawal Raphael dengan menggerakkan tetikus"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3131,9 +3131,9 @@ msgstr "Tong sampah tidak dapat disimpan. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori mengalami kerosakan kali terakhir dibuka. Anda boleh laporkan masalah "
+"Raphael mengalami kerosakan kali terakhir dibuka. Anda boleh laporkan masalah "
 "di %s."
 
 #: ../midori/midori-frontend.c:362
@@ -3145,8 +3145,8 @@ msgid "Disable all _extensions"
 msgstr "Lumpuhkan semua sa_mbungan"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Paparkan dialog selepas Midori mengalami kerosakan"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Paparkan dialog selepas Raphael mengalami kerosakan"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3161,8 +3161,8 @@ msgid "Run in _debugger"
 msgstr "Jalankan dalam pen_yahpepijat"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Kejadian Midori sudah pun berjalan tetapi tidak bergerakbalas.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Kejadian Raphael sudah pun berjalan tetapi tidak bergerakbalas.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3316,7 +3316,7 @@ msgstr "Tarikh luput"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Polisi yang digunakan untuk domain tidak dikonfigur secara individu. Ia "
 "hanya bertindakan untuk sekatan set polisi kuki lanjutan dalam tetapan "
@@ -3337,8 +3337,8 @@ msgstr "Gagal mendapatkan ikon aplikasi dalam %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3445,8 +3445,8 @@ msgid "_Quit Midori"
 msgstr "_Keluar Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Pemnindahan akan dibatalkan jika Midori ditutup."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Pemnindahan akan dibatalkan jika Raphael ditutup."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3664,7 +3664,7 @@ msgstr "Webmedia kini-dimainkan"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "Kongsi 'youtube, vimeo, dailymotion, coub dan zippcast' yang anda main di "
-"dalam Midori menggunakan org.midori.mediaHerald"
+"dalam Raphael menggunakan org.midori.mediaHerald"

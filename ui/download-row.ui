@@ -1,5 +1,5 @@
 <interface>
-  <template class="MidoriDownloadRow" parent="GtkListBoxRow">
+  <template class="RaphaelDownloadRow" parent="GtkListBoxRow">
     <property name="can-focus">no</property>
     <property name="activatable">no</property>
     <property name="visible">yes</property>

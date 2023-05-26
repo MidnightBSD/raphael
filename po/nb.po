@@ -29,8 +29,8 @@ msgid "Web Browser"
 msgstr "Nettleser"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Midori Nettleser"
+msgid "Raphael Web Browser"
+msgstr "Raphael Nettleser"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,8 +53,8 @@ msgid "New Private Browsing Window"
 msgstr "Nytt privatsurfing vindu"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori privat nettlesing"
+msgid "Raphael Private Browsing"
+msgstr "Raphael privat nettlesing"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -139,8 +139,8 @@ msgstr "MØNSTER"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Nullstill Midori etter SEKUNDER sekunders inaktivitet"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Nullstill Raphael etter SEKUNDER sekunders inaktivitet"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -361,7 +361,7 @@ msgid ""
 msgstr ""
 "For å bruke URI'en over, åpne en nyhetssamler. Det er vanligvis en meny "
 "eller knap \"Nytt abonnement\", \"Ny nyhetsstrøm\" eller lignende.\n"
-"Alternativt gå til Innstillinger, Programmer i Midori og velg Nyhetssamler. "
+"Alternativt gå til Innstillinger, Programmer i Raphael og velg Nyhetssamler. "
 "Neste gang du velger en nyhetsstrøm fra ikon, blir det lagt til automatisk."
 
 #: ../midori/midori-browser.c:2832 ../extensions/feed-panel/main.c:350
@@ -430,8 +430,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -466,8 +466,8 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape bokmerker"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
-msgstr "Midori kan kun eksportere til XBEL (*.xbel) og Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgstr "Raphael kan kun eksportere til XBEL (*.xbel) og Netscape (*.html)"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1195,8 +1195,8 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori kan ikke finne siden som du ser etter"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael kan ikke finne siden som du ser etter"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1478,8 +1478,8 @@ msgid "Startup"
 msgstr "Oppstart"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Når Midori starter:"
+msgid "When Raphael starts:"
+msgstr "Når Raphael starter:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2253,8 +2253,8 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "Versjonnummer i paranteser viser versjon brukt ved kjøring."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori samler ikke noen personlige data:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael samler ikke noen personlige data:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2270,8 +2270,8 @@ msgstr ""
 "HTML5lagring, lokal database og applikasjonsmellomlagere er skrudd av."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori forhindrer nettsider i å spore brukeren:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael forhindrer nettsider i å spore brukeren:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2761,7 +2761,7 @@ msgid "Browser window"
 msgstr "Nettleservindu"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr "Midori-nettleser instansen som denne visningen tilhører"
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2769,7 +2769,7 @@ msgid "View"
 msgstr "Visning"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr "Midorivisningsinstansen denne visingen tilhører"
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2842,7 +2842,7 @@ msgstr "Tillegginstans"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
+msgid "The Raphael extension instance for this extension"
 msgstr "Midoritillegginstans for dette tillegget"
 
 #: ../extensions/nojs/nojs.c:723
@@ -2852,7 +2852,7 @@ msgstr "Applikasjonsinstans"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
+msgid "The Raphael application instance this extension belongs to"
 msgstr "Midoriapplikasjonsinstansen dette tillegget tilhører"
 
 #: ../extensions/nojs/nojs.c:730
@@ -2911,7 +2911,7 @@ msgid "Mouse Gestures"
 msgstr "Musebevegelser"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
+msgid "Control Raphael by moving the mouse"
 msgstr "Kontroller midori med musebevegelser"
 
 #: ../extensions/shortcuts.c:109
@@ -3120,9 +3120,9 @@ msgstr "Papirkurven kunne ikke lagres. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori kjæsjet sist det ble åpnet. Du kan innrapportere problemet til %s."
+"Raphael kjæsjet sist det ble åpnet. Du kan innrapportere problemet til %s."
 
 #: ../midori/midori-frontend.c:362
 msgid "Modify _preferences"
@@ -3133,7 +3133,7 @@ msgid "Disable all _extensions"
 msgstr "Skru av all_extensions"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
+msgid "Show a dialog after Raphael crashed"
 msgstr "Vis dialog etter Midori-kræsj"
 
 #: ../midori/midori-frontend.c:380
@@ -3149,7 +3149,7 @@ msgid "Run in _debugger"
 msgstr "Kjør i feilsøkingsprogram"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
 msgstr "En annen instans av midori kjører allerede, men svarer ikke.\n"
 
 #: ../midori/midori-frontend.c:516
@@ -3304,7 +3304,7 @@ msgstr "Utløpsdato"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Ingen individuelt fastsatt praksis for bruk av domener. Dette begrenser "
 "ytterligere den globale informasjonskapsels-praksisen satt i Midoris "
@@ -3325,8 +3325,8 @@ msgstr "Kunne ikke innhente applikasjonsikon i %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3433,8 +3433,8 @@ msgid "_Quit Midori"
 msgstr "_Avslutt Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Overføringene vil bli kansellert om Midori avsluttes."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Overføringene vil bli kansellert om Raphael avsluttes."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3644,5 +3644,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""

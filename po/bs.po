@@ -21,16 +21,16 @@ msgstr ""
 
 #: ../data/midori.desktop.in.h:1 ../midori/main.c:142
 #: ../midori/midori-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/midori.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Internet preglednik"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
-msgstr "Midori internet pregledač"
+msgid "Raphael Web Browser"
+msgstr "Raphael internet pregledač"
 
 #: ../data/midori.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,8 +53,8 @@ msgid "New Private Browsing Window"
 msgstr "Novi prozor privatnog pregledanja"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori privatno pregledanje"
+msgid "Raphael Private Browsing"
+msgstr "Raphael privatno pregledanje"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -139,8 +139,8 @@ msgstr "OBRAZAC"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Restartuj Midori nakon SEKUNDE sekundi neaktivnosti"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Restartuj Raphael nakon SEKUNDE sekundi neaktivnosti"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -357,13 +357,13 @@ msgstr "Otvori datoteku"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Da koristite URI iznad otvorite agregator vijesti. Obično ćete tu pronaći "
 "meni ili dugme \"Nova supskripcija\", \"Novi feed vijesti\" ili slično.\n"
-"Ukoliko to ne uspije, otvorite Podešavanja, Aplikacije u Midoriju i "
+"Ukoliko to ne uspije, otvorite Podešavanja, Aplikacije u Raphaelju i "
 "izaberite Agregator vijesti. Sledjeći put kada kliknete na ikonu feeda "
 "vijesti, feed će se dodati automatski."
 
@@ -433,8 +433,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -469,9 +469,9 @@ msgid "Netscape Bookmarks"
 msgstr "Netscape bookmarkovi"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Midori može da eksportuje samo u XBEL (*.xbel) i Netscape (*.html) formatu"
+"Raphael može da eksportuje samo u XBEL (*.xbel) i Netscape (*.html) formatu"
 
 #: ../midori/midori-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1193,7 +1193,7 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr ""
 
 #: ../midori/midori-view.c:1249
@@ -1475,8 +1475,8 @@ msgid "Startup"
 msgstr "Pokretanje"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Kada se Midori pokrene:"
+msgid "When Raphael starts:"
+msgstr "Kada se Raphael pokrene:"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2246,8 +2246,8 @@ msgstr ""
 "pokretanja."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori ne čuva nikakve lične podatke:"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael ne čuva nikakve lične podatke:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2263,8 +2263,8 @@ msgstr ""
 "HTML5 spremanje, lokalne baze podataka i kešovi od aplikacija nisu omogućeni."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori sprječava web stranice da prate korisnike:"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael sprječava web stranice da prate korisnike:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2757,15 +2757,15 @@ msgid "Browser window"
 msgstr "Prozor browser-a"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "Instanca kojoj pripada Midori pretraživač"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "Instanca kojoj pripada Raphael pretraživač"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "Pregledaj"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2836,7 +2836,7 @@ msgstr "Instanca dodatka"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
+msgid "The Raphael extension instance for this extension"
 msgstr ""
 
 #: ../extensions/nojs/nojs.c:723
@@ -2846,7 +2846,7 @@ msgstr "Instanca aplikacije"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
+msgid "The Raphael application instance this extension belongs to"
 msgstr ""
 
 #: ../extensions/nojs/nojs.c:730
@@ -2905,8 +2905,8 @@ msgid "Mouse Gestures"
 msgstr "Gesture mišem"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Kontroliši Midori pokretanjem miša"
+msgid "Control Raphael by moving the mouse"
+msgstr "Kontroliši Raphael pokretanjem miša"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3112,9 +3112,9 @@ msgstr "Nije uspjelo čuvanje smeća. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori je pao zadnji put kada je bio otvoren. Ovaj problem možete da "
+"Raphael je pao zadnji put kada je bio otvoren. Ovaj problem možete da "
 "prijavite na %s."
 
 #: ../midori/midori-frontend.c:362
@@ -3126,8 +3126,8 @@ msgid "Disable all _extensions"
 msgstr "Onemogući sve _dodatke"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
-msgstr "Prikaži dijalog kada Midori padne"
+msgid "Show a dialog after Raphael crashed"
+msgstr "Prikaži dijalog kada Raphael padne"
 
 #: ../midori/midori-frontend.c:380
 msgid "Discard old tabs"
@@ -3142,7 +3142,7 @@ msgid "Run in _debugger"
 msgstr "Pokreni u _debuggeru"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
 msgstr "Već je pokrenuta instanca Midorija, ali ona ne reaguje.\n"
 
 #: ../midori/midori-frontend.c:516
@@ -3288,7 +3288,7 @@ msgstr "Datum isteka"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3306,8 +3306,8 @@ msgstr "Nije uspjelo učitavanje ikone aplikacije u %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3414,7 +3414,7 @@ msgid "_Quit Midori"
 msgstr "_Zatvori Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
+msgid "The transfers will be cancelled if Raphael quits."
 msgstr "Transferi datoteka će biti otkazani ukoliko zatvorite Midori."
 
 #: ../extensions/transfers.vala:568
@@ -3623,5 +3623,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""

@@ -35,7 +35,7 @@ msgid "Web Browser"
 msgstr "Navigateur Web"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
+msgid "Raphael Web Browser"
 msgstr "Navigateur Web Midori"
 
 #: ../data/midori.desktop.in.h:4
@@ -59,8 +59,8 @@ msgid "New Private Browsing Window"
 msgstr "Nouvelle fenêtre de navigation privée"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
-msgstr "Midori (Navigation privée)"
+msgid "Raphael Private Browsing"
+msgstr "Raphael (Navigation privée)"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -146,8 +146,8 @@ msgstr "MODÈLE"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
-msgstr "Réinitialiser Midori après SECONDES secondes d'inactivité"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
+msgstr "Réinitialiser Raphael après SECONDES secondes d'inactivité"
 
 #: ../midori/main.c:111
 msgid "SECONDS"
@@ -444,8 +444,8 @@ msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
-msgstr "Midori 0.2.6"
+msgid "Raphael 0.2.6"
+msgstr "Raphael 0.2.6"
 
 #: ../midori/midori-browser.c:4529
 msgid "Import bookmarks…"
@@ -480,9 +480,9 @@ msgid "Netscape Bookmarks"
 msgstr "Signets Netscape"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Midori peut exporter uniquement vers les formats XBEL (*.xbel) et Netscape "
+"Raphael peut exporter uniquement vers les formats XBEL (*.xbel) et Netscape "
 "(*.html)."
 
 #: ../midori/midori-browser.c:4711
@@ -1255,8 +1255,8 @@ msgstr ""
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
-msgstr "Midori ne peut pas trouver la page que vous cherchez"
+msgid "Raphael can't find the page you're looking for"
+msgstr "Raphael ne peut pas trouver la page que vous cherchez"
 
 #: ../midori/midori-view.c:1249
 #, c-format
@@ -1539,8 +1539,8 @@ msgid "Startup"
 msgstr "Démarrage"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
-msgstr "Au lancement de Midori :"
+msgid "When Raphael starts:"
+msgstr "Au lancement de Raphael :"
 
 #: ../midori/midori-preferences.c:294
 msgid "Homepage:"
@@ -2325,8 +2325,8 @@ msgstr ""
 "utilisez."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
-msgstr "Midori ne stocke aucune donnée personnelle :"
+msgid "Raphael doesn't store any personal data:"
+msgstr "Raphael ne stocke aucune donnée personnelle :"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2343,8 +2343,8 @@ msgstr ""
 "sont désactivés."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
-msgstr "Midori empêche les sites web de traquer l'utilisateur :"
+msgid "Raphael prevents websites from tracking the user:"
+msgstr "Raphael empêche les sites web de traquer l'utilisateur :"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2855,16 +2855,16 @@ msgid "Browser window"
 msgstr "Fenêtre du Navigateur"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
-msgstr "Cette exemple de vue du navigateur web Midori appartient à"
+msgid "The Raphael browser instance this view belongs to"
+msgstr "Cette exemple de vue du navigateur web Raphael appartient à"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
 msgstr "Afficher"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
-msgstr "Cette vue du navigateur web Midori appartient à"
+msgid "The Raphael view instance this view belongs to"
+msgstr "Cette vue du navigateur web Raphael appartient à"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2937,8 +2937,8 @@ msgstr "Instance d'extension"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
-msgstr "L'instance d'extension Midori pour cette extension"
+msgid "The Raphael extension instance for this extension"
+msgstr "L'instance d'extension Raphael pour cette extension"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2947,8 +2947,8 @@ msgstr "Instance d'application"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
-msgstr "L'instance de l'application Midori cette extension appartient à"
+msgid "The Raphael application instance this extension belongs to"
+msgstr "L'instance de l'application Raphael cette extension appartient à"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -3013,8 +3013,8 @@ msgid "Mouse Gestures"
 msgstr "Mouvements de souris"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
-msgstr "Contrôler Midori par des mouvements de la souris"
+msgid "Control Raphael by moving the mouse"
+msgstr "Contrôler Raphael par des mouvements de la souris"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3224,9 +3224,9 @@ msgstr "La corbeille n'a pas pu être enregistrée. %s"
 #: ../midori/midori-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr ""
-"Midori s'est arrêté inopinément lors de votre dernière utilisation. Si ce "
+"Raphael s'est arrêté inopinément lors de votre dernière utilisation. Si ce "
 "problème se répéte, vous pouvez soumettre votre problème à  %s."
 
 #: ../midori/midori-frontend.c:362
@@ -3238,7 +3238,7 @@ msgid "Disable all _extensions"
 msgstr "Désactiver toutes les _extensions"
 
 #: ../midori/midori-frontend.c:375
-msgid "Show a dialog after Midori crashed"
+msgid "Show a dialog after Raphael crashed"
 msgstr "Afficher une fenêtre en cas de fermeture inattendue de Midori"
 
 #: ../midori/midori-frontend.c:380
@@ -3254,8 +3254,8 @@ msgid "Run in _debugger"
 msgstr "Exécuter dans _debugger"
 
 #: ../midori/midori-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
-msgstr "Une instance de Midori est déjà lancée mais ne répond pas.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
+msgstr "Une instance de Raphael est déjà lancée mais ne répond pas.\n"
 
 #: ../midori/midori-frontend.c:516
 #, c-format
@@ -3412,7 +3412,7 @@ msgstr "Date d'expiration"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "La politique à appliquer pour les domaines n'est pas configurée "
 "individuellement. Cela n'agit que pour restreindre davantage la politique "
@@ -3433,8 +3433,8 @@ msgstr "Échec de la récupération de l'icone de l'application dans %s: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
-msgstr "Midori (%s)"
+msgid "Raphael (%s)"
+msgstr "Raphael (%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
 #: ../extensions/apps.vala:160
@@ -3544,8 +3544,8 @@ msgid "_Quit Midori"
 msgstr "_Quitter Midori"
 
 #: ../extensions/transfers.vala:519
-msgid "The transfers will be cancelled if Midori quits."
-msgstr "Les transferts seront annulés si Midori se ferme."
+msgid "The transfers will be cancelled if Raphael quits."
+msgstr "Les transferts seront annulés si Raphael se ferme."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"
@@ -3764,7 +3764,7 @@ msgstr "Webmédia en cours de lecture"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.midori.mediaHerald"
+"in Raphael using org.midori.mediaHerald"
 msgstr ""
 "Partager votre activité sur 'youtube, vimeo, dailymotion, coub et zippcast' "
-"avec Midori en utilisant org.midori.mediaHerald"
+"avec Raphael en utilisant org.midori.mediaHerald"

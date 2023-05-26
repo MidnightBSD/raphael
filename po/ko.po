@@ -40,7 +40,7 @@ msgid "Web Browser"
 msgstr "웹 브라우저"
 
 #: ../data/midori.desktop.in.h:3
-msgid "Midori Web Browser"
+msgid "Raphael Web Browser"
 msgstr "미도리 웹 브라우저"
 
 #: ../data/midori.desktop.in.h:4
@@ -64,7 +64,7 @@ msgid "New Private Browsing Window"
 msgstr "새 사생활 보호 모드 창"
 
 #: ../data/midori-private.desktop.in.h:1
-msgid "Midori Private Browsing"
+msgid "Raphael Private Browsing"
 msgstr "미도리 개인 정보 보호 모드"
 
 #: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
@@ -150,7 +150,7 @@ msgstr "[패턴]"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../midori/main.c:111
-msgid "Reset Midori after SECONDS seconds of inactivity"
+msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr "수 초 이상 활동이 없을 경우 미도리 초기화"
 
 #: ../midori/main.c:111
@@ -437,7 +437,7 @@ msgid "Firefox (%s)"
 msgstr "파이어폭스(%s)"
 
 #: ../midori/midori-browser.c:4511
-msgid "Midori 0.2.6"
+msgid "Raphael 0.2.6"
 msgstr "미도리 0.2.6"
 
 #: ../midori/midori-browser.c:4529
@@ -473,7 +473,7 @@ msgid "Netscape Bookmarks"
 msgstr "넷스케이프 책갈피"
 
 #: ../midori/midori-browser.c:4699
-msgid "Midori can only export to XBEL (*.xbel) and Netscape (*.html)"
+msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr "미도리는 XBEL(*.xbel) 그리고 넷스케이프(*.html)로만 내보낼 수 있습니다"
 
 #: ../midori/midori-browser.c:4711
@@ -1190,7 +1190,7 @@ msgstr "사용자는 네트워크에는 연결되어 있지만 “%s”에 연�
 
 #: ../midori/midori-view.c:1248
 #, c-format
-msgid "Midori can't find the page you're looking for"
+msgid "Raphael can't find the page you're looking for"
 msgstr "미도리가 페이지를 찾을 수 없습니다."
 
 #: ../midori/midori-view.c:1249
@@ -1466,7 +1466,7 @@ msgid "Startup"
 msgstr "시작"
 
 #: ../midori/midori-preferences.c:289
-msgid "When Midori starts:"
+msgid "When Raphael starts:"
 msgstr "미도리를 시작할 때:"
 
 #: ../midori/midori-preferences.c:294
@@ -2227,7 +2227,7 @@ msgid "Version numbers in brackets show the version used at runtime."
 msgstr "괄호 안의 버전 번호는 실행 중인 미도리가 사용하고 있는 버전입니다."
 
 #: ../extensions/about.vala:177
-msgid "Midori doesn't store any personal data:"
+msgid "Raphael doesn't store any personal data:"
 msgstr "미도리는 어떤 개인 정보도 보존하지 않습니다:"
 
 #: ../extensions/about.vala:178
@@ -2243,7 +2243,7 @@ msgid "HTML5 storage, local database and application caches are disabled."
 msgstr "HTML5 저장소, 로컬 데이터베이스 그리고 프로그램 캐시를 사용하지 않습니다."
 
 #: ../extensions/about.vala:181
-msgid "Midori prevents websites from tracking the user:"
+msgid "Raphael prevents websites from tracking the user:"
 msgstr "미도리가 사용자를 추적할 수 없게 합니다.:"
 
 #: ../extensions/about.vala:182
