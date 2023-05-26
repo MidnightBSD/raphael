@@ -53,5 +53,5 @@ namespace StatusClock {
 [ModuleInit]
 public void peas_register_types(TypeModule module) {
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.BrowserActivatable), typeof (StatusClock.Frontend));
+        typeof (Raphael.BrowserActivatable), typeof (StatusClock.Frontend));
 }

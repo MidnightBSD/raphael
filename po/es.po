@@ -26,8 +26,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -35,7 +35,7 @@ msgstr "Navegador web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Navegador web Midori"
+msgstr "Navegador web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -59,7 +59,7 @@ msgstr "Ventana de navegación privada nueva"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Navegación privada Midori"
+msgstr "Navegación privada Raphael"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -362,7 +362,7 @@ msgstr "Abrir archivo"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -439,7 +439,7 @@ msgstr "Firefox (%s)"
 
 #: ../raphael/raphael-browser.c:4511
 msgid "Raphael 0.2.6"
-msgstr "Midori"
+msgstr "Raphael"
 
 #: ../raphael/raphael-browser.c:4529
 msgid "Import bookmarks…"
@@ -3156,8 +3156,8 @@ msgid "Last open _tabs"
 msgstr "Últimas _pestañas abiertas"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Limpiar los datos privados al _salir de Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Limpiar los datos privados al _salir de Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3411,7 +3411,7 @@ msgid ""
 msgstr ""
 "Política que se usará en los dominios no configurados individualmente. Solo "
 "actuará para potenciar la restricción de la política global de cookies "
-"establecida en la configuración de Midori."
+"establecida en la configuración de Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3532,8 +3532,8 @@ msgid "Some files are being downloaded"
 msgstr "Se está descargando algunos archivos"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Cerrar Midori"
+msgid "_Quit Raphael"
+msgstr "_Cerrar Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

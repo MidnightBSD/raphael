@@ -1,4 +1,4 @@
-# Finnish translations for Midori.
+# Finnish translations for Raphael.
 # Copyright (C) 2007-2011 Christian Dywan <christian@twotoasts.de>
 # This file is distributed under the same license as the raphael package.
 # Elias Julkunen <elias.julkunen@gmail.com>, 2008
@@ -21,8 +21,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -30,7 +30,7 @@ msgstr "Verkkoselain"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Midori-verkkoselain"
+msgstr "Raphael-verkkoselain"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -54,7 +54,7 @@ msgstr "Uusi yksityisen selauksen ikkuna"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Midori-yksityisselaus"
+msgstr "Raphael-yksityisselaus"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -357,13 +357,13 @@ msgstr "Avaa tiedosto"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Avaa yllä oleva URI-osoite uutistenlukuohjelmassa. Tämä onnistuu "
 "lukuohjelman toiminnolla \"Lisää tilaus\", \"Lisää syöte\" tms.\n"
-"Vaihtoehtoisesti voit avata Midorin asetukset ja valita sovellukset-"
+"Vaihtoehtoisesti voit avata Raphael asetukset ja valita sovellukset-"
 "välilehdeltä uutistenlukuohjelman. Tällöin uutissyötekuvakkeen "
 "napsauttaminen lisää syötteen automaattisesti."
 
@@ -2913,7 +2913,7 @@ msgstr "Hiirieleet"
 
 #: ../extensions/mouse-gestures.c:525
 msgid "Control Raphael by moving the mouse"
-msgstr "Ohjaa Midoria hiiren liikkeillä"
+msgstr "Ohjaa Raphael hiiren liikkeillä"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3057,7 +3057,7 @@ msgid "Last open _tabs"
 msgstr "Viim_eksi avoinna olleet välilehdet"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr "Poista yksityisyystiedot, kun _Raphael suljetaan"
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3425,8 +3425,8 @@ msgid "Some files are being downloaded"
 msgstr "Tiedostojen lataus on kesken"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Lopeta Midori"
+msgid "_Quit Raphael"
+msgstr "_Lopeta Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
@@ -3643,5 +3643,5 @@ msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
 "in Raphael using org.raphael.mediaHerald"
 msgstr ""
-"Jaa tiedot Midorissa toistettavista Youtube-, Vimeo-, Dailymotion-, Coub- ja "
+"Jaa tiedot Raphael toistettavista Youtube-, Vimeo-, Dailymotion-, Coub- ja "
 "Zippcast-medioista käyttäen \"org.raphael.mediaHerald\"-ominaisuutta"

@@ -1,4 +1,4 @@
-package org.midori_browser.midori
+package org.midnightbsd.raphael
 
 import android.os.Message
 import android.support.v7.widget.Toolbar

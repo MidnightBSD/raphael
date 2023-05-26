@@ -1,7 +1,7 @@
 # Simplified Chinese translations for
 # the raphael package.
 # This file is distributed under the same license as
-# the midori package.
+# the raphael package.
 # Stanley Zhang <yatzhang@gmail.com>, 2009.
 # Hunt Xu <mhuntxu@gmail.com>, 2009, 2010, 2011, 2012.
 # Chipong Luo <chipong.luo@yahoo.com>, 2011, 2012.

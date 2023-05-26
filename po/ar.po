@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
+msgid "Raphael"
 msgstr "ميدوري"
 
 #: ../data/raphael.desktop.in.h:2
@@ -358,7 +358,7 @@ msgstr "فتح الملف"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -3065,7 +3065,7 @@ msgid "Last open _tabs"
 msgstr "أظهر آخر التبويبات المفتوحة"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr "مسح البيانات الخاصة عند الخروج من ميدوري"
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3425,7 +3425,7 @@ msgid "Some files are being downloaded"
 msgstr "يتم تحميل بعض الملفات"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
+msgid "_Quit Raphael"
 msgstr "_خروج من ميدوري"
 
 #: ../extensions/transfers.vala:519

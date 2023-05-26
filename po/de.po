@@ -2828,7 +2828,7 @@ msgstr "Browserfenster"
 
 #: ../extensions/nojs/nojs-view.c:710
 msgid "The Raphael browser instance this view belongs to"
-msgstr "Diese Instanz des Midori-Browsers gehört zu"
+msgstr "Diese Instanz des Raphael-Browsers gehört zu"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
@@ -2912,7 +2912,7 @@ msgstr "Instanz der Erweiterung"
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
 msgid "The Raphael extension instance for this extension"
-msgstr "Die Instanz von Midori's Erweiterungen für diese Erweiterung"
+msgstr "Die Instanz von Raphael's Erweiterungen für diese Erweiterung"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2922,7 +2922,7 @@ msgstr "Anwendungsinstanz"
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
 msgid "The Raphael application instance this extension belongs to"
-msgstr "Die Midori-Anwendungsinstanz zu der diese Erweiterung gehört"
+msgstr "Die Raphael-Anwendungsinstanz zu der diese Erweiterung gehört"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -3130,7 +3130,7 @@ msgid "Last open _tabs"
 msgstr "_Zuletzt geöffnete Tabs"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr "Private Daten beim _Beenden von Raphael löschen"
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3386,7 +3386,7 @@ msgid ""
 msgstr ""
 "Richtlinie zur Nutzung mit nicht individuell konfigurierten Domains. Diese "
 "Einstellung betrifft nur zukünftige Einschränkungen der globalen Cookie-"
-"Richtlinien in den Midori-Einstellungen."
+"Richtlinien in den Raphael-Einstellungen."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3507,7 +3507,7 @@ msgid "Some files are being downloaded"
 msgstr "Einige Dateien werden gerade heruntergeladen."
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
+msgid "_Quit Raphael"
 msgstr "Raphael _beenden"
 
 #: ../extensions/transfers.vala:519

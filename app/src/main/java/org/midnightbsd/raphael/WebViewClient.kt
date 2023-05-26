@@ -1,4 +1,4 @@
-package org.midori_browser.midori
+package org.midnightbsd.raphael
 
 import android.content.Context
 import android.content.Intent

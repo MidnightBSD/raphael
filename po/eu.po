@@ -20,8 +20,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -354,7 +354,7 @@ msgstr "Ireki fitxategia"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -461,7 +461,7 @@ msgstr "Netscape-ren laster-markak"
 #: ../raphael/raphael-browser.c:4699
 msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"Midorik soilik XBEL-era (*.xbel) eta Netscape-era (*.html) exportatu dezake"
+"Raphael soilik XBEL-era (*.xbel) eta Netscape-era (*.html) exportatu dezake"
 
 #: ../raphael/raphael-browser.c:4711
 msgid "Failed to export bookmarks"
@@ -1180,7 +1180,7 @@ msgstr ""
 #: ../raphael/raphael-view.c:1248
 #, c-format
 msgid "Raphael can't find the page you're looking for"
-msgstr "Midori-k ezin du aurkitu bilatzen ari zaren orria"
+msgstr "Raphael-k ezin du aurkitu bilatzen ari zaren orria"
 
 #: ../raphael/raphael-view.c:1249
 #, c-format
@@ -2226,7 +2226,7 @@ msgstr ""
 
 #: ../extensions/about.vala:177
 msgid "Raphael doesn't store any personal data:"
-msgstr "Midori-k ez du datu pertsonalik gordetzen:"
+msgstr "Raphael-k ez du datu pertsonalik gordetzen:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -3013,7 +3013,7 @@ msgid "Last open _tabs"
 msgstr ""
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr "Garbitu datu pribatuak Raphael ixtean"
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3090,7 +3090,7 @@ msgstr "Desgaitu _hedapen guztiak"
 
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "Erakutsi elkarrizketa-koadro bat Midorik kraskatzean"
+msgstr "Erakutsi elkarrizketa-koadro bat Raphael kraskatzean"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3373,8 +3373,8 @@ msgid "Some files are being downloaded"
 msgstr "Zenbait fitxategi deskargatzen ari dira"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Irten Midori-tik"
+msgid "_Quit Raphael"
+msgstr "_Irten Raphael-tik"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

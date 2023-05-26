@@ -1,4 +1,4 @@
-package org.midori_browser.midori
+package org.midnightbsd.raphael
 
 import android.content.Context
 import android.content.Intent
@@ -94,17 +94,14 @@ class BrowserActivity : AppCompatActivity() {
     fun uriForSearch(keywords: String? = null, search: String? = null): String {
         val uri = search ?: locationEntrySearch
         val escaped = Uri.encode(keywords ?: "", ":/")
-        // Allow DuckDuckGo to distinguish Midori and in turn share revenue
-        if (uri == "https://duckduckgo.com/?q=%s") {
-            return "https://duckduckgo.com/?q=$escaped&t=midori"
-        } else if ("%s" in uri) {
+        if ("%s" in uri) {
             return uri.format(escaped)
         }
         return uri + escaped
 
     }
 
-    val completion = listOf("www.midori-browser.org", "example.com", "duckduckgo.com")
+    val completion = listOf("www.midnightbsd.org", "example.com", "duckduckgo.com")
     fun requestDesktopSite(desktopSite: Boolean) {
         webView.settings.apply {
             userAgentString = null // Reset to default

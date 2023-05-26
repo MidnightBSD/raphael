@@ -3152,7 +3152,7 @@ msgstr "Выключыць _усе прыстаўкі"
 
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "Паказваць гэты дыялог пасля аварыйнага завяршэння Midori"
+msgstr "Паказваць гэты дыялог пасля аварыйнага завяршэння Raphael"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3325,7 +3325,7 @@ msgid ""
 "further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Палітыка для несканфігураваных індывідуальна даменаў. Дзейнічае толькі як "
-"узмацненне строгасці глабальнай палітыкі для кукаў у настройках Midori."
+"узмацненне строгасці глабальнай палітыкі для кукаў у настройках Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3446,12 +3446,12 @@ msgid "Some files are being downloaded"
 msgstr "Некаторыя файлы яшчэ цягнуцца"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "Вы_йсці з Midori"
+msgid "_Quit Raphael"
+msgstr "Вы_йсці з Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
-msgstr "Перасыланні будуць скасаваныя, калі выйсці з Midori."
+msgstr "Перасыланні будуць скасаваныя, калі выйсці з Raphael."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"

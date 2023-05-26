@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -32,7 +32,7 @@ msgstr "Brabhsair-lìn"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Brabhsair-lìn Midori"
+msgstr "Brabhsair-lìn Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"

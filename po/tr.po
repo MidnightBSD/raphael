@@ -20,8 +20,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -139,7 +139,7 @@ msgstr "ÖRNEK"
 #. i18n: CLI: Close tabs, clear private data, open starting page
 #: ../raphael/main.c:111
 msgid "Reset Raphael after SECONDS seconds of inactivity"
-msgstr "Kullanılmazken Midori'yi SECONDS saniye sonra yeniden başlat"
+msgstr "Kullanılmazken Raphael'yi SECONDS saniye sonra yeniden başlat"
 
 #: ../raphael/main.c:111
 msgid "SECONDS"
@@ -356,14 +356,14 @@ msgstr "Dosya aç"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Yukarıdaki URI'yi kullanmak için bir haber toplayıcı açın. Genellikle bir "
 "menü veya \"Yeni Abonelik\", \"Yeni Haber Kaynağı\" ya da benzer bir düğme "
 "bulunur.\n"
-"Alternatif olarak Midori'de Tercihler,Gözden Geçiriliyor'a gidin ve bir "
+"Alternatif olarak Raphael'de Tercihler,Gözden Geçiriliyor'a gidin ve bir "
 "haber toplayıcı seçin. Haber kaynağı simgesine tekrar tıkladığınızda "
 "otomatik olarak eklenecektir."
 
@@ -3063,8 +3063,8 @@ msgid "Last open _tabs"
 msgstr "Son açılmış sekmeler"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Midori'den çıkıldığında kişisel verileri temizle"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Raphael'den çıkıldığında kişisel verileri temizle"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3156,7 +3156,7 @@ msgstr ""
 
 #: ../raphael/raphael-frontend.c:479
 msgid "An instance of Raphael is already running but not responding.\n"
-msgstr "Şu anda Midori'nin başka bir örneği çalışıyor; ama cevap vermiyor.\n"
+msgstr "Şu anda Raphael'nin başka bir örneği çalışıyor; ama cevap vermiyor.\n"
 
 #: ../raphael/raphael-frontend.c:516
 #, c-format
@@ -3423,8 +3423,8 @@ msgid "Some files are being downloaded"
 msgstr "Bazı dosyalar indiriliyor"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "Midori'den _çık"
+msgid "_Quit Raphael"
+msgstr "Raphael'den _çık"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

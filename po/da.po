@@ -22,8 +22,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -31,7 +31,7 @@ msgstr "Webbrowser"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Midori-webbrowser"
+msgstr "Raphael-webbrowser"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -356,7 +356,7 @@ msgstr "Åbn fil"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -3048,7 +3048,7 @@ msgid "Last open _tabs"
 msgstr "Sidste åbne _faneblade"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr "_Ryd private data når Raphael afsluttes"
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3125,7 +3125,7 @@ msgstr "Slå alle _udvidelser fra"
 
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "Vis en dialog efter nedbrud af Midori"
+msgstr "Vis en dialog efter nedbrud af Raphael"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3408,8 +3408,8 @@ msgid "Some files are being downloaded"
 msgstr "Nogle filer bliver overført"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Afslut Midori"
+msgid "_Quit Raphael"
+msgstr "_Afslut Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

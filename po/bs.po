@@ -3048,8 +3048,8 @@ msgid "Last open _tabs"
 msgstr "Zadnje otvoreni _tabovi"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Obriši privatne podatke prilikom zatvaranja Midorija"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Obriši privatne podatke prilikom zatvaranja Raphaelja"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3143,7 +3143,7 @@ msgstr "Pokreni u _debuggeru"
 
 #: ../raphael/raphael-frontend.c:479
 msgid "An instance of Raphael is already running but not responding.\n"
-msgstr "Već je pokrenuta instanca Midorija, ali ona ne reaguje.\n"
+msgstr "Već je pokrenuta instanca Raphaelja, ali ona ne reaguje.\n"
 
 #: ../raphael/raphael-frontend.c:516
 #, c-format
@@ -3410,12 +3410,12 @@ msgid "Some files are being downloaded"
 msgstr "U toku je proces preuzimanja nekih datoteka"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Zatvori Midori"
+msgid "_Quit Raphael"
+msgstr "_Zatvori Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
-msgstr "Transferi datoteka će biti otkazani ukoliko zatvorite Midori."
+msgstr "Transferi datoteka će biti otkazani ukoliko zatvorite Raphael."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"

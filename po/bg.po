@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
+msgid "Raphael"
 msgstr "Мидори"
 
 #: ../data/raphael.desktop.in.h:2
@@ -31,7 +31,7 @@ msgstr "Уеб Браузър"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Уеб браузър Midori"
+msgstr "Уеб браузър Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -356,7 +356,7 @@ msgstr "Отваряне на файл"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -1488,7 +1488,7 @@ msgstr "Стартиране"
 
 #: ../raphael/raphael-preferences.c:289
 msgid "When Raphael starts:"
-msgstr "При стартиране на Midori:"
+msgstr "При стартиране на Raphael:"
 
 #: ../raphael/raphael-preferences.c:294
 msgid "Homepage:"
@@ -3087,8 +3087,8 @@ msgid "Last open _tabs"
 msgstr "Последните отворени раздели"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Изчистване на личните данни при затваряне на Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Изчистване на личните данни при затваряне на Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3167,7 +3167,7 @@ msgstr "Изключване на всички разширения"
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
 msgstr ""
-"Показване на прозорец за действие при аварийно спиране на работата на Midori"
+"Показване на прозорец за действие при аварийно спиране на работата на Raphael"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3461,8 +3461,8 @@ msgid "Some files are being downloaded"
 msgstr "Няколко файла бяха свалени"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "Затваряне на Midori"
+msgid "_Quit Raphael"
+msgstr "Затваряне на Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

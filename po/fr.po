@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -36,7 +36,7 @@ msgstr "Navigateur Web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Navigateur Web Midori"
+msgstr "Navigateur Web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -367,14 +367,14 @@ msgstr "Ouvrir le fichier"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Pour utiliser l'URI ci-dessus ouvrez un agrégateur de flux. Il y a "
 "habituellement un menu ou un bouton \"Nouvel abonnement\", \"Nouvelles RSS "
 "\" ou similaires.\n"
-"Alternativement allez dans Préférences, Applications de Midori, et "
+"Alternativement allez dans Préférences, Applications de Raphael, et "
 "sélectionnez un agrégateur de flux. La prochaine fois que vous cliquerez sur "
 "l'icône de fil de nouvelles, il sera ajouté automatiquement."
 
@@ -497,7 +497,7 @@ msgstr "Un navigateur Internet léger."
 msgid "See about:version for version info."
 msgstr ""
 "Consultez about:version pour obtenir des informations à propos de la version "
-"de Midori."
+"de Raphael."
 
 #: ../raphael/raphael-browser.c:4902
 msgid ""
@@ -3160,8 +3160,8 @@ msgid "Last open _tabs"
 msgstr "Derniers ongle_ts ouverts"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Effacer les informations privées en _quittant Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Effacer les informations privées en _quittant Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3239,7 +3239,7 @@ msgstr "Désactiver toutes les _extensions"
 
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "Afficher une fenêtre en cas de fermeture inattendue de Midori"
+msgstr "Afficher une fenêtre en cas de fermeture inattendue de Raphael"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3416,7 +3416,7 @@ msgid ""
 msgstr ""
 "La politique à appliquer pour les domaines n'est pas configurée "
 "individuellement. Cela n'agit que pour restreindre davantage la politique "
-"globale des cookies définie dans les paramètres de Midori."
+"globale des cookies définie dans les paramètres de Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3540,8 +3540,8 @@ msgid "Some files are being downloaded"
 msgstr "Des fichiers sont en cours de téléchargement"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Quitter Midori"
+msgid "_Quit Raphael"
+msgstr "_Quitter Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

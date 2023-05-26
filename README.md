@@ -150,7 +150,7 @@ Raphael code should in general have:
   * Call variables `animal` and `animal_shelter` instead of ~camelCase~
   * Keep a space between functions/ keywords and round parentheses
   * Prefer `new Gtk.Widget ()` over `using Gtk; new Widget ()`
-  * `Midori` and `GLib` namespaces should be omitted
+  * `Raphael` and `GLib` namespaces should be omitted
   * Don't use `private` specifiers (which is the default)
   * Stick to standard Vala-style curly parentheses on the same line
   * Cuddled `} else {` and `} catch (Error error) {`
@@ -289,9 +289,9 @@ The following API specification is supported by Raphael:
 * **katze, sokoke, tabby**: legacy API names and coincidentally cat breeds
 * web extension: a cross-browser extension (plugin) - or in a webkit context, the multi-process api
 
-# Midori for Android
+# Raphael for Android
 
-The easiest way to build, develop and test Midori on Android is with [Android Studio](https://developer.android.com/studio/#downloads) ([snap](https://snapcraft.io/android-studio)).
+The easiest way to build, develop and test Raphael on Android is with [Android Studio](https://developer.android.com/studio/#downloads) ([snap](https://snapcraft.io/android-studio)).
 
 When working with the command line, setting `JAVA_HOME` is paramount:
 
@@ -301,13 +301,13 @@ Afterwards you can run commands like so:
 
     ./gradlew lint test
 
-# Midori for Windows
+# Raphael for Windows
 
 ## For Linux developers
 
 ### Dependencies
 
-Midori for Windows is compiled on a Linux host and MinGW stack. For the current build Fedora 18 packages are used. Packages needed are listed below:
+Raphael for Windows is compiled on a Linux host and MinGW stack. For the current build Fedora 18 packages are used. Packages needed are listed below:
 
     yum install gcc vala intltool
 
@@ -323,7 +323,7 @@ Packages needed when assembling the archive
 
     yum install faenza-icon-theme p7zip mingw32-nsis greybird-gtk3-theme
 
-Installing those should get you the packages needed to successfully build and develop Midori for Win32.
+Installing those should get you the packages needed to successfully build and develop Raphael for Win32.
 
 ### Building
 
@@ -343,7 +343,7 @@ For 64-bit builds:
     make
     sudo make install
 
-Once built and tested you can assemble the Midori archive with a helper script
+Once built and tested you can assemble the Raphael archive with a helper script
 
 32-bit build:
 

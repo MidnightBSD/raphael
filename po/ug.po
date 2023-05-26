@@ -21,8 +21,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "مىدورى(Midori)"
+msgid "Raphael"
+msgstr "مىدورى(Raphael)"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -30,7 +30,7 @@ msgstr "توركۆرگۈ"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "مىدورى(Midori) توركۆرگۈ"
+msgstr "مىدورى(Raphael) توركۆرگۈ"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -54,7 +54,7 @@ msgstr "يېڭى شەخسىي كۆرۈش كۆزنىكى"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "مىدورى(Midori) شەخسىي كۆرۈش"
+msgstr "مىدورى(Raphael) شەخسىي كۆرۈش"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -151,7 +151,7 @@ msgstr "PATTERN"
 #: ../raphael/main.c:111
 msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr ""
-"مىدورى(Midori) ئاكتىپ ئەمەس ھالەتتە SECONDS سېكۇنت تۇرسا،  Raphael نى ئەسلىگە "
+"مىدورى(Raphael) ئاكتىپ ئەمەس ھالەتتە SECONDS سېكۇنت تۇرسا،  Raphael نى ئەسلىگە "
 "قايتىدۇ"
 
 #: ../raphael/main.c:111
@@ -369,14 +369,14 @@ msgstr "ھۆججەتنى ئاچ"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "يۇقىرىدىكى URI نى ئىشلىتىش ئۈچۈن خەۋەر ئوقۇغۇچ(news aggregator) نى ئېچىڭ. بۇ "
 "يەردە ئادەتتە «يېڭىدىن مۇشتەرى بولىمەن»، «يېڭى خەۋەر ئوقۇغۇچ» ياكى بولمىسا "
 "شۇنىڭغا يېقىن مەنىدىكى توپچا بار بولىدۇ.\n"
-"ياكى بولمىسا مىدورى(Midori) نىڭ مايىللىق دېگەن يېرىگە بېرىپ، خەۋەر "
+"ياكى بولمىسا مىدورى(Raphael) نىڭ مايىللىق دېگەن يېرىگە بېرىپ، خەۋەر "
 "ئوقۇغۇچ(news aggregator)نى تاللاڭ. شۇنىڭ بىلەن كېيىن قېتىم خەۋەر ئوقۇغۇچ "
 "سىنبەلگىسىنى چەكسىڭىز، ئاپتوماتىك قوشۇلىدۇ."
 
@@ -485,7 +485,7 @@ msgstr "Netscape خەتكۈش"
 #: ../raphael/raphael-browser.c:4699
 msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
-"مىدورى(Midori) پەقەتلا XBEL (*.xbel) ۋە Netscape (*.html) غا ئېكسپورت "
+"مىدورى(Raphael) پەقەتلا XBEL (*.xbel) ۋە Netscape (*.html) غا ئېكسپورت "
 "قىلالايدۇ"
 
 #: ../raphael/raphael-browser.c:4711
@@ -1506,7 +1506,7 @@ msgstr "قوزغات"
 
 #: ../raphael/raphael-preferences.c:289
 msgid "When Raphael starts:"
-msgstr "مىدورى(Midori) قوزغالغاندا:"
+msgstr "مىدورى(Raphael) قوزغالغاندا:"
 
 #: ../raphael/raphael-preferences.c:294
 msgid "Homepage:"
@@ -2303,7 +2303,7 @@ msgstr ""
 
 #: ../extensions/about.vala:177
 msgid "Raphael doesn't store any personal data:"
-msgstr "مىدورى(Midori) ھېچقانداق شەخسىي ئۇچۇرلارنى ساقلىمايدۇ:"
+msgstr "مىدورى(Raphael) ھېچقانداق شەخسىي ئۇچۇرلارنى ساقلىمايدۇ:"
 
 #: ../extensions/about.vala:178
 msgid "No history or web cookies are being saved."
@@ -2319,7 +2319,7 @@ msgstr "يەرلىك ساندان، HTML5 ساقلىغۇچى ۋە پروگرام
 
 #: ../extensions/about.vala:181
 msgid "Raphael prevents websites from tracking the user:"
-msgstr "مىدورى(Midori) تورتۇرالارنىڭ ئىشلەتكۈچىنى ئىزلىشىنى توسىدۇ:"
+msgstr "مىدورى(Raphael) تورتۇرالارنىڭ ئىشلەتكۈچىنى ئىزلىشىنى توسىدۇ:"
 
 #: ../extensions/about.vala:182
 msgid "Referrer URLs are stripped down to the hostname."
@@ -2957,7 +2957,7 @@ msgstr "چاشقىنەك ئىشارىتى"
 # description
 #: ../extensions/mouse-gestures.c:525
 msgid "Control Raphael by moving the mouse"
-msgstr "چاشقىنەك ھەرىكىتىدە مىدورى(Midori) نى باشقۇرىدۇ"
+msgstr "چاشقىنەك ھەرىكىتىدە مىدورى(Raphael) نى باشقۇرىدۇ"
 
 #: ../extensions/shortcuts.c:109
 msgid "Reload page or stop loading"
@@ -3106,9 +3106,9 @@ msgid "Last open _tabs"
 msgstr "ئەڭ ئاخىرىدا ئېچىلغان بەتكۈچلەر"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr ""
-"مىدورى(Midori) نى ئاخىرلاشقاندا شەخسىي سانلىق-مەلۇماتلار تازىلانسۇن(_Q)"
+"مىدورى(Raphael) نى ئاخىرلاشقاندا شەخسىي سانلىق-مەلۇماتلار تازىلانسۇن(_Q)"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3185,7 +3185,7 @@ msgstr "بارلىق كېڭەيتمىنى چەكلە(_E)"
 # tooltip
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "مىدورى(Midori)  غۇلاپ كېتىپ، قايتا قوزغالغاندا كۆزنەك كۆرسىتىدۇ"
+msgstr "مىدورى(Raphael)  غۇلاپ كېتىپ، قايتا قوزغالغاندا كۆزنەك كۆرسىتىدۇ"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3201,7 +3201,7 @@ msgstr ""
 
 #: ../raphael/raphael-frontend.c:479
 msgid "An instance of Raphael is already running but not responding.\n"
-msgstr "مىدورى(Midori)نىڭ ئۈلگىسى ئىجرا قىلىنىۋېتىپتۇ بىراق ئىنكاس يوق.\n"
+msgstr "مىدورى(Raphael)نىڭ ئۈلگىسى ئىجرا قىلىنىۋېتىپتۇ بىراق ئىنكاس يوق.\n"
 
 #: ../raphael/raphael-frontend.c:516
 #, c-format
@@ -3468,12 +3468,12 @@ msgid "Some files are being downloaded"
 msgstr "بەزى ھۆججەتلەر چۈشۈرۈلىدۇ"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "مىدورى(Midori) نى ئاخىرلاشتۇر(_Q)"
+msgid "_Quit Raphael"
+msgstr "مىدورى(Raphael) نى ئاخىرلاشتۇر(_Q)"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
-msgstr "مىدورى(Midori) ئاخىرلاشتۇرۇلسا ئۇزىتىشلار ئۈزۈلىدۇ."
+msgstr "مىدورى(Raphael) ئاخىرلاشتۇرۇلسا ئۇزىتىشلار ئۈزۈلىدۇ."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"

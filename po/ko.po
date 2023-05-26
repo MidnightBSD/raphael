@@ -2736,7 +2736,7 @@ msgid "Browser window"
 msgstr "브라우저 창"
 
 #: ../extensions/nojs/nojs-view.c:710
-msgid "The Midori browser instance this view belongs to"
+msgid "The Raphael browser instance this view belongs to"
 msgstr "이 보기가 속하는 미도리 브라우저 인스턴스"
 
 #: ../extensions/nojs/nojs-view.c:716
@@ -2744,7 +2744,7 @@ msgid "View"
 msgstr "보기"
 
 #: ../extensions/nojs/nojs-view.c:717
-msgid "The Midori view instance this view belongs to"
+msgid "The Raphael view instance this view belongs to"
 msgstr "이 보기가 속하는 미도리 보기 인스턴스"
 
 #: ../extensions/nojs/nojs-view.c:723
@@ -2815,7 +2815,7 @@ msgstr "확장 기능 인스턴스"
 
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
-msgid "The Midori extension instance for this extension"
+msgid "The Raphael extension instance for this extension"
 msgstr "이 확장 기능의 미도리 확장 기능 인스턴스"
 
 #: ../extensions/nojs/nojs.c:723
@@ -2825,7 +2825,7 @@ msgstr "프로그램 인스턴스"
 
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
-msgid "The Midori application instance this extension belongs to"
+msgid "The Raphael application instance this extension belongs to"
 msgstr "이 확장 기능에 해당하는 미도리 프로그램 인스턴스"
 
 #: ../extensions/nojs/nojs.c:730
@@ -2884,7 +2884,7 @@ msgid "Mouse Gestures"
 msgstr "마우스 제스처"
 
 #: ../extensions/mouse-gestures.c:525
-msgid "Control Midori by moving the mouse"
+msgid "Control Raphael by moving the mouse"
 msgstr "마우스의 움직임으로 미도리를 조정합니다"
 
 #: ../extensions/shortcuts.c:109
@@ -3091,7 +3091,7 @@ msgstr "휴지통을 저장할 수 없습니다.%s"
 #: ../raphael/raphael-frontend.c:353
 #, c-format
 msgid ""
-"Midori crashed the last time it was opened. You can report the problem at %s."
+"Raphael crashed the last time it was opened. You can report the problem at %s."
 msgstr "미도리를 마지막으로 실행했을 때 비 정상적으로 끝난 것 같습니다. 문제는 %s에 보고해주십시오."
 
 #: ../raphael/raphael-frontend.c:362
@@ -3103,7 +3103,7 @@ msgid "Disable all _extensions"
 msgstr "모든 확장 기능 사용하지 않기(_E)"
 
 #: ../raphael/raphael-frontend.c:375
-msgid "Show a dialog after Midori crashed"
+msgid "Show a dialog after Raphael crashed"
 msgstr "미도리가 충돌한 후 대화 상자를 표시합니다"
 
 #: ../raphael/raphael-frontend.c:380
@@ -3119,7 +3119,7 @@ msgid "Run in _debugger"
 msgstr "디버깅 도구 실행(_D)"
 
 #: ../raphael/raphael-frontend.c:479
-msgid "An instance of Midori is already running but not responding.\n"
+msgid "An instance of Raphael is already running but not responding.\n"
 msgstr "미도리를 이미 실행했지만 응답이 없습니다.\n"
 
 #: ../raphael/raphael-frontend.c:516
@@ -3268,7 +3268,7 @@ msgstr "만료 날짜"
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1036
 msgid ""
 "The policy to use for domains not individually configured. This only acts to "
-"further restrict the global cookie policy set in Midori settings."
+"further restrict the global cookie policy set in Raphael settings."
 msgstr "도메인에 사용할 정책은 각자 설정할 수 없습니다. 이 정책은 미도리 설정의 전역 쿠키 정책 설정에 더해 동작합니다."
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3286,7 +3286,7 @@ msgstr "%s에서 프로그램 아이콘을 가져올 수 없습니다: %s"
 
 #: ../extensions/apps.vala:106
 #, c-format
-msgid "Midori (%s)"
+msgid "Raphael (%s)"
 msgstr "미도리(%s)"
 
 #: ../extensions/apps.vala:125 ../extensions/apps.vala:156
@@ -3605,6 +3605,6 @@ msgstr "지금 재생 중인 웹 미디어"
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Midori using org.raphael.mediaHerald"
+"in Raphael using org.raphael.mediaHerald"
 msgstr ""
 "지금 재생 중인 유튜브, 비미오, 데일리모션 동영상을 미도리 org.raphael.mediaHerald 기능을 사용해 공유합니다."

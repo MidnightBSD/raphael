@@ -156,7 +156,7 @@ namespace Bookmarks {
                     item = new Raphael.DatabaseItem (tab.display_uri, tab.display_title);
                     try {
                         yield BookmarksDatabase.get_default ().insert (item);
-                    } catch (Midori.DatabaseError error) {
+                    } catch (Raphael.DatabaseError error) {
                         critical ("Failed to add %s to bookmarks database: %s", item.uri, error.message);
                     }
                 }
@@ -208,7 +208,7 @@ namespace Bookmarks {
         public void activate () {
             try {
                 completion.add (BookmarksDatabase.get_default ());
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to add bookmarks completion: %s", error.message);
             }
         }
