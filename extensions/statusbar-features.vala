@@ -10,8 +10,8 @@
 */
 
 namespace StatusbarFeatures {
-    public class Frontend : Object, Midori.BrowserActivatable {
-        public Midori.Browser browser { owned get; set; }
+    public class Frontend : Object, Raphael.BrowserActivatable {
+        public Raphael.Browser browser { owned get; set; }
 
         public void add_zoom () {
             var zoom = new Gtk.ComboBoxText.with_entry ();
@@ -65,7 +65,7 @@ namespace StatusbarFeatures {
                 button.label = item;
             }
             button.tooltip_text = tooltip;
-            var settings = Midori.CoreSettings.get_default ();
+            var settings = Raphael.CoreSettings.get_default ();
             if (settings.get_class ().find_property (item) != null) {
                 settings.bind_property (item, button, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
             } else {
@@ -99,5 +99,5 @@ namespace StatusbarFeatures {
 [ModuleInit]
 public void peas_register_types(TypeModule module) {
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.BrowserActivatable), typeof (StatusbarFeatures.Frontend));
+        typeof (Raphael.BrowserActivatable), typeof (StatusbarFeatures.Frontend));
 }

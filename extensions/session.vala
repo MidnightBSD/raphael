@@ -10,25 +10,25 @@
 */
 
 namespace Tabby {
-    class SessionDatabase : Midori.Database {
+    class SessionDatabase : Raphael.Database {
         static SessionDatabase? _default = null;
         // Note: Using string instead of int64 because it's a hashable type
-        HashTable<string, Midori.Browser> browsers;
+        HashTable<string, Raphael.Browser> browsers;
 
-        public static SessionDatabase get_default () throws Midori.DatabaseError {
+        public static SessionDatabase get_default () throws Raphael.DatabaseError {
             if (_default == null) {
                 _default = new SessionDatabase ();
             }
             return _default;
         }
 
-        SessionDatabase () throws Midori.DatabaseError {
+        SessionDatabase () throws Raphael.DatabaseError {
             Object (path: "tabby.db", table: "tabs");
             init ();
-            browsers = new HashTable<string, Midori.Browser> (str_hash, str_equal);
+            browsers = new HashTable<string, Raphael.Browser> (str_hash, str_equal);
         }
 
-        async List<int64?> get_sessions () throws Midori.DatabaseError {
+        async List<int64?> get_sessions () throws Raphael.DatabaseError {
             string sqlcmd = """
                 SELECT id, closed FROM sessions WHERE closed = 0
                 UNION
@@ -47,7 +47,7 @@ namespace Tabby {
             return sessions;
         }
 
-        async List<Midori.DatabaseItem>? get_items (int64 session_id, string? filter=null, int64 max_items=15, Cancellable? cancellable=null) throws Midori.DatabaseError {
+        async List<Raphael.DatabaseItem>? get_items (int64 session_id, string? filter=null, int64 max_items=15, Cancellable? cancellable=null) throws Raphael.DatabaseError {
             string where = filter != null ? "AND (uri LIKE :filter OR title LIKE :filter)" : "";
             string sqlcmd = """
                 SELECT id, uri, title, tstamp, pinned FROM %s
@@ -62,12 +62,12 @@ namespace Tabby {
                 statement.bind (":filter", typeof (string), real_filter);
             }
 
-            var items = new List<Midori.DatabaseItem> ();
+            var items = new List<Raphael.DatabaseItem> ();
             while (statement.step ()) {
                 string uri = statement.get_string ("uri");
                 string title = statement.get_string ("title");
                 int64 date = statement.get_int64 ("tstamp");
-                var item = new Midori.DatabaseItem (uri, title, date);
+                var item = new Raphael.DatabaseItem (uri, title, date);
                 item.database = this;
                 item.id = statement.get_int64 ("id");
                 item.set_data<int64> ("session_id", session_id);
@@ -87,8 +87,8 @@ namespace Tabby {
             return items;
         }
 
-        public async override List<Midori.DatabaseItem>? query (string? filter=null, int64 max_items=15, Cancellable? cancellable=null) throws Midori.DatabaseError {
-            var items = new List<Midori.DatabaseItem> ();
+        public async override List<Raphael.DatabaseItem>? query (string? filter=null, int64 max_items=15, Cancellable? cancellable=null) throws Raphael.DatabaseError {
+            var items = new List<Raphael.DatabaseItem> ();
             foreach (int64 session_id in yield get_sessions ()) {
                 foreach (var item in yield get_items (session_id, filter, max_items, cancellable)) {
                     items.append (item);
@@ -100,7 +100,7 @@ namespace Tabby {
             return items;
         }
 
-        public async override bool insert (Midori.DatabaseItem item) throws Midori.DatabaseError {
+        public async override bool insert (Raphael.DatabaseItem item) throws Raphael.DatabaseError {
             item.database = this;
 
             string sqlcmd = """
@@ -121,7 +121,7 @@ namespace Tabby {
             return false;
         }
 
-        public async override bool update (Midori.DatabaseItem item) throws Midori.DatabaseError {
+        public async override bool update (Raphael.DatabaseItem item) throws Raphael.DatabaseError {
             string sqlcmd = """
                 UPDATE %s SET uri = :uri, title = :title, tstamp = :tstamp WHERE id = :id
                 """.printf (table);
@@ -134,13 +134,13 @@ namespace Tabby {
                 if (statement.exec ()) {
                     return true;
                 }
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to update %s: %s", table, error.message);
             }
             return false;
         }
 
-        public async override bool delete (Midori.DatabaseItem item) throws Midori.DatabaseError {
+        public async override bool delete (Raphael.DatabaseItem item) throws Raphael.DatabaseError {
             string sqlcmd = """
                 DELETE FROM %s WHERE id = :id
                 """.printf (table);
@@ -162,7 +162,7 @@ namespace Tabby {
                 statement.exec ();
                 debug ("Added session: %s", statement.row_id ().to_string ());
                 return statement.row_id ();
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to add session: %s", error.message);
             }
             return -1;
@@ -178,12 +178,12 @@ namespace Tabby {
                     ":tstamp", typeof (int64), new DateTime.now_local ().to_unix (),
                     ":closed", typeof (int64), closed ? 1 : 0);
                 statement.exec ();
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to update session: %s", error.message);
             }
         }
 
-        async void update_tab (Midori.DatabaseItem item) throws Midori.DatabaseError {
+        async void update_tab (Raphael.DatabaseItem item) throws Raphael.DatabaseError {
             string sqlcmd = """
                 UPDATE %s SET pinned=:pinned WHERE rowid = :id
                 """.printf (table);
@@ -192,7 +192,7 @@ namespace Tabby {
                 ":pinned", typeof (int64), item.get_data<int64> ("pinned")).exec ();
         }
 
-        public async override bool clear (TimeSpan timespan) throws Midori.DatabaseError {
+        public async override bool clear (TimeSpan timespan) throws Raphael.DatabaseError {
             // Note: TimeSpan is defined in microseconds
             int64 maximum_age = new DateTime.now_local ().to_unix () - timespan / 1000000;
 
@@ -205,25 +205,25 @@ namespace Tabby {
             return statement.exec ();
         }
 
-        public async bool restore_windows (Midori.Browser default_browser) throws Midori.DatabaseError {
+        public async bool restore_windows (Raphael.Browser default_browser) throws Raphael.DatabaseError {
             bool restored = false;
 
             // Restore existing session(s) that weren't closed, or the last closed one
             foreach (var item in yield query (null, int64.MAX - 1)) {
-                Midori.Browser browser;
+                Raphael.Browser browser;
                 int64 id = item.get_data<int64> ("session_id");
                 if (!restored) {
                     browser = default_browser;
                     restored = true;
                     connect_browser (browser, id);
                     foreach (var widget in browser.tabs.get_children ()) {
-                        yield tab_added (widget as Midori.Tab, id);
+                        yield tab_added (widget as Raphael.Tab, id);
                     }
                 } else {
-                    var app = (Midori.App)default_browser.get_application ();
+                    var app = (Raphael.App)default_browser.get_application ();
                     browser = browser_for_session (app, id);
                 }
-                var tab = new Midori.Tab (null, browser.web_context,
+                var tab = new Raphael.Tab (null, browser.web_context,
                                           item.uri, item.title);
                 tab.pinned = item.get_data<bool> ("pinned");
                 connect_tab (tab, item);
@@ -232,18 +232,18 @@ namespace Tabby {
             return restored;
         }
 
-        Midori.Browser browser_for_session (Midori.App app, int64 id) {
+        Raphael.Browser browser_for_session (Raphael.App app, int64 id) {
             var browser = browsers.lookup (id.to_string ());
             if (browser == null) {
                 debug ("Restoring session %s", id.to_string ());
-                browser = new Midori.Browser (app);
+                browser = new Raphael.Browser (app);
                 browser.show ();
                 connect_browser (browser, id);
             }
             return browser;
         }
 
-        public void connect_browser (Midori.Browser browser, int64 id=-1) {
+        public void connect_browser (Raphael.Browser browser, int64 id=-1) {
             if (id < 0) {
                 id = insert_session ();
             } else {
@@ -253,9 +253,9 @@ namespace Tabby {
             browsers.insert (id.to_string (), browser);
             browser.set_data<bool> ("tabby_connected", true);
             foreach (var widget in browser.tabs.get_children ()) {
-                tab_added.begin (widget as Midori.Tab, id);
+                tab_added.begin (widget as Raphael.Tab, id);
             }
-            browser.tabs.add.connect ((widget) => { tab_added.begin (widget as Midori.Tab, id); });
+            browser.tabs.add.connect ((widget) => { tab_added.begin (widget as Raphael.Tab, id); });
             browser.delete_event.connect ((event) => {
                 debug ("Closing session %s", id.to_string ());
                 update_session (id, true);
@@ -263,43 +263,43 @@ namespace Tabby {
             });
         }
 
-        void connect_tab (Midori.Tab tab, Midori.DatabaseItem item) {
+        void connect_tab (Raphael.Tab tab, Raphael.DatabaseItem item) {
             debug ("Connecting %s to session %s", item.uri, item.get_data<int64> ("session_id").to_string ());
-            tab.set_data<Midori.DatabaseItem?> ("tabby-item", item);
+            tab.set_data<Raphael.DatabaseItem?> ("tabby-item", item);
             tab.notify["uri"].connect ((pspec) => { item.uri = tab.uri; update.begin (item); });
             tab.notify["title"].connect ((pspec) => { item.title = tab.title; });
             tab.notify["pinned"].connect ((pspec) => { item.set_data<bool> ("pinned", tab.pinned); update_tab.begin (item); });
             tab.close.connect (() => { tab_removed (tab); });
         }
 
-        bool tab_is_connected (Midori.Tab tab) {
-            return tab.get_data<Midori.DatabaseItem?> ("tabby-item") != null;
+        bool tab_is_connected (Raphael.Tab tab) {
+            return tab.get_data<Raphael.DatabaseItem?> ("tabby-item") != null;
         }
 
-        async void tab_added (Midori.Tab tab, int64 id) {
+        async void tab_added (Raphael.Tab tab, int64 id) {
             if (tab_is_connected (tab)) {
                 return;
             }
-            var item = new Midori.DatabaseItem (tab.display_uri, tab.display_title,
+            var item = new Raphael.DatabaseItem (tab.display_uri, tab.display_title,
                                                 new DateTime.now_local ().to_unix ());
             item.set_data<int64> ("session_id", id);
             try {
                 yield insert (item);
                 connect_tab (tab, item);
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed add tab to session database: %s", error.message);
             }
         }
 
-        void tab_removed (Midori.Tab tab) {
-            var item = tab.get_data<Midori.DatabaseItem?> ("tabby-item");
+        void tab_removed (Raphael.Tab tab) {
+            var item = tab.get_data<Raphael.DatabaseItem?> ("tabby-item");
             debug ("Trashing tab %s:%s", item.get_data<int64> ("session_id").to_string (), tab.display_uri);
             item.delete.begin ();
         }
     }
 
-    public class Session : Peas.ExtensionBase, Midori.BrowserActivatable {
-        public Midori.Browser browser { owned get; set; }
+    public class Session : Peas.ExtensionBase, Raphael.BrowserActivatable {
+        public Raphael.Browser browser { owned get; set; }
 
         static bool session_restored = false;
 
@@ -323,7 +323,7 @@ namespace Tabby {
                     session_restored = true;
                     restore_session.begin (session);
                 }
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to restore session: %s", error.message);
             }
         }
@@ -331,17 +331,17 @@ namespace Tabby {
         bool restore_or_connect () {
             try {
                 var session = SessionDatabase.get_default ();
-                var settings = Midori.CoreSettings.get_default ();
-                if (settings.load_on_startup == Midori.StartupType.SPEED_DIAL) {
+                var settings = Raphael.CoreSettings.get_default ();
+                if (settings.load_on_startup == Raphael.StartupType.SPEED_DIAL) {
                     session.connect_browser (browser);
-                } else if (settings.load_on_startup == Midori.StartupType.HOMEPAGE) {
+                } else if (settings.load_on_startup == Raphael.StartupType.HOMEPAGE) {
                     session.connect_browser (browser);
                     browser.activate_action ("homepage", null);
                     return true;
                 } else {
                     return true;
                 }
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to restore session: %s", error.message);
             }
             return false;
@@ -351,27 +351,27 @@ namespace Tabby {
             try {
                 bool restored = yield session.restore_windows (browser);
                 if (!restored) {
-                    browser.add (new Midori.Tab (null, browser.web_context));
+                    browser.add (new Raphael.Tab (null, browser.web_context));
                     session.connect_browser (browser);
                 }
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to restore session: %s", error.message);
             }
         }
     }
 
-    public class Preferences : Object, Midori.PreferencesActivatable {
-        public Midori.Preferences preferences { owned get; set; }
+    public class Preferences : Object, Raphael.PreferencesActivatable {
+        public Raphael.Preferences preferences { owned get; set; }
 
         public void activate () {
-            var settings = Midori.CoreSettings.get_default ();
-            var box = new Midori.LabelWidget (_("Startup"));
+            var settings = Raphael.CoreSettings.get_default ();
+            var box = new Raphael.LabelWidget (_("Startup"));
             var combo = new Gtk.ComboBoxText ();
             combo.append ("0", _("Show Speed Dial"));
             combo.append ("1", _("Show Homepage"));
             combo.append ("2", _("Show last open tabs"));
             settings.bind_property ("load-on-startup", combo, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
-            var button = new Midori.LabelWidget (_("When Raphael starts:"), combo);
+            var button = new Raphael.LabelWidget (_("When Raphael starts:"), combo);
             box.add (button);
             box.show_all ();
             preferences.add (_("Browsing"), box);
@@ -381,7 +381,7 @@ namespace Tabby {
         }
     }
 
-    public class ClearSession : Peas.ExtensionBase, Midori.ClearPrivateDataActivatable {
+    public class ClearSession : Peas.ExtensionBase, Raphael.ClearPrivateDataActivatable {
         public Gtk.Box box { owned get; set; }
 
         Gtk.CheckButton button;
@@ -399,7 +399,7 @@ namespace Tabby {
 
             try {
                 yield SessionDatabase.get_default ().clear (timespan);
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to clear session: %s", error.message);
             }
         }
@@ -409,10 +409,10 @@ namespace Tabby {
 [ModuleInit]
 public void peas_register_types(TypeModule module) {
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.BrowserActivatable), typeof (Tabby.Session));
+        typeof (Raphael.BrowserActivatable), typeof (Tabby.Session));
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.PreferencesActivatable), typeof (Tabby.Preferences));
+        typeof (Raphael.PreferencesActivatable), typeof (Tabby.Preferences));
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.ClearPrivateDataActivatable), typeof (Tabby.ClearSession));
+        typeof (Raphael.ClearPrivateDataActivatable), typeof (Tabby.ClearSession));
 
 }

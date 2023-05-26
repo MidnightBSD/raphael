@@ -110,7 +110,7 @@ namespace WebExtension {
             while ((info = enumerator.next_file ()) != null) {
                 var file = folder.get_child (info.get_name ());
                 string id = file.get_basename ();
-                if (!Midori.CoreSettings.get_default ().get_plugin_enabled (id)) {
+                if (!Raphael.CoreSettings.get_default ().get_plugin_enabled (id)) {
                     continue;
                 }
 
@@ -252,8 +252,8 @@ namespace WebExtension {
             }
         }
 
-        Midori.App app { get { return Application.get_default () as Midori.App; } }
-        Midori.Browser browser { get { return app.active_window as Midori.Browser; } }
+        Raphael.App app { get { return Application.get_default () as Raphael.App; } }
+        Raphael.Browser browser { get { return app.active_window as Raphael.Browser; } }
 
         void web_extension_message_received (WebKit.WebView web_view, WebKit.JavascriptResult result) {
             unowned JS.GlobalContext context = result.get_global_context ();
@@ -264,7 +264,7 @@ namespace WebExtension {
                 if (fn != null && fn.has_prefix ("tabs.create")) {
                     var args = object.get_property (context, new JS.String.create_with_utf8_cstring ("args")).to_object (context);
                     string? url = js_to_string (context, args.get_property (context, new JS.String.create_with_utf8_cstring ("url")));
-                    var tab = new Midori.Tab (null, browser.tab.web_context, url);
+                    var tab = new Raphael.Tab (null, browser.tab.web_context, url);
                     browser.add (tab);
                     var promise = object.get_property (context, new JS.String.create_with_utf8_cstring ("promise")).to_number (context);
                     debug ("Calling back to promise #%.f".printf (promise));
@@ -301,7 +301,7 @@ namespace WebExtension {
             web_view.get_settings ().enable_write_console_messages_to_stdout = true;
 
             var content = web_view.get_user_content_manager ();
-            if (content.register_script_message_handler ("midori")) {
+            if (content.register_script_message_handler ("raphael")) {
                 content.script_message_received.connect ((result) => {
                     web_extension_message_received (web_view, result);
                 });
@@ -363,7 +363,7 @@ namespace WebExtension {
             tooltip_text = extension.browser_action.title ?? extension.name;
             visible = true;
             focus_on_click = false;
-            var icon = new Gtk.Image.from_icon_name ("midori-symbolic", Gtk.IconSize.BUTTON);
+            var icon = new Gtk.Image.from_icon_name ("raphael-symbolic", Gtk.IconSize.BUTTON);
             icon.use_fallback = true;
             icon.visible = true;
             if (extension.browser_action.icon != null) {
@@ -407,8 +407,8 @@ namespace WebExtension {
         return ((string)buffer);
     }
 
-    public class Browser : Object, Midori.BrowserActivatable {
-        public Midori.Browser browser { owned get; set; }
+    public class Browser : Object, Raphael.BrowserActivatable {
+        public Raphael.Browser browser { owned get; set; }
 
         async void extension_scheme (WebKit.URISchemeRequest request) {
             string[] path = request.get_path ().substring (1, -1).split ("/", 2);
@@ -494,11 +494,11 @@ namespace WebExtension {
             browser.tabs.add.disconnect (tab_added);
 
             var manager = ExtensionManager.get_default ();
-            var tab = widget as Midori.Tab;
+            var tab = widget as Raphael.Tab;
 
             var content = tab.get_user_content_manager ();
             // Try and load plugins from build folder
-            var builtin_path = ((Midori.App)Application.get_default ()).exec_path.get_parent ().get_child ("extensions");
+            var builtin_path = ((Raphael.App)Application.get_default ()).exec_path.get_parent ().get_child ("extensions");
             manager.load_from_folder.begin (content, builtin_path);
             // System-wide plugins
             manager.load_from_folder.begin (content, File.new_for_path (Config.PLUGINDIR));
@@ -513,5 +513,5 @@ namespace WebExtension {
 [ModuleInit]
 public void peas_register_types(TypeModule module) {
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.BrowserActivatable), typeof (WebExtension.Browser));
+        typeof (Raphael.BrowserActivatable), typeof (WebExtension.Browser));
 }

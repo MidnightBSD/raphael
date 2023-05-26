@@ -10,7 +10,7 @@
 */
 
 namespace Adblock {
-    public class Settings : Midori.Settings {
+    public class Settings : Raphael.Settings {
         static Settings? _default = null;
         public string default_filters = "https://easylist.to/easylist/easylist.txt&title=EasyList;https://easylist.to/easylist/easyprivacy.txt&title=EasyPrivacy";
         List<Subscription> subscriptions;

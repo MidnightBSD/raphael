@@ -11,8 +11,8 @@
 */
 
 namespace ColorfulTabs {
-    public class Tint : Peas.ExtensionBase, Midori.TabActivatable {
-        public Midori.Tab tab { owned get; set; }
+    public class Tint : Peas.ExtensionBase, Raphael.TabActivatable {
+        public Raphael.Tab tab { owned get; set; }
 
         public void activate () {
             tab.notify["display-uri"].connect (apply_tint);
@@ -54,5 +54,5 @@ namespace ColorfulTabs {
 [ModuleInit]
 public void peas_register_types(TypeModule module) {
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.TabActivatable), typeof (ColorfulTabs.Tint));
+        typeof (Raphael.TabActivatable), typeof (ColorfulTabs.Tint));
 }

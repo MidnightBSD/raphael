@@ -1,11 +1,11 @@
-# Bosnian translation for midori
+# Bosnian translation for raphael
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the midori package.
+# This file is distributed under the same license as the raphael package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: midori\n"
+"Project-Id-Version: raphael\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-07-11 22:56-0400\n"
 "PO-Revision-Date: 2014-12-08 07:35+0000\n"
@@ -19,341 +19,341 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-10-13 05:12+0000\n"
 "X-Generator: Launchpad (build 18474)\n"
 
-#: ../data/midori.desktop.in.h:1 ../midori/main.c:142
-#: ../midori/midori-websettings.c:231
+#: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
+#: ../raphael/raphael-websettings.c:231
 msgid "Raphael"
 msgstr "Raphael"
 
-#: ../data/midori.desktop.in.h:2
+#: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
 msgstr "Internet preglednik"
 
-#: ../data/midori.desktop.in.h:3
+#: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
 msgstr "Raphael internet pregledač"
 
-#: ../data/midori.desktop.in.h:4
+#: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
 msgstr "Pretražuj Internet"
 
-#: ../data/midori.desktop.in.h:5
+#: ../data/raphael.desktop.in.h:5
 msgid "Internet;WWW;Explorer"
 msgstr "Internet;WWW,Eksplorer"
 
-#: ../data/midori.desktop.in.h:6 ../midori/midori-browser.c:1783
+#: ../data/raphael.desktop.in.h:6 ../raphael/raphael-browser.c:1783
 msgid "New Tab"
 msgstr "Novi tab"
 
-#: ../data/midori.desktop.in.h:7 ../midori/midori-browser.c:1780
+#: ../data/raphael.desktop.in.h:7 ../raphael/raphael-browser.c:1780
 msgid "New Window"
 msgstr "Novi prozor"
 
-#: ../data/midori.desktop.in.h:8
+#: ../data/raphael.desktop.in.h:8
 msgid "New Private Browsing Window"
 msgstr "Novi prozor privatnog pregledanja"
 
-#: ../data/midori-private.desktop.in.h:1
+#: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
 msgstr "Raphael privatno pregledanje"
 
-#: ../data/midori-private.desktop.in.h:2 ../extensions/about.vala:176
+#: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
 msgstr "Privatno pregledanje"
 
-#: ../data/midori-private.desktop.in.h:3
+#: ../data/raphael-private.desktop.in.h:3
 msgid "Open a new private browsing window"
 msgstr "Otvori novi prozor za privatno pregledanje"
 
-#: ../midori/main.c:52
+#: ../raphael/main.c:52
 #, c-format
 msgid "Snapshot saved to: %s\n"
 msgstr "Slika sačuvana u: %s\n"
 
-#: ../midori/main.c:79
+#: ../raphael/main.c:79
 msgid "Run ADDRESS as a web application"
 msgstr "Otvori ADRESU kao internet aplikaciju"
 
-#: ../midori/main.c:79
+#: ../raphael/main.c:79
 msgid "ADDRESS"
 msgstr "ADRESA"
 
-#: ../midori/main.c:81
+#: ../raphael/main.c:81
 msgid "Use FOLDER as configuration folder"
 msgstr "Koristi DIREKTORIJ kao konfiguracijski direktorij"
 
-#: ../midori/main.c:81
+#: ../raphael/main.c:81
 msgid "FOLDER"
 msgstr "DIREKTORIJ"
 
-#: ../midori/main.c:83
+#: ../raphael/main.c:83
 msgid "Private browsing, no changes are saved"
 msgstr "Privatno pretraživanje, promjene nisu sačuvane"
 
-#: ../midori/main.c:86
+#: ../raphael/main.c:86
 msgid "Portable mode, all runtime files are stored in one place"
 msgstr "Prenosni mod, sve datoteke su smeštene na jednome mestu"
 
-#: ../midori/main.c:89
+#: ../raphael/main.c:89
 msgid "Plain GTK+ window with WebKit, akin to GtkLauncher"
 msgstr "Čist GTK+ prozor sa WebKit-om, sličan GtkLauncher-u"
 
-#: ../midori/main.c:91
+#: ../raphael/main.c:91
 msgid "Show a diagnostic dialog"
 msgstr "Prikaži dijagnostički dijalog"
 
-#: ../midori/main.c:93
+#: ../raphael/main.c:93
 msgid "Run within gdb and save a backtrace on crash"
 msgstr "Pokreni unutar gdb-a i sačuvaj zapis pri rušenju"
 
-#: ../midori/main.c:95
+#: ../raphael/main.c:95
 msgid "Run the specified filename as javascript"
 msgstr "Pokreni određeni fajl kao javaskriptu"
 
-#: ../midori/main.c:97
+#: ../raphael/main.c:97
 msgid "Take a snapshot of the specified URI"
 msgstr "Uslikaj određeni URL"
 
-#: ../midori/main.c:99
+#: ../raphael/main.c:99
 msgid "Execute the specified command"
 msgstr "Izvrši zadatu naredbu"
 
-#: ../midori/main.c:101
+#: ../raphael/main.c:101
 msgid "List available commands to execute with -e/ --execute"
 msgstr "Lista dostupnih naredbi koje se izvršavaju sa -e/ --execute"
 
-#: ../midori/main.c:103
+#: ../raphael/main.c:103
 msgid "Display program version"
 msgstr "Prikaži verziju programa"
 
-#: ../midori/main.c:105
+#: ../raphael/main.c:105
 msgid "Addresses"
 msgstr "Adrese"
 
-#: ../midori/main.c:107
+#: ../raphael/main.c:107
 msgid "Block URIs according to regular expression PATTERN"
 msgstr "Blokiraj URI po regularnom OBRASCU izraza"
 
-#: ../midori/main.c:107
+#: ../raphael/main.c:107
 msgid "PATTERN"
 msgstr "OBRAZAC"
 
 #. i18n: CLI: Close tabs, clear private data, open starting page
-#: ../midori/main.c:111
+#: ../raphael/main.c:111
 msgid "Reset Raphael after SECONDS seconds of inactivity"
 msgstr "Restartuj Raphael nakon SEKUNDE sekundi neaktivnosti"
 
-#: ../midori/main.c:111
+#: ../raphael/main.c:111
 msgid "SECONDS"
 msgstr "SEKUNDE"
 
-#: ../midori/main.c:136
+#: ../raphael/main.c:136
 msgid "Error: \"gdb\" can't be found\n"
 msgstr "Greška: \"gdb\" nije pronađen\n"
 
-#: ../midori/main.c:162
+#: ../raphael/main.c:162
 msgid "Please report comments, suggestions and bugs to:"
 msgstr "Molimo da ostavite vaše komentare, sugestije i bagove na:"
 
-#: ../midori/main.c:164
+#: ../raphael/main.c:164
 msgid "Check for new versions at:"
 msgstr "Pogledaj postoji li nova verzija na:"
 
-#: ../midori/main.c:358
+#: ../raphael/main.c:358
 msgid "An unknown error occured"
 msgstr "Došlo je do nepoznate greške"
 
-#: ../midori/midori-app.c:1184 ../midori/midori-browser.c:6078
+#: ../raphael/raphael-app.c:1184 ../raphael/raphael-browser.c:6078
 msgid "_Bookmarks"
 msgstr "_Bookmarkovi"
 
-#: ../midori/midori-app.c:1185
+#: ../raphael/raphael-app.c:1185
 msgid "Add Boo_kmark"
 msgstr "Dodaj Boo_kmark"
 
-#: ../midori/midori-app.c:1186
+#: ../raphael/raphael-app.c:1186
 msgid "_Extensions"
 msgstr "_Ekstenzije"
 
 #. i18n: Browsing history, visited web pages, closed tabs
-#: ../midori/midori-app.c:1187 ../midori/midori-privatedata.c:230
+#: ../raphael/raphael-app.c:1187 ../raphael/raphael-privatedata.c:230
 msgid "_History"
 msgstr "_Istorija"
 
-#: ../midori/midori-app.c:1188
+#: ../raphael/raphael-app.c:1188
 msgid "_Userscripts"
 msgstr "Korisničke _skripte"
 
-#: ../midori/midori-app.c:1189
+#: ../raphael/raphael-app.c:1189
 msgid "User_styles"
 msgstr "Korisnički s_tilovi"
 
-#: ../midori/midori-app.c:1190
+#: ../raphael/raphael-app.c:1190
 msgid "New _Tab"
 msgstr "Novi _tab"
 
-#: ../midori/midori-app.c:1191
+#: ../raphael/raphael-app.c:1191
 msgid "_Transfers"
 msgstr "_Transferi"
 
-#: ../midori/midori-app.c:1192
+#: ../raphael/raphael-app.c:1192
 msgid "Netscape p_lugins"
 msgstr "Netscape _dodaci"
 
-#: ../midori/midori-app.c:1193
+#: ../raphael/raphael-app.c:1193
 msgid "_Closed Tabs"
 msgstr "_Zatvoreni tabovi"
 
-#: ../midori/midori-app.c:1194 ../midori/midori-browser.c:5228
+#: ../raphael/raphael-app.c:1194 ../raphael/raphael-browser.c:5228
 msgid "New _Window"
 msgstr "Novi _prozor"
 
-#: ../midori/midori-app.c:1195
+#: ../raphael/raphael-app.c:1195
 msgid "New _Folder"
 msgstr "Novi _direktorij"
 
-#: ../midori/midori-app.c:1257 ../midori/midori-app.c:1260
+#: ../raphael/raphael-app.c:1257 ../raphael/raphael-app.c:1260
 msgid "[Addresses]"
 msgstr "[Adrese]"
 
-#: ../midori/midori-array.c:549
+#: ../raphael/raphael-array.c:549
 msgid "File not found."
 msgstr "Datoteka nije pronađena."
 
-#: ../midori/midori-array.c:574 ../midori/midori-array.c:613
-#: ../midori/midori-array.c:637 ../midori/midori-array.c:647
+#: ../raphael/raphael-array.c:574 ../raphael/raphael-array.c:613
+#: ../raphael/raphael-array.c:637 ../raphael/raphael-array.c:647
 msgid "Malformed document."
 msgstr "Dokument sa greškom"
 
-#: ../midori/midori-array.c:656
+#: ../raphael/raphael-array.c:656
 msgid "Unrecognized bookmark format."
 msgstr "Nije prepoznat format za bookmarkove."
 
-#: ../midori/midori-browser.c:322 ../midori/midori-browser.c:5364
+#: ../raphael/raphael-browser.c:322 ../raphael/raphael-browser.c:5364
 msgid "Go forward to the next page"
 msgstr "Idi na sledjeću stranicu"
 
 #. i18n: Visit the following logical page, ie. in a forum or blog
-#: ../midori/midori-browser.c:329 ../midori/midori-browser.c:5372
+#: ../raphael/raphael-browser.c:329 ../raphael/raphael-browser.c:5372
 msgid "Go to the next sub-page"
 msgstr "Idi na sledjeću pod-stranicu"
 
-#: ../midori/midori-browser.c:339
+#: ../raphael/raphael-browser.c:339
 msgid "Web Search…"
 msgstr "Pretraživanje interneta..."
 
-#: ../midori/midori-browser.c:443 ../midori/midori-browser.c:2095
-#: ../midori/midori-browser.c:5310 ../midori/midori-browser.c:5319
+#: ../raphael/raphael-browser.c:443 ../raphael/raphael-browser.c:2095
+#: ../raphael/raphael-browser.c:5310 ../raphael/raphael-browser.c:5319
 msgid "Reload the current page"
 msgstr "Ponovo učitaj trenutnu stranicu"
 
-#: ../midori/midori-browser.c:449 ../midori/midori-browser.c:5316
+#: ../raphael/raphael-browser.c:449 ../raphael/raphael-browser.c:5316
 msgid "Stop loading the current page"
 msgstr "Zaustavi učitavanje trenutne stranice"
 
-#: ../midori/midori-browser.c:539
+#: ../raphael/raphael-browser.c:539
 #, c-format
 msgid "Failed to update title: %s\n"
 msgstr "Nije uspjelo ažuriranje naslova: %s\n"
 
-#: ../midori/midori-browser.c:579 ../midori/midori-browser.c:635
-#: ../midori/midori-browser.c:638 ../midori/midori-websettings.c:1502
+#: ../raphael/raphael-browser.c:579 ../raphael/raphael-browser.c:635
+#: ../raphael/raphael-browser.c:638 ../raphael/raphael-websettings.c:1502
 #, c-format
 msgid "Value '%s' is invalid for %s"
 msgstr "Vrijednost '%s' nije važeća za %s"
 
-#: ../midori/midori-browser.c:587 ../midori/midori-browser.c:658
-#: ../midori/midori-browser.c:6640
+#: ../raphael/raphael-browser.c:587 ../raphael/raphael-browser.c:658
+#: ../raphael/raphael-browser.c:6640
 #, c-format
 msgid "Unexpected setting '%s'"
 msgstr "Nije očekivana postavka '%s'"
 
-#: ../midori/midori-browser.c:595 ../midori/midori-browser.c:668
+#: ../raphael/raphael-browser.c:595 ../raphael/raphael-browser.c:668
 #, c-format
 msgid "Unexpected action '%s'."
 msgstr "Nije očekivana akcija '%s'."
 
-#: ../midori/midori-browser.c:752
+#: ../raphael/raphael-browser.c:752
 #, c-format
 msgid "%s (Private Browsing)"
 msgstr "%s (Privatno pretraživanje)"
 
-#: ../midori/midori-browser.c:805 ../midori/midori-browser.c:4066
+#: ../raphael/raphael-browser.c:805 ../raphael/raphael-browser.c:4066
 #, c-format
 msgid "Failed to insert new history item: %s\n"
 msgstr "Nije uspjelo unošenje nove stavke u istoriju: %s\n"
 
-#: ../midori/midori-browser.c:939
+#: ../raphael/raphael-browser.c:939
 msgid "Select [text]"
 msgstr "Označi [tekst]"
 
-#: ../midori/midori-browser.c:968 ../panels/midori-bookmarks.c:148
-#: ../midori/midori-bookmarks-db.c:153
+#: ../raphael/raphael-browser.c:968 ../panels/raphael-bookmarks.c:148
+#: ../raphael/raphael-bookmarks-db.c:153
 msgid "Bookmarks"
 msgstr "Bookmarkovi"
 
-#: ../midori/midori-browser.c:1189
+#: ../raphael/raphael-browser.c:1189
 msgid "New Folder"
 msgstr "Novi direktorij"
 
-#: ../midori/midori-browser.c:1189
+#: ../raphael/raphael-browser.c:1189
 msgid "Edit Folder"
 msgstr "Uredi direktorij"
 
-#: ../midori/midori-browser.c:1191
+#: ../raphael/raphael-browser.c:1191
 msgid "New Bookmark"
 msgstr "Novi bookmark"
 
-#: ../midori/midori-browser.c:1191
+#: ../raphael/raphael-browser.c:1191
 msgid "Edit Bookmark"
 msgstr "Uredi bookmark"
 
-#: ../midori/midori-browser.c:1224
+#: ../raphael/raphael-browser.c:1224
 msgid "Type a name for this bookmark, and choose where to keep it."
 msgstr ""
 "Unesite naziv za ovaj bookmark i izaberite gdje želite da ga sačuvate."
 
-#: ../midori/midori-browser.c:1226
+#: ../raphael/raphael-browser.c:1226
 msgid "Type a name for this folder, and choose where to keep it."
 msgstr ""
 "Unesite naziv za ovaj direktorij i izaberite gdje želite da ga sačuovate"
 
-#: ../midori/midori-browser.c:1282
+#: ../raphael/raphael-browser.c:1282
 msgid "Show in Bookmarks _Bar"
 msgstr "Prikaži u bookmark _liniji"
 
-#: ../midori/midori-browser.c:1290
+#: ../raphael/raphael-browser.c:1290
 msgid "Add to _Speed Dial"
 msgstr "Dodaj u _Brzo biranje"
 
-#: ../midori/midori-browser.c:1380 ../midori/midori-browser.c:4671
+#: ../raphael/raphael-browser.c:1380 ../raphael/raphael-browser.c:4671
 msgid "Save file as"
 msgstr "Sačuvaj datoteku kao"
 
-#: ../midori/midori-browser.c:1406
+#: ../raphael/raphael-browser.c:1406
 msgid "Save associated _resources"
 msgstr "Sačuvaj povezane _resurse"
 
-#: ../midori/midori-browser.c:1780
+#: ../raphael/raphael-browser.c:1780
 msgid "A new window has been opened"
 msgstr "Novi prozor je otvoren"
 
-#: ../midori/midori-browser.c:1783
+#: ../raphael/raphael-browser.c:1783
 msgid "A new tab has been opened"
 msgstr "Novi tab je otvoren"
 
-#: ../midori/midori-browser.c:1843
+#: ../raphael/raphael-browser.c:1843
 msgid "Save file"
 msgstr "Sačuvaj datoteku"
 
-#: ../midori/midori-browser.c:2091 ../midori/midori-browser.c:5312
+#: ../raphael/raphael-browser.c:2091 ../raphael/raphael-browser.c:5312
 msgid "Reload page without caching"
 msgstr "Ponovo učitaj stranicu bez keširanja"
 
-#: ../midori/midori-browser.c:2740
+#: ../raphael/raphael-browser.c:2740
 msgid "Open file"
 msgstr "Otvori datoteku"
 
-#: ../midori/midori-browser.c:2826
+#: ../raphael/raphael-browser.c:2826
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
@@ -367,24 +367,24 @@ msgstr ""
 "izaberite Agregator vijesti. Sledjeći put kada kliknete na ikonu feeda "
 "vijesti, feed će se dodati automatski."
 
-#: ../midori/midori-browser.c:2832 ../extensions/feed-panel/main.c:350
+#: ../raphael/raphael-browser.c:2832 ../extensions/feed-panel/main.c:350
 msgid "New feed"
 msgstr "Novi feed"
 
-#: ../midori/midori-browser.c:2863 ../midori/midori-browser.c:5388
-#: ../panels/midori-bookmarks.c:760
+#: ../raphael/raphael-browser.c:2863 ../raphael/raphael-browser.c:5388
+#: ../panels/raphael-bookmarks.c:760
 msgid "Add a new bookmark"
 msgstr "Dodaj novi bookmark"
 
-#: ../midori/midori-browser.c:3350 ../midori/midori-searchaction.c:444
+#: ../raphael/raphael-browser.c:3350 ../raphael/raphael-searchaction.c:444
 msgid "Empty"
 msgstr "Prazno"
 
-#: ../midori/midori-browser.c:3666 ../midori/midori-browser.c:3667
+#: ../raphael/raphael-browser.c:3666 ../raphael/raphael-browser.c:3667
 msgid "Toggle text cursor navigation"
 msgstr "Izaberite sledjeću navigaciju kursora"
 
-#: ../midori/midori-browser.c:3669
+#: ../raphael/raphael-browser.c:3669
 msgid ""
 "Pressing F7 toggles Caret Browsing. When active, a text cursor appears in "
 "all websites."
@@ -392,100 +392,100 @@ msgstr ""
 "Pritiskanje tipke F7 će uključiti Caret Browsing. Kada je aktivno, "
 "tekstualni kursor će biti prikazan na svakoj web stranici."
 
-#: ../midori/midori-browser.c:3672
+#: ../raphael/raphael-browser.c:3672
 msgid "_Enable Caret Browsing"
 msgstr "_Omogući Caret Browsing"
 
-#: ../midori/midori-browser.c:4381 ../panels/midori-bookmarks.c:1079
-#: ../panels/midori-history.c:738
+#: ../raphael/raphael-browser.c:4381 ../panels/raphael-bookmarks.c:1079
+#: ../panels/raphael-history.c:738
 msgid "Open all in _Tabs"
 msgstr "Otvori sve u _tabovima"
 
-#: ../midori/midori-browser.c:4402 ../midori/midori-notebook.vala:366
-#: ../midori/midori-view.c:2501 ../panels/midori-bookmarks.c:1089
-#: ../panels/midori-history.c:746 ../extensions/feed-panel/feed-panel.c:504
+#: ../raphael/raphael-browser.c:4402 ../raphael/raphael-notebook.vala:366
+#: ../raphael/raphael-view.c:2501 ../panels/raphael-bookmarks.c:1089
+#: ../panels/raphael-history.c:746 ../extensions/feed-panel/feed-panel.c:504
 msgid "Open in New _Window"
 msgstr "Otvori u novom _prozoru"
 
-#: ../midori/midori-browser.c:4505
+#: ../raphael/raphael-browser.c:4505
 msgid "Arora"
 msgstr "Arora"
 
-#: ../midori/midori-browser.c:4506
+#: ../raphael/raphael-browser.c:4506
 msgid "Kazehakase"
 msgstr "Kazehakase"
 
-#: ../midori/midori-browser.c:4507
+#: ../raphael/raphael-browser.c:4507
 msgid "Opera"
 msgstr "Opera"
 
-#: ../midori/midori-browser.c:4508
+#: ../raphael/raphael-browser.c:4508
 msgid "Konqueror"
 msgstr "Konqueror"
 
-#: ../midori/midori-browser.c:4509
+#: ../raphael/raphael-browser.c:4509
 msgid "Epiphany"
 msgstr "Epiphany"
 
-#: ../midori/midori-browser.c:4510
+#: ../raphael/raphael-browser.c:4510
 #, c-format
 msgid "Firefox (%s)"
 msgstr "Firefox (%s)"
 
-#: ../midori/midori-browser.c:4511
+#: ../raphael/raphael-browser.c:4511
 msgid "Raphael 0.2.6"
 msgstr "Raphael 0.2.6"
 
-#: ../midori/midori-browser.c:4529
+#: ../raphael/raphael-browser.c:4529
 msgid "Import bookmarks…"
 msgstr "Uvezi bookmarkove..."
 
-#: ../midori/midori-browser.c:4532
+#: ../raphael/raphael-browser.c:4532
 msgid "_Import bookmarks"
 msgstr "_Uvezi bookmarkove"
 
-#: ../midori/midori-browser.c:4543
+#: ../raphael/raphael-browser.c:4543
 msgid "_Application:"
 msgstr "_Aplikacija:"
 
-#: ../midori/midori-browser.c:4608
+#: ../raphael/raphael-browser.c:4608
 msgid "Import from XBEL or HTML file"
 msgstr "Uvezi iz XBEL ili HTML datoteke"
 
-#: ../midori/midori-browser.c:4634
+#: ../raphael/raphael-browser.c:4634
 msgid "Import from a file"
 msgstr "Uvezi iz datoteke"
 
-#: ../midori/midori-browser.c:4646
+#: ../raphael/raphael-browser.c:4646
 msgid "Failed to import bookmarks"
 msgstr "Uvoženje bookmarkova nije uspjelo"
 
-#: ../midori/midori-browser.c:4676
+#: ../raphael/raphael-browser.c:4676
 msgid "XBEL Bookmarks"
 msgstr "XBEL bookmarkovi"
 
-#: ../midori/midori-browser.c:4681
+#: ../raphael/raphael-browser.c:4681
 msgid "Netscape Bookmarks"
 msgstr "Netscape bookmarkovi"
 
-#: ../midori/midori-browser.c:4699
+#: ../raphael/raphael-browser.c:4699
 msgid "Raphael can only export to XBEL (*.xbel) and Netscape (*.html)"
 msgstr ""
 "Raphael može da eksportuje samo u XBEL (*.xbel) i Netscape (*.html) formatu"
 
-#: ../midori/midori-browser.c:4711
+#: ../raphael/raphael-browser.c:4711
 msgid "Failed to export bookmarks"
 msgstr "Greška prilikom eksportovanja bookmarkova"
 
-#: ../midori/midori-browser.c:4899
+#: ../raphael/raphael-browser.c:4899
 msgid "A lightweight web browser."
 msgstr "Jednostavan web pretraživač."
 
-#: ../midori/midori-browser.c:4900
+#: ../raphael/raphael-browser.c:4900
 msgid "See about:version for version info."
 msgstr "Otvorite about:version da pregledate informacije o verziji."
 
-#: ../midori/midori-browser.c:4902
+#: ../raphael/raphael-browser.c:4902
 msgid ""
 "This library is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU Lesser General Public License as published by the "
@@ -497,7 +497,7 @@ msgstr ""
 "Fondacija slobodnog softvera. Ovime pristajete na 2.1 ili (na vaš izbor) "
 "noviju verziju licence."
 
-#: ../midori/midori-browser.c:4933
+#: ../raphael/raphael-browser.c:4933
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -506,425 +506,425 @@ msgstr ""
 "  WebKit Team https://launchpad.net/~webkit-team\n"
 "  aleksandar-todorovic https://launchpad.net/~aleksandar-todorovic"
 
-#: ../midori/midori-browser.c:5191 ../midori/midori-browser.c:5432
+#: ../raphael/raphael-browser.c:5191 ../raphael/raphael-browser.c:5432
 msgid "_Duplicate Current Tab"
 msgstr "_Duplicirajte trenutni tab"
 
-#: ../midori/midori-browser.c:5226
+#: ../raphael/raphael-browser.c:5226
 msgid "_File"
 msgstr "_Datoteka"
 
-#: ../midori/midori-browser.c:5229
+#: ../raphael/raphael-browser.c:5229
 msgid "Open a new window"
 msgstr "Otvori u novom prozoru"
 
-#: ../midori/midori-browser.c:5232 ../midori/midori-notebook.vala:232
+#: ../raphael/raphael-browser.c:5232 ../raphael/raphael-notebook.vala:232
 msgid "Open a new tab"
 msgstr "Otvori u novom tabu"
 
-#: ../midori/midori-browser.c:5234
+#: ../raphael/raphael-browser.c:5234
 msgid "New P_rivate Browsing Window"
 msgstr "Novi _privatni prozor"
 
-#: ../midori/midori-browser.c:5238
+#: ../raphael/raphael-browser.c:5238
 msgid "Open a file"
 msgstr "Otvori datoteku"
 
-#: ../midori/midori-browser.c:5240
+#: ../raphael/raphael-browser.c:5240
 msgid "_Save Page As…"
 msgstr "_Sačuvaj stranicu kao..."
 
-#: ../midori/midori-browser.c:5241
+#: ../raphael/raphael-browser.c:5241
 msgid "Save to a file"
 msgstr "Sačuvaj u datoteku"
 
-#: ../midori/midori-browser.c:5243
+#: ../raphael/raphael-browser.c:5243
 msgid "Add to Speed _dial"
 msgstr "Dodaj u brzo _biranje"
 
-#: ../midori/midori-browser.c:5246
+#: ../raphael/raphael-browser.c:5246
 msgid "Subscribe to News _feed"
 msgstr "Pretplatite se na _feed vijesti"
 
-#: ../midori/midori-browser.c:5252
+#: ../raphael/raphael-browser.c:5252
 msgid "_Close Tab"
 msgstr "_Zatvori tab"
 
-#: ../midori/midori-browser.c:5253
+#: ../raphael/raphael-browser.c:5253
 msgid "Close the current tab"
 msgstr "Zatvori trenutni tab"
 
-#: ../midori/midori-browser.c:5255
+#: ../raphael/raphael-browser.c:5255
 msgid "C_lose Window"
 msgstr "Z_atvori prozor"
 
-#: ../midori/midori-browser.c:5259
+#: ../raphael/raphael-browser.c:5259
 msgid "Print the current page"
 msgstr "Odštampaj trenutnu stranicu"
 
-#: ../midori/midori-browser.c:5261
+#: ../raphael/raphael-browser.c:5261
 msgid "Send Page Link Via Email"
 msgstr ""
 
-#: ../midori/midori-browser.c:5264
+#: ../raphael/raphael-browser.c:5264
 msgid "Close a_ll Windows"
 msgstr "Zatvori _sve prozore"
 
-#: ../midori/midori-browser.c:5267
+#: ../raphael/raphael-browser.c:5267
 msgid "_Edit"
 msgstr "_Uredi"
 
 #. i18n: Right-click on Location, Open an URL from the clipboard
-#: ../midori/midori-browser.c:5285
+#: ../raphael/raphael-browser.c:5285
 msgid "Paste and p_roceed"
 msgstr "Nalijepi i _nastavi dalje"
 
-#: ../midori/midori-browser.c:5294
+#: ../raphael/raphael-browser.c:5294
 msgid "_Find…"
 msgstr "_Pronađi..."
 
-#: ../midori/midori-browser.c:5295
+#: ../raphael/raphael-browser.c:5295
 msgid "Find a word or phrase in the page"
 msgstr "Pronađi riječ ili frazu na stranici"
 
-#: ../midori/midori-browser.c:5297
+#: ../raphael/raphael-browser.c:5297
 msgid "Find _Next"
 msgstr "Pronađi _sledjeće"
 
-#: ../midori/midori-browser.c:5300
+#: ../raphael/raphael-browser.c:5300
 msgid "Find _Previous"
 msgstr "Pronađi _prethodno"
 
-#: ../midori/midori-browser.c:5304
+#: ../raphael/raphael-browser.c:5304
 msgid "Configure the application preferences"
 msgstr "Konfiguriši podešavanja za aplikaciju"
 
-#: ../midori/midori-browser.c:5306
+#: ../raphael/raphael-browser.c:5306
 msgid "_View"
 msgstr "_Pregledaj"
 
-#: ../midori/midori-browser.c:5307
+#: ../raphael/raphael-browser.c:5307
 msgid "_Toolbars"
 msgstr "_Toolbarovi"
 
-#: ../midori/midori-browser.c:5322
+#: ../raphael/raphael-browser.c:5322
 msgid "Increase the zoom level"
 msgstr "Povećaj zoom nivo"
 
-#: ../midori/midori-browser.c:5325
+#: ../raphael/raphael-browser.c:5325
 msgid "Decrease the zoom level"
 msgstr "Smanji zoom nivo"
 
-#: ../midori/midori-browser.c:5329 ../midori/midori-view.c:2506
+#: ../raphael/raphael-browser.c:5329 ../raphael/raphael-view.c:2506
 msgid "_Encoding"
 msgstr "_Enkodiranje"
 
-#: ../midori/midori-browser.c:5331
+#: ../raphael/raphael-browser.c:5331
 msgid "View So_urce"
 msgstr "Pregledaj _izvor"
 
-#: ../midori/midori-browser.c:5334
+#: ../raphael/raphael-browser.c:5334
 msgid "View _DOM Source"
 msgstr "Pregledaj _DOM izvor"
 
-#: ../midori/midori-browser.c:5337
+#: ../raphael/raphael-browser.c:5337
 msgid "Ca_ret Browsing"
 msgstr "Ca_ret Browsing"
 
-#: ../midori/midori-browser.c:5341
+#: ../raphael/raphael-browser.c:5341
 msgid "Toggle fullscreen view"
 msgstr "Uključite/isključite prikaz preko čitavog ekrana"
 
-#: ../midori/midori-browser.c:5343
+#: ../raphael/raphael-browser.c:5343
 msgid "Scroll _Left"
 msgstr "Pomjeru u_lijevo"
 
-#: ../midori/midori-browser.c:5346
+#: ../raphael/raphael-browser.c:5346
 msgid "Scroll _Down"
 msgstr "Pomjeri prema dole"
 
-#: ../midori/midori-browser.c:5349
+#: ../raphael/raphael-browser.c:5349
 msgid "Scroll _Up"
 msgstr "Pomjeri prema gore"
 
-#: ../midori/midori-browser.c:5352
+#: ../raphael/raphael-browser.c:5352
 msgid "Scroll _Right"
 msgstr "Pomjeri u_desno"
 
-#: ../midori/midori-browser.c:5355
+#: ../raphael/raphael-browser.c:5355
 msgid "_Readable"
 msgstr "_Čitljivo"
 
-#: ../midori/midori-browser.c:5358
+#: ../raphael/raphael-browser.c:5358
 msgid "_Go"
 msgstr "_Idi"
 
-#: ../midori/midori-browser.c:5361
+#: ../raphael/raphael-browser.c:5361
 msgid "Go back to the previous page"
 msgstr "Idi nazad na prethodnu stranicu"
 
 #. i18n: Visit the previous logical page, ie. in a forum or blog
-#: ../midori/midori-browser.c:5368
+#: ../raphael/raphael-browser.c:5368
 msgid "Go to the previous sub-page"
 msgstr "Idi na prethodnu pod-stranicu"
 
-#: ../midori/midori-browser.c:5374
+#: ../raphael/raphael-browser.c:5374
 msgid "Next or Forward"
 msgstr "Sledjeće ili Naprijed"
 
-#: ../midori/midori-browser.c:5375
+#: ../raphael/raphael-browser.c:5375
 msgid "Go to the next sub-page or next page in history"
 msgstr "Idi na sledjeću pod-stranicu ili na sledjeću stranicu u istoriji"
 
-#: ../midori/midori-browser.c:5377
+#: ../raphael/raphael-browser.c:5377
 msgid "_Homepage"
 msgstr "_Početna stranica"
 
-#: ../midori/midori-browser.c:5378
+#: ../raphael/raphael-browser.c:5378
 msgid "Go to your homepage"
 msgstr "Idi na početnu stranicu"
 
-#: ../midori/midori-browser.c:5380
+#: ../raphael/raphael-browser.c:5380
 msgid "Empty Trash"
 msgstr "Isprazni smeće"
 
-#: ../midori/midori-browser.c:5383
+#: ../raphael/raphael-browser.c:5383
 msgid "Undo _Close Tab"
 msgstr "Poništi _zatvaranje taba"
 
-#: ../midori/midori-browser.c:5390
+#: ../raphael/raphael-browser.c:5390
 msgid "Add a new _folder"
 msgstr "Dodaj novi direktorij"
 
-#: ../midori/midori-browser.c:5393
+#: ../raphael/raphael-browser.c:5393
 msgid "_Import bookmarks…"
 msgstr "_Uvezi bookmarkove..."
 
-#: ../midori/midori-browser.c:5396
+#: ../raphael/raphael-browser.c:5396
 msgid "_Export bookmarks…"
 msgstr "_Eksportuj bookmarkove..."
 
-#: ../midori/midori-browser.c:5399
+#: ../raphael/raphael-browser.c:5399
 msgid "_Manage Search Engines…"
 msgstr "_Izaberite podrazumijevane pretraživače..."
 
-#: ../midori/midori-browser.c:5402
+#: ../raphael/raphael-browser.c:5402
 msgid "_Clear Private Data…"
 msgstr "_Izbrišite privatne podatke..."
 
-#: ../midori/midori-browser.c:5405
+#: ../raphael/raphael-browser.c:5405
 msgid "_Inspect Page"
 msgstr "_Pregledajte stranicu"
 
-#: ../midori/midori-browser.c:5409
+#: ../raphael/raphael-browser.c:5409
 msgid "_Previous Tab"
 msgstr "_Prethodni tab"
 
-#: ../midori/midori-browser.c:5412
+#: ../raphael/raphael-browser.c:5412
 msgid "_Next Tab"
 msgstr "_Sledjeći tab"
 
-#: ../midori/midori-browser.c:5414
+#: ../raphael/raphael-browser.c:5414
 msgid "Move Tab to _first position"
 msgstr "Premjesti tab na _prvu poziciju"
 
-#: ../midori/midori-browser.c:5416
+#: ../raphael/raphael-browser.c:5416
 msgid "Move Tab _Backward"
 msgstr "Premjesti tab u_nazad"
 
-#: ../midori/midori-browser.c:5418
+#: ../raphael/raphael-browser.c:5418
 msgid "_Move Tab Forward"
 msgstr "_Premjesti tab unaprijed"
 
-#: ../midori/midori-browser.c:5420
+#: ../raphael/raphael-browser.c:5420
 msgid "Move Tab to _last position"
 msgstr "Premjesti tab na _zadnju poziciju"
 
-#: ../midori/midori-browser.c:5423
+#: ../raphael/raphael-browser.c:5423
 msgid "Focus _Current Tab"
 msgstr "Fokusiraj _trenutni tab"
 
-#: ../midori/midori-browser.c:5426
+#: ../raphael/raphael-browser.c:5426
 msgid "Focus _Next view"
 msgstr "Fokusiraj _sledjeći prikaz"
 
-#: ../midori/midori-browser.c:5429
+#: ../raphael/raphael-browser.c:5429
 msgid "Only show the Icon of the _Current Tab"
 msgstr "Prikaži samo ikonu _trenutnog taba"
 
-#: ../midori/midori-browser.c:5435
+#: ../raphael/raphael-browser.c:5435
 msgid "Close Ot_her Tabs"
 msgstr "Zatvori _ostale tabove"
 
-#: ../midori/midori-browser.c:5438
+#: ../raphael/raphael-browser.c:5438
 msgid "Open last _session"
 msgstr "Otvori prethodnu _sesiju"
 
-#: ../midori/midori-browser.c:5441
+#: ../raphael/raphael-browser.c:5441
 msgid "_Help"
 msgstr "_Pomoć"
 
-#: ../midori/midori-browser.c:5443
+#: ../raphael/raphael-browser.c:5443
 msgid "_Frequent Questions"
 msgstr "_Često postavljena pitanja"
 
-#: ../midori/midori-browser.c:5446
+#: ../raphael/raphael-browser.c:5446
 msgid "_Report a Problem…"
 msgstr "_Prijavi problem..."
 
-#: ../midori/midori-browser.c:5451 ../midori/midori-browser.c:6101
+#: ../raphael/raphael-browser.c:5451 ../raphael/raphael-browser.c:6101
 msgid "_Tools"
 msgstr "_Alati"
 
-#: ../midori/midori-browser.c:5458
+#: ../raphael/raphael-browser.c:5458
 msgid "_Menubar"
 msgstr "_Meni bar"
 
-#: ../midori/midori-browser.c:5462
+#: ../raphael/raphael-browser.c:5462
 msgid "_Navigationbar"
 msgstr "Bar za _navigaciju"
 
-#: ../midori/midori-browser.c:5466
+#: ../raphael/raphael-browser.c:5466
 msgid "Side_panel"
 msgstr "_Panel sa strane"
 
-#: ../midori/midori-browser.c:5467
+#: ../raphael/raphael-browser.c:5467
 msgid "Sidepanel"
 msgstr "Panel sa strane"
 
-#: ../midori/midori-browser.c:5470
+#: ../raphael/raphael-browser.c:5470
 msgid "_Bookmarkbar"
 msgstr "Bar sa _bookmarkovima"
 
-#: ../midori/midori-browser.c:5474
+#: ../raphael/raphael-browser.c:5474
 msgid "_Statusbar"
 msgstr "_Status bar"
 
-#: ../midori/midori-browser.c:5482 ../midori/midori-websettings.c:230
+#: ../raphael/raphael-browser.c:5482 ../raphael/raphael-websettings.c:230
 msgid "_Automatic"
 msgstr "_Automatski"
 
-#: ../midori/midori-browser.c:5485 ../midori/midori-websettings.c:154
+#: ../raphael/raphael-browser.c:5485 ../raphael/raphael-websettings.c:154
 msgid "Chinese Traditional (BIG5)"
 msgstr "Kineski tradicionalni (BIG5)"
 
-#: ../midori/midori-browser.c:5488 ../midori/midori-websettings.c:155
+#: ../raphael/raphael-browser.c:5488 ../raphael/raphael-websettings.c:155
 msgid "Chinese Simplified (GB18030)"
 msgstr "Kineski pojednostavljeni (GB18030)"
 
 #. i18n: A double underscore "__" is used to prevent the mnemonic
-#: ../midori/midori-browser.c:5492
+#: ../raphael/raphael-browser.c:5492
 msgid "Japanese (SHIFT__JIS)"
 msgstr "Japanski (SHIFT__JIS)"
 
-#: ../midori/midori-browser.c:5495 ../midori/midori-websettings.c:157
+#: ../raphael/raphael-browser.c:5495 ../raphael/raphael-websettings.c:157
 msgid "Korean (EUC-KR)"
 msgstr "Korejski (EUC-KR)"
 
-#: ../midori/midori-browser.c:5498 ../midori/midori-websettings.c:158
+#: ../raphael/raphael-browser.c:5498 ../raphael/raphael-websettings.c:158
 msgid "Russian (KOI8-R)"
 msgstr "Ruski (K0I8-R)"
 
-#: ../midori/midori-browser.c:5501 ../midori/midori-websettings.c:159
+#: ../raphael/raphael-browser.c:5501 ../raphael/raphael-websettings.c:159
 msgid "Unicode (UTF-8)"
 msgstr "Unikod (UTF-8)"
 
-#: ../midori/midori-browser.c:5504 ../midori/midori-websettings.c:160
+#: ../raphael/raphael-browser.c:5504 ../raphael/raphael-websettings.c:160
 msgid "Western (ISO-8859-1)"
 msgstr "Zapadni (ISO-8859-1)"
 
-#: ../midori/midori-browser.c:5507 ../midori/midori-websettings.c:161
-#: ../midori/midori-websettings.c:237 ../extensions/open-with.vala:159
+#: ../raphael/raphael-browser.c:5507 ../raphael/raphael-websettings.c:161
+#: ../raphael/raphael-websettings.c:237 ../extensions/open-with.vala:159
 #: ../extensions/open-with.vala:268
 msgid "Custom…"
 msgstr "Prilagođeno..."
 
-#: ../midori/midori-browser.c:5821
+#: ../raphael/raphael-browser.c:5821
 #, c-format
 msgid "Failed to initialize history: %s"
 msgstr "Nije moguće inicijalizovati istoriju: %s"
 
-#: ../midori/midori-browser.c:6000
+#: ../raphael/raphael-browser.c:6000
 msgid "_Separator"
 msgstr "_Separator"
 
-#: ../midori/midori-browser.c:6007
+#: ../raphael/raphael-browser.c:6007
 msgid "_Location…"
 msgstr "_Lokacija..."
 
-#: ../midori/midori-browser.c:6009
+#: ../raphael/raphael-browser.c:6009
 msgid "Open a particular location"
 msgstr "Otvori specifičnu lokaciju"
 
-#: ../midori/midori-browser.c:6010
+#: ../raphael/raphael-browser.c:6010
 msgid "Search or enter an address"
 msgstr ""
 
-#: ../midori/midori-browser.c:6032
+#: ../raphael/raphael-browser.c:6032
 msgid "_Web Search…"
 msgstr "_Web pretraživanje..."
 
-#: ../midori/midori-browser.c:6034
+#: ../raphael/raphael-browser.c:6034
 msgid "Run a web search"
 msgstr "Pokreni web pretraživanje"
 
-#: ../midori/midori-browser.c:6061
+#: ../raphael/raphael-browser.c:6061
 msgid "Reopen a previously closed tab or window"
 msgstr "Ponovo otvori prethodno zatvorene tabove ili prozore"
 
-#: ../midori/midori-browser.c:6080
+#: ../raphael/raphael-browser.c:6080
 msgid "Show the saved bookmarks"
 msgstr "Pokaži sačuvane bookmarkove"
 
-#: ../midori/midori-browser.c:6115
+#: ../raphael/raphael-browser.c:6115
 msgid "_Tabs"
 msgstr "_Tabovi"
 
-#: ../midori/midori-browser.c:6117
+#: ../raphael/raphael-browser.c:6117
 msgid "Show a list of all open tabs"
 msgstr "Prikaži listu svih otvorenih tabova"
 
-#: ../midori/midori-browser.c:6134
+#: ../raphael/raphael-browser.c:6134
 msgid "_Menu"
 msgstr "_Meni"
 
-#: ../midori/midori-browser.c:6136
+#: ../raphael/raphael-browser.c:6136
 msgid "Menu"
 msgstr "Meni"
 
-#: ../midori/midori-extension.c:341
+#: ../raphael/raphael-extension.c:341
 #, c-format
 msgid "The configuration of the extension '%s' couldn't be loaded: %s\n"
 msgstr "Nije moguće učitati konfiguraciju ekstenzije '%s': %s\n"
 
-#: ../midori/midori-extension.c:921 ../extensions/addons.c:1707
+#: ../raphael/raphael-extension.c:921 ../extensions/addons.c:1707
 #, c-format
 msgid "The configuration of the extension '%s' couldn't be saved: %s\n"
 msgstr "Nije moguće sačuvati konfiguraciju ekstenzije '%s': %s\n"
 
-#: ../midori/midori-locationaction.c:1343
+#: ../raphael/raphael-locationaction.c:1343
 msgid "Export certificate"
 msgstr "Eksportuj certifikate"
 
-#: ../midori/midori-locationaction.c:1377
-#: ../midori/midori-locationaction.c:1495
+#: ../raphael/raphael-locationaction.c:1377
+#: ../raphael/raphael-locationaction.c:1495
 msgid "_Don't trust this website"
 msgstr ""
 
-#: ../midori/midori-locationaction.c:1379
-#: ../midori/midori-locationaction.c:1501
+#: ../raphael/raphael-locationaction.c:1379
+#: ../raphael/raphael-locationaction.c:1501
 msgid "_Trust this website"
 msgstr ""
 
-#: ../midori/midori-locationaction.c:1381
+#: ../raphael/raphael-locationaction.c:1381
 msgid "_Export Certificate"
 msgstr ""
 
-#: ../midori/midori-locationaction.c:1429
+#: ../raphael/raphael-locationaction.c:1429
 msgid "The signing certificate authority is not known."
 msgstr "Nije prepoznat autoritet za potpisivanje certifikata"
 
-#: ../midori/midori-locationaction.c:1431
+#: ../raphael/raphael-locationaction.c:1431
 msgid ""
 "The certificate does not match the expected identity of the site that it was "
 "retrieved from."
@@ -932,474 +932,474 @@ msgstr ""
 "Certifikat se ne slaže sa pretpostavljenim identitetom stranice od koje ga "
 "je primio."
 
-#: ../midori/midori-locationaction.c:1433
+#: ../raphael/raphael-locationaction.c:1433
 msgid "The certificate's activation time is still in the future."
 msgstr "Vrijeme za aktivaciju certifikata je u budućnosti."
 
-#: ../midori/midori-locationaction.c:1435
+#: ../raphael/raphael-locationaction.c:1435
 msgid "The certificate has expired"
 msgstr "Certifikat je istekao"
 
-#: ../midori/midori-locationaction.c:1437
+#: ../raphael/raphael-locationaction.c:1437
 msgid ""
 "The certificate has been revoked according to the GTlsConnection's "
 "certificate revocation list."
 msgstr ""
 
-#: ../midori/midori-locationaction.c:1439
+#: ../raphael/raphael-locationaction.c:1439
 msgid "The certificate's algorithm is considered insecure."
 msgstr "Algoritam za certifikat se smatra nesigurnim."
 
-#: ../midori/midori-locationaction.c:1441
+#: ../raphael/raphael-locationaction.c:1441
 msgid "Some other error occurred validating the certificate."
 msgstr ""
 "Došlo je do neke druge greške prilikom ispitivanja validnosti certifikata."
 
-#: ../midori/midori-locationaction.c:1505
-#: ../midori/midori-locationaction.c:1517
+#: ../raphael/raphael-locationaction.c:1505
+#: ../raphael/raphael-locationaction.c:1517
 msgid "_Export certificate"
 msgstr "_Eksportuj certifikate"
 
-#: ../midori/midori-locationaction.c:1532
+#: ../raphael/raphael-locationaction.c:1532
 msgid "Self-signed"
 msgstr "Samo-potpisan"
 
-#: ../midori/midori-locationaction.c:1603
+#: ../raphael/raphael-locationaction.c:1603
 msgid "Security details"
 msgstr "Detalji o sigurnosti"
 
-#: ../midori/midori-locationaction.c:1899
+#: ../raphael/raphael-locationaction.c:1899
 msgid "Not verified"
 msgstr "Nije verifikovano"
 
-#: ../midori/midori-locationaction.c:1905
+#: ../raphael/raphael-locationaction.c:1905
 msgid "Verified and encrypted connection"
 msgstr "Verifikovana i enkriptovana konekcija"
 
-#: ../midori/midori-locationaction.c:1910
+#: ../raphael/raphael-locationaction.c:1910
 msgid "Open, unencrypted connection"
 msgstr "Otvori ne-enkriptovanu konekciju"
 
-#: ../midori/midori-panel.c:314 ../midori/midori-panel.c:316
-#: ../midori/midori-panel.c:480 ../midori/midori-panel.c:483
+#: ../raphael/raphael-panel.c:314 ../raphael/raphael-panel.c:316
+#: ../raphael/raphael-panel.c:480 ../raphael/raphael-panel.c:483
 msgid "Align sidepanel to the right"
 msgstr "Poredaj panele sa strane udesno"
 
-#: ../midori/midori-panel.c:326 ../midori/midori-panel.c:327
+#: ../raphael/raphael-panel.c:326 ../raphael/raphael-panel.c:327
 msgid "Close panel"
 msgstr "Zatvori panel"
 
-#: ../midori/midori-panel.c:481 ../midori/midori-panel.c:484
+#: ../raphael/raphael-panel.c:481 ../raphael/raphael-panel.c:484
 msgid "Align sidepanel to the left"
 msgstr "Poredaj panele sa strane ulijevo"
 
-#: ../midori/midori-websettings.c:117 ../midori/midori-websettings.c:138
+#: ../raphael/raphael-websettings.c:117 ../raphael/raphael-websettings.c:138
 msgid "Show Speed Dial"
 msgstr "Prikaži brzo biranje"
 
-#: ../midori/midori-websettings.c:118 ../midori/midori-websettings.c:136
+#: ../raphael/raphael-websettings.c:118 ../raphael/raphael-websettings.c:136
 msgid "Show Homepage"
 msgstr "Prikaži početnu stranicu"
 
-#: ../midori/midori-websettings.c:119 ../midori/midori-frontend.c:382
+#: ../raphael/raphael-websettings.c:119 ../raphael/raphael-frontend.c:382
 msgid "Show last open tabs"
 msgstr "Prikaži zadnje otvorene tabove"
 
-#: ../midori/midori-websettings.c:120 ../midori/midori-frontend.c:381
+#: ../raphael/raphael-websettings.c:120 ../raphael/raphael-frontend.c:381
 msgid "Show last tabs without loading"
 msgstr "Prikaži zadne tabove bez učitavanja"
 
-#: ../midori/midori-websettings.c:135
+#: ../raphael/raphael-websettings.c:135
 msgid "Show Blank Page"
 msgstr "Prikaži praznu stranicu"
 
-#: ../midori/midori-websettings.c:137
+#: ../raphael/raphael-websettings.c:137
 msgid "Show default Search Engine"
 msgstr "Prikaži podrazumijevani pretraživač"
 
-#: ../midori/midori-websettings.c:139
+#: ../raphael/raphael-websettings.c:139
 msgid "Show custom page"
 msgstr "Prikaži neku drugu stranicu"
 
-#: ../midori/midori-websettings.c:156
+#: ../raphael/raphael-websettings.c:156
 msgid "Japanese (SHIFT_JIS)"
 msgstr "Japanski (SHIFT_JIS)"
 
-#: ../midori/midori-websettings.c:176
+#: ../raphael/raphael-websettings.c:176
 msgid "New tab"
 msgstr "Novi tab"
 
-#: ../midori/midori-websettings.c:177
+#: ../raphael/raphael-websettings.c:177
 msgid "New window"
 msgstr "Novi prozor"
 
-#: ../midori/midori-websettings.c:178
+#: ../raphael/raphael-websettings.c:178
 msgid "Current tab"
 msgstr "Trenutni tab"
 
-#: ../midori/midori-websettings.c:193
+#: ../raphael/raphael-websettings.c:193
 msgid "Default"
 msgstr "Podrazumijevano"
 
-#: ../midori/midori-websettings.c:194
+#: ../raphael/raphael-websettings.c:194
 msgid "Icons"
 msgstr "Ikone"
 
-#: ../midori/midori-websettings.c:195
+#: ../raphael/raphael-websettings.c:195
 msgid "Small icons"
 msgstr "Male ikone"
 
-#: ../midori/midori-websettings.c:196
+#: ../raphael/raphael-websettings.c:196
 msgid "Text"
 msgstr "Tekst"
 
-#: ../midori/midori-websettings.c:197
+#: ../raphael/raphael-websettings.c:197
 msgid "Icons and text"
 msgstr "Ikone i tekst"
 
-#: ../midori/midori-websettings.c:198
+#: ../raphael/raphael-websettings.c:198
 msgid "Text beside icons"
 msgstr "Tekst pored ikona"
 
-#: ../midori/midori-websettings.c:213
+#: ../raphael/raphael-websettings.c:213
 msgid "Automatic (GNOME or environment)"
 msgstr "Automatski (GNOME ili okruženje)"
 
-#: ../midori/midori-websettings.c:214
+#: ../raphael/raphael-websettings.c:214
 msgid "HTTP proxy server"
 msgstr "HTTP server za proksi"
 
-#: ../midori/midori-websettings.c:215
+#: ../raphael/raphael-websettings.c:215
 msgid "No proxy server"
 msgstr "Nema proksi servera"
 
-#: ../midori/midori-websettings.c:232
+#: ../raphael/raphael-websettings.c:232
 msgid "Chrome"
 msgstr "Chrome"
 
-#: ../midori/midori-websettings.c:233
+#: ../raphael/raphael-websettings.c:233
 msgid "Safari"
 msgstr "Safari"
 
-#: ../midori/midori-websettings.c:234
+#: ../raphael/raphael-websettings.c:234
 msgid "iPhone"
 msgstr "iPhone"
 
-#: ../midori/midori-websettings.c:235
+#: ../raphael/raphael-websettings.c:235
 msgid "Firefox"
 msgstr "Firefox"
 
-#: ../midori/midori-websettings.c:236
+#: ../raphael/raphael-websettings.c:236
 msgid "Internet Explorer"
 msgstr "Internet Explorer"
 
-#: ../midori/midori-websettings.c:318
+#: ../raphael/raphael-websettings.c:318
 msgid "The style of the toolbar"
 msgstr "Stil toolbara"
 
-#: ../midori/midori-websettings.c:502
+#: ../raphael/raphael-websettings.c:502
 msgid "Always use my font choices"
 msgstr "Uvijek koristi moje izbore za font"
 
-#: ../midori/midori-websettings.c:503
+#: ../raphael/raphael-websettings.c:503
 msgid "Override fonts picked by websites with user preferences"
 msgstr ""
 "Obori fontove izabrane od web stranica sa onima iz podešavanja korisnika"
 
-#: ../midori/midori-websettings.c:1447 ../midori/midori-websettings.c:1453
+#: ../raphael/raphael-websettings.c:1447 ../raphael/raphael-websettings.c:1453
 #, c-format
 msgid "The configuration couldn't be loaded: %s\n"
 msgstr "Nije moguće učitati konfiguraciju: %s\n"
 
-#: ../midori/midori-websettings.c:1507 ../midori/midori-websettings.c:1636
+#: ../raphael/raphael-websettings.c:1507 ../raphael/raphael-websettings.c:1636
 #, c-format
 msgid "Invalid configuration value '%s'"
 msgstr "Nevažeća konfiguracijska vrijednost '%s'"
 
-#: ../midori/midori-tab.vala:157
+#: ../raphael/raphael-tab.vala:157
 #, c-format
 msgid "Failed to inject stylesheet: %s"
 msgstr "Nije uspjelo unošenje stylesheet-a: %s"
 
-#: ../midori/midori-notebook.vala:371
+#: ../raphael/raphael-notebook.vala:371
 msgid "Show Tab _Label"
 msgstr "Prikaži _naslov taba"
 
-#: ../midori/midori-notebook.vala:371
+#: ../raphael/raphael-notebook.vala:371
 msgid "Show Tab _Icon Only"
 msgstr "Prikaži samo ikonu"
 
-#: ../midori/midori-notebook.vala:376
+#: ../raphael/raphael-notebook.vala:376
 msgid "Close Tab to the R_ight"
 msgid_plural "Close Tabs to the R_ight"
 msgstr[0] "Zatvori tab u_desno"
 msgstr[1] "Zatvori tabove u_desno"
 
-#: ../midori/midori-notebook.vala:388
+#: ../raphael/raphael-notebook.vala:388
 msgid "Close Ot_her Tab"
 msgid_plural "Close Ot_her Tabs"
 msgstr[0] "Zatvori os_tali tab"
 msgstr[1] "Zatvori os_tale tabove"
 
-#: ../midori/midori-view.c:627 ../midori/midori-view.c:755
+#: ../raphael/raphael-view.c:627 ../raphael/raphael-view.c:755
 msgid "Trust this website"
 msgstr "Vjeruj ovoj web stranici"
 
-#: ../midori/midori-view.c:753
+#: ../raphael/raphael-view.c:753
 msgid "Security unknown"
 msgstr "Sigurnost nepoznata"
 
-#: ../midori/midori-view.c:1042
+#: ../raphael/raphael-view.c:1042
 #, c-format
 msgid "%s wants to save an HTML5 database."
 msgstr "%s želi da sačuva HTML5 bazu podataka."
 
-#: ../midori/midori-view.c:1046 ../midori/midori-view.c:1077
+#: ../raphael/raphael-view.c:1046 ../raphael/raphael-view.c:1077
 msgid "_Deny"
 msgstr "_Odbij"
 
-#: ../midori/midori-view.c:1046 ../midori/midori-view.c:1077
+#: ../raphael/raphael-view.c:1046 ../raphael/raphael-view.c:1077
 msgid "_Allow"
 msgstr "_Prihvati"
 
-#: ../midori/midori-view.c:1073
+#: ../raphael/raphael-view.c:1073
 #, c-format
 msgid "%s wants to know your location."
 msgstr "%s želi da zna vašu lokaciju."
 
-#: ../midori/midori-view.c:1231
+#: ../raphael/raphael-view.c:1231
 #, c-format
 msgid "You are not connected to a network"
 msgstr ""
 
-#: ../midori/midori-view.c:1232
+#: ../raphael/raphael-view.c:1232
 #, c-format
 msgid ""
 "Your computer must be connected to a network to reach “%s”. Connect to a "
 "wireless access point or attach a network cable and try again."
 msgstr ""
 
-#: ../midori/midori-view.c:1241
+#: ../raphael/raphael-view.c:1241
 #, c-format
 msgid "You are not connected to the Internet"
 msgstr ""
 
-#: ../midori/midori-view.c:1242
+#: ../raphael/raphael-view.c:1242
 #, c-format
 msgid ""
 "Your computer appears to be connected to a network, but can't reach “%s”. "
 "Check your network settings and try again."
 msgstr ""
 
-#: ../midori/midori-view.c:1248
+#: ../raphael/raphael-view.c:1248
 #, c-format
 msgid "Raphael can't find the page you're looking for"
 msgstr ""
 
-#: ../midori/midori-view.c:1249
+#: ../raphael/raphael-view.c:1249
 #, c-format
 msgid ""
 "The page located at “%s” cannot be found. Check the web address for "
 "misspelled words and try again."
 msgstr ""
 
-#: ../midori/midori-view.c:1256
+#: ../raphael/raphael-view.c:1256
 msgid "Try Again"
 msgstr "Pokušaj ponovo"
 
-#: ../midori/midori-view.c:1386
+#: ../raphael/raphael-view.c:1386
 #, c-format
 msgid "Oops - %s"
 msgstr "Ups - %s"
 
-#: ../midori/midori-view.c:1387
+#: ../raphael/raphael-view.c:1387
 #, c-format
 msgid "Something went wrong with '%s'."
 msgstr "Nešto je pošlo po zlu sa '%s'."
 
-#: ../midori/midori-view.c:1389
+#: ../raphael/raphael-view.c:1389
 msgid "Try again"
 msgstr "Pokušaj ponovo"
 
-#: ../midori/midori-view.c:1536 ../midori/midori-view.c:2418
+#: ../raphael/raphael-view.c:1536 ../raphael/raphael-view.c:2418
 #, c-format
 msgid "Send a message to %s"
 msgstr "Pošalji poruku prema %s"
 
-#: ../midori/midori-view.c:2334
+#: ../raphael/raphael-view.c:2334
 msgid "Add _search engine..."
 msgstr "Dodaj _pretraživač"
 
-#: ../midori/midori-view.c:2349
+#: ../raphael/raphael-view.c:2349
 msgid "Open _Link"
 msgstr "Otvori _link"
 
-#: ../midori/midori-view.c:2356
+#: ../raphael/raphael-view.c:2356
 msgid "Open Link in New _Tab"
 msgstr "Otvori link u novom _tabu"
 
-#: ../midori/midori-view.c:2362
+#: ../raphael/raphael-view.c:2362
 msgid "Open Link in _Foreground Tab"
 msgstr "Otvori link u _foreground tabu"
 
-#: ../midori/midori-view.c:2362
+#: ../raphael/raphael-view.c:2362
 msgid "Open Link in _Background Tab"
 msgstr "Otvori link u _background tabu"
 
-#: ../midori/midori-view.c:2364
+#: ../raphael/raphael-view.c:2364
 msgid "Open Link in New _Window"
 msgstr "Otvori link u novom _prozoru"
 
-#: ../midori/midori-view.c:2368
+#: ../raphael/raphael-view.c:2368
 msgid "Copy Link de_stination"
 msgstr "Kopiraj link de_stinacije"
 
 #. GTK_STOCK_SAVE_AS is lacking the underline
-#: ../midori/midori-view.c:2374
+#: ../raphael/raphael-view.c:2374
 msgid "Save _As…"
 msgstr "Sačuvaj _kao..."
 
-#: ../midori/midori-view.c:2386
+#: ../raphael/raphael-view.c:2386
 msgid "Open _Image in New Window"
 msgstr "Otvori _sliku u novom prozoru"
 
-#: ../midori/midori-view.c:2386
+#: ../raphael/raphael-view.c:2386
 msgid "Open _Image in New Tab"
 msgstr "Otvori _sliku u novom tabu"
 
-#: ../midori/midori-view.c:2389
+#: ../raphael/raphael-view.c:2389
 msgid "Copy Im_age"
 msgstr "Kopiraj sl_iku"
 
-#: ../midori/midori-view.c:2391
+#: ../raphael/raphael-view.c:2391
 msgid "Save I_mage"
 msgstr "Sačuvaj s_liku"
 
-#: ../midori/midori-view.c:2397
+#: ../raphael/raphael-view.c:2397
 msgid "Copy Video _Address"
 msgstr "Kopiraj _adresu videa"
 
-#: ../midori/midori-view.c:2399
+#: ../raphael/raphael-view.c:2399
 msgid "Download _Video"
 msgstr "Preuzmi _video"
 
-#: ../midori/midori-view.c:2427
+#: ../raphael/raphael-view.c:2427
 msgid "Open Address in New _Tab"
 msgstr "Otvori adresu u novom _tabu"
 
-#: ../midori/midori-view.c:2437
+#: ../raphael/raphael-view.c:2437
 msgid "Search _with"
 msgstr "Pretraži _sa"
 
-#: ../midori/midori-view.c:2468
+#: ../raphael/raphael-view.c:2468
 msgid "_Search the Web"
 msgstr "_Pretraži internet"
 
-#: ../midori/midori-view.c:2498
+#: ../raphael/raphael-view.c:2498
 msgid "Open _Frame in New Tab"
 msgstr "Otvori _frame u novom tabu"
 
-#: ../midori/midori-view.c:2531
+#: ../raphael/raphael-view.c:2531
 msgid "Inspect _Element"
 msgstr "Pretraži _element"
 
-#: ../midori/midori-view.c:2776
+#: ../raphael/raphael-view.c:2776
 #, c-format
 msgid "Open or download file from %s"
 msgstr "Otvori ili preuzmi datoteku iz %s"
 
-#: ../midori/midori-view.c:2872 ../midori/midori-view.c:2875
+#: ../raphael/raphael-view.c:2872 ../raphael/raphael-view.c:2875
 #, c-format
 msgid "File Name: %s"
 msgstr "Ime datoteke: %s"
 
-#: ../midori/midori-view.c:2881
+#: ../raphael/raphael-view.c:2881
 #, c-format
 msgid "File Type: '%s'"
 msgstr "Tip datoteke: '%s'"
 
-#: ../midori/midori-view.c:2883
+#: ../raphael/raphael-view.c:2883
 #, c-format
 msgid "File Type: %s ('%s')"
 msgstr "Tip datoteke: %s ('%s')"
 
-#: ../midori/midori-view.c:2919
+#: ../raphael/raphael-view.c:2919
 #, c-format
 msgid "Size: %s"
 msgstr "Veličina: %s"
 
 #. i18n: A file open dialog title, ie. "Open http://fila.com/manual.tgz"
-#: ../midori/midori-view.c:2927 ../midori/midori-view.c:2929
+#: ../raphael/raphael-view.c:2927 ../raphael/raphael-view.c:2929
 #, c-format
 msgid "Open %s"
 msgstr "Otvori %s"
 
-#: ../midori/midori-view.c:3467
+#: ../raphael/raphael-view.c:3467
 #, c-format
 msgid "Inspect page - %s"
 msgstr "Inspektuj stranicu - %s"
 
-#: ../midori/midori-view.c:3941
+#: ../raphael/raphael-view.c:3941
 msgid "Page loading delayed:"
 msgstr "Učitavanje stranice se odužilo:"
 
-#: ../midori/midori-view.c:3942
+#: ../raphael/raphael-view.c:3942
 msgid "Loading delayed either due to a recent crash or startup preferences."
 msgstr ""
 "Učitavanje se odužilo ili zbog nedavnog krešovanja ili podešavanja prilikom "
 "pokretanja."
 
-#: ../midori/midori-view.c:3944
+#: ../raphael/raphael-view.c:3944
 msgid "Load Page"
 msgstr "Učitaj stranicu"
 
-#: ../midori/midori-view.c:4111
+#: ../raphael/raphael-view.c:4111
 msgid "Blank page"
 msgstr "Prazna stranica"
 
 #. i18n: word stem of "previous page" type links, case is not important
-#: ../midori/midori-view.c:4741
+#: ../raphael/raphael-view.c:4741
 msgid "previous"
 msgstr "prethodno"
 
 #. i18n: word stem of "next page" type links, case is not important
-#: ../midori/midori-view.c:4760
+#: ../raphael/raphael-view.c:4760
 msgid "next"
 msgstr "sledjeće"
 
-#: ../midori/midori-view.c:4774
+#: ../raphael/raphael-view.c:4774
 msgid "Print background images"
 msgstr "Štampaj pozadinske slike"
 
-#: ../midori/midori-view.c:4775
+#: ../raphael/raphael-view.c:4775
 msgid "Whether background images should be printed"
 msgstr "Da li treba štampati pozadinske slike"
 
-#: ../midori/midori-view.c:4817
+#: ../raphael/raphael-view.c:4817
 msgid "Features"
 msgstr "Svojstva"
 
 #. i18n: Download tooltip (size): 4KB of 43MB
-#: ../midori/midori-download.vala:66
+#: ../raphael/raphael-download.vala:66
 #, c-format
 msgid "%s of %s"
 msgstr "%s od %s"
 
-#: ../midori/midori-download.vala:82
+#: ../raphael/raphael-download.vala:82
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d sat"
 msgstr[1] "%d sati"
 
-#: ../midori/midori-download.vala:83
+#: ../raphael/raphael-download.vala:83
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuta"
 msgstr[1] "%d minuta"
 
-#: ../midori/midori-download.vala:84
+#: ../raphael/raphael-download.vala:84
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -1407,27 +1407,27 @@ msgstr[0] "%d sekunda"
 msgstr[1] "%d sekundi"
 
 #. i18n: Download tooltip (estimated time) : - 1 hour, 5 minutes remaning
-#: ../midori/midori-download.vala:99
+#: ../raphael/raphael-download.vala:99
 #, c-format
 msgid " - %s remaining"
 msgstr " Preostaje %s"
 
 #. i18n: Unknown number of bytes, used for transfer rate like ?B/s
-#: ../midori/midori-download.vala:116
+#: ../raphael/raphael-download.vala:116
 msgid "?B"
 msgstr "?B"
 
 #. i18n: Download tooltip (transfer rate): (130KB/s)
-#: ../midori/midori-download.vala:118 ../midori/midori-download.vala:132
+#: ../raphael/raphael-download.vala:118 ../raphael/raphael-download.vala:132
 #, c-format
 msgid " (%s/s)"
 msgstr " (%s/s)"
 
-#: ../midori/midori-download.vala:259
+#: ../raphael/raphael-download.vala:259
 msgid "The downloaded file is erroneous."
 msgstr "Preuzeta datoteka ima grešaka."
 
-#: ../midori/midori-download.vala:260
+#: ../raphael/raphael-download.vala:260
 msgid ""
 "The checksum provided with the link did not match. This means the file is "
 "probably incomplete or was modified afterwards."
@@ -1435,256 +1435,256 @@ msgstr ""
 "Checksum koji je provajdiran od strane linka se ne slaže. Ovo znači da je "
 "datoteka nekompletna ili da je uređena naknadno."
 
-#: ../midori/midori-download.vala:419
+#: ../raphael/raphael-download.vala:419
 #, c-format
 msgid "The file \"%s\" can't be saved in this folder."
 msgstr "Datoteka \"%s\" se ne može sačuvati u ovom direktoriju."
 
-#: ../midori/midori-download.vala:421
+#: ../raphael/raphael-download.vala:421
 msgid "You don't have permission to write in this location."
 msgstr "Nemate prava pristupa da pišete na ovoj lokaciji."
 
-#: ../midori/midori-download.vala:424
+#: ../raphael/raphael-download.vala:424
 #, c-format
 msgid "There is not enough free space to download \"%s\"."
 msgstr "Nema dovoljno prostora za preuzimanje \"%s\"."
 
-#: ../midori/midori-download.vala:426
+#: ../raphael/raphael-download.vala:426
 #, c-format
 msgid "The file needs %s but only %s are left."
 msgstr "Datoteka treba %s ali imate slobodno samo %s."
 
-#: ../midori/midori-speeddial.vala:188
+#: ../raphael/raphael-speeddial.vala:188
 msgid "Speed Dial"
 msgstr "Brzo biranje"
 
-#: ../midori/midori-speeddial.vala:189 ../midori/midori-speeddial.vala:268
+#: ../raphael/raphael-speeddial.vala:189 ../raphael/raphael-speeddial.vala:268
 msgid "Click to add a shortcut"
 msgstr "Kliknite da dodate prečicu"
 
-#: ../midori/midori-speeddial.vala:190
+#: ../raphael/raphael-speeddial.vala:190
 msgid "Enter shortcut address"
 msgstr "Unesite adresu prečice"
 
-#: ../midori/midori-speeddial.vala:191
+#: ../raphael/raphael-speeddial.vala:191
 msgid "Are you sure you want to delete this shortcut?"
 msgstr "Da li ste sigurni da želite da izbrišete ovu prečicu?"
 
-#: ../midori/midori-preferences.c:287
+#: ../raphael/raphael-preferences.c:287
 msgid "Startup"
 msgstr "Pokretanje"
 
-#: ../midori/midori-preferences.c:289
+#: ../raphael/raphael-preferences.c:289
 msgid "When Raphael starts:"
 msgstr "Kada se Raphael pokrene:"
 
-#: ../midori/midori-preferences.c:294
+#: ../raphael/raphael-preferences.c:294
 msgid "Homepage:"
 msgstr "Početna stranica"
 
-#: ../midori/midori-preferences.c:302
+#: ../raphael/raphael-preferences.c:302
 msgid "Use _current page"
 msgstr "Prikaži _trenutnu stranicu"
 
-#: ../midori/midori-preferences.c:306
+#: ../raphael/raphael-preferences.c:306
 msgid "Use current page as homepage"
 msgstr "Koristi trenutnu stranicu kao početnu"
 
 #. Page "Appearance"
-#: ../midori/midori-preferences.c:315
+#: ../raphael/raphael-preferences.c:315
 msgid "Fonts"
 msgstr "Fontovi"
 
-#: ../midori/midori-preferences.c:317
+#: ../raphael/raphael-preferences.c:317
 msgid "Proportional Font Family"
 msgstr "Proporcionalna porodica fontova"
 
-#: ../midori/midori-preferences.c:321
+#: ../raphael/raphael-preferences.c:321
 msgid "The default font family used to display text"
 msgstr "Podrazumijevana porodica fontova korišćena za prikazivanje teksta"
 
-#: ../midori/midori-preferences.c:324
+#: ../raphael/raphael-preferences.c:324
 msgid "The default font size used to display text"
 msgstr "Podrazumijevana veličina fonta za prikazivanje teksta"
 
-#: ../midori/midori-preferences.c:326
+#: ../raphael/raphael-preferences.c:326
 msgid "Fixed-width Font Family"
 msgstr ""
 
-#: ../midori/midori-preferences.c:330
+#: ../raphael/raphael-preferences.c:330
 msgid "The font family used to display fixed-width text"
 msgstr ""
 
-#: ../midori/midori-preferences.c:333
+#: ../raphael/raphael-preferences.c:333
 msgid "The font size used to display fixed-width text"
 msgstr ""
 
-#: ../midori/midori-preferences.c:335
+#: ../raphael/raphael-preferences.c:335
 msgid "Minimum Font Size"
 msgstr "Minimalna veličina fonta"
 
-#: ../midori/midori-preferences.c:339
+#: ../raphael/raphael-preferences.c:339
 msgid "The minimum font size used to display text"
 msgstr "Minimalna veličina fonta korišćena za prikaz teksta"
 
-#: ../midori/midori-preferences.c:343
+#: ../raphael/raphael-preferences.c:343
 msgid "Preferred Encoding"
 msgstr "Preferirano enkodiranje"
 
 #. Page "Behavior"
-#: ../midori/midori-preferences.c:350
+#: ../raphael/raphael-preferences.c:350
 msgid "Behavior"
 msgstr "Ponašanje"
 
-#: ../midori/midori-preferences.c:353 ../extensions/statusbar-features.c:155
+#: ../raphael/raphael-preferences.c:353 ../extensions/statusbar-features.c:155
 msgid "Load images automatically"
 msgstr "Učitaj slike automatski"
 
-#: ../midori/midori-preferences.c:356
+#: ../raphael/raphael-preferences.c:356
 msgid "Enable Spell Checking"
 msgstr "Omogući provjeru pravopisa"
 
-#: ../midori/midori-preferences.c:370 ../extensions/statusbar-features.c:162
+#: ../raphael/raphael-preferences.c:370 ../extensions/statusbar-features.c:162
 msgid "Enable scripts"
 msgstr "Omogući skripte"
 
-#: ../midori/midori-preferences.c:373
+#: ../raphael/raphael-preferences.c:373
 msgid "Enable WebGL support"
 msgstr "Omogući WebGL podršku"
 
-#: ../midori/midori-preferences.c:390
+#: ../raphael/raphael-preferences.c:390
 msgid "Zoom Text and Images"
 msgstr "Zoomiraj tekst i slike"
 
-#: ../midori/midori-preferences.c:393
+#: ../raphael/raphael-preferences.c:393
 msgid "Allow scripts to open popups"
 msgstr "Omogući skriptama da otvore popup prozore"
 
-#: ../midori/midori-preferences.c:394
+#: ../raphael/raphael-preferences.c:394
 msgid "Whether scripts are allowed to open popup windows automatically"
 msgstr "Da li je skriptama dozvoljeno da otvaraju popup prozore automatski"
 
-#: ../midori/midori-preferences.c:396
+#: ../raphael/raphael-preferences.c:396
 msgid "Default Zoom Level"
 msgstr "Podrazumijevani nivo zooma"
 
-#: ../midori/midori-preferences.c:400
+#: ../raphael/raphael-preferences.c:400
 msgid "Initial factor to enlarge newly opened tabs by"
 msgstr "Inicijalni faktor za povećavanje novootvorenih tabova za"
 
-#: ../midori/midori-preferences.c:404
+#: ../raphael/raphael-preferences.c:404
 msgid "Preferred languages"
 msgstr "Preferirani jezici"
 
-#: ../midori/midori-preferences.c:408
+#: ../raphael/raphael-preferences.c:408
 msgid ""
 "A comma separated list of languages preferred for rendering multilingual "
 "webpages, for example \"de\", \"ru,nl\" or \"en-us;q=1.0, fr-fr;q=0.667\""
 msgstr ""
 
-#: ../midori/midori-preferences.c:410
+#: ../raphael/raphael-preferences.c:410
 msgid "Save downloaded files to:"
 msgstr "Sačuvaj preuzete datoteke u:"
 
 #. Page "Interface"
-#: ../midori/midori-preferences.c:417
+#: ../raphael/raphael-preferences.c:417
 msgid "Browsing"
 msgstr "Pretraživanje"
 
-#: ../midori/midori-preferences.c:424
+#: ../raphael/raphael-preferences.c:424
 msgid "Theme:"
 msgstr "Tema:"
 
-#: ../midori/midori-preferences.c:458
+#: ../raphael/raphael-preferences.c:458
 msgid "Toolbar Style:"
 msgstr "Stil toolbara:"
 
-#: ../midori/midori-preferences.c:463
+#: ../raphael/raphael-preferences.c:463
 msgid "Open new pages in:"
 msgstr "Otvori nove stranice u:"
 
-#: ../midori/midori-preferences.c:467
+#: ../raphael/raphael-preferences.c:467
 msgid "New tab behavior:"
 msgstr "Ponašanje novog taba:"
 
-#: ../midori/midori-preferences.c:472
+#: ../raphael/raphael-preferences.c:472
 msgid "Close Buttons on Tabs"
 msgstr "Zatvori dugmad na tabovima"
 
-#: ../midori/midori-preferences.c:475
+#: ../raphael/raphael-preferences.c:475
 msgid "Open Tabs next to Current"
 msgstr "Otvara tabove pored trenutnog"
 
-#: ../midori/midori-preferences.c:476
+#: ../raphael/raphael-preferences.c:476
 msgid ""
 "Whether to open new tabs next to the current tab or after the last one"
 msgstr ""
 "Da li da se novi tabovi otvaraju pored trenutnog ili poslije zadnjeg taba"
 
-#: ../midori/midori-preferences.c:479
+#: ../raphael/raphael-preferences.c:479
 msgid "Open tabs in the background"
 msgstr "Otvara tabove u pozadini"
 
 #. Page "Network"
-#: ../midori/midori-preferences.c:483
+#: ../raphael/raphael-preferences.c:483
 msgid "Network"
 msgstr "Mreža"
 
-#: ../midori/midori-preferences.c:485
+#: ../raphael/raphael-preferences.c:485
 msgid "Proxy server"
 msgstr "Proksi server"
 
-#: ../midori/midori-preferences.c:490
+#: ../raphael/raphael-preferences.c:490
 msgid "URI"
 msgstr "URI"
 
-#: ../midori/midori-preferences.c:498
+#: ../raphael/raphael-preferences.c:498
 msgid "Port"
 msgstr "Port"
 
-#: ../midori/midori-preferences.c:510
+#: ../raphael/raphael-preferences.c:510
 msgid "Supported proxy types:"
 msgstr "Podržani tipovi proksija:"
 
 #. TODO: Preserve page icons of search engines and merge privacy items
-#: ../midori/midori-preferences.c:528 ../midori/midori-privatedata.c:383
+#: ../raphael/raphael-preferences.c:528 ../raphael/raphael-privatedata.c:383
 msgid "Web Cache"
 msgstr "Web keš"
 
-#: ../midori/midori-preferences.c:529 ../midori/midori-preferences.c:533
+#: ../raphael/raphael-preferences.c:529 ../raphael/raphael-preferences.c:533
 msgid "The maximum size of cached pages on disk"
 msgstr "Maksimalna veličina keširanih stranica na disku"
 
-#: ../midori/midori-preferences.c:535
+#: ../raphael/raphael-preferences.c:535
 msgid "MB"
 msgstr "MB"
 
 #. i18n: This refers to an application, not the 'user agent' string
-#: ../midori/midori-preferences.c:541
+#: ../raphael/raphael-preferences.c:541
 msgid "Identify as"
 msgstr "Identitet kao"
 
-#: ../midori/midori-preferences.c:559
+#: ../raphael/raphael-preferences.c:559
 msgid "Privacy"
 msgstr "Privatnost"
 
-#: ../midori/midori-preferences.c:561
+#: ../raphael/raphael-preferences.c:561
 msgid "Delete old Cookies after:"
 msgstr "Izbriši stare cookie datoteke poslije:"
 
-#: ../midori/midori-preferences.c:563 ../midori/midori-preferences.c:566
+#: ../raphael/raphael-preferences.c:563 ../raphael/raphael-preferences.c:566
 msgid "The maximum number of days to save cookies for"
 msgstr "Maksimalan broj dana koliko se čuvaju cookie datoteke"
 
-#: ../midori/midori-preferences.c:569
+#: ../raphael/raphael-preferences.c:569
 msgid "Only accept Cookies from sites you visit"
 msgstr "Samo prihvati cookie datoteke od stranica koje posjećujete"
 
-#: ../midori/midori-preferences.c:570
+#: ../raphael/raphael-preferences.c:570
 msgid "Block cookies sent by third-party websites"
 msgstr "Blokiraj cookie datoteke poslane od strane trećih strana"
 
-#: ../midori/midori-preferences.c:574
+#: ../raphael/raphael-preferences.c:574
 msgid ""
 "Cookies store login data, saved games, or user profiles for advertisement "
 "purposes."
@@ -1692,139 +1692,139 @@ msgstr ""
 "Kolačići čuvaju login podatke, sačuvane igre ili korisničke profile za "
 "reklamne namjene"
 
-#: ../midori/midori-preferences.c:581
+#: ../raphael/raphael-preferences.c:581
 msgid "Enable offline web application cache"
 msgstr "Omogući oflajn keš web aplikacija"
 
-#: ../midori/midori-preferences.c:584
+#: ../raphael/raphael-preferences.c:584
 msgid "Enable HTML5 local storage support"
 msgstr "Omogući HTML5 podršku za lokalno spremanje"
 
 #. i18n: Reworded: Shorten details propagated when going to another page
-#: ../midori/midori-preferences.c:588
+#: ../raphael/raphael-preferences.c:588
 msgid "Strip referrer details sent to websites"
 msgstr "Briše informacije o tome odakle posjećuje web stranicu"
 
 #. i18n: Referer here is not a typo but a technical term
-#: ../midori/midori-preferences.c:590
+#: ../raphael/raphael-preferences.c:590
 msgid "Whether the \"Referer\" header should be shortened to the hostname"
 msgstr ""
 
-#: ../midori/midori-preferences.c:593
+#: ../raphael/raphael-preferences.c:593
 msgid "Delete pages from history after:"
 msgstr "Briši web stranice iz istorije nakon:"
 
-#: ../midori/midori-preferences.c:595 ../midori/midori-preferences.c:598
+#: ../raphael/raphael-preferences.c:595 ../raphael/raphael-preferences.c:598
 msgid "The maximum number of days to save the history for"
 msgstr "Maksimalan broj dana koliko se čuva istorija"
 
-#: ../midori/midori-preferences.c:634 ../panels/midori-extensions.c:90
+#: ../raphael/raphael-preferences.c:634 ../panels/raphael-extensions.c:90
 msgid "Extensions"
 msgstr "Dodaci"
 
-#: ../midori/midori-searchaction.c:453
+#: ../raphael/raphael-searchaction.c:453
 msgid "_Manage Search Engines"
 msgstr "_Upravljač internet pretražiteljima"
 
-#: ../midori/midori-searchaction.c:1059
+#: ../raphael/raphael-searchaction.c:1059
 msgid "Add search engine"
 msgstr "Dodaj internet pretražitelja"
 
-#: ../midori/midori-searchaction.c:1059
+#: ../raphael/raphael-searchaction.c:1059
 msgid "Edit search engine"
 msgstr "Uredi internet pretražitelja"
 
-#: ../midori/midori-searchaction.c:1087
+#: ../raphael/raphael-searchaction.c:1087
 msgid "_Name:"
 msgstr "_Ime:"
 
-#: ../midori/midori-searchaction.c:1102
+#: ../raphael/raphael-searchaction.c:1102
 msgid "_Description:"
 msgstr "_Opis:"
 
-#: ../midori/midori-searchaction.c:1115 ../extensions/feed-panel/main.c:362
+#: ../raphael/raphael-searchaction.c:1115 ../extensions/feed-panel/main.c:362
 msgid "_Address:"
 msgstr "_Adresa:"
 
-#: ../midori/midori-searchaction.c:1130
+#: ../raphael/raphael-searchaction.c:1130
 msgid "_Token:"
 msgstr "_Token"
 
-#: ../midori/midori-searchaction.c:1420
+#: ../raphael/raphael-searchaction.c:1420
 msgid "Manage Search Engines"
 msgstr "Upravljanje internet pretražiteljima"
 
-#: ../midori/midori-searchaction.c:1520
+#: ../raphael/raphael-searchaction.c:1520
 msgid "Use as _default"
 msgstr "Koristi kao _podrazumijevani"
 
-#: ../midori/midori-searchaction.c:1631
+#: ../raphael/raphael-searchaction.c:1631
 #, c-format
 msgid "The search engines couldn't be loaded. %s\n"
 msgstr "Internet pretražitelji ne mogu biti učitani. %s\n"
 
-#: ../midori/midori-searchaction.c:1686
+#: ../raphael/raphael-searchaction.c:1686
 #, c-format
 msgid "The search engines couldn't be saved. %s"
 msgstr "Internet pretraživače nije moguće sačuvati. %s"
 
-#: ../midori/midori-historycompletion.vala:17
+#: ../raphael/raphael-historycompletion.vala:17
 msgid "Bookmarks and History"
 msgstr "Bookmarkovi i istorija"
 
-#: ../midori/midori-historydatabase.vala:28
+#: ../raphael/raphael-historydatabase.vala:28
 #, c-format
 msgid "Search for %s"
 msgstr "Pretraži za %s"
 
-#: ../midori/midori-historydatabase.vala:63
-#: ../midori/midori-historydatabase.vala:96
+#: ../raphael/raphael-historydatabase.vala:63
+#: ../raphael/raphael-historydatabase.vala:96
 #, c-format
 msgid "Failed to select from history: %s"
 msgstr "Nije uspjelo označavanje iz istorije: %s"
 
-#: ../midori/midori-searchcompletion.vala:20
-#: ../midori/midori-searchcompletion.vala:57
+#: ../raphael/raphael-searchcompletion.vala:20
+#: ../raphael/raphael-searchcompletion.vala:57
 msgid "Search with…"
 msgstr "Pretraži pomoću..."
 
-#: ../midori/midori-searchcompletion.vala:47
+#: ../raphael/raphael-searchcompletion.vala:47
 #, c-format
 msgid "Search with %s"
 msgstr "Pretraži pomoću %s"
 
-#: ../midori/sokoke.c:234 ../midori/sokoke.c:254
-#: ../midori/midori-frontend.c:325
+#: ../raphael/sokoke.c:234 ../raphael/sokoke.c:254
+#: ../raphael/raphael-frontend.c:325
 msgid "Could not run external program."
 msgstr "Nije moguće pokrenuti eksterni program"
 
-#: ../midori/sokoke.c:444
+#: ../raphael/sokoke.c:444
 msgid "Invalid URI"
 msgstr "URI nije validan"
 
 #. i18n: A panel at the bottom, to search text in pages
-#: ../toolbars/midori-findbar.c:233
+#: ../toolbars/raphael-findbar.c:233
 msgid "_Inline Find:"
 msgstr "_Potraži unutar nilije"
 
-#: ../toolbars/midori-findbar.c:251
+#: ../toolbars/raphael-findbar.c:251
 msgid "Previous"
 msgstr "Prethodno"
 
-#: ../toolbars/midori-findbar.c:257
+#: ../toolbars/raphael-findbar.c:257
 msgid "Next"
 msgstr "Sljedeće"
 
-#: ../toolbars/midori-findbar.c:261
+#: ../toolbars/raphael-findbar.c:261
 msgid "Match Case"
 msgstr ""
 
-#: ../toolbars/midori-findbar.c:270
+#: ../toolbars/raphael-findbar.c:270
 msgid "Close Findbar"
 msgstr "Zatvori bar za traženje"
 
 #. i18n: [n] bookmark(s)
-#: ../panels/midori-bookmarks.c:632
+#: ../panels/raphael-bookmarks.c:632
 #, c-format
 msgid "%d bookmark"
 msgid_plural "%d bookmarks"
@@ -1832,7 +1832,7 @@ msgstr[0] "%d bookmark"
 msgstr[1] "%d bookmarka"
 
 #. i18n: [n] subfolder(s)
-#: ../panels/midori-bookmarks.c:642
+#: ../panels/raphael-bookmarks.c:642
 #, c-format
 msgid "%d subfolder"
 msgid_plural "%d subfolders"
@@ -1840,119 +1840,119 @@ msgstr[0] "%d pod-direktorij"
 msgstr[1] "%d pod-direktorija"
 
 #. i18n: Empty folder
-#: ../panels/midori-bookmarks.c:667
+#: ../panels/raphael-bookmarks.c:667
 #, c-format
 msgid "Empty folder"
 msgstr "Prazan direktorij"
 
 #. i18n: Folder containing [[n] folder(s)] and no bookmark
-#: ../panels/midori-bookmarks.c:670
+#: ../panels/raphael-bookmarks.c:670
 #, c-format
 msgid "Folder containing %s and no bookmark"
 msgstr "Direktorij sadrži %s i nema bookmarkova"
 
 #. i18n: Folder containing [[n] bookmark(s)]
-#: ../panels/midori-bookmarks.c:674
+#: ../panels/raphael-bookmarks.c:674
 #, c-format
 msgid "Folder containing %s"
 msgstr "Direktorij sadrži %s"
 
 #. i18n: Folder containing [[n] bookmark(s)] and [[n] folder(s)]
-#: ../panels/midori-bookmarks.c:677
+#: ../panels/raphael-bookmarks.c:677
 #, c-format
 msgid "Folder containing %s and %s"
 msgstr "Direktorij sadrži %s i %s"
 
 #. i18n: Bookmark leading to: [bookmark uri]
-#: ../panels/midori-bookmarks.c:688
+#: ../panels/raphael-bookmarks.c:688
 #, c-format
 msgid "Bookmark leading to: %s"
 msgstr "Bookmark vodi ka: %s"
 
 #. i18n: [[n] folder(s)] and no bookmark
-#: ../panels/midori-bookmarks.c:702
+#: ../panels/raphael-bookmarks.c:702
 #, c-format
 msgid "%s and no bookmark"
 msgstr "%s i nema bookmarkova"
 
 #. i18n: [[n] bookmark(s)] and [[n] folder(s)]
-#: ../panels/midori-bookmarks.c:708
+#: ../panels/raphael-bookmarks.c:708
 #, c-format
 msgid "%s and %s"
 msgstr "%s i %s"
 
-#: ../panels/midori-bookmarks.c:768
+#: ../panels/raphael-bookmarks.c:768
 msgid "Edit the selected bookmark"
 msgstr "Uredi izabrani bookmark"
 
-#: ../panels/midori-bookmarks.c:776
+#: ../panels/raphael-bookmarks.c:776
 msgid "Delete the selected bookmark"
 msgstr "Izbriši izabrani bookmark"
 
-#: ../panels/midori-bookmarks.c:792
+#: ../panels/raphael-bookmarks.c:792
 msgid "Add a new folder"
 msgstr "Dodaj novi direktorij"
 
-#: ../panels/midori-bookmarks.c:923 ../panels/midori-history.c:575
+#: ../panels/raphael-bookmarks.c:923 ../panels/raphael-history.c:575
 msgid "<i>Separator</i>"
 msgstr "<i>Separator</i>"
 
-#: ../panels/midori-bookmarks.c:1087 ../panels/midori-history.c:744
+#: ../panels/raphael-bookmarks.c:1087 ../panels/raphael-history.c:744
 #: ../extensions/feed-panel/feed-panel.c:502
 msgid "Open in New _Tab"
 msgstr "Otvori u novom _tabu"
 
 #. Create the filter entry
-#: ../panels/midori-bookmarks.c:1352
+#: ../panels/raphael-bookmarks.c:1352
 msgid "Search Bookmarks"
 msgstr "Pretraži bookmarkove"
 
-#: ../panels/midori-history.c:111
+#: ../panels/raphael-history.c:111
 msgid "History"
 msgstr "Istorija"
 
-#: ../panels/midori-history.c:133
+#: ../panels/raphael-history.c:133
 msgid "Today"
 msgstr "Danas"
 
-#: ../panels/midori-history.c:135
+#: ../panels/raphael-history.c:135
 msgid "Yesterday"
 msgstr "Juče"
 
-#: ../panels/midori-history.c:137
+#: ../panels/raphael-history.c:137
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
 msgstr[0] "Prije %d dana"
 msgstr[1] "Prije %d dana"
 
-#: ../panels/midori-history.c:140
+#: ../panels/raphael-history.c:140
 msgid "A week ago"
 msgstr "Prije 7 dana"
 
-#: ../panels/midori-history.c:185
+#: ../panels/raphael-history.c:185
 #, c-format
 msgid "Failed to remove history item: %s\n"
 msgstr "Nije uspjelo brisanje stavke iz istorije: %s\n"
 
-#: ../panels/midori-history.c:312
+#: ../panels/raphael-history.c:312
 msgid "Are you sure you want to remove all history items?"
 msgstr "Da li ste sigurni da želite da izbrišete kompletnu istoriju?"
 
-#: ../panels/midori-history.c:358
+#: ../panels/raphael-history.c:358
 msgid "Bookmark the selected history item"
 msgstr "Bookmarkuj izabranu stavku iz istorije"
 
-#: ../panels/midori-history.c:367
+#: ../panels/raphael-history.c:367
 msgid "Delete the selected history item"
 msgstr "Izbriši izabranu stavku iz istorije"
 
-#: ../panels/midori-history.c:375
+#: ../panels/raphael-history.c:375
 msgid "Clear the entire history"
 msgstr "Izbriši kompletnu istoriju"
 
 #. Create the filter entry
-#: ../panels/midori-history.c:926
+#: ../panels/raphael-history.c:926
 msgid "Search History"
 msgstr "Pretraži istoriju"
 
@@ -2021,11 +2021,11 @@ msgstr "1 godina"
 msgid "Preferences for %s"
 msgstr "Podešavanja za %s"
 
-#: ../katze/midori-uri.vala:212
+#: ../katze/raphael-uri.vala:212
 msgid "MD5-Checksum:"
 msgstr "MD5 otisak"
 
-#: ../katze/midori-uri.vala:219
+#: ../katze/raphael-uri.vala:219
 msgid "SHA1-Checksum:"
 msgstr "SHA1 otisak"
 
@@ -3031,85 +3031,85 @@ msgid "Easily edit the toolbar layout"
 msgstr ""
 
 #. i18n: Dialog: Clear Private Data, in the Tools menu
-#: ../midori/midori-privatedata.c:192
+#: ../raphael/raphael-privatedata.c:192
 msgid "Clear Private Data"
 msgstr "Obriši privatne podatke"
 
-#: ../midori/midori-privatedata.c:196
+#: ../raphael/raphael-privatedata.c:196
 msgid "_Clear private data"
 msgstr "_Obriši privatne podatke"
 
-#: ../midori/midori-privatedata.c:212
+#: ../raphael/raphael-privatedata.c:212
 msgid "Clear the following data:"
 msgstr "Obriši sljedeće podatke:"
 
-#: ../midori/midori-privatedata.c:222
+#: ../raphael/raphael-privatedata.c:222
 msgid "Last open _tabs"
 msgstr "Zadnje otvoreni _tabovi"
 
-#: ../midori/midori-privatedata.c:255
+#: ../raphael/raphael-privatedata.c:255
 msgid "Clear private data when _quitting Midori"
 msgstr "Obriši privatne podatke prilikom zatvaranja Midorija"
 
 #. i18n: Logins and passwords in websites and web forms
-#: ../midori/midori-privatedata.c:378
+#: ../raphael/raphael-privatedata.c:378
 msgid "Saved logins and _passwords"
 msgstr "Sačuvani podaci za prijavljivanje"
 
-#: ../midori/midori-privatedata.c:380
+#: ../raphael/raphael-privatedata.c:380
 msgid "Cookies and Website data"
 msgstr "Cookieji i podaci web sajtovima"
 
-#: ../midori/midori-privatedata.c:385
+#: ../raphael/raphael-privatedata.c:385
 msgid "Website icons"
 msgstr "Ikonice web stranica"
 
-#: ../midori/midori-viewcompletion.vala:18
+#: ../raphael/raphael-viewcompletion.vala:18
 msgid "Open tabs"
 msgstr "Otvoreni tabovi"
 
-#: ../midori/midori-viewcompletion.vala:80
+#: ../raphael/raphael-viewcompletion.vala:80
 msgid "More open tabs…"
 msgstr "Više otvorenih tabova..."
 
-#: ../midori/midori-history.c:27
+#: ../raphael/raphael-history.c:27
 #, c-format
 msgid "Failed to clear history: %s\n"
 msgstr "Brisanje istorije nije uspjelo: %s\n"
 
 #. i18n: Couldn't remove items that are older than n days
-#: ../midori/midori-history.c:73
+#: ../raphael/raphael-history.c:73
 #, c-format
 msgid "Failed to remove old history items: %s\n"
 msgstr "Nije uspjelo brisanje starih stavki iz istorije: %s\n"
 
-#: ../midori/midori-bookmarks-db.c:525
+#: ../raphael/raphael-bookmarks-db.c:525
 #, c-format
 msgid "Failed to add bookmark item: %s\n"
 msgstr "Nije uspjelo dodavanje stavke kao bookmarka: %s\n"
 
-#: ../midori/midori-bookmarks-db.c:580
+#: ../raphael/raphael-bookmarks-db.c:580
 #, c-format
 msgid "Failed to update bookmark: %s\n"
 msgstr "Nije uspjelo uređivanje bookmarka: %s\n"
 
-#: ../midori/midori-bookmarks-db.c:616
+#: ../raphael/raphael-bookmarks-db.c:616
 #, c-format
 msgid "Failed to remove bookmark item: %s\n"
 msgstr "Nije uspjelo brisanje stavke iz bookmarka: %s\n"
 
-#: ../midori/midori-session.c:362
+#: ../raphael/raphael-session.c:362
 #, c-format
 msgid "The configuration couldn't be saved. %s"
 msgstr "Nije uspjelo čuvanje Konfiguracije. %s"
 
 #. i18n: Trash, or wastebin, containing closed tabs
-#: ../midori/midori-frontend.c:154
+#: ../raphael/raphael-frontend.c:154
 #, c-format
 msgid "The trash couldn't be saved. %s"
 msgstr "Nije uspjelo čuvanje smeća. %s"
 
-#: ../midori/midori-frontend.c:353
+#: ../raphael/raphael-frontend.c:353
 #, c-format
 msgid ""
 "Raphael crashed the last time it was opened. You can report the problem at %s."
@@ -3117,59 +3117,59 @@ msgstr ""
 "Raphael je pao zadnji put kada je bio otvoren. Ovaj problem možete da "
 "prijavite na %s."
 
-#: ../midori/midori-frontend.c:362
+#: ../raphael/raphael-frontend.c:362
 msgid "Modify _preferences"
 msgstr "Izmijenite _podešavanja"
 
-#: ../midori/midori-frontend.c:366
+#: ../raphael/raphael-frontend.c:366
 msgid "Disable all _extensions"
 msgstr "Onemogući sve _dodatke"
 
-#: ../midori/midori-frontend.c:375
+#: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
 msgstr "Prikaži dijalog kada Raphael padne"
 
-#: ../midori/midori-frontend.c:380
+#: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
 msgstr "Odbaci stare tabove"
 
-#: ../midori/midori-frontend.c:388
+#: ../raphael/raphael-frontend.c:388
 msgid "Show last crash _log"
 msgstr "Prikaži zadnji _log o padu"
 
-#: ../midori/midori-frontend.c:401
+#: ../raphael/raphael-frontend.c:401
 msgid "Run in _debugger"
 msgstr "Pokreni u _debuggeru"
 
-#: ../midori/midori-frontend.c:479
+#: ../raphael/raphael-frontend.c:479
 msgid "An instance of Raphael is already running but not responding.\n"
 msgstr "Već je pokrenuta instanca Midorija, ali ona ne reaguje.\n"
 
-#: ../midori/midori-frontend.c:516
+#: ../raphael/raphael-frontend.c:516
 #, c-format
 msgid "Bookmarks couldn't be loaded: %s\n"
 msgstr "Nije uspjelo učitavanje bookmarkova: %s\n"
 
-#: ../midori/midori-frontend.c:531
+#: ../raphael/raphael-frontend.c:531
 #, c-format
 msgid "The session couldn't be loaded: %s\n"
 msgstr "Nije uspjelo učitavanje sesije: %s\n"
 
-#: ../midori/midori-frontend.c:547
+#: ../raphael/raphael-frontend.c:547
 #, c-format
 msgid "The trash couldn't be loaded: %s\n"
 msgstr "Nije uspjelo učitavanje smeća: %s\n"
 
-#: ../midori/midori-frontend.c:555
+#: ../raphael/raphael-frontend.c:555
 #, c-format
 msgid "The history couldn't be loaded: %s\n"
 msgstr "Nije uspjelo učitavanje istorije: %s\n"
 
-#: ../midori/midori-frontend.c:566
+#: ../raphael/raphael-frontend.c:566
 msgid "The following errors occured:"
 msgstr "Došlo je do sljedećih grešaka:"
 
-#: ../midori/midori-frontend.c:571
+#: ../raphael/raphael-frontend.c:571
 msgid "_Ignore"
 msgstr "_Ignoriši"
 
@@ -3623,5 +3623,5 @@ msgstr ""
 #: ../extensions/webmedia-now-playing.vala:21
 msgid ""
 "Share 'youtube, vimeo, dailymotion, coub and zippcast' that you are playing "
-"in Raphael using org.midori.mediaHerald"
+"in Raphael using org.raphael.mediaHerald"
 msgstr ""

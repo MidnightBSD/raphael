@@ -11,8 +11,8 @@
 */
 
 namespace StatusClock {
-    public class Frontend : Object, Midori.BrowserActivatable {
-        public Midori.Browser browser { owned get; set; }
+    public class Frontend : Object, Raphael.BrowserActivatable {
+        public Raphael.Browser browser { owned get; set; }
 
         bool set_current_time (Gtk.Label clock) {
             var date = new DateTime.now_local ();

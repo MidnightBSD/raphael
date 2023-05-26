@@ -24,7 +24,7 @@ namespace Bookmarks {
             init ();
         }
 
-        public async override Midori.DatabaseItem? lookup (string uri) throws Midori.DatabaseError {
+        public async override Raphael.DatabaseItem? lookup (string uri) throws Raphael.DatabaseError {
             string sqlcmd = """
                 SELECT id, title FROM %s WHERE uri = :uri LIMIT 1
                 """.printf (table);
@@ -32,7 +32,7 @@ namespace Bookmarks {
                 ":uri", typeof (string), uri);
             if (statement.step ()) {
                 string title = statement.get_string ("title");
-                var item = new Midori.DatabaseItem (uri, title);
+                var item = new Raphael.DatabaseItem (uri, title);
                 item.database = this;
                 item.id = statement.get_int64 ("id");
                 return item;
@@ -40,7 +40,7 @@ namespace Bookmarks {
             return null;
         }
 
-        public async override List<Midori.DatabaseItem>? query (string? filter=null, int64 max_items=15, Cancellable? cancellable=null) throws Midori.DatabaseError {
+        public async override List<Raphael.DatabaseItem>? query (string? filter=null, int64 max_items=15, Cancellable? cancellable=null) throws Raphael.DatabaseError {
             string where = filter != null ? "WHERE uri LIKE :filter OR title LIKE :filter" : "";
             string sqlcmd = """
                 SELECT id, uri, title, visit_count AS ct FROM %s
@@ -57,11 +57,11 @@ namespace Bookmarks {
                     statement.bind (":filter", typeof (string), real_filter);
                 }
 
-                var items = new List<Midori.DatabaseItem> ();
+                var items = new List<Raphael.DatabaseItem> ();
                 while (statement.step ()) {
                     string uri = statement.get_string ("uri");
                     string title = statement.get_string ("title");
-                    var item = new Midori.DatabaseItem (uri, title);
+                    var item = new Raphael.DatabaseItem (uri, title);
                     item.database = this;
                     item.id = statement.get_int64 ("id");
                     items.append (item);
@@ -76,13 +76,13 @@ namespace Bookmarks {
                 if (cancellable != null && cancellable.is_cancelled ())
                     return null;
                 return items;
-            } catch (Midori.DatabaseError error) {
+            } catch (Raphael.DatabaseError error) {
                 critical ("Failed to query bookmarks: %s", error.message);
             }
             return null;
         }
 
-        public async override bool update (Midori.DatabaseItem item) throws Midori.DatabaseError {
+        public async override bool update (Raphael.DatabaseItem item) throws Raphael.DatabaseError {
             string sqlcmd = """
                 UPDATE %s SET uri = :uri, title = :title WHERE id = :id
                 """.printf (table);
@@ -100,7 +100,7 @@ namespace Bookmarks {
             return false;
         }
 
-        public async override bool insert (Midori.DatabaseItem item) throws Midori.DatabaseError {
+        public async override bool insert (Raphael.DatabaseItem item) throws Raphael.DatabaseError {
             item.database = this;
 
             string sqlcmd = """
@@ -126,34 +126,34 @@ namespace Bookmarks {
         [GtkChild]
         Gtk.Button button_remove;
 
-        Midori.Browser browser;
+        Raphael.Browser browser;
 
         construct {
             popover.relative_to = this;
             entry_title.changed.connect (() => {
-                var item = browser.tab.get_data<Midori.DatabaseItem?> ("bookmarks-item");
+                var item = browser.tab.get_data<Raphael.DatabaseItem?> ("bookmarks-item");
                 if (item != null) {
                     item.title = entry_title.text;
                 }
             });
             button_remove.clicked.connect (() => {
                 popover.hide ();
-                var item = browser.tab.get_data<Midori.DatabaseItem?> ("bookmarks-item");
+                var item = browser.tab.get_data<Raphael.DatabaseItem?> ("bookmarks-item");
                 item.delete.begin ();
-                browser.tab.set_data<Midori.DatabaseItem?> ("bookmarks-item", null);
+                browser.tab.set_data<Raphael.DatabaseItem?> ("bookmarks-item", null);
             });
         }
 
-        async Midori.DatabaseItem item_for_tab (Midori.Tab tab) {
-            var item = tab.get_data<Midori.DatabaseItem?> ("bookmarks-item");
+        async Raphael.DatabaseItem item_for_tab (Raphael.Tab tab) {
+            var item = tab.get_data<Raphael.DatabaseItem?> ("bookmarks-item");
             if (item == null) {
                 try {
                     item = yield BookmarksDatabase.get_default ().lookup (tab.display_uri);
-                } catch (Midori.DatabaseError error) {
+                } catch (Raphael.DatabaseError error) {
                     critical ("Failed to lookup %s in bookmarks database: %s", tab.display_uri, error.message);
                 }
                 if (item == null) {
-                    item = new Midori.DatabaseItem (tab.display_uri, tab.display_title);
+                    item = new Raphael.DatabaseItem (tab.display_uri, tab.display_title);
                     try {
                         yield BookmarksDatabase.get_default ().insert (item);
                     } catch (Midori.DatabaseError error) {
@@ -161,7 +161,7 @@ namespace Bookmarks {
                     }
                 }
                 entry_title.text = item.title;
-                tab.set_data<Midori.DatabaseItem?> ("bookmarks-item", item);
+                tab.set_data<Raphael.DatabaseItem?> ("bookmarks-item", item);
             }
             return item;
         }
@@ -172,7 +172,7 @@ namespace Bookmarks {
             popover.show ();
         }
 
-        public Button (Midori.Browser browser) {
+        public Button (Raphael.Browser browser) {
             this.browser = browser;
 
             var action = new SimpleAction ("bookmark-add", null);
@@ -189,8 +189,8 @@ namespace Bookmarks {
         }
     }
 
-    public class Frontend : Object, Midori.BrowserActivatable {
-        public Midori.Browser browser { owned get; set; }
+    public class Frontend : Object, Raphael.BrowserActivatable {
+        public Raphael.Browser browser { owned get; set; }
 
         public void activate () {
             // No bookmarks in app mode
@@ -202,8 +202,8 @@ namespace Bookmarks {
         }
     }
 
-    public class Completion : Peas.ExtensionBase, Midori.CompletionActivatable {
-        public Midori.Completion completion { owned get; set; }
+    public class Completion : Peas.ExtensionBase, Raphael.CompletionActivatable {
+        public Raphael.Completion completion { owned get; set; }
 
         public void activate () {
             try {
@@ -218,8 +218,8 @@ namespace Bookmarks {
 [ModuleInit]
 public void peas_register_types(TypeModule module) {
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.BrowserActivatable), typeof (Bookmarks.Frontend));
+        typeof (Raphael.BrowserActivatable), typeof (Bookmarks.Frontend));
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.CompletionActivatable), typeof (Bookmarks.Completion));
+        typeof (Raphael.CompletionActivatable), typeof (Bookmarks.Completion));
 
 }

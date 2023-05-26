@@ -32,7 +32,7 @@ namespace Adblock {
             icon_name = "security-%s-symbolic".printf (settings.enabled ? "high" : "low");
         }
 
-        public Button (Midori.Browser browser) {
+        public Button (Raphael.Browser browser) {
             var action = new SimpleAction ("adblock-status", null);
             action.activate.connect (() => {
                 settings.enabled = !settings.enabled;
@@ -46,8 +46,8 @@ namespace Adblock {
         }
     }
 
-    public class Frontend : Object, Midori.BrowserActivatable {
-        public Midori.Browser browser { owned get; set; }
+    public class Frontend : Object, Raphael.BrowserActivatable {
+        public Raphael.Browser browser { owned get; set; }
 
         public void activate () {
             var button = new Button (browser);
@@ -124,11 +124,11 @@ namespace Adblock {
         }
     }
 
-    public class Preferences : Object, Midori.PreferencesActivatable {
-        public Midori.Preferences preferences { owned get; set; }
+    public class Preferences : Object, Raphael.PreferencesActivatable {
+        public Raphael.Preferences preferences { owned get; set; }
 
         public void activate () {
-            var box = new Midori.LabelWidget (_("Configure Advertisement filters"));
+            var box = new Raphael.LabelWidget (_("Configure Advertisement filters"));
             var listbox = new Gtk.ListBox ();
             listbox.selection_mode = Gtk.SelectionMode.NONE;
             var settings = Settings.get_default ();
@@ -177,9 +177,9 @@ namespace Adblock {
 [ModuleInit]
 public void peas_register_types(TypeModule module) {
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.BrowserActivatable), typeof (Adblock.Frontend));
+        typeof (Raphael.BrowserActivatable), typeof (Adblock.Frontend));
     ((Peas.ObjectModule)module).register_extension_type (
         typeof (Peas.Activatable), typeof (Adblock.RequestFilter));
     ((Peas.ObjectModule)module).register_extension_type (
-        typeof (Midori.PreferencesActivatable), typeof (Adblock.Preferences));
+        typeof (Raphael.PreferencesActivatable), typeof (Adblock.Preferences));
 }
