@@ -7,7 +7,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Midori\n"
+"Project-Id-Version: Raphael\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-11 22:56-0400\n"
 "PO-Revision-Date: 2017-10-13 06:29+0000\n"
@@ -24,8 +24,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -33,7 +33,7 @@ msgstr "Navegador web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Navegador Web Midori"
+msgstr "Navegador Web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -57,7 +57,7 @@ msgstr "Nova janela de navegação privada"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Navegação Privada Midori"
+msgstr "Navegação Privada Raphael"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -359,7 +359,7 @@ msgstr "Abrir arquivo"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -1506,7 +1506,7 @@ msgstr "Início"
 
 #: ../raphael/raphael-preferences.c:289
 msgid "When Raphael starts:"
-msgstr "Ao iniciar o Midori:"
+msgstr "Ao iniciar o Raphael:"
 
 #: ../raphael/raphael-preferences.c:294
 msgid "Homepage:"
@@ -3099,8 +3099,8 @@ msgid "Last open _tabs"
 msgstr "Últimas abas abertas"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Limpar dados privados ao _sair do Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Limpar dados privados ao _sair do Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3178,7 +3178,7 @@ msgstr "Desabilitar todas as _extensões"
 
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "Exibir um diálogo após o encerramento abrupto do Midori"
+msgstr "Exibir um diálogo após o encerramento abrupto do Raphael"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3355,7 +3355,7 @@ msgid ""
 msgstr ""
 "A política de uso para domínios não está configurada individualmente. Isto "
 "só faz efeito para futuramente restringir a configuração da política global "
-"de cookies nos ajustes do Midori."
+"de cookies nos ajustes do Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3476,12 +3476,12 @@ msgid "Some files are being downloaded"
 msgstr "Alguns arquivos estão sendo baixados"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Sair do Midori"
+msgid "_Quit Raphael"
+msgstr "_Sair do Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
-msgstr "As transferências serão canceladas se sair do Midori."
+msgstr "As transferências serão canceladas se sair do Raphael."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"

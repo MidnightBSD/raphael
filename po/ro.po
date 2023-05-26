@@ -1,5 +1,5 @@
 # Romanian translation for Raphael
-# Copyright (C) 2009-2014 THE Midori'S COPYRIGHT HOLDER
+# Copyright (C) 2009-2014 THE Raphael'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the Raphael package.
 # Igor Știrbu <igor.stirbu@gmail.com> 2009.
 # Mișu Moldovan <dumol@l10n.ro> 2009-2014.
@@ -3087,8 +3087,8 @@ msgid "Last open _tabs"
 msgstr "Ultimele _taburi deschise"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Șterge datele pri_vate la ieșirea din Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Șterge datele pri_vate la ieșirea din Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3343,7 +3343,7 @@ msgid ""
 msgstr ""
 "Regula de utilizat pentru domeniile ce nu au fost configurate individual. "
 "Această regulă poate restrânge politica globală pentru gestionarea cookie-"
-"urile configurată în opțiunile Midori."
+"urile configurată în opțiunile Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3464,12 +3464,12 @@ msgid "Some files are being downloaded"
 msgstr "Unele fișiere sunt în curs de descărcare"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "În_chidere Midori"
+msgid "_Quit Raphael"
+msgstr "În_chidere Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
-msgstr "Dacă închideți Midori, se vor pierde descărcările curente."
+msgstr "Dacă închideți Raphael, se vor pierde descărcările curente."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"

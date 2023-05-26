@@ -24,8 +24,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -33,7 +33,7 @@ msgstr "Przeglądarka internetowa"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Przeglądarka internetowa Midori"
+msgstr "Przeglądarka internetowa Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -57,7 +57,7 @@ msgstr "Nowe okno prywatne"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Tryb prywatny Midori"
+msgstr "Tryb prywatny Raphael"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -359,7 +359,7 @@ msgstr "Wybór pliku"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -2909,7 +2909,7 @@ msgstr "Wystąpienie wtyczki"
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
 msgid "The Raphael extension instance for this extension"
-msgstr "Instancja dla rozszerzenia Midori"
+msgstr "Instancja dla rozszerzenia Raphael"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -3129,7 +3129,7 @@ msgid "Last open _tabs"
 msgstr "Ostatnio otwarte _karty"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr "Usunięcie danych podczas _kończenia programu"
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3382,7 +3382,7 @@ msgid ""
 msgstr ""
 "Zasady dotyczące domen nieskonfigurowanych indywidualnie. Działa tylko na "
 "rzecz dalszego ograniczenia globalnej polityki ciasteczek skonfigurowanych w "
-"ustawieniach Midori."
+"ustawieniach Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3503,7 +3503,7 @@ msgid "Some files are being downloaded"
 msgstr "Trwa pobieranie plików"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
+msgid "_Quit Raphael"
 msgstr "Za_kończ program"
 
 #: ../extensions/transfers.vala:519
@@ -3726,4 +3726,4 @@ msgid ""
 "in Raphael using org.raphael.mediaHerald"
 msgstr ""
 "Udostępniaj 'youtube, vimeo, dailymotion, coub i zippcast', które odtwarzasz "
-"w Midori, wykorzystując org.raphael.mediaHerald"
+"w Raphael, wykorzystując org.raphael.mediaHerald"

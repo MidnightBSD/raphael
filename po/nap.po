@@ -20,8 +20,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -29,7 +29,7 @@ msgstr "Navigatore web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Navigatore web Midori"
+msgstr "Navigatore web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,7 +53,7 @@ msgstr "Fenesta 'e navigazione privata nova"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Navigazione privata 'e Midori"
+msgstr "Navigazione privata 'e Raphael"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -359,14 +359,14 @@ msgstr "Arape file"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Pe te piglià st'URI ccà ncoppa, arapite n'azzeccatóre 'e nutizie o simile. "
 "Normalmente , ce sta nu menù o nu buttóne ca se chiammasse \"Nova "
 "sottoscrizione\", \"Nuovo Azzeccatore 'e Nutizie\".\n"
-"Si nò, iate ncopp' 'e Preferenze, Applicaziune dint' 'a Midori, e scigliete "
+"Si nò, iate ncopp' 'e Preferenze, Applicaziune dint' 'a Raphael, e scigliete "
 "n'Azzeccatore 'e Nutizie. Accussì, n'ata vota quanno spremmerrite 'o buttóne "
 "'e nutizie azzeccate, s'azzeccarrà 'n automatico."
 
@@ -2998,7 +2998,7 @@ msgid "Last open _tabs"
 msgstr ""
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr ""
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3358,7 +3358,7 @@ msgid "Some files are being downloaded"
 msgstr ""
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
+msgid "_Quit Raphael"
 msgstr ""
 
 #: ../extensions/transfers.vala:519

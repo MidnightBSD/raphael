@@ -20,8 +20,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -29,7 +29,7 @@ msgstr "Pelayar Web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Pelayar Web Midori"
+msgstr "Pelayar Web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,7 +53,7 @@ msgstr "Tetingkap Pelayar Peribadi Baru"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Pelayar Peribadi Midori"
+msgstr "Pelayar Peribadi Raphael"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -354,13 +354,13 @@ msgstr "Buka fail"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Untuk guna URI diatas, buka aggregator berita. Umumnya terdapat menu atau "
 "butang \"Langganan Baru, \"Suapan Berita Baru\" atau yang seangkatan "
-"dengannya. Cara lain, pergi ke keutamaan, Aplikasi dalam Midori, kemudian "
+"dengannya. Cara lain, pergi ke keutamaan, Aplikasi dalam Raphael, kemudian "
 "pilih Aggregator Berita. Dilain masa, bila anda klik ikon suapan berita, ia "
 "akan ditambah secara automatik."
 
@@ -3067,8 +3067,8 @@ msgid "Last open _tabs"
 msgstr "_Tab terakhir dibuka"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Kosongkan data peribadi bila men_utup Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Kosongkan data peribadi bila men_utup Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3320,7 +3320,7 @@ msgid ""
 msgstr ""
 "Polisi yang digunakan untuk domain tidak dikonfigur secara individu. Ia "
 "hanya bertindakan untuk sekatan set polisi kuki lanjutan dalam tetapan "
-"Midori."
+"Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3441,8 +3441,8 @@ msgid "Some files are being downloaded"
 msgstr "Beberapa fail sedang dimuat turun"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Keluar Midori"
+msgid "_Quit Raphael"
+msgstr "_Keluar Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

@@ -21,8 +21,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -355,7 +355,7 @@ msgstr "Åpne fil"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -2762,7 +2762,7 @@ msgstr "Nettleservindu"
 
 #: ../extensions/nojs/nojs-view.c:710
 msgid "The Raphael browser instance this view belongs to"
-msgstr "Midori-nettleser instansen som denne visningen tilhører"
+msgstr "Raphael-nettleser instansen som denne visningen tilhører"
 
 #: ../extensions/nojs/nojs-view.c:716
 msgid "View"
@@ -2770,7 +2770,7 @@ msgstr "Visning"
 
 #: ../extensions/nojs/nojs-view.c:717
 msgid "The Raphael view instance this view belongs to"
-msgstr "Midorivisningsinstansen denne visingen tilhører"
+msgstr "Raphael denne visingen tilhører"
 
 #: ../extensions/nojs/nojs-view.c:723
 msgid "Menu icon state"
@@ -2843,7 +2843,7 @@ msgstr "Tillegginstans"
 #: ../extensions/nojs/nojs.c:717
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1009
 msgid "The Raphael extension instance for this extension"
-msgstr "Midoritillegginstans for dette tillegget"
+msgstr "Raphael for dette tillegget"
 
 #: ../extensions/nojs/nojs.c:723
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1015
@@ -2853,7 +2853,7 @@ msgstr "Applikasjonsinstans"
 #: ../extensions/nojs/nojs.c:724
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1016
 msgid "The Raphael application instance this extension belongs to"
-msgstr "Midoriapplikasjonsinstansen dette tillegget tilhører"
+msgstr "Raphael dette tillegget tilhører"
 
 #: ../extensions/nojs/nojs.c:730
 #: ../extensions/cookie-permissions/cookie-permission-manager.c:1022
@@ -3056,8 +3056,8 @@ msgid "Last open _tabs"
 msgstr "Sist åpne _faner"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Vask ut private data ved _avslutting av Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Vask ut private data ved _avslutting av Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3134,7 +3134,7 @@ msgstr "Skru av all_extensions"
 
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "Vis dialog etter Midori-kræsj"
+msgstr "Vis dialog etter Raphael-kræsj"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3307,7 +3307,7 @@ msgid ""
 "further restrict the global cookie policy set in Raphael settings."
 msgstr ""
 "Ingen individuelt fastsatt praksis for bruk av domener. Dette begrenser "
-"ytterligere den globale informasjonskapsels-praksisen satt i Midoris "
+"ytterligere den globale informasjonskapsels-praksisen satt i Raphael "
 "innstillinger."
 
 #: ../extensions/cookie-permissions/main.c:62
@@ -3429,8 +3429,8 @@ msgid "Some files are being downloaded"
 msgstr "Noen filer er på vei ned"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Avslutt Midori"
+msgid "_Quit Raphael"
+msgstr "_Avslutt Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

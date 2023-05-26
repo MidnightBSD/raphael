@@ -20,8 +20,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -29,7 +29,7 @@ msgstr "Navigator Web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Le Navigator Web Midori"
+msgstr "Le Navigator Web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -53,7 +53,7 @@ msgstr "Nove fenestra private"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Navigation private de Midori"
+msgstr "Navigation private de Raphael"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -355,14 +355,14 @@ msgstr "Aperir file"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Pro usar le URI precedente aperir un aggregator de actualitate. Il ha "
 "usualmente un menu o un button \"Nove Subscription\", \"Nove sustentation de "
 "actualitates o simile.\n"
-"In alternativa va a Preferentias, Applicationes in Midori, e elige un Nove "
+"In alternativa va a Preferentias, Applicationes in Raphael, e elige un Nove "
 "aggregator. Le proxime vice tu clicca le icone de dispensation de "
 "actualitates, illo essera addite automaticamente."
 
@@ -3086,8 +3086,8 @@ msgid "Last open _tabs"
 msgstr "Le ultime schedas (_tabs) aperite"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Clarar le datos private lassante (_quitting) Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Clarar le datos private lassante (_quitting) Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3339,7 +3339,7 @@ msgid ""
 msgstr ""
 "Le regulas a usar pro le dominios non configurate individualmente. Isto age "
 "solmente pro ulterior restriction del regulamento del cookie global fixate "
-"in le configurationes de Midori."
+"in le configurationes de Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3460,8 +3460,8 @@ msgid "Some files are being downloaded"
 msgstr "Alcun files va esser discargate"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Quitar Midori"
+msgid "_Quit Raphael"
+msgstr "_Quitar Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."

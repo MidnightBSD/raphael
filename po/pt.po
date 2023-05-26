@@ -21,8 +21,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -30,7 +30,7 @@ msgstr "Navegador web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Navegador web Midori"
+msgstr "Navegador web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -355,7 +355,7 @@ msgstr "Abrir ficheiro"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
@@ -1491,7 +1491,7 @@ msgstr "Arranque"
 
 #: ../raphael/raphael-preferences.c:289
 msgid "When Raphael starts:"
-msgstr "Ao iniciar o Midori:"
+msgstr "Ao iniciar o Raphael:"
 
 #: ../raphael/raphael-preferences.c:294
 msgid "Homepage:"
@@ -3079,8 +3079,8 @@ msgid "Last open _tabs"
 msgstr "Úl_timos separadores abertos"
 
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
-msgstr "Limpar dados privados ao _sair do Midori"
+msgid "Clear private data when _quitting Raphael"
+msgstr "Limpar dados privados ao _sair do Raphael"
 
 #. i18n: Logins and passwords in websites and web forms
 #: ../raphael/raphael-privatedata.c:378
@@ -3158,7 +3158,7 @@ msgstr "Desativar todas as _extensões"
 
 #: ../raphael/raphael-frontend.c:375
 msgid "Show a dialog after Raphael crashed"
-msgstr "Mostrar a janela após o encerramento do Midori"
+msgstr "Mostrar a janela após o encerramento do Raphael"
 
 #: ../raphael/raphael-frontend.c:380
 msgid "Discard old tabs"
@@ -3332,7 +3332,7 @@ msgid ""
 msgstr ""
 "A política utilizada para domínios não configurados individualmente. Apenas "
 "atua para restringir a política global de cookies definida nas preferências "
-"do Midori."
+"do Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3453,12 +3453,12 @@ msgid "Some files are being downloaded"
 msgstr "Existem ficheiros a ser transferidos"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Sair do Midori"
+msgid "_Quit Raphael"
+msgstr "_Sair do Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
-msgstr "As transferências serão canceladas se sair do Midori."
+msgstr "As transferências serão canceladas se sair do Raphael."
 
 #: ../extensions/transfers.vala:568
 msgid "Transfer Manager"

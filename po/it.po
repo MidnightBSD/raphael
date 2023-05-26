@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../data/raphael.desktop.in.h:1 ../raphael/main.c:142
 #: ../raphael/raphael-websettings.c:231
-msgid "Midori"
-msgstr "Midori"
+msgid "Raphael"
+msgstr "Raphael"
 
 #: ../data/raphael.desktop.in.h:2
 msgid "Web Browser"
@@ -32,7 +32,7 @@ msgstr "Browser web"
 
 #: ../data/raphael.desktop.in.h:3
 msgid "Raphael Web Browser"
-msgstr "Browser web Midori"
+msgstr "Browser web Raphael"
 
 #: ../data/raphael.desktop.in.h:4
 msgid "Browse the Web"
@@ -56,7 +56,7 @@ msgstr "Nuova finestra di navigazione privata"
 
 #: ../data/raphael-private.desktop.in.h:1
 msgid "Raphael Private Browsing"
-msgstr "Navigazione privata di Midori"
+msgstr "Navigazione privata di Raphael"
 
 #: ../data/raphael-private.desktop.in.h:2 ../extensions/about.vala:176
 msgid "Private Browsing"
@@ -360,13 +360,13 @@ msgstr "Apre file"
 msgid ""
 "To use the above URI open a news aggregator. There is usually a menu or "
 "button \"New Subscription\", \"New News Feed\" or similar.\n"
-"Alternatively go to Preferences, Applications in Midori, and select a News "
+"Alternatively go to Preferences, Applications in Raphael, and select a News "
 "Aggregator. Next time you click the news feed icon, it will be added "
 "automatically."
 msgstr ""
 "Per usare questa URI usare un aggregatore di notizie; di solito vi è un "
 "pulsante \"Nuova sottoscrizione\", \"Nuovo Feed Notizie\" o simile;\n"
-"in alternativa andare in Preferenze, Applicazioni in Midori, e selezionare "
+"in alternativa andare in Preferenze, Applicazioni in Raphael, e selezionare "
 "un aggregatore di notizie; al prossimo clic sull'icona del feed delle "
 "notizie, questo verrà aggiunto automaticamente"
 
@@ -1517,7 +1517,7 @@ msgstr "Avvio"
 
 #: ../raphael/raphael-preferences.c:289
 msgid "When Raphael starts:"
-msgstr "All'avvio di Midori:"
+msgstr "All'avvio di Raphael:"
 
 #: ../raphael/raphael-preferences.c:294
 msgid "Homepage:"
@@ -3129,7 +3129,7 @@ msgstr "Ultime sc_hede aperte"
 
 # cri.penta version
 #: ../raphael/raphael-privatedata.c:255
-msgid "Clear private data when _quitting Midori"
+msgid "Clear private data when _quitting Raphael"
 msgstr "Cancella i dati personali _quando Raphael viene chiuso"
 
 #. i18n: Logins and passwords in websites and web forms
@@ -3386,7 +3386,7 @@ msgid ""
 msgstr ""
 "La politica da usare per i domini non è configurata individualmente. Questo "
 "serve a restringere ulteriormente la politica globale per i cookie impostata "
-"nelle preferenze di Midori."
+"nelle preferenze di Raphael."
 
 #: ../extensions/cookie-permissions/main.c:62
 msgid "Cookie Security Manager"
@@ -3507,8 +3507,8 @@ msgid "Some files are being downloaded"
 msgstr "Alcuni file sono stati scaricati"
 
 #: ../extensions/transfers.vala:517
-msgid "_Quit Midori"
-msgstr "_Chiudi Midori"
+msgid "_Quit Raphael"
+msgstr "_Chiudi Raphael"
 
 #: ../extensions/transfers.vala:519
 msgid "The transfers will be cancelled if Raphael quits."
