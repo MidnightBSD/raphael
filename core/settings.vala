@@ -208,6 +208,8 @@ namespace Raphael {
                         case GLib.FileMonitorEvent.CHANGES_DONE_HINT:
                             debug ("Reloading settings from %s", filename);
                             break;
+                        default:
+                            break;
                     }
                 });
             } catch (FileError.NOENT error) {
