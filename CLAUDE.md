@@ -80,10 +80,6 @@ GTK UI template files (`.ui`) are compiled into a GResource bundle and embedded 
 
 Uses intltool/gettext. To update translations, use standard `intltool-update` tooling after running cmake.
 
-### Android (`app/`)
-
-Separate Gradle/Kotlin project targeting Android SDK 28+. Independent from the GTK build.
-
 ## Code Style
 
 From the project's contributing guidelines:
