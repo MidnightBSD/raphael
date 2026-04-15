@@ -202,12 +202,18 @@ namespace Raphael {
                     string title = statement.get_string ("title");
                     string image_uri = statement.get_string ("image");
                     index++;
+                    // HTML-escape all database-sourced values before injecting into HTML.
+                    // image_uri goes into a CSS url() delimited by single quotes, so
+                    // percent-encode single quotes before HTML-escaping.
+                    string safe_image_uri = Markup.escape_text (image_uri.replace ("'", "%27"));
+                    string safe_uri = Markup.escape_text (uri);
+                    string safe_title = Markup.escape_text (title);
                     content += """
                         <div class="shortcut" style="background-image: url('%s')">
                           <a href="%s" accesskey="%u">
                             <span class="title">%s</span>
                           </a>
-                        </div>""".printf (image_uri, uri, index, title);
+                        </div>""".printf (safe_image_uri, safe_uri, index, safe_title);
 
                     uint src = Idle.add (internal_scheme.callback);
                     yield;

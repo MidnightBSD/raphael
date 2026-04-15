@@ -27,8 +27,13 @@
         <p class="message">{message}</p>
         <span class="description">{description}</span>
         <div class="action">
-          <button onclick="window.location = '{uri}'">{tryagain}</button>
+          <button id="tryagain" data-uri="{uri}">{tryagain}</button>
         </div>
+        <script>
+          document.getElementById('tryagain').onclick = function () {
+            window.location = this.getAttribute('data-uri');
+          };
+        </script>
       </div>
     </div>
   </body>

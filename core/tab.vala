@@ -246,7 +246,9 @@ namespace Raphael {
                     .replace ("{message}", message)
                     .replace ("{description}", description ?? "")
                     .replace ("{tryagain}", "<span>%s</span>".printf (_("Try Again")))
-                    .replace ("{uri}", display_uri);
+                    // HTML-escape the URI so it is safe as an HTML attribute value.
+                    // error.html reads it back via getAttribute() which decodes entities.
+                    .replace ("{uri}", Markup.escape_text (display_uri));
                 load_alternate_html (html, display_uri, display_uri);
                 was_error = true;
                 return true;

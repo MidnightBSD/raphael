@@ -317,7 +317,12 @@ namespace Raphael {
                 });
                 trust.clicked.connect (() => {
                     var tab = ((Browser)get_toplevel ()).tab;
-                    tab.web_context.allow_tls_certificate_for_host (tab.tls, new Soup.URI (uri).host);
+                    // WebKit's allow_tls_certificate_for_host accepts only a bare
+                    // hostname — port-scoped trust is not supported by the API.
+                    // This means trusting a certificate applies to all ports on
+                    // the host, not just the port currently being visited.
+                    var soup_uri = new Soup.URI (tab.uri);
+                    tab.web_context.allow_tls_certificate_for_host (tab.tls, soup_uri.host);
                     security.hide ();
                     tab.reload ();
                 });
