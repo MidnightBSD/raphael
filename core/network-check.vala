@@ -13,7 +13,7 @@ namespace Raphael {
     [GtkTemplate (ui = "/ui/network-check.ui")]
     public class NetworkCheck : Gtk.ActionBar {
         [GtkChild]
-        Gtk.Button login;
+        unowned Gtk.Button login;
 
         construct {
             login.clicked.connect (login_clicked);

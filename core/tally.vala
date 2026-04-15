@@ -36,15 +36,15 @@ namespace Raphael {
         SimpleActionGroup? group = null;
 
         [GtkChild]
-        Gtk.Label caption;
+        unowned Gtk.Label caption;
         [GtkChild]
-        Gtk.Spinner spinner;
+        unowned Gtk.Spinner spinner;
         [GtkChild]
-        Favicon favicon;
+        unowned Favicon favicon;
         [GtkChild]
-        Gtk.Image audio;
+        unowned Gtk.Image audio;
         [GtkChild]
-        Gtk.Button close;
+        unowned Gtk.Button close;
 
         public Tally (Tab tab) {
             Object (tab: tab,

@@ -51,35 +51,35 @@ namespace Raphael {
             { "force-fullscreen", force_fullscreen_activated },
         };
         [GtkChild]
-        Gtk.HeaderBar panelbar;
+        unowned Gtk.HeaderBar panelbar;
         [GtkChild]
-        Gtk.Stack panel;
+        unowned Gtk.Stack panel;
         [GtkChild]
-        Gtk.HeaderBar tabbar;
+        unowned Gtk.HeaderBar tabbar;
         [GtkChild]
-        Gtk.Box actionbox;
+        unowned Gtk.Box actionbox;
         [GtkChild]
-        Gtk.ToggleButton panel_toggle;
+        unowned Gtk.ToggleButton panel_toggle;
         [GtkChild]
-        DownloadButton downloads;
+        unowned DownloadButton downloads;
         [GtkChild]
-        Gtk.Button tab_new;
+        unowned Gtk.Button tab_new;
         [GtkChild]
-        Gtk.Button toggle_fullscreen;
+        unowned Gtk.Button toggle_fullscreen;
         [GtkChild]
-        Gtk.MenuButton app_menu;
+        unowned Gtk.MenuButton app_menu;
         [GtkChild]
-        Navigationbar navigationbar;
+        unowned Navigationbar navigationbar;
         [GtkChild]
-        public Gtk.Stack tabs;
+        public unowned Gtk.Stack tabs;
         [GtkChild]
-        public Gtk.Overlay overlay;
+        public unowned Gtk.Overlay overlay;
         [GtkChild]
-        public Statusbar statusbar;
+        public unowned Statusbar statusbar;
         [GtkChild]
-        Gtk.SearchBar search;
+        unowned Gtk.SearchBar search;
         [GtkChild]
-        Gtk.SearchEntry search_entry;
+        unowned Gtk.SearchEntry search_entry;
 
         List<Binding> bindings;
         uint focus_timeout = 0;

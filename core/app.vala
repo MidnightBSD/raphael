@@ -25,7 +25,7 @@ namespace Raphael {
         static int inactivity_reset = 0;
         static bool incognito = false;
         static bool single_app = false;
-        static bool version = false;
+        static new bool version = false;
         const OptionEntry[] options = {
             { "app", 'a', 0, OptionArg.STRING, ref app, N_("Run ADDRESS as a web application"), N_("ADDRESS") },
             { "single-app", 'S', 0, OptionArg.NONE, ref single_app, N_("With --app, prefer currently open browser window (if any)"), null },

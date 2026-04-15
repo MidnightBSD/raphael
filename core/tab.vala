@@ -33,11 +33,11 @@ namespace Raphael {
         public string link_uri { get; protected set; }
 
         [GtkChild]
-        internal Gtk.Popover popover;
+        internal unowned Gtk.Popover popover;
         [GtkChild]
-        Gtk.Label message;
+        unowned Gtk.Label message;
         [GtkChild]
-        Gtk.Button confirm;
+        unowned Gtk.Button confirm;
 
         construct {
             notify["estimated-load-progress"].connect (update_progress);

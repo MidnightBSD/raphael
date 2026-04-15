@@ -17,15 +17,15 @@ namespace Raphael {
         public Regex? regex { get; set; }
         public string? key { get; set; }
         [GtkChild]
-        Gtk.Box box;
+        unowned Gtk.Box box;
         [GtkChild]
-        Favicon icon;
+        unowned Favicon icon;
         [GtkChild]
-        Gtk.Label title;
+        unowned Gtk.Label title;
         [GtkChild]
-        Gtk.Label uri;
+        unowned Gtk.Label uri;
         [GtkChild]
-        Gtk.Button delete;
+        unowned Gtk.Button delete;
         public SuggestionRow (DatabaseItem item) {
             Object (item: item);
             if (item is SuggestionItem) {

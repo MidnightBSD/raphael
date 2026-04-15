@@ -34,18 +34,18 @@ namespace Raphael {
         internal bool blank { get { return uri == "about:blank" || uri == "internal:speed-dial"; } }
 
         [GtkChild]
-        Gtk.Popover? suggestions;
+        unowned Gtk.Popover? suggestions;
         [GtkChild]
-        Gtk.ListBox listbox;
+        unowned Gtk.ListBox listbox;
         Gtk.ListBoxRow? selected_row { get; protected set; default = null; }
         [GtkChild]
-        Gtk.Popover security;
+        unowned Gtk.Popover security;
         [GtkChild]
-        Gtk.Box security_box;
+        unowned Gtk.Box security_box;
         [GtkChild]
-        Gtk.Button trust;
+        unowned Gtk.Button trust;
         [GtkChild]
-        Gtk.Label security_status;
+        unowned Gtk.Label security_status;
         Gcr.CertificateWidget? details = null;
 
         construct {

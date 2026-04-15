@@ -18,11 +18,11 @@ namespace Raphael {
         }
 
         [GtkChild]
-        public Gtk.Popover popover;
+        public unowned Gtk.Popover popover;
         [GtkChild]
-        public Gtk.Button clear;
+        public unowned Gtk.Button clear;
         [GtkChild]
-        public Gtk.ListBox listbox;
+        public unowned Gtk.ListBox listbox;
 
         string cache = File.new_for_path (Path.build_filename (
             Environment.get_user_cache_dir ())).get_uri ();
@@ -130,19 +130,19 @@ namespace Raphael {
         public DownloadItem item { get; protected set; }
 
         [GtkChild]
-        public Gtk.Image icon;
+        public unowned Gtk.Image icon;
         [GtkChild]
-        public Gtk.Label filename;
+        public unowned Gtk.Label filename;
         [GtkChild]
-        public Gtk.ProgressBar progress;
+        public unowned Gtk.ProgressBar progress;
         [GtkChild]
-        public Gtk.Button cancel;
+        public unowned Gtk.Button cancel;
         [GtkChild]
-        public Gtk.Button open;
+        public unowned Gtk.Button open;
         [GtkChild]
-        public Gtk.Image error;
+        public unowned Gtk.Image error;
         [GtkChild]
-        public Gtk.Label status;
+        public unowned Gtk.Label status;
 
         construct {
             cancel.clicked.connect (() => {

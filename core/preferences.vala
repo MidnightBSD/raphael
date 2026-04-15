@@ -72,11 +72,11 @@ namespace Raphael {
     [GtkTemplate (ui = "/ui/preferences.ui")]
     public class Preferences : Gtk.Dialog {
         [GtkChild]
-        Gtk.StackSwitcher switcher;
+        unowned Gtk.StackSwitcher switcher;
         [GtkChild]
-        Gtk.Box content_box;
+        unowned Gtk.Box content_box;
         [GtkChild]
-        Gtk.Stack categories;
+        unowned Gtk.Stack categories;
         Gtk.SearchEntry proxy;
         Gtk.SpinButton port;
 

@@ -19,13 +19,13 @@ namespace Raphael {
     [GtkTemplate (ui = "/ui/clear-private-data.ui")]
     public class ClearPrivateData : Gtk.Dialog {
         [GtkChild]
-        Gtk.ComboBoxText timerange;
+        unowned Gtk.ComboBoxText timerange;
         [GtkChild]
-        Gtk.CheckButton history;
+        unowned Gtk.CheckButton history;
         [GtkChild]
-        Gtk.CheckButton websitedata;
+        unowned Gtk.CheckButton websitedata;
         [GtkChild]
-        Gtk.CheckButton cache;
+        unowned Gtk.CheckButton cache;
 
         Cancellable? show_cancellable = null;
         Peas.ExtensionSet extensions;

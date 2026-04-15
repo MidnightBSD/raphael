@@ -13,21 +13,21 @@ namespace Raphael {
     [GtkTemplate (ui = "/ui/navigationbar.ui")]
     public class Navigationbar : Gtk.ActionBar {
         [GtkChild]
-        public Gtk.Box actionbox;
+        public unowned Gtk.Box actionbox;
         [GtkChild]
-        public Gtk.Button go_back;
+        public unowned Gtk.Button go_back;
         [GtkChild]
-        public Gtk.Button go_forward;
+        public unowned Gtk.Button go_forward;
         [GtkChild]
-        public Gtk.Button reload;
+        public unowned Gtk.Button reload;
         [GtkChild]
-        public Gtk.Button stop_loading;
+        public unowned Gtk.Button stop_loading;
         [GtkChild]
-        public Gtk.Button homepage;
+        public unowned Gtk.Button homepage;
         [GtkChild]
-        public Urlbar urlbar;
+        public unowned Urlbar urlbar;
         [GtkChild]
-        public Gtk.Button restore;
+        public unowned Gtk.Button restore;
 
         construct {
             var settings = CoreSettings.get_default ();
