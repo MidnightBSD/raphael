@@ -26,7 +26,7 @@ namespace Raphael {
             add.connect ((widget) => { has_children = true; show (); });
             ((Gtk.Box)this).remove.connect ((widget) => {
                 has_children = get_children ().length () > 0;
-                visible = !has_children && label != null && label != "";
+                visible = has_children || (label != null && label != "");
             });
         }
     }

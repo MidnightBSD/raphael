@@ -337,8 +337,13 @@ namespace Raphael {
 
         public bool transaction (DatabaseCallback callback) throws DatabaseError {
             exec ("BEGIN TRANSACTION;");
-            callback ();
-            exec ("COMMIT;");
+            try {
+                callback ();
+                exec ("COMMIT;");
+            } catch (DatabaseError error) {
+                exec ("ROLLBACK;");
+                throw error;
+            }
             return true;
         }
 
@@ -557,9 +562,9 @@ namespace Raphael {
          * Delete data exceeding a maximum age (expiry date).
          */
         internal async bool cap (int64 maximum_age) throws DatabaseError {
-            unowned string sqlcmd = """
-                DELETE FROM %s WHERE date >= :maximum_age;
-                """;
+            string sqlcmd = """
+                DELETE FROM %s WHERE date <= :maximum_age;
+                """.printf (table);
             var statement = prepare (sqlcmd,
                 ":maximum_age", typeof (int64), maximum_age);
             return statement.exec ();
@@ -571,7 +576,7 @@ namespace Raphael {
         List<DatabaseItem>? _items = null;
 
         public Object? get_item (uint position) {
-            return _items.nth_data (position);
+            return _items != null ? _items.nth_data (position) : null;
         }
 
         public uint get_n_items () {

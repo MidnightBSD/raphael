@@ -235,7 +235,7 @@ namespace Raphael {
             if ("@" in uri)
                 return is_ip_address (uri.split ("@")[1]);
             /* IPv4 */
-            if (uri[0] != '0' && uri[0].isdigit () && "." in uri)
+            if (uri[0].isdigit () && "." in uri)
                 return true;
             /* IPv6 */
             if (uri[0].isalnum () && uri[1].isalnum ()
