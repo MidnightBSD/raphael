@@ -17,12 +17,12 @@ Raphael is a fork of the Midori web browser to incorporate some bug fixes and se
 
 **Productivity features**
 
-* Open a 1000 tabs instantly
+* Open 1000 tabs instantly
 * Easy web apps creation
 * Customizable side panels
 * User scripts and styles a la Greasemonkey
 * Web developer tools powered by WebKit
-* Cross-browser extensions compatible with Chrome, Firefox, Opera and Vivaldi
+* Cross-browser extensions compatible with Chrome, Firefox, Opera, and Vivaldi
 
 # Installing from MidnightBSD
 
@@ -111,18 +111,18 @@ Add release to `data/org.midnightbsd.Raphael.appdata.xml.in`.
 
 # Troubleshooting
 
-Testing an installed release may reveal crashers or memory corruption which require investigating from a local build and obtaining a stacktrace (backtrace, crash log).
+Testing an installed release may reveal crashers or memory corruption that require investigation from a local build and obtaining a stacktrace (backtrace, crash log).
 
     gdb _build/raphael
     run
     …
     bt
 
-If the problem is a warning, not a crash GLib has a handy feature
+If the problem is a warning, not a crash, GLib has a handy feature
 
     env G_MESSAGES_DEBUG=all gdb _build/raphael
 
-On Windows you can open the folder where Raphael is installed and double-click gdb.exe which opens a command window:
+On Windows, you can open the folder where Raphael is installed and double-click gdb.exe, which opens a command window:
 
     file raphael.exe
     run
@@ -134,23 +134,23 @@ To verify a regression you might need to revert a particular change:
     # Revert only d54c7e45
     git revert d54c7e45
     
-If the screen is "blank" as in web pages won't render and you get an EGL initilization error.  Try the following:
+If the screen is "blank" as in web pages won't render, and you get an EGL initialization error.  Try the following:
 set this in the environment: 
 WEBKIT_DISABLE_COMPOSITING_MODE=1 
 
-try running as root to see if it works. (not recommended for security reasons normally) 
+try running as root to see if it works. (not recommended for security reasons, normally) 
 
-If these work, you may need to get your user added to the video group on your OS.  This also seems to be an issue with some newer mesa releases (22.x) or on systems that use wayland like Ubuntu. 
+If these work, you may need to get your user added to the video group on your OS.  This also seems to be an issue with some newer Mesa releases (22.x) or on systems that use Wayland, like Ubuntu. 
 [[https://bugs.webkit.org/show_bug.cgi?id=238513]]
 
 # Contributing code
 
 ## Coding style and quality
 
-Raphael code should in general have:
+Raphael's code should, in general, have:
 
   * 4 space indentation, no tabs
-  * Between 80 to 120 columns
+  * Between 80 and 120 columns
   * Use `//` or `/* */` style comments
   * Call variables `animal` and `animal_shelter` instead of ~camelCase~
   * Keep a space between functions/ keywords and round parentheses
@@ -195,7 +195,7 @@ Tell git your name if you haven't yet:
     git config user.email "<email@address>"
     git config user.name "Real Name"
 
-See what you did so far
+See what you've done so far
 
     git diff
 
@@ -203,7 +203,7 @@ Get an overview of changed and new files:
 
     git status -u
 
-Add new files, move/ rename or delete:
+Add new files, move/ rename, or delete:
 
     git add FILENAME
     mv OLDFILE NEWFILE
@@ -227,8 +227,7 @@ In the case you committed something wrong or want to amend it:
 
     git reset --soft HEAD^
 
-If you end up with unrelated debugging code or other patches in the current changes
-it's sometimes handy to temporarily clean up.
+If you end up with unrelated debugging code or other patches in the current changes, it's sometimes handy to clean up temporarily.
 This may be seen as git's version of `bzr shelve`:
 
     git stash save
@@ -348,7 +347,7 @@ For 64-bit builds:
     make
     sudo make install
 
-Once built and tested you can assemble the Raphael archive with a helper script
+Once built and tested, you can assemble the Raphael archive with a helper script
 
 32-bit build:
 
@@ -360,7 +359,7 @@ Once built and tested you can assemble the Raphael archive with a helper script
 
 ### Testing
 
-For testing your changes a real system is recommended because WebKitGTK+ doesn't work properly under Wine. Mounting your MinGW directories as a network drive or shared folder in a Windows VM is a good option.
+For testing your changes, a real system is recommended because WebKitGTK+ doesn't work properly under Wine. Mounting your MinGW directories as a network drive or shared folder in a Windows VM is a good option.
 
 ## For Windows developers
 
