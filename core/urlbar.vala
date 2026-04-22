@@ -178,7 +178,7 @@ namespace Raphael {
             }
         }
 
-        string? magic_uri (string text) {
+        public string? magic_uri (string text) {
             // Leading or trailing space means search
             if (text.has_prefix (" ") || text.has_suffix (" ")) {
                 return null;
@@ -199,7 +199,16 @@ namespace Raphael {
             } else if (is_location (text)) {
                 return text;
             } else if (is_ip_address (text)) {
-                return "http://" + text;
+                string authority;
+                string suffix;
+                split_authority (text, out authority, out suffix);
+                if (authority.has_prefix ("[") || count_colons (authority) > 1) {
+                    if (!authority.has_prefix ("[")) {
+                        authority = "[" + authority + "]";
+                    }
+                    return "http://" + authority + suffix;
+                }
+                return "http://" + authority + suffix;
             } else if (text.has_prefix ("localhost") || "." in text) {
                 return "http://" + text;
             } else if (text == "") {
@@ -227,22 +236,86 @@ namespace Raphael {
                 && AppInfo.get_default_for_uri_scheme (scheme) != null;
         }
 
-        bool is_ip_address (string uri) {
+        public bool is_ip_address (string uri) {
             /* Quick check for IPv4 or IPv6, no validation.
                hostname_is_ip_address () is not used because
                we'd have to separate the path from the URI first. */
-            /* Skip leading user/ password */
-            if ("@" in uri)
-                return is_ip_address (uri.split ("@")[1]);
-            /* IPv4 */
-            if (uri[0].isdigit () && "." in uri)
-                return true;
-            /* IPv6 */
-            if (uri[0].isalnum () && uri[1].isalnum ()
-             && uri[2].isalnum () && uri[3].isalnum () && uri[4] == ':'
-             && (uri[5] == ':' || uri[5].isalnum ()))
-                return true;
-            return false;
+            if (uri == "" || "://" in uri)
+                return false;
+
+            string authority;
+            string suffix;
+            split_authority (uri, out authority, out suffix);
+
+            /* Skip leading user/ password (use last @ segment) */
+            if ("@" in authority) {
+                var parts = authority.split ("@");
+                authority = parts[parts.length - 1];
+            }
+
+            /* Bracketed IPv6, optionally with a port: [::1] or [::1]:8080 */
+            if (authority.has_prefix ("[")) {
+                int close = authority.index_of ("]");
+                if (close > 1) {
+                    var host = authority.substring (1, close - 1);
+                    return InetAddress.from_string (host) != null;
+                }
+                return false;
+            }
+
+            /* IPv4, optionally with a port: 1.2.3.4 or 1.2.3.4:8080 */
+            if ("." in authority && count_colons (authority) == 1) {
+                int colon = authority.index_of (":");
+                if (colon > 0) {
+                    var host = authority.substring (0, colon);
+                    var port = authority.substring (colon + 1, -1);
+                    if (is_number (port)) {
+                        return InetAddress.from_string (host) != null;
+                    }
+                }
+            }
+
+            /* Plain host (IPv4 or IPv6) without scheme */
+            return InetAddress.from_string (authority) != null;
+        }
+
+        static void split_authority (string text, out string authority, out string suffix) {
+            int cut = -1;
+            for (int i = 0; i < text.length; i++) {
+                char c = text[i];
+                if (c == '/' || c == '?' || c == '#') {
+                    cut = i;
+                    break;
+                }
+            }
+            if (cut >= 0) {
+                authority = text.substring (0, cut);
+                suffix = text.substring (cut, -1);
+            } else {
+                authority = text;
+                suffix = "";
+            }
+        }
+
+        static int count_colons (string text) {
+            int count = 0;
+            for (int i = 0; i < text.length; i++) {
+                if (text[i] == ':') {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        static bool is_number (string text) {
+            if (text == "")
+                return false;
+            for (int i = 0; i < text.length; i++) {
+                if (!text[i].isdigit ()) {
+                    return false;
+                }
+            }
+            return true;
         }
  
         protected override bool focus_out_event (Gdk.EventFocus event) {
