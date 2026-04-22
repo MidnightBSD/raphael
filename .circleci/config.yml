@@ -1,15 +1,15 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
-    - image: ubuntu:16.04
+    - image: cimg/base:stable
     steps:
     - checkout
     - run:
         name: Install dependencies
         command: |
-          apt-get update
-          apt-get install -y cmake xvfb valac libwebkit2gtk-4.0-dev libsoup-gnome2.4-dev libgcr-3-dev libpeas-dev libsqlite3-dev libjson-glib-dev libarchive-dev intltool libxml2-utils
+          sudo apt-get update
+          sudo apt-get install -y cmake xvfb valac libwebkit2gtk-4.0-dev libsoup-gnome2.4-dev libgcr-3-dev libpeas-dev libsqlite3-dev libjson-glib-dev libarchive-dev intltool libxml2-utils
     - run:
         name: Build
         command: |
@@ -30,10 +30,10 @@ jobs:
         name: Install system-wide
         command: |
           cd _build
-          make install
+          sudo make install
   snap:
     docker:
-    - image: cibuilds/snapcraft:stable
+    - image: snapcore/snapcraft:stable
     steps:
     - checkout
     - run:
