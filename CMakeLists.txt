@@ -63,6 +63,17 @@ pkg_check_modules(DEPS_GTK REQUIRED
                   libarchive
                   )
 set(PKGS ${PKGS} gtk+-3.0 libsoup-2.4 gcr-ui-3 libpeas-gtk-1.0 json-glib-1.0 posix)
+
+# pkg_check_modules() populates *_LIBRARIES without -L paths; ensure library
+# directories are available for link steps on platforms where /usr/local/lib
+# is not in the default search path (e.g., some BSD setups).
+if (DEPS_LIBRARY_DIRS)
+    link_directories(${DEPS_LIBRARY_DIRS})
+endif ()
+if (DEPS_GTK_LIBRARY_DIRS)
+    link_directories(${DEPS_GTK_LIBRARY_DIRS})
+endif ()
+
 set(EXTRA_VAPIS
     ${CMAKE_SOURCE_DIR}/vapi/config.vapi
     ${CMAKE_SOURCE_DIR}/vapi/libarchive.vapi
