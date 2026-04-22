@@ -2,7 +2,7 @@
   <template class="RaphaelAbout" parent="GtkAboutDialog">
     <property name="modal">yes</property>
     <property name="copyright" translatable="yes">
-      2023 Lucas Holt
+      2023-2026 Lucas Holt
       2007-2019 Astian Foundation
     </property>
     <property name="authors">

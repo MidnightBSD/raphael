@@ -11,7 +11,7 @@ option(RAPHAEL_VALA_FATAL_WARNINGS "Treat Vala warnings as fatal in development 
 set(PROJECT_DOMAIN org.midnightbsd.Raphael)
 set(PROJECT_BUGS https://github.com/MidnightBSD/raphael/issues)
 set(PROJECT_WEBSITE https://github.com/MidnightBSD/raphael)
-set(CORE_VERSION 9.1)
+set(CORE_VERSION 9.2)
 
 execute_process(COMMAND "git" "describe" "--tags"
                 OUTPUT_VARIABLE REVISION
