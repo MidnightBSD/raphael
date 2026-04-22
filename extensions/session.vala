@@ -15,6 +15,30 @@ namespace Tabby {
         // Note: Using string instead of int64 because it's a hashable type
         HashTable<string, Raphael.Browser> browsers;
 
+        static void item_set_session_id (Raphael.DatabaseItem item, int64 session_id) {
+            item.set_data<string> ("session_id", session_id.to_string ());
+        }
+
+        static int64 item_get_session_id (Raphael.DatabaseItem item) {
+            string? value = item.get_data<string> ("session_id");
+            if (value == null || value == "") {
+                return -1;
+            }
+            try {
+                return int64.parse (value);
+            } catch (Error error) {
+                return -1;
+            }
+        }
+
+        static void item_set_pinned (Raphael.DatabaseItem item, bool pinned) {
+            item.set_data<bool> ("pinned", pinned);
+        }
+
+        static bool item_get_pinned (Raphael.DatabaseItem item) {
+            return item.get_data<bool> ("pinned");
+        }
+
         public static SessionDatabase get_default () throws Raphael.DatabaseError {
             if (_default == null) {
                 _default = new SessionDatabase ();
@@ -70,8 +94,8 @@ namespace Tabby {
                 var item = new Raphael.DatabaseItem (uri, title, date);
                 item.database = this;
                 item.id = statement.get_int64 ("id");
-                item.set_data<int64> ("session_id", session_id);
-                item.set_data<int64> ("pinned", statement.get_int64 ("pinned"));
+                item_set_session_id (item, session_id);
+                item_set_pinned (item, statement.get_int64 ("pinned") != 0);
                 items.append (item);
 
                 uint src = Idle.add (get_items.callback);
@@ -111,7 +135,7 @@ namespace Tabby {
             var statement = prepare (sqlcmd,
                 ":crdate", typeof (int64), item.date,
                 ":tstamp", typeof (int64), item.date,
-                ":session_id", typeof (int64), item.get_data<int64> ("session_id"),
+                ":session_id", typeof (int64), item_get_session_id (item),
                 ":uri", typeof (string), item.uri,
                 ":title", typeof (string), item.title);
             if (statement.exec ()) {
@@ -189,7 +213,7 @@ namespace Tabby {
                 """.printf (table);
             prepare (sqlcmd,
                 ":id", typeof (int64), item.id,
-                ":pinned", typeof (int64), item.get_data<int64> ("pinned")).exec ();
+                ":pinned", typeof (int64), item_get_pinned (item) ? 1 : 0).exec ();
         }
 
         public async override bool clear (TimeSpan timespan) throws Raphael.DatabaseError {
@@ -211,7 +235,7 @@ namespace Tabby {
             // Restore existing session(s) that weren't closed, or the last closed one
             foreach (var item in yield query (null, int64.MAX - 1)) {
                 Raphael.Browser browser;
-                int64 id = item.get_data<int64> ("session_id");
+                int64 id = item_get_session_id (item);
                 if (!restored) {
                     browser = default_browser;
                     restored = true;
@@ -225,7 +249,7 @@ namespace Tabby {
                 }
                 var tab = new Raphael.Tab (null, browser.web_context,
                                           item.uri, item.title);
-                tab.pinned = item.get_data<bool> ("pinned");
+                tab.pinned = item_get_pinned (item);
                 connect_tab (tab, item);
                 browser.add (tab);
             }
@@ -264,7 +288,7 @@ namespace Tabby {
         }
 
         void connect_tab (Raphael.Tab tab, Raphael.DatabaseItem item) {
-            debug ("Connecting %s to session %s", item.uri, item.get_data<int64> ("session_id").to_string ());
+            debug ("Connecting %s to session %s", item.uri, item_get_session_id (item).to_string ());
             tab.set_data<Raphael.DatabaseItem?> ("tabby-item", item);
             tab.notify["uri"].connect ((pspec) => { item.uri = tab.uri; update.begin (item); });
             tab.notify["title"].connect ((pspec) => { item.title = tab.title; });
@@ -282,7 +306,7 @@ namespace Tabby {
             }
             var item = new Raphael.DatabaseItem (tab.display_uri, tab.display_title,
                                                 new DateTime.now_local ().to_unix ());
-            item.set_data<int64> ("session_id", id);
+            item_set_session_id (item, id);
             try {
                 yield insert (item);
                 connect_tab (tab, item);
@@ -293,7 +317,7 @@ namespace Tabby {
 
         void tab_removed (Raphael.Tab tab) {
             var item = tab.get_data<Raphael.DatabaseItem?> ("tabby-item");
-            debug ("Trashing tab %s:%s", item.get_data<int64> ("session_id").to_string (), tab.display_uri);
+            debug ("Trashing tab %s:%s", item_get_session_id (item).to_string (), tab.display_uri);
             item.delete.begin ();
         }
     }
