@@ -50,12 +50,13 @@
   <translation type="gettext">raphael</translation>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="9.2" date="2026-04-22">
+    <release version="9.3" date="2026-04-22">
       <description>
         <ul>
           <li>Port to libsoup 3 and modern WebKitGTK builds</li>
           <li>Fix tab widget input handling and tab spacing</li>
           <li>Add a close button to the in-page find bar</li>
+          <li>Add a bookmarks side panel</li>
         </ul>
       </description>
     </release>
