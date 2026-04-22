@@ -120,13 +120,14 @@ namespace Bookmarks {
     [GtkTemplate (ui = "/ui/bookmarks-button.ui")]
     public class Button : Gtk.Button {
         [GtkChild]
-        Gtk.Popover popover;
+        unowned Gtk.Popover popover;
         [GtkChild]
-        Gtk.Entry entry_title;
+        unowned Gtk.Entry entry_title;
         [GtkChild]
-        Gtk.Button button_remove;
+        unowned Gtk.Button button_remove;
 
         Raphael.Browser browser;
+        public signal void changed ();
 
         construct {
             popover.relative_to = this;
@@ -134,6 +135,7 @@ namespace Bookmarks {
                 var item = browser.tab.get_data<Raphael.DatabaseItem?> ("bookmarks-item");
                 if (item != null) {
                     item.title = entry_title.text;
+                    changed ();
                 }
             });
             button_remove.clicked.connect (() => {
@@ -141,6 +143,7 @@ namespace Bookmarks {
                 var item = browser.tab.get_data<Raphael.DatabaseItem?> ("bookmarks-item");
                 item.delete.begin ();
                 browser.tab.set_data<Raphael.DatabaseItem?> ("bookmarks-item", null);
+                changed ();
             });
         }
 
@@ -156,6 +159,7 @@ namespace Bookmarks {
                     item = new Raphael.DatabaseItem (tab.display_uri, tab.display_title);
                     try {
                         yield BookmarksDatabase.get_default ().insert (item);
+                        changed ();
                     } catch (Raphael.DatabaseError error) {
                         critical ("Failed to add %s to bookmarks database: %s", item.uri, error.message);
                     }
@@ -189,6 +193,86 @@ namespace Bookmarks {
         }
     }
 
+    class Row : Gtk.ListBoxRow {
+        public Raphael.DatabaseItem item { get; construct set; }
+
+        public Row (Raphael.DatabaseItem item) {
+            Object (item: item);
+        }
+
+        construct {
+            var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+            box.margin = 6;
+            box.margin_start = 8;
+            box.margin_end = 8;
+
+            var title = new Gtk.Label (item.title ?? item.uri);
+            title.halign = Gtk.Align.START;
+            title.ellipsize = Pango.EllipsizeMode.END;
+            title.xalign = 0.0f;
+            box.add (title);
+
+            var uri = new Gtk.Label (item.uri);
+            uri.halign = Gtk.Align.START;
+            uri.ellipsize = Pango.EllipsizeMode.END;
+            uri.xalign = 0.0f;
+            uri.opacity = 0.7;
+            box.add (uri);
+
+            add (box);
+            show_all ();
+        }
+    }
+
+    class Panel : Gtk.ScrolledWindow {
+        Raphael.Browser browser;
+        Gtk.ListBox list;
+
+        public Panel (Raphael.Browser browser) {
+            Object ();
+            this.browser = browser;
+        }
+
+        construct {
+            list = new Gtk.ListBox ();
+            list.selection_mode = Gtk.SelectionMode.BROWSE;
+            list.row_activated.connect ((row) => {
+                var bookmark = row as Row;
+                if (bookmark != null && browser.tab != null) {
+                    browser.tab.load_uri (bookmark.item.uri);
+                }
+            });
+            add (list);
+            show_all ();
+            reload.begin ();
+        }
+
+        public async void reload () {
+            foreach (var child in list.get_children ()) {
+                child.destroy ();
+            }
+
+            try {
+                var items = yield BookmarksDatabase.get_default ().query (null, 500);
+                if (items == null || items.length () == 0) {
+                    var empty = new Gtk.Label (_("No bookmarks yet"));
+                    empty.margin = 12;
+                    empty.wrap = true;
+                    empty.show ();
+                    list.add (empty);
+                    return;
+                }
+
+                foreach (var item in items) {
+                    list.add (new Row (item));
+                }
+                list.show_all ();
+            } catch (Raphael.DatabaseError error) {
+                critical ("Failed to load bookmarks panel: %s", error.message);
+            }
+        }
+    }
+
     public class Frontend : Object, Raphael.BrowserActivatable {
         public Raphael.Browser browser { owned get; set; }
 
@@ -198,7 +282,15 @@ namespace Bookmarks {
                 return;
             }
 
-            browser.add_button (new Button (browser));
+            var panel = new Panel (browser);
+            browser.add_panel (panel);
+            panel.parent.child_set (panel, "title", _("Bookmarks"));
+
+            var button = new Button (browser);
+            button.changed.connect (() => {
+                panel.reload.begin ();
+            });
+            browser.add_button (button);
         }
     }
 
