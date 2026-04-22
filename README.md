@@ -9,8 +9,6 @@ Raphael is a fork of the Midori web browser to incorporate some bug fixes and se
 
 [![CircleCI (Linux)](https://dl.circleci.com/status-badge/img/gh/MidnightBSD/raphael/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MidnightBSD/raphael/tree/master)
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMidnightBSD%2Fraphael.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FMidnightBSD%2Fraphael?ref=badge_shield)
-
 **Privacy out of the box**
 
 * Adblock filter list support
