@@ -37,18 +37,23 @@ mport install raphael
 * [GLib](https://wiki.gnome.org/Projects/GLib) 2.46.2
 * [GTK](https://www.gtk.org) 3.12
 * [WebKitGTK](https://webkitgtk.org/) 2.16.6
-* [libsoup](https://wiki.gnome.org/Projects/libsoup) 2.48.0
+* [libsoup](https://wiki.gnome.org/Projects/libsoup) 3.0
 * [sqlite](https://sqlite.org) 3.6.19
 * [Vala](https://wiki.gnome.org/Projects/Vala) 0.30
 * GCR 2.32
 * [Libpeas](https://wiki.gnome.org/Projects/Libpeas)
 * [JSON-Glib](https://wiki.gnome.org/Projects/JsonGlib) 0.12
 
-Install dependencies on Astian OS, Ubuntu, Debian or other Debian-based distros:
+Raphael now builds against the modern WebKitGTK/ libsoup stack:
+
+* `webkit2gtk-4.1`
+* `webkit2gtk-web-extension-4.1`
+* `javascriptcoregtk-4.1`
+* `libsoup-3.0`
+
+The exact package names vary by OS and ports tree. On Debian or Ubuntu, for example:
 
     sudo apt install cmake valac libwebkit2gtk-4.1-dev libsoup-3.0-dev libgcr-3-dev libpeas-dev libsqlite3-dev libjson-glib-dev libarchive-dev intltool libxml2-utils
-
-On older Debian/ Ubuntu releases, `libwebkit2gtk-4.0-dev` may still be the correct package name.
 
 Install dependencies on openSUSE:
 

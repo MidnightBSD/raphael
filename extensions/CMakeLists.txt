@@ -29,7 +29,7 @@ foreach(UNIT_SRC ${EXTENSIONS})
     if ("${UNIT_SRC}" MATCHES "(.vala)$")
         set(UNIT_PACKAGES ${PKGS})
         if (${UNIT} STREQUAL "web-extensions")
-            list(APPEND UNIT_PACKAGES javascriptcoregtk-4.1)
+            list(APPEND UNIT_PACKAGES ${JAVASCRIPTCOREGTK_PACKAGE})
         endif ()
         include(ValaPrecompile)
         vala_precompile(UNIT_SRC_C ${UNIT}

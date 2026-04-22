@@ -47,21 +47,23 @@ set(DATADIR ${CMAKE_INSTALL_FULL_DATADIR})
 set(PLUGINDIR "${CMAKE_INSTALL_FULL_LIBDIR}/${CMAKE_PROJECT_NAME}" CACHE STRING "Location for system-wide plugins")
 
 find_package(PkgConfig)
+set(LIBSOUP_PACKAGE libsoup-3.0)
+set(WEBKITGTK_PACKAGE webkit2gtk-4.1)
+set(WEBKITGTK_WEB_EXTENSION_PACKAGE webkit2gtk-web-extension-4.1)
+set(JAVASCRIPTCOREGTK_PACKAGE javascriptcoregtk-4.1)
+
 pkg_check_modules(DEPS REQUIRED
                   sqlite3>=3.6.19
                   gio-2.0>=2.46.2
-                  libsoup-3.0>=3.0
+                  ${LIBSOUP_PACKAGE}>=3.0
                   )
-set(PKGS sqlite3 gio-2.0 libsoup-3.0)
+set(PKGS sqlite3 gio-2.0 ${LIBSOUP_PACKAGE})
 
-pkg_check_modules(WEBKITGTK_41 QUIET webkit2gtk-4.1>=2.16.6)
-if (WEBKITGTK_41_FOUND)
-    set(WEBKITGTK_PACKAGE webkit2gtk-4.1)
-    set(WEBKITGTK_WEB_EXTENSION_PACKAGE webkit2gtk-web-extension-4.1)
-else ()
-    set(WEBKITGTK_PACKAGE webkit2gtk-4.0)
-    set(WEBKITGTK_WEB_EXTENSION_PACKAGE webkit2gtk-web-extension-4.0)
-endif ()
+pkg_check_modules(WEBKITGTK REQUIRED
+                  ${WEBKITGTK_PACKAGE}>=2.16.6
+                  ${WEBKITGTK_WEB_EXTENSION_PACKAGE}
+                  ${JAVASCRIPTCOREGTK_PACKAGE}
+                  )
 
 pkg_check_modules(DEPS_GTK REQUIRED
                   gtk+-3.0>=3.12.0
@@ -83,20 +85,13 @@ if (DEPS_GTK_LIBRARY_DIRS)
     link_directories(${DEPS_GTK_LIBRARY_DIRS})
 endif ()
 
-if (WEBKITGTK_41_FOUND)
-    list(APPEND PKGS ${WEBKITGTK_PACKAGE})
-    set(EXTRA_VAPIS
-        ${CMAKE_SOURCE_DIR}/vapi/config.vapi
-        ${CMAKE_SOURCE_DIR}/vapi/libarchive.vapi
-        ${CMAKE_SOURCE_DIR}/vapi/javascriptcoregtk-4.0.vapi)
-else ()
-    list(APPEND PKGS ${WEBKITGTK_PACKAGE})
-    set(EXTRA_VAPIS
-        ${CMAKE_SOURCE_DIR}/vapi/config.vapi
-        ${CMAKE_SOURCE_DIR}/vapi/libarchive.vapi
-        ${CMAKE_SOURCE_DIR}/vapi/webkit2gtk-4.0.vapi
-        ${CMAKE_SOURCE_DIR}/vapi/javascriptcoregtk-4.0.vapi)
-endif ()
+list(APPEND PKGS ${WEBKITGTK_PACKAGE})
+set(EXTRA_VAPIS
+    ${CMAKE_SOURCE_DIR}/vapi/config.vapi
+    ${CMAKE_SOURCE_DIR}/vapi/libarchive.vapi
+    ${CMAKE_SOURCE_DIR}/vapi/javascriptcoregtk-4.0.vapi)
+
+message(STATUS "Building Raphael with ${WEBKITGTK_PACKAGE} and ${LIBSOUP_PACKAGE}")
 
 add_definitions("-DGCR_API_SUBJECT_TO_CHANGE")
 set(CFLAGS "${CFLAGS} -g")
