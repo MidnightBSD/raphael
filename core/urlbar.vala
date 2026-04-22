@@ -258,7 +258,7 @@ namespace Raphael {
                 int close = authority.index_of ("]");
                 if (close > 1) {
                     var host = authority.substring (1, close - 1);
-                    return InetAddress.from_string (host) != null;
+                    return (new InetAddress.from_string (host)) != null;
                 }
                 return false;
             }
@@ -270,13 +270,13 @@ namespace Raphael {
                     var host = authority.substring (0, colon);
                     var port = authority.substring (colon + 1, -1);
                     if (is_number (port)) {
-                        return InetAddress.from_string (host) != null;
+                        return (new InetAddress.from_string (host)) != null;
                     }
                 }
             }
 
             /* Plain host (IPv4 or IPv6) without scheme */
-            return InetAddress.from_string (authority) != null;
+            return (new InetAddress.from_string (authority)) != null;
         }
 
         static void split_authority (string text, out string authority, out string suffix) {
