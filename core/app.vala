@@ -77,7 +77,9 @@ namespace Raphael {
             if (disable_gpu) {
                 Environment.set_variable ("RAPHAEL_DISABLE_GPU", "1", true);
                 Environment.set_variable ("WEBKIT_DISABLE_COMPOSITING_MODE", "1", false);
+                Environment.set_variable ("WEBKIT_DISABLE_DMABUF_RENDERER", "1", false);
                 Environment.set_variable ("GDK_GL", "disable", false);
+                Environment.set_variable ("LIBGL_ALWAYS_SOFTWARE", "1", false);
             }
 
             base.startup ();
