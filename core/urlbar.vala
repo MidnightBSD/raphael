@@ -70,6 +70,7 @@ namespace Raphael {
                 update_key (text);
             });
             icon_press.connect (icon_pressed);
+            populate_popup.connect (add_proceed_menu_item);
         }
 
         public Gtk.Widget create_row (Object item) {
@@ -351,7 +352,7 @@ namespace Raphael {
             suggestions.grab_focus ();
         }
 
-        protected override void populate_popup (Gtk.Menu menu) {
+        void add_proceed_menu_item (Gtk.Menu menu) {
             string? text = Gtk.Clipboard.get_for_display (get_display (), Gdk.SELECTION_CLIPBOARD).wait_for_text ();
             var menuitem = new Gtk.MenuItem.with_mnemonic ("Paste and p_roceed");
             menuitem.sensitive = text != null;

@@ -290,7 +290,7 @@ namespace Raphael {
             }
             if (hit.context_is_link () && !hit.link_uri.has_prefix ("javascript:")) {
                 menu.append (new WebKit.ContextMenuItem.from_stock_action_with_label (WebKit.ContextMenuAction.OPEN_LINK_IN_NEW_WINDOW, _("Open Link in New _Tab")));
-                var action = new Gtk.Action ("link-window", _("Open Link in New _Window"), null, null);
+                var action = new SimpleAction ("link-window", null);
                 action.activate.connect (() => {
                     var browser = web_context.is_ephemeral ()
                         ? new Browser.incognito ((App)Application.get_default ())
@@ -298,7 +298,7 @@ namespace Raphael {
                     browser.add (new Tab (null, browser.web_context, hit.link_uri));
                     browser.show ();
                 });
-                menu.append (new WebKit.ContextMenuItem (action));
+                menu.append (new WebKit.ContextMenuItem.from_gaction (action, _("Open Link in New _Window"), null));
                 menu.append (new WebKit.ContextMenuItem.separator ());
                 menu.append (new WebKit.ContextMenuItem.from_stock_action (WebKit.ContextMenuAction.DOWNLOAD_LINK_TO_DISK));
                 menu.append (new WebKit.ContextMenuItem.from_stock_action (WebKit.ContextMenuAction.COPY_LINK_TO_CLIPBOARD));
@@ -320,13 +320,13 @@ namespace Raphael {
                 // Selected text, ellipsized if > 32 characters
                 string? text = Gtk.Clipboard.get_for_display (get_display (), Gdk.SELECTION_PRIMARY).wait_for_text ();
                 string? label = ((text != null && text.length > 32) ? text.substring (0, 32) + "…" : text).delimit ("\n", ' ');
-                var action = new Gtk.Action ("text-search", _("Search for %s").printf (label), null, null);
+                var action = new SimpleAction ("text-search", null);
                 action.activate.connect (() => {
                     var settings = CoreSettings.get_default ();
                     var tab = new Tab (null, web_context, settings.uri_for_search (text));
                     ((Browser)get_toplevel ()).add (tab);
                 });
-                menu.append (new WebKit.ContextMenuItem (action));
+                menu.append (new WebKit.ContextMenuItem.from_gaction (action, _("Search for %s").printf (label), null));
             }
             if (clear) {
                 menu.append (new WebKit.ContextMenuItem.separator ());

@@ -28,6 +28,7 @@ namespace Raphael {
 
         public override void add (Gtk.Widget widget) {
             base.add (widget);
+            widget.show ();
             if (widget is LabelWidget) {
                 sizegroup.add_widget (((LabelWidget)widget).label);
             }
@@ -54,13 +55,16 @@ namespace Raphael {
             bool header = widget == null;
             orientation = header ? Gtk.Orientation.VERTICAL : Gtk.Orientation.HORIZONTAL;
             halign = Gtk.Align.START;
+            visible = true;
             label = new Gtk.Label.with_mnemonic (header ? "<b>%s</b>".printf (title) : title);
             label.use_markup = header;
             label.halign = Gtk.Align.START;
+            label.show ();
             pack_start (label, false, false, 4);
             if (widget != null) {
                 label.mnemonic_widget = widget;
                 widget.margin = 4;
+                widget.show ();
                 set_center_widget (widget);
                 if (widget is Gtk.Entry && !(widget is Gtk.SpinButton)) {
                     ((Gtk.Entry)widget).width_chars = 30;
@@ -106,7 +110,6 @@ namespace Raphael {
             checkbox = new Gtk.CheckButton.with_mnemonic (_("Enable scripts"));
             settings.bind_property ("enable-javascript", checkbox, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
             box.add (checkbox);
-            box.show_all ();
             add (_("Browsing"), box);
 
             box = new LabelWidget (_("Search _with"));
@@ -123,7 +126,6 @@ namespace Raphael {
                 combo.active_id = settings.location_entry_search;
             }
             box.add (combo);
-            box.show_all ();
             add (_("Browsing"), box);
 
             box = new LabelWidget (_("_Tabs"));
@@ -145,14 +147,12 @@ namespace Raphael {
             checkbox = new Gtk.CheckButton.with_mnemonic (_("Close Buttons on Tabs"));
             settings.bind_property ("close-buttons-on-tabs", checkbox, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
             box.add (checkbox);
-            box.show_all ();
             add (_("Browsing"), box);
 
             box = new LabelWidget (_("Customize Toolbar"));
             checkbox = new Gtk.CheckButton.with_mnemonic (_("Show Homepage"));
             settings.bind_property ("homepage-in-toolbar", checkbox, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
             box.add (checkbox);
-            box.show_all ();
             add (_("Browsing"), box);
 
             box = new LabelWidget (_("Proxy server"));
@@ -196,7 +196,6 @@ namespace Raphael {
             box.add (new LabelWidget (_("Port"), port));
             settings.notify["proxy-type"].connect (update_proxy_sensitivity);
             update_proxy_sensitivity ();
-            box.show_all ();
             add (_("Network"), box);
 
             box = new LabelWidget (_("Cookies and Website data"));
@@ -204,19 +203,21 @@ namespace Raphael {
             settings.bind_property ("first-party-cookies-only", checkbox, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
             checkbox.tooltip_text = _("Block cookies sent by third-party websites");
             box.pack_start (checkbox, false, false, 4);
-            box.show_all ();
+            checkbox.show ();
             add (_("Privacy"), box);
 
             box = new LabelWidget (_("_History"));
             button = new LabelWidget.for_days (_("Delete pages from history after:"), settings, "maximum-history-age");
             button.tooltip_text = _("The maximum number of days to save the history for");
             box.pack_start (button, false, false, 4);
-            box.show_all ();
+            button.show ();
             add (_("Privacy"), box);
 
             box = new Gtk.Box (Gtk.Orientation.VERTICAL, 4);
-            box.add (new PeasGtk.PluginManagerView (null));
-            box.show_all ();
+            box.visible = true;
+            var plugin_manager = new PeasGtk.PluginManagerView (null);
+            plugin_manager.show ();
+            box.add (plugin_manager);
             add (_("Extensions"), box);
 
             var extensions = Plugins.get_default ().plug<PreferencesActivatable> ("preferences", this);

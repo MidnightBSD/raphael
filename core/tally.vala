@@ -34,6 +34,7 @@ namespace Raphael {
         } }
 
         SimpleActionGroup? group = null;
+        Gtk.CssProvider? color_provider = null;
 
         [GtkChild]
         unowned Gtk.Label caption;
@@ -85,20 +86,41 @@ namespace Raphael {
         }
 
         void apply_color () {
-            Gdk.Color? background_color = null;
-            Gdk.Color? foreground_color = null;
+            Gdk.RGBA background_color = Gdk.RGBA ();
+            Gdk.RGBA foreground_color = Gdk.RGBA ();
             if (tab.color != null) {
-                Gdk.Color.parse (tab.color, out background_color);
+                background_color.parse (tab.color);
                 // Ensure high contrast by enforcing black/ white foreground based on Y(UV)
-                float brightness = 0.299f * (float)background_color.red / 255f
-                                 + 0.587f * (float)background_color.green / 255f
-                                 + 0.114f * (float)background_color.blue / 255f;
-                Gdk.Color.parse (brightness < 128 ? "white" : "black", out foreground_color);
+                double brightness = 0.299 * background_color.red
+                                  + 0.587 * background_color.green
+                                  + 0.114 * background_color.blue;
+                foreground_color.parse (brightness < 0.5 ? "white" : "black");
+                if (color_provider == null) {
+                    color_provider = new Gtk.CssProvider ();
+                    get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                    caption.get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                    close.get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                    audio.get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                }
+                try {
+                    color_provider.load_from_data ("""
+                        * {
+                          background-color: %s;
+                          color: %s;
+                        }
+                    """.printf (background_color.to_string (), foreground_color.to_string ()));
+                } catch (Error error) {
+                    warning ("Failed to apply tab color CSS: %s", error.message);
+                }
+                return;
             }
-            modify_fg (Gtk.StateType.NORMAL, foreground_color);
-            modify_fg (Gtk.StateType.ACTIVE, foreground_color);
-            modify_bg (Gtk.StateType.NORMAL, background_color);
-            modify_bg (Gtk.StateType.ACTIVE, background_color);
+            if (color_provider != null) {
+                try {
+                    color_provider.load_from_data ("");
+                } catch (Error error) {
+                    warning ("Failed to reset tab color CSS: %s", error.message);
+                }
+            }
         }
 
         void update_close_position () {

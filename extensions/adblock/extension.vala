@@ -130,16 +130,20 @@ namespace Adblock {
         public void activate () {
             var box = new Raphael.LabelWidget (_("Configure Advertisement filters"));
             var listbox = new Gtk.ListBox ();
+            listbox.show ();
             listbox.selection_mode = Gtk.SelectionMode.NONE;
             var settings = Settings.get_default ();
             foreach (var sub in settings) {
                 var row = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 4);
+                row.show ();
                 var button = new Gtk.CheckButton.with_label (sub.title);
+                button.show ();
                 button.tooltip_text = sub.uri;
                 sub.bind_property ("active", button, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
                 row.pack_start (button);
                 if (!settings.default_filters.contains (sub.uri.split ("&")[0])) {
                     var remove = new Gtk.Button.from_icon_name ("list-remove-symbolic");
+                    remove.show ();
                     remove.relief = Gtk.ReliefStyle.NONE;
                     remove.clicked.connect (() => {
                         settings.remove (sub);
@@ -155,6 +159,7 @@ namespace Adblock {
                 _("You can find more lists by visiting following sites:\n %s, %s\n").printf (
                 "<a href=\"https://adblockplus.org/en/subscriptions\">AdblockPlus</a>",
                 "<a href=\"https://easylist.to\">EasyList</a>"));
+            label.show ();
             label.use_markup = true;
             label.activate_link.connect ((uri) => {
                 var files = new File[1];
@@ -165,7 +170,6 @@ namespace Adblock {
             listbox.insert (label, -1);
 
             box.add (listbox);
-            box.show_all ();
             preferences.add (_("Privacy"), box);
             deactivate.connect (() => {
                 box.destroy ();

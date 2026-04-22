@@ -391,13 +391,13 @@ namespace Tabby {
             var settings = Raphael.CoreSettings.get_default ();
             var box = new Raphael.LabelWidget (_("Startup"));
             var combo = new Gtk.ComboBoxText ();
+            combo.show ();
             combo.append ("0", _("Show Speed Dial"));
             combo.append ("1", _("Show Homepage"));
             combo.append ("2", _("Show last open tabs"));
             settings.bind_property ("load-on-startup", combo, "active", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
             var button = new Raphael.LabelWidget (_("When Raphael starts:"), combo);
             box.add (button);
-            box.show_all ();
             preferences.add (_("Browsing"), box);
             deactivate.connect (() => {
                 box.destroy ();
