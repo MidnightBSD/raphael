@@ -1,39 +1,54 @@
 <interface>
-  <template class="RaphaelTally" parent="GtkEventBox">
+  <template class="RaphaelTally" parent="GtkBox">
     <style>
         <class name="tab"/>
     </style>
     <child>
-      <object class="GtkBox">
+      <object class="GtkBox" id="content">
         <property name="orientation">horizontal</property>
         <property name="visible">yes</property>
         <child>
-          <object class="RaphaelFavicon" id="favicon">
-            <!-- menu -->
-            <property name="icon-size">1</property>
+          <object class="GtkButton" id="body">
+            <property name="focus-on-click">no</property>
+            <property name="relief">none</property>
+            <property name="hexpand">yes</property>
             <property name="visible">yes</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkSpinner" id="spinner">
-            <property name="active">yes</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkImage" id="audio">
-            <property name="icon-name">audio-volume-high-symbolic</property>
-            <property name="use-fallback">yes</property>
-            <!-- menu -->
-            <property name="icon-size">1</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkLabel" id="caption">
-            <property name="ellipsize">end</property>
-            <!-- As per docs, when ellipsized and expanded max width is the minimum -->
-            <property name="width-chars">8</property>
-            <property name="max-width-chars">500</property>
-            <property name="visible">yes</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">4</property>
+                <property name="visible">yes</property>
+                <child>
+                  <object class="RaphaelFavicon" id="favicon">
+                    <!-- menu -->
+                    <property name="icon-size">1</property>
+                    <property name="visible">yes</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSpinner" id="spinner">
+                    <property name="active">yes</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage" id="audio">
+                    <property name="icon-name">audio-volume-high-symbolic</property>
+                    <property name="use-fallback">yes</property>
+                    <!-- menu -->
+                    <property name="icon-size">1</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="caption">
+                    <property name="ellipsize">end</property>
+                    <!-- As per docs, when ellipsized and expanded max width is the minimum -->
+                    <property name="width-chars">8</property>
+                    <property name="max-width-chars">500</property>
+                    <property name="visible">yes</property>
+                  </object>
+                </child>
+              </object>
+            </child>
           </object>
         </child>
         <child>

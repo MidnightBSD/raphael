@@ -11,7 +11,7 @@
 
 namespace Raphael {
     [GtkTemplate (ui = "/ui/tally.ui")]
-    public class Tally : Gtk.EventBox {
+    public class Tally : Gtk.Box {
         public Tab tab { get; protected set; }
         public string? uri { get; set; }
         public string? title { get; set; }
@@ -35,7 +35,10 @@ namespace Raphael {
 
         SimpleActionGroup? group = null;
         Gtk.CssProvider? color_provider = null;
+        uint last_button = 0;
 
+        [GtkChild]
+        unowned Gtk.Button body;
         [GtkChild]
         unowned Gtk.Label caption;
         [GtkChild]
@@ -62,6 +65,7 @@ namespace Raphael {
             tab.bind_property ("display-title", this, "title");
             bind_property ("title", this, "tooltip-text");
             tab.bind_property ("visible", this, "visible");
+            body.clicked.connect (() => { clicked (); });
             close.clicked.connect (() => { tab.try_close (); });
             tab.notify["color"].connect (apply_color);
             apply_color ();
@@ -98,6 +102,7 @@ namespace Raphael {
                 if (color_provider == null) {
                     color_provider = new Gtk.CssProvider ();
                     get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                    body.get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                     caption.get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                     close.get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                     audio.get_style_context ().add_provider (color_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
@@ -125,15 +130,13 @@ namespace Raphael {
 
         void update_close_position () {
             string layout = Gtk.Settings.get_default ().gtk_decoration_layout;
-            var box = (Gtk.Box)close.parent;
+            var box = (Gtk.Box)body.parent;
             if (layout.index_of ("c") < layout.index_of (":")) {
                 box.reorder_child (close, 0);
-                box.reorder_child (favicon, -1);
-                box.reorder_child (spinner, -1);
+                box.reorder_child (body, -1);
             } else {
                 box.reorder_child (close, -1);
-                box.reorder_child (favicon, 0);
-                box.reorder_child (spinner, 0);
+                box.reorder_child (body, 0);
             }
         }
 
@@ -144,13 +147,41 @@ namespace Raphael {
 
         construct {
             bind_property ("title", caption, "label");
-            add_events (Gdk.EventMask.ENTER_NOTIFY_MASK);
-            add_events (Gdk.EventMask.LEAVE_NOTIFY_MASK);
-            enter_notify_event.connect ((event) => {
+            var motion = new Gtk.EventControllerMotion (body);
+            motion.propagation_phase = Gtk.PropagationPhase.CAPTURE;
+            motion.enter.connect ((x, y) => {
                 set_state_flags (Gtk.StateFlags.PRELIGHT, false);
             });
-            leave_notify_event.connect ((event) => {
+            motion.leave.connect (() => {
                 unset_state_flags (Gtk.StateFlags.PRELIGHT);
+            });
+            var clicks = new Gtk.GestureMultiPress (body);
+            clicks.propagation_phase = Gtk.PropagationPhase.CAPTURE;
+            clicks.button = 0;
+            clicks.pressed.connect ((n_press, x, y) => {
+                last_button = clicks.get_current_button ();
+                // No context menu for a single tab
+                if (!show_close) {
+                    return;
+                }
+                if (last_button == Gdk.BUTTON_SECONDARY) {
+                    ((SimpleAction)group.lookup_action ("pin")).set_enabled (!tab.pinned);
+                    ((SimpleAction)group.lookup_action ("unpin")).set_enabled (tab.pinned);
+                    var app = (App)Application.get_default ();
+                    var menu = new Gtk.Popover.from_model (this, app.get_menu_by_id ("tally-menu"));
+                    menu.show ();
+                }
+            });
+            clicks.released.connect ((n_press, x, y) => {
+                switch (last_button) {
+                    case Gdk.BUTTON_PRIMARY:
+                        clicked ();
+                        break;
+                    case Gdk.BUTTON_MIDDLE:
+                        tab.try_close ();
+                        break;
+                }
+                last_button = 0;
             });
 
             group = new SimpleActionGroup ();
@@ -186,36 +217,6 @@ namespace Raphael {
             });
             group.add_action (action);
             insert_action_group ("tally", group);
-        }
-
-        protected override bool button_press_event (Gdk.EventButton event) {
-            // No context menu for a single tab
-            if (!show_close) {
-                return false;
-            }
-
-            switch (event.button) {
-                case Gdk.BUTTON_SECONDARY:
-                    ((SimpleAction)group.lookup_action ("pin")).set_enabled (!tab.pinned);
-                    ((SimpleAction)group.lookup_action ("unpin")).set_enabled (tab.pinned);
-                    var app = (App)Application.get_default ();
-                    var menu = new Gtk.Popover.from_model (this, app.get_menu_by_id ("tally-menu"));
-                    menu.show ();
-                    break;
-            }
-            return true;
-        }
-
-        protected override bool button_release_event (Gdk.EventButton event) {
-            switch (event.button) {
-                case Gdk.BUTTON_PRIMARY:
-                    clicked ();
-                    break;
-                case Gdk.BUTTON_MIDDLE:
-                    tab.try_close ();
-                    break;
-            }
-            return true;
         }
     }
 }
