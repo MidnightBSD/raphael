@@ -330,8 +330,10 @@ namespace Raphael {
                     var previous_tab = tabs.get_children ().nth_data (0);
                     if (previous_tab == null)
                         close ();
-                    else
+                    else {
                         tab = (Tab)previous_tab;
+                        tabs.visible_child = (Gtk.Widget)previous_tab;
+                    }
                 }
             });
 
