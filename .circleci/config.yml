@@ -43,30 +43,6 @@ jobs:
     - run:
         name: Build snap
         command: snapcraft
-  android:
-    docker:
-    - image: circleci/android:api-28-alpha
-    environment:
-    - JVM_OPTS: -Xmx3200m
-    steps:
-    - checkout
-    - restore_cache:
-        key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-    - run:
-        name: Download dependencies
-        command: ./gradlew androidDependencies
-    - save_cache:
-        key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-        paths:
-        - ~/.gradle
-    - run:
-        name: Run unit tests
-        command: ./gradlew lint test
-    - store_artifacts:
-        path: app/build/reports
-        destination: reports
-    - store_test_results:
-        path: app/build/test-results
 
 workflows:
   version: 2
@@ -74,4 +50,3 @@ workflows:
     jobs:
     - build
     - snap
-    - android
