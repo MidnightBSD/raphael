@@ -394,8 +394,7 @@ namespace Raphael {
                     // hostname — port-scoped trust is not supported by the API.
                     // This means trusting a certificate applies to all ports on
                     // the host, not just the port currently being visited.
-                    var soup_uri = new Soup.URI (tab.uri);
-                    tab.web_context.allow_tls_certificate_for_host (tab.tls, soup_uri.host);
+                    tab.web_context.allow_tls_certificate_for_host (tab.tls, uri_hostname (tab.uri));
                     security.hide ();
                     tab.reload ();
                 });

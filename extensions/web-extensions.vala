@@ -256,34 +256,33 @@ namespace WebExtension {
         Raphael.Browser browser { get { return app.active_window as Raphael.Browser; } }
 
         void web_extension_message_received (WebKit.WebView web_view, WebKit.JavascriptResult result) {
-            unowned JS.GlobalContext context = result.get_global_context ();
-            unowned JS.Value value = result.get_value ();
-            if (value.is_object (context)) {
-                var object = value.to_object (context);
-                string? fn = js_to_string (context, object.get_property (context, new JS.String.create_with_utf8_cstring ("fn")));
+            unowned JSC.Value value = result.get_js_value ();
+            if (value.is_object ()) {
+                var object = value;
+                string? fn = js_to_string (object.object_get_property ("fn"));
                 if (fn != null && fn.has_prefix ("tabs.create")) {
-                    var args = object.get_property (context, new JS.String.create_with_utf8_cstring ("args")).to_object (context);
-                    string? url = js_to_string (context, args.get_property (context, new JS.String.create_with_utf8_cstring ("url")));
+                    var args = object.object_get_property ("args");
+                    string? url = js_to_string (args.object_get_property ("url"));
                     var tab = new Raphael.Tab (null, browser.tab.web_context, url);
                     browser.add (tab);
-                    var promise = object.get_property (context, new JS.String.create_with_utf8_cstring ("promise")).to_number (context);
+                    var promise = object.object_get_property ("promise").to_double ();
                     debug ("Calling back to promise #%.f".printf (promise));
                     web_view.run_javascript.begin ("promises[%.f].resolve({id:%s});".printf (promise, tab.id));
                 } else if (fn != null && fn.has_prefix ("tabs.executeScript")) {
-                    var args = object.get_property (context, new JS.String.create_with_utf8_cstring ("args")).to_object (context);
+                    var args = object.object_get_property ("args");
                     string? results = null;
-                    string? code = js_to_string (context, args.get_property (context, new JS.String.create_with_utf8_cstring ("code")));
+                    string? code = js_to_string (args.object_get_property ("code"));
                     if (code != null) {
                         results = "[true]";
                         browser.tab.run_javascript.begin (code);
                     }
-                    var promise = object.get_property (context, new JS.String.create_with_utf8_cstring ("promise")).to_number (context);
+                    var promise = object.object_get_property ("promise").to_double ();
                     debug ("Calling back to promise #%.f".printf (promise));
                     web_view.run_javascript.begin ("promises[%.f].resolve(%s);".printf (promise, results ?? "[undefined]"));
                 } else if (fn != null && fn.has_prefix ("notifications.create")) {
-                    var args = object.get_property (context, new JS.String.create_with_utf8_cstring ("args")).to_object (context);
-                    string? message = js_to_string (context, args.get_property (context, new JS.String.create_with_utf8_cstring ("message")));
-                    string? title = js_to_string (context, args.get_property (context, new JS.String.create_with_utf8_cstring ("title")));
+                    var args = object.object_get_property ("args");
+                    string? message = js_to_string (args.object_get_property ("message"));
+                    string? title = js_to_string (args.object_get_property ("title"));
                     var notification = new Notification (title);
                     notification.set_body (message);
                     // Use per-extension ID to avoid collisions
@@ -293,7 +292,7 @@ namespace WebExtension {
                     warning ("Unsupported Web Extension API: %s", fn);
                 }
             } else {
-                warning ("Unexpected non-object value posted to Web Extension API: %s", js_to_string (context, value));
+                warning ("Unexpected non-object value posted to Web Extension API: %s", js_to_string (value));
             }
         }
 
@@ -397,14 +396,11 @@ namespace WebExtension {
         }
     }
 
-    static string? js_to_string (JS.GlobalContext context, JS.Value value) {
-        if (!value.is_string (context)) {
+    static string? js_to_string (JSC.Value value) {
+        if (!value.is_string ()) {
             return null;
         }
-        var str = value.to_string_copy (context);
-        uint8[] buffer = new uint8[str.get_maximum_utf8_cstring_size ()];
-        str.get_utf8_cstring (buffer);
-        return ((string)buffer);
+        return value.to_string ();
     }
 
     public class Browser : Object, Raphael.BrowserActivatable {

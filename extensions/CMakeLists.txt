@@ -27,11 +27,15 @@ foreach(UNIT_SRC ${EXTENSIONS})
     endif ()
 
     if ("${UNIT_SRC}" MATCHES "(.vala)$")
+        set(UNIT_PACKAGES ${PKGS})
+        if (${UNIT} STREQUAL "web-extensions")
+            list(APPEND UNIT_PACKAGES javascriptcoregtk-4.1)
+        endif ()
         include(ValaPrecompile)
         vala_precompile(UNIT_SRC_C ${UNIT}
             ${UNIT_SRC}
         PACKAGES
-            ${PKGS}
+            ${UNIT_PACKAGES}
         OPTIONS
             ${VALAFLAGS}
             --gresources="${CMAKE_SOURCE_DIR}/gresource.xml"

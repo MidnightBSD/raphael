@@ -217,7 +217,7 @@ namespace Raphael {
             }
 
             var monitor = NetworkMonitor.get_default ();
-            string hostname = new Soup.URI (uri).host;
+            string hostname = uri_hostname (uri);
             string? title = null;
             string? message = null;
             if (!monitor.network_available) {
@@ -353,11 +353,11 @@ namespace Raphael {
                     break;
                 case WebKit.ScriptDialogType.CONFIRM:
                 case WebKit.ScriptDialogType.BEFORE_UNLOAD_CONFIRM:
-                    string hostname = new Soup.URI (uri).host;
+                    string hostname = uri_hostname (uri);
                     dialog.confirm_set_confirmed(((Browser)get_toplevel ()).prompt (hostname, dialog.get_message (), _("_Confirm")) != null);
                     break;
                 case WebKit.ScriptDialogType.PROMPT:
-                    string hostname = new Soup.URI (uri).host;
+                    string hostname = uri_hostname (uri);
                     dialog.prompt_set_text(((Browser)get_toplevel ()).prompt (hostname, dialog.get_message (), _("_Confirm"), dialog.prompt_get_default_text ()));
                     break;
             }
@@ -378,7 +378,7 @@ namespace Raphael {
             }
             notification.set_body (webkit_notification.body);
             // Use a per-host ID to avoid collisions, but neglect the tag
-            string hostname = new Soup.URI (uri).host;
+            string hostname = uri_hostname (uri);
             notification.set_default_action_and_target_value("app.tab-focus", id);
             Application.get_default ().send_notification ("web-%s".printf (hostname), notification);
             return true;
@@ -386,7 +386,7 @@ namespace Raphael {
 
         public override bool permission_request (WebKit.PermissionRequest permission) {
             if (permission is WebKit.GeolocationPermissionRequest) {
-                string hostname = new Soup.URI (uri).host;
+                string hostname = uri_hostname (uri);
                 message.label = _("%s wants to know your location.").printf (hostname);
             } else if (permission is WebKit.NotificationPermissionRequest) {
                 permission.allow ();

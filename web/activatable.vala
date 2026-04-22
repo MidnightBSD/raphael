@@ -27,10 +27,7 @@ public void webkit_web_extension_initialize_with_user_data (WebKit.WebExtension 
                 if (uri != null && uri != "") {
                     // Relative URL
                     if (!("://" in uri)) {
-                        var soup_uri = new Soup.URI (page.uri);
-                        soup_uri.set_path ("/" + uri);
-                        soup_uri.set_query (null);
-                        uri = soup_uri.to_string (false);
+                        uri = Uri.resolve_relative (page.uri, uri, UriFlags.PARSE_RELAXED);
                     }
                     debug ("Found thumbnail for %s: %s", page.uri, uri);
                     var history = Raphael.HistoryDatabase.get_default ();

@@ -68,7 +68,7 @@ namespace Adblock {
                 ensure_headers ();
                 if (_title == null) {
                     // Fallback to title from the URI
-                    string[] parts = Soup.URI.decode (uri).split ("&");
+                    string[] parts = (Uri.unescape_string (uri) ?? uri).split ("&");
                     foreach (string part in parts) {
                         if (part.has_prefix ("title=")) {
                             _title = part.substring (6, -1);

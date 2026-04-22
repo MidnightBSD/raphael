@@ -46,7 +46,7 @@ apps:
       - network-status
     desktop: share/applications/org.midnightbsd.Raphael.desktop
     environment:
-      LD_LIBRARY_PATH: $SNAP/usr/lib/x86_64-linux-gnu/webkit2gtk-4.0/:$LD_LIBRARY_PATH
+      LD_LIBRARY_PATH: $SNAP/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/:$LD_LIBRARY_PATH
       # Work-around GPU crash https://bugs.webkit.org/show_bug.cgi?id=126122
       WEBKIT_DISABLE_COMPOSITING_MODE: 1
       # No Netscape plugins
@@ -67,8 +67,8 @@ parts:
     build-packages:
       - git
       - valac
-      - libwebkit2gtk-4.0-dev
-      - libsoup-gnome2.4-dev
+      - libwebkit2gtk-4.1-dev
+      - libsoup-3.0-dev
       - libgcr-3-dev
       - libpeas-dev
       - libsqlite3-dev
@@ -80,7 +80,7 @@ parts:
     stage-packages:
       - libjson-glib-1.0-0
       - libarchive13
-      - libwebkit2gtk-4.0-37
+      - libwebkit2gtk-4.1-0
       - libgcr-base-3-1
       - libgcr-ui-3-1
       - libgck-1-0
@@ -88,8 +88,9 @@ parts:
       - libdb5.3
       - libcanberra-gtk3-module
       - libpeas-1.0-0-python2loader
-      - python-gi
-      - gir1.2-webkit2-4.0
+      - python3-gi
+      - gir1.2-javascriptcoregtk-4.1
+      - gir1.2-webkit2-4.1
       - gir1.2-peas-1.0
       - myspell-en-us
       - gnome-icon-theme-symbolic
@@ -108,8 +109,6 @@ parts:
       - -usr/share/gir-1.0/Raphael-0.6.gir
       - -usr/lib/*/libcups.so.2
       - -usr/share/doc/libcups2/changelog.Debian.gz
-      - -usr/lib/*/libsoup-2.4.so.1.7.0
-      - -usr/lib/*/libsoup-gnome-2.4.so.1.7.0
       - -usr/lib/*/libjpeg.so.8.0.2
       - -usr/share/doc
       - -usr/lib/*/libX11-xcb.so.1.0.0

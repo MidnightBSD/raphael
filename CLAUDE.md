@@ -97,7 +97,7 @@ From the project's contributing guidelines:
 - **Vala** compiler (valac)
 - **CMake** 3.2+
 - **GTK+** 3.12+
-- **WebKitGTK** 2.16.6+ (`webkit2gtk-4.0`)
+- **WebKitGTK** 2.16.6+ (`webkit2gtk-4.1` on newer distros, `webkit2gtk-4.0` on older ones)
 - **libsoup** 2.48+
 - **SQLite** 3.6.19+
 - **Libpeas** (plugin system)

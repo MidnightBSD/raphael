@@ -46,7 +46,9 @@ mport install raphael
 
 Install dependencies on Astian OS, Ubuntu, Debian or other Debian-based distros:
 
-    sudo apt install cmake valac libwebkit2gtk-4.0-dev libgcr-3-dev libpeas-dev libsqlite3-dev libjson-glib-dev libarchive-dev intltool libxml2-utils
+    sudo apt install cmake valac libwebkit2gtk-4.1-dev libsoup-3.0-dev libgcr-3-dev libpeas-dev libsqlite3-dev libjson-glib-dev libarchive-dev intltool libxml2-utils
+
+On older Debian/ Ubuntu releases, `libwebkit2gtk-4.0-dev` may still be the correct package name.
 
 Install dependencies on openSUSE:
 
@@ -382,5 +384,3 @@ For testing your changes a real system is recommended because WebKitGTK+ doesn't
 See [Fedora 18 packages](http://dl.fedoraproject.org/pub/fedora/linux/releases/18/Everything/i386/os/Packages/m/).
 
 > **Spoilers:** Use `msys.bat` to launch a shell
-
-

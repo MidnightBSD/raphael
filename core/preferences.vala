@@ -118,7 +118,7 @@ namespace Raphael {
             settings.bind_property ("location-entry-search", combo, "active-id", BindingFlags.SYNC_CREATE | BindingFlags.BIDIRECTIONAL);
             // Generic item for custom search option
             if (combo.get_active_text () == null) {
-                string hostname = new Soup.URI (settings.location_entry_search).host;
+                string hostname = uri_hostname (settings.location_entry_search);
                 combo.append (settings.location_entry_search, hostname);
                 combo.active_id = settings.location_entry_search;
             }

@@ -52,7 +52,10 @@ namespace Raphael {
                     title: tab.display_title,
                     tooltip_text: tab.display_title,
                     visible: tab.visible);
-            tab.bind_property ("favicon", favicon, "surface", BindingFlags.SYNC_CREATE);
+            favicon.surface = (Cairo.Surface?)tab.favicon;
+            tab.notify["favicon"].connect ((pspec) => {
+                favicon.surface = (Cairo.Surface?)tab.favicon;
+            });
             tab.bind_property ("display-uri", this, "uri");
             title = tab.display_title;
             tab.bind_property ("display-title", this, "title");
