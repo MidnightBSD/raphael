@@ -38,6 +38,11 @@ make            # or: cmake -G Ninja .. && ninja
 - Add new unit tests as a new `tests/<name>.vala` file; the binary/test name matches the filename.
 - Keep tests deterministic and runnable under `xvfb-run` in CI.
 
+## Portability Targets
+
+- Changes must work on MidnightBSD; prefer solutions that stay portable to other BSDs and Linux.
+- Avoid OS-specific paths/assumptions; gate platform differences in CMake where needed and document any new dependencies in `README.md`.
+
 ## Commit & Pull Request Guidelines
 
 - Commits are typically short, imperative subjects (e.g., “Fix …”, “Add …”, “Update …”), optionally with a scope (`[Android] …`) or issue/PR reference (`(#123)`).
