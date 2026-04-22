@@ -6,6 +6,8 @@ cmake_minimum_required(VERSION 3.2)
 set (GETTEXT_PACKAGE "raphael")
 add_definitions("-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\"")
 project(${GETTEXT_PACKAGE} C)
+
+option(RAPHAEL_VALA_FATAL_WARNINGS "Treat Vala warnings as fatal in development builds" ON)
 set(PROJECT_DOMAIN org.midnightbsd.Raphael)
 set(PROJECT_BUGS https://github.com/MidnightBSD/raphael/issues)
 set(PROJECT_WEBSITE https://github.com/MidnightBSD/raphael)
@@ -17,8 +19,10 @@ execute_process(COMMAND "git" "describe" "--tags"
                 OUTPUT_STRIP_TRAILING_WHITESPACE)
 if (REVISION)
     set(CORE_VERSION "${REVISION}")
-    # All warnings are errors in development builds
-    set(VALAFLAGS ${VALAFLAGS} --fatal-warnings)
+    # All warnings are errors in development builds (can be disabled for toolchain noise)
+    if (RAPHAEL_VALA_FATAL_WARNINGS)
+        set(VALAFLAGS ${VALAFLAGS} --fatal-warnings)
+    endif ()
 else ()
     # No runtime type checks
     set(VALAFLAGS ${VALAFLAGS} --disable-assert)
