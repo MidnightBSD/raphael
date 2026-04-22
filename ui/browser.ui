@@ -193,6 +193,7 @@
                         <property name="halign">end</property>
                         <property name="valign">start</property>
                         <property name="margin">0</property>
+                        <property name="show-close-button">yes</property>
                         <style>
                           <class name="background"/>
                         </style>

@@ -271,6 +271,13 @@ namespace Raphael {
             bind_property ("is-small", actionbox, "visible", BindingFlags.SYNC_CREATE | BindingFlags.INVERT_BOOLEAN);
             bind_property ("is-small", navigationbar.actionbox, "visible", BindingFlags.SYNC_CREATE | BindingFlags.INVERT_BOOLEAN);
             search.bind_property ("search-mode-enabled", search, "visible", BindingFlags.SYNC_CREATE);
+            search.notify["search-mode-enabled"].connect (() => {
+                if (!search.search_mode_enabled && tab != null) {
+                    search_entry.text = "";
+                    tab.get_find_controller ().search_finish ();
+                    tab.grab_focus ();
+                }
+            });
             navigationbar.urlbar.notify["uri"].connect ((pspec) => {
                 string uri = navigationbar.urlbar.uri;
                 if (uri.has_prefix ("javascript:")) {
