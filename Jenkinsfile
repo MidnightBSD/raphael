@@ -4,7 +4,10 @@ pipeline {
     stage('build') {
       steps {
           cmakeBuild(
-            installation: 'InSearchPath'
+            installation: 'InSearchPath',
+            buildDir: '_build',
+            sourceDir: '.',
+            steps: [[args: 'all']]
           )
       }
     }
