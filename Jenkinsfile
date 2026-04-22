@@ -3,12 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-          cmakeBuild(
-            installation: 'InSearchPath',
-            buildDir: '_build',
-            sourceDir: '.',
-            steps: [[args: 'all']]
-          )
+          sh 'cmake -S . -B _build'
+          sh 'cmake --build _build'
       }
     }
   }
