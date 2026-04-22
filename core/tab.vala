@@ -80,6 +80,13 @@ namespace Raphael {
             var settings = get_settings ();
             settings.user_agent += " %s".printf (Config.CORE_USER_AGENT_VERSION);
             bind_property ("pinned", settings, "enable-developer-extras", BindingFlags.SYNC_CREATE | BindingFlags.INVERT_BOOLEAN);
+
+            if (Environment.get_variable ("RAPHAEL_DISABLE_GPU") == "1") {
+                settings.hardware_acceleration_policy = WebKit.HardwareAccelerationPolicy.NEVER;
+                settings.enable_webgl = false;
+                settings.enable_accelerated_2d_canvas = false;
+            }
+
             var core_settings = CoreSettings.get_default ();
             settings.javascript_can_open_windows_automatically = true;
             settings.allow_modal_dialogs = true;

@@ -25,6 +25,7 @@ namespace Raphael {
         static int inactivity_reset = 0;
         static bool incognito = false;
         static bool single_app = false;
+        static bool disable_gpu = false;
         static new bool version = false;
         const OptionEntry[] options = {
             { "app", 'a', 0, OptionArg.STRING, ref app, N_("Run ADDRESS as a web application"), N_("ADDRESS") },
@@ -33,6 +34,7 @@ namespace Raphael {
             { "help-execute", 0, 0, OptionArg.NONE, ref help_execute, N_("List available commands to execute with -e/ --execute"), null },
             { "inactivity-reset", 'i', 0, OptionArg.INT, ref inactivity_reset, N_("Reset Raphael after SECONDS seconds of inactivity"), N_("SECONDS") },
             { "private", 'p', 0, OptionArg.NONE, ref incognito, N_("Private browsing, no changes are saved"), null },
+            { "disable-gpu", 0, 0, OptionArg.NONE, ref disable_gpu, N_("Disable hardware acceleration (useful when EGL/GPU is unavailable)"), null },
             { "version", 'V', 0, OptionArg.NONE, ref version, N_("Display version number"), null },
             { null }
         };
@@ -71,6 +73,10 @@ namespace Raphael {
             Intl.bindtextdomain (Config.PROJECT_NAME, null);
             Intl.bind_textdomain_codeset (Config.PROJECT_NAME, "UTF-8");
             Intl.textdomain (Config.PROJECT_NAME);
+
+            if (disable_gpu) {
+                Environment.set_variable ("RAPHAEL_DISABLE_GPU", "1", false);
+            }
 
             base.startup ();
 
