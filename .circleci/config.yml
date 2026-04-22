@@ -4,7 +4,9 @@ jobs:
     docker:
     - image: cimg/base:stable
     steps:
-    - checkout
+    - run:
+        name: Checkout via HTTPS
+        command: git clone --branch "$CIRCLE_BRANCH" https://github.com/MidnightBSD/raphael.git .
     - run:
         name: Install dependencies
         command: |
@@ -35,7 +37,9 @@ jobs:
     docker:
     - image: snapcore/snapcraft:stable
     steps:
-    - checkout
+    - run:
+        name: Checkout via HTTPS
+        command: git clone --branch "$CIRCLE_BRANCH" https://github.com/MidnightBSD/raphael.git .
     - run:
         name: Refresh package cache
         command: |
