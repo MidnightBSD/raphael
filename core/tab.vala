@@ -248,10 +248,10 @@ namespace Raphael {
                 string html = ((string)resources_lookup_data ("/data/error.html",
                                                              ResourceLookupFlags.NONE).get_data ())
                     .replace ("{stylesheet}", stylesheet)
-                    .replace ("{icon}", icon_name)
-                    .replace ("{title}", title)
-                    .replace ("{message}", message)
-                    .replace ("{description}", description ?? "")
+                    .replace ("{icon}", Markup.escape_text (icon_name))
+                    .replace ("{title}", Markup.escape_text (title))
+                    .replace ("{message}", Markup.escape_text (message))
+                    .replace ("{description}", Markup.escape_text (description ?? ""))
                     .replace ("{tryagain}", "<span>%s</span>".printf (_("Try Again")))
                     // HTML-escape the URI so it is safe as an HTML attribute value.
                     // error.html reads it back via getAttribute() which decodes entities.

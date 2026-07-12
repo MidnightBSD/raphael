@@ -226,7 +226,12 @@ namespace Raphael {
                 // It's no error if the folder already exists
             }
             try {
-                keyfile.save_to_file (filename);
+                size_t length;
+                string contents = keyfile.to_data (out length);
+                uint8[] data = contents.data;
+                data.length = (int)length;
+                File.new_for_path (filename).replace_contents (data, null, false,
+                    FileCreateFlags.REPLACE_DESTINATION, null, null);
             } catch (Error error) {
                 critical ("Failed to save settings to %s: %s", filename, error.message);
             }
