@@ -182,6 +182,17 @@ namespace Raphael {
         } set {
             set_boolean ("settings", "first-party-cookies-only", value, true);
         } }
+
+        public string? get_permission (string host, string kind) {
+            string key = Checksum.compute_for_string (ChecksumType.SHA256, "%s:%s".printf (host, kind), -1);
+            return get_string ("permissions", key);
+        }
+
+        public void set_permission (string host, string kind, string decision) {
+            string key = Checksum.compute_for_string (ChecksumType.SHA256, "%s:%s".printf (host, kind), -1);
+            set_string ("permissions", key, decision);
+        }
+
         public int maximum_history_age { get {
             return get_string ("settings", "maximum-history-age", "30").to_int ();
         } set {

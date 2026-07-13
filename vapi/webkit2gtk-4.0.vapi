@@ -653,11 +653,28 @@ namespace WebKit {
 		public UserContentManager ();
 		public void add_script (WebKit.UserScript script);
 		public void add_style_sheet (WebKit.UserStyleSheet stylesheet);
+		public void add_filter (WebKit.UserContentFilter filter);
 		public bool register_script_message_handler (string name);
 		public void remove_all_scripts ();
 		public void remove_all_style_sheets ();
+		public void remove_filter (WebKit.UserContentFilter filter);
 		public void unregister_script_message_handler (string name);
 		public signal void script_message_received (WebKit.JavascriptResult js_result);
+	}
+	[CCode (cheader_filename = "webkit2/webkit2.h", ref_function = "webkit_user_content_filter_ref", type_id = "webkit_user_content_filter_get_type ()", unref_function = "webkit_user_content_filter_unref")]
+	[Compact]
+	public class UserContentFilter {
+		public unowned string get_identifier ();
+		public unowned WebKit.UserContentFilter @ref ();
+		public void unref ();
+	}
+	[CCode (cheader_filename = "webkit2/webkit2.h", type_id = "webkit_user_content_filter_store_get_type ()")]
+	public class UserContentFilterStore : GLib.Object {
+		[CCode (has_construct_function = false)]
+		public UserContentFilterStore (string storage_path);
+		public async WebKit.UserContentFilter save (string identifier, GLib.Bytes source, GLib.Cancellable? cancellable) throws GLib.Error;
+		public async WebKit.UserContentFilter load (string identifier, GLib.Cancellable? cancellable) throws GLib.Error;
+		public async bool remove (string identifier, GLib.Cancellable? cancellable) throws GLib.Error;
 	}
 	[CCode (cheader_filename = "webkit2/webkit2.h", type_id = "webkit_user_media_permission_request_get_type ()")]
 	public class UserMediaPermissionRequest : GLib.Object, WebKit.PermissionRequest {
@@ -886,6 +903,13 @@ namespace WebKit {
 		public virtual signal bool show_notification (WebKit.Notification notification);
 		public virtual signal void submit_form (WebKit.FormSubmissionRequest request);
 		public virtual signal bool web_process_crashed ();
+		public virtual signal void web_process_terminated (WebKit.WebProcessTerminationReason reason);
+	}
+	[CCode (cheader_filename = "webkit2/webkit2.h", cprefix = "WEBKIT_WEB_PROCESS_", type_id = "webkit_web_process_termination_reason_get_type ()")]
+	public enum WebProcessTerminationReason {
+		CRASHED,
+		EXCEEDED_MEMORY_LIMIT,
+		TERMINATED_BY_API
 	}
 	[CCode (cheader_filename = "webkit2/webkit2.h", type_id = "webkit_web_view_base_get_type ()")]
 	public class WebViewBase : Gtk.Container, Atk.Implementor, Gtk.Buildable {

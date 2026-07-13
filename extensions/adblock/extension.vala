@@ -11,6 +11,96 @@
 */
 
 namespace Adblock {
+    public class NativeFilters : Object {
+        WebKit.UserContentManager manager;
+        WebKit.UserContentFilter? filter = null;
+        WebKit.UserContentFilterStore store;
+
+        public NativeFilters (WebKit.UserContentManager manager) {
+            this.manager = manager;
+            string path = Path.build_filename (Environment.get_user_cache_dir (),
+                Config.PROJECT_NAME, "adblock", "native");
+            store = new WebKit.UserContentFilterStore (path);
+        }
+
+        string build_source () {
+            var builder = new Json.Builder ();
+            builder.begin_array ();
+            uint rules = 0;
+            var settings = Settings.get_default ();
+            foreach (unowned Subscription subscription in settings) {
+                if (!subscription.active || rules >= 10000) {
+                    continue;
+                }
+                try {
+                    uint8[] contents;
+                    string? etag;
+                    if (!subscription.file.load_contents (null, out contents, out etag)) {
+                        continue;
+                    }
+                    var stream = new DataInputStream (new MemoryInputStream.from_data (contents, null));
+                    string? line;
+                    while ((line = stream.read_line (null)) != null && rules < 10000) {
+                        line = line.chomp ();
+                        if (line == "" || line[0] == '!' || line[0] == '[' || line[0] == '#'
+                            || line.contains ("##") || line.contains ("#@#") || line.contains ("$")) {
+                            continue;
+                        }
+                        bool exception = line.has_prefix ("@@");
+                        if (exception) {
+                            line = line.substring (2, -1);
+                        }
+                        string pattern;
+                        if (line.has_prefix ("||")) {
+                            pattern = fixup_regex ("", line.substring (2, -1));
+                        } else if (line.has_prefix ("|")) {
+                            pattern = fixup_regex ("^", line.substring (1, -1));
+                        } else {
+                            pattern = fixup_regex ("", line);
+                        }
+                        if (pattern == null || pattern == "") {
+                            continue;
+                        }
+                        builder.begin_object ();
+                        builder.set_member_name ("trigger");
+                        builder.begin_object ();
+                        builder.set_member_name ("url-filter");
+                        builder.add_string_value (pattern);
+                        builder.end_object ();
+                        builder.set_member_name ("action");
+                        builder.begin_object ();
+                        builder.set_member_name ("type");
+                        builder.add_string_value (exception ? "ignore-previous-rules" : "block");
+                        builder.end_object ();
+                        builder.end_object ();
+                        rules++;
+                    }
+                } catch (Error error) {
+                    debug ("Failed to read native adblock source %s: %s",
+                        subscription.file.get_path (), error.message);
+                }
+            }
+            builder.end_array ();
+            var generator = new Json.Generator ();
+            generator.root = builder.get_root ();
+            return generator.to_data (null);
+        }
+
+        public async void reload () {
+            try {
+                string source = build_source ();
+                var compiled = yield store.save ("raphael-adblock", new Bytes (source.data), null);
+                if (filter != null) {
+                    manager.remove_filter (filter);
+                }
+                filter = compiled;
+                manager.add_filter (filter);
+            } catch (Error error) {
+                debug ("Failed to load native adblock filter: %s", error.message);
+            }
+        }
+    }
+
     public class Button : Gtk.Button {
         public string icon_name { get; protected set; }
         Settings settings = Settings.get_default ();
@@ -48,10 +138,13 @@ namespace Adblock {
 
     public class Frontend : Object, Raphael.BrowserActivatable {
         public Raphael.Browser browser { owned get; set; }
+        NativeFilters? native_filters;
 
         public void activate () {
             var button = new Button (browser);
             browser.add_button (button);
+            native_filters = new NativeFilters (browser.tab.get_user_content_manager ());
+            native_filters.reload.begin ();
             deactivate.connect (() => {
                 button.destroy ();
             });

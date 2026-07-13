@@ -32,6 +32,8 @@ namespace Raphael {
         internal TlsCertificate? tls { get; protected set; default = null; }
         public string link_uri { get; protected set; }
         WebKit.PermissionRequest? pending_permission = null;
+        string? pending_permission_kind = null;
+        string? pending_permission_host = null;
 
         [GtkChild]
         internal unowned Gtk.Popover popover;
@@ -39,6 +41,8 @@ namespace Raphael {
         unowned Gtk.Label message;
         [GtkChild]
         unowned Gtk.Button confirm;
+        [GtkChild]
+        unowned Gtk.Button deny;
 
         construct {
             notify["estimated-load-progress"].connect (update_progress);
@@ -65,7 +69,27 @@ namespace Raphael {
                 pending_permission = null;
                 if (permission != null) {
                     permission.allow ();
+                    if (!web_context.is_ephemeral () && pending_permission_kind != null && pending_permission_host != null) {
+                        CoreSettings.get_default ().set_permission (
+                            pending_permission_host, pending_permission_kind, "allow");
+                    }
                 }
+                pending_permission_kind = null;
+                pending_permission_host = null;
+                popover.hide ();
+            });
+            deny.clicked.connect (() => {
+                var permission = pending_permission;
+                pending_permission = null;
+                if (permission != null) {
+                    permission.deny ();
+                    if (!web_context.is_ephemeral () && pending_permission_kind != null && pending_permission_host != null) {
+                        CoreSettings.get_default ().set_permission (
+                            pending_permission_host, pending_permission_kind, "deny");
+                    }
+                }
+                pending_permission_kind = null;
+                pending_permission_host = null;
                 popover.hide ();
             });
             popover.closed.connect (() => {
@@ -74,6 +98,8 @@ namespace Raphael {
                 if (permission != null) {
                     permission.deny ();
                 }
+                pending_permission_kind = null;
+                pending_permission_host = null;
             });
         }
 
@@ -199,6 +225,12 @@ namespace Raphael {
         public override bool web_process_crashed () {
             this.tls = null;
             return display_error ("face-sad", _("Oops - %s").printf (uri), _("Something went wrong with '%s'.").printf (uri));
+        }
+
+        public override void web_process_terminated (WebKit.WebProcessTerminationReason reason) {
+            this.tls = null;
+            display_error ("face-sad", _("The page process stopped"),
+                _("Something went wrong with '%s'. Reload the page to try again.").printf (uri));
         }
 
         public override bool load_failed_with_tls_errors (string uri, GLib.TlsCertificate tls, GLib.TlsCertificateFlags flags) {
@@ -405,15 +437,40 @@ namespace Raphael {
                 pending_permission.deny ();
             }
             pending_permission = permission;
+            string hostname = uri_hostname (uri);
+            string kind = "permission";
             if (permission is WebKit.GeolocationPermissionRequest) {
-                string hostname = uri_hostname (uri);
+                kind = "location";
                 message.label = _("%s wants to know your location.").printf (hostname);
             } else if (permission is WebKit.NotificationPermissionRequest) {
-                string hostname = uri_hostname (uri);
+                kind = "notifications";
                 message.label = _("%s wants to show notifications.").printf (hostname);
+            } else if (permission is WebKit.UserMediaPermissionRequest) {
+                var media = permission as WebKit.UserMediaPermissionRequest;
+                bool audio = WebKit.user_media_permission_is_for_audio_device (media);
+                bool video = WebKit.user_media_permission_is_for_video_device (media);
+                kind = audio && video ? "camera-microphone" : video ? "camera" : "microphone";
+                message.label = audio && video
+                    ? _("%s wants to use your camera and microphone.").printf (hostname)
+                    : video
+                        ? _("%s wants to use your camera.").printf (hostname)
+                        : _("%s wants to use your microphone.").printf (hostname);
             } else {
                 message.label = permission.get_type ().name ();
             }
+            var saved = CoreSettings.get_default ().get_permission (hostname, kind);
+            if (saved == "allow") {
+                pending_permission = null;
+                permission.allow ();
+                return true;
+            }
+            if (saved == "deny") {
+                pending_permission = null;
+                permission.deny ();
+                return true;
+            }
+            pending_permission_kind = kind;
+            pending_permission_host = hostname;
             confirm.label = _("_Allow");
             confirm.show ();
             popover.show ();

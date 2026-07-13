@@ -266,6 +266,13 @@ namespace Raphael {
             settings.notify["homepage-in-toolbar"].connect (() => {
                 action.set_enabled (settings.homepage_in_toolbar);
             });
+            action = new SimpleAction ("site-data", null);
+            action.activate.connect (() => { site_data_activated (); });
+            action.set_enabled (false);
+            add_action (action);
+            notify["uri"].connect (() => {
+                action.set_enabled (uri != null && uri.has_prefix ("http"));
+            });
 
             trash = new ListStore (typeof (DatabaseItem));
 
@@ -692,6 +699,13 @@ namespace Raphael {
 
         void save_page_activated () {
             save_page.begin ();
+        }
+
+        void site_data_activated () {
+            if (uri == null || !uri.has_prefix ("http")) {
+                return;
+            }
+            new SiteDataDialog (this, uri_hostname (uri)).show ();
         }
 
         async void save_page () {

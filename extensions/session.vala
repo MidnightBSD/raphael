@@ -24,11 +24,7 @@ namespace Tabby {
             if (value == null || value == "") {
                 return -1;
             }
-            try {
-                return int64.parse (value);
-            } catch (Error error) {
-                return -1;
-            }
+            return int64.parse (value);
         }
 
         static void item_set_pinned (Raphael.DatabaseItem item, bool pinned) {
@@ -37,6 +33,14 @@ namespace Tabby {
 
         static bool item_get_pinned (Raphael.DatabaseItem item) {
             return item.get_data<bool> ("pinned");
+        }
+
+        static void item_set_session_state (Raphael.DatabaseItem item, string state) {
+            item.set_data<string> ("session-state", state);
+        }
+
+        static string? item_get_session_state (Raphael.DatabaseItem item) {
+            return item.get_data<string> ("session-state");
         }
 
         public static SessionDatabase get_default () throws Raphael.DatabaseError {
@@ -74,7 +78,7 @@ namespace Tabby {
         async List<Raphael.DatabaseItem>? get_items (int64 session_id, string? filter=null, int64 max_items=15, Cancellable? cancellable=null) throws Raphael.DatabaseError {
             string where = filter != null ? "AND (uri LIKE :filter OR title LIKE :filter)" : "";
             string sqlcmd = """
-                SELECT id, uri, title, tstamp, pinned FROM %s
+                SELECT id, uri, title, tstamp, pinned, session_state FROM %s
                 WHERE session_id = :session_id %s
                 ORDER BY tstamp DESC LIMIT :limit
                 """.printf (table, where);
@@ -96,6 +100,10 @@ namespace Tabby {
                 item.id = statement.get_int64 ("id");
                 item_set_session_id (item, session_id);
                 item_set_pinned (item, statement.get_int64 ("pinned") != 0);
+                string? state = statement.get_string ("session_state");
+                if (state != null && state != "") {
+                    item_set_session_state (item, state);
+                }
                 items.append (item);
 
                 uint src = Idle.add (get_items.callback);
@@ -216,6 +224,20 @@ namespace Tabby {
                 ":pinned", typeof (int64), item_get_pinned (item) ? 1 : 0).exec ();
         }
 
+        async void update_tab_state (Raphael.Tab tab, Raphael.DatabaseItem item) {
+            try {
+                var state = tab.get_session_state ().serialize ();
+                string encoded = Base64.encode (state.get_data ());
+                item_set_session_state (item, encoded);
+                var statement = prepare ("UPDATE %s SET session_state=:state WHERE rowid=:id".printf (table),
+                    ":state", typeof (string), encoded,
+                    ":id", typeof (int64), item.id);
+                statement.exec ();
+            } catch (Error error) {
+                debug ("Failed to save tab session state: %s", error.message);
+            }
+        }
+
         public async override bool clear (TimeSpan timespan) throws Raphael.DatabaseError {
             // Note: TimeSpan is defined in microseconds
             int64 maximum_age = new DateTime.now_local ().to_unix () - timespan / 1000000;
@@ -250,6 +272,11 @@ namespace Tabby {
                 var tab = new Raphael.Tab (null, browser.web_context,
                                           item.uri, item.title);
                 tab.pinned = item_get_pinned (item);
+                string? state = item_get_session_state (item);
+                if (state != null) {
+                    tab.restore_session_state (new WebKit.WebViewSessionState (
+                        new Bytes (Base64.decode (state))));
+                }
                 connect_tab (tab, item);
                 browser.add (tab);
             }
@@ -293,6 +320,11 @@ namespace Tabby {
             tab.notify["uri"].connect ((pspec) => { item.uri = tab.uri; update.begin (item); });
             tab.notify["title"].connect ((pspec) => { item.title = tab.title; });
             tab.notify["pinned"].connect ((pspec) => { item.set_data<bool> ("pinned", tab.pinned); update_tab.begin (item); });
+            tab.load_changed.connect ((event) => {
+                if (event == WebKit.LoadEvent.FINISHED && !tab.web_context.is_ephemeral ()) {
+                    update_tab_state.begin (tab, item);
+                }
+            });
             tab.close.connect (() => { tab_removed (tab); });
         }
 

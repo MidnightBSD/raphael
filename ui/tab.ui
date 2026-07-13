@@ -21,6 +21,13 @@
             <property name="use-underline">yes</property>
           </object>
         </child>
+        <child>
+          <object class="GtkButton" id="deny">
+            <property name="focus-on-click">no</property>
+            <property name="label" translatable="yes">_Deny</property>
+            <property name="use-underline">yes</property>
+          </object>
+        </child>
       </object>
     </child>
   </object>

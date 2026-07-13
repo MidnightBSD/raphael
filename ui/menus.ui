@@ -125,6 +125,11 @@
         <attribute name="accel">&lt;Primary&gt;s</attribute>
       </item>
       <item>
+        <attribute name="action">win.site-data</attribute>
+        <attribute name="hidden-when">action-disabled</attribute>
+        <attribute name="label" translatable="yes">Manage Site _Data…</attribute>
+      </item>
+      <item>
         <attribute name="action">win.print</attribute>
         <attribute name="label" translatable="yes">Print the current page</attribute>
         <attribute name="accel">&lt;Primary&gt;p</attribute>

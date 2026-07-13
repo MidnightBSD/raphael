@@ -1,0 +1,1 @@
+ALTER TABLE tabs ADD session_state TEXT DEFAULT NULL;
