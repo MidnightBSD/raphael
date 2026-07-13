@@ -11,6 +11,7 @@
 
 namespace WebExtension {
     public class Extension : Object {
+        const uint64 MAX_RESOURCE_SIZE = 16 * 1024 * 1024;
         HashTable<string, Bytes> _files;
         public File file { get; protected set; }
 
@@ -62,12 +63,22 @@ namespace WebExtension {
             if (_files != null && _files.contains (_resource)) {
                 return _files.lookup (_resource);
             }
-            var child = file.get_child (_resource);
+            var child = file;
             try {
-                var info = child.query_info ("standard::type,standard::is-symlink",
-                                             FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
-                if (info.get_file_type () != FileType.REGULAR || info.get_is_symlink ()) {
-                    throw new FileError.PERM ("Resource is not a regular file");
+                string[] components = _resource.split ("/");
+                for (int i = 0; i < components.length; i++) {
+                    child = child.get_child (components[i]);
+                    var info = child.query_info ("standard::type,standard::is-symlink",
+                                                 FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                    bool last = i == components.length - 1;
+                    if (info.get_is_symlink ()
+                        || (!last && info.get_file_type () != FileType.DIRECTORY)
+                        || (last && info.get_file_type () != FileType.REGULAR)) {
+                        throw new FileError.PERM ("Resource escapes extension root");
+                    }
+                    if (last && info.get_size () > MAX_RESOURCE_SIZE) {
+                        throw new FileError.FAILED ("Resource is too large");
+                    }
                 }
                 uint8[] data;
                 if (yield child.load_contents_async (null, out data, null)) {
@@ -91,6 +102,9 @@ namespace WebExtension {
     }
 
     public class ExtensionManager : Object {
+        const uint64 MAX_ARCHIVE_ENTRY_SIZE = 16 * 1024 * 1024;
+        const uint64 MAX_ARCHIVE_TOTAL_SIZE = 64 * 1024 * 1024;
+        const uint MAX_ARCHIVE_ENTRIES = 1024;
         static ExtensionManager? _default = null;
         internal HashTable<string, Extension> extensions;
 
@@ -130,7 +144,7 @@ namespace WebExtension {
             return _default;
         }
 
-        static ByteArray read_archive_entry (Archive.Read archive) throws Error {
+        static ByteArray read_archive_entry (Archive.Read archive, uint64 maximum) throws Error {
             var data = new ByteArray ();
             while (true) {
                 // archive_read_data_block() returns a borrowed pointer owned by
@@ -144,6 +158,9 @@ namespace WebExtension {
                 if (result != Archive.Result.OK) {
                     throw new FileError.IO ("Failed to read archive entry: %s".printf (
                         archive.error_string ()));
+                }
+                if ((uint64)data.len + (uint64)buffer.length > maximum) {
+                    throw new FileError.FAILED ("Archive entry is too large");
                 }
                 data.append (buffer);
             }
@@ -174,17 +191,34 @@ namespace WebExtension {
                             archive.support_format_zip ();
                             if (archive.open_filename (file.get_path (), 10240) == Archive.Result.OK) {
                                 unowned Archive.Entry entry;
+                                uint archive_entries = 0;
+                                uint64 archive_size = 0;
                                 while (archive.next_header (out entry) == Archive.Result.OK) {
+                                    archive_entries++;
+                                    if (archive_entries > MAX_ARCHIVE_ENTRIES) {
+                                        throw new FileError.FAILED ("Archive has too many entries");
+                                    }
                                     if (!Extension.is_safe_resource_path (entry.pathname ())) {
                                         warning ("Ignoring unsafe resource path in '%s'", file.get_path ());
                                         continue;
                                     }
+                                    if (entry.size_is_set () && entry.size () > MAX_ARCHIVE_ENTRY_SIZE) {
+                                        throw new FileError.FAILED ("Archive entry is too large");
+                                    }
                                     if (entry.pathname () == "manifest.json") {
-                                        var data = read_archive_entry (archive);
+                                        var data = read_archive_entry (archive, MAX_ARCHIVE_ENTRY_SIZE);
+                                        archive_size += data.len;
+                                        if (archive_size > MAX_ARCHIVE_TOTAL_SIZE) {
+                                            throw new FileError.FAILED ("Archive is too large");
+                                        }
                                         var bytes = ByteArray.free_to_bytes ((owned) data);
                                         stream = new MemoryInputStream.from_data (bytes.get_data (), free);
                                     } else {
-                                        var data = read_archive_entry (archive);
+                                        var data = read_archive_entry (archive, MAX_ARCHIVE_ENTRY_SIZE);
+                                        archive_size += data.len;
+                                        if (archive_size > MAX_ARCHIVE_TOTAL_SIZE) {
+                                            throw new FileError.FAILED ("Archive is too large");
+                                        }
                                         if (data.len > 0) {
                                             extension.add_resource (entry.pathname (),
                                                 ByteArray.free_to_bytes ((owned) data));

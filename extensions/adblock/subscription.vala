@@ -252,10 +252,13 @@ namespace Adblock {
                 if (!regular_file (temporary)) {
                     throw new IOError.FAILED ("Downloaded cache is not a regular file");
                 }
+                // Parse the still-open, validated temporary pathname before
+                // installing it. This avoids reopening the final cache path
+                // after validation.
+                yield parse (temporary, true);
                 // Do not overwrite an existing cache entry or follow a final
                 // symlink. A competing download simply loses this race.
                 temporary.move (file, FileCopyFlags.NONE, null, null);
-                queue_parse.begin (true);
             } catch (Error error) {
                 critical ("Failed to install adblock cache %s: %s", file.get_path (), error.message);
                 try {
@@ -268,7 +271,7 @@ namespace Adblock {
 
         async void queue_parse (bool headers_only=false) {
             try {
-                yield parse (headers_only);
+                yield parse (file, headers_only);
             } catch (Error error) {
                 critical ("Failed to parse %s%s: %s", headers_only ? "headers for " : "", uri, error.message);
             }
@@ -277,10 +280,10 @@ namespace Adblock {
         /*
          * Parse either headers or filters depending on the flag.
          */
-        async void parse (bool headers_only=false) throws Error {
-            debug ("Parsing %s, caching %s", uri, file.get_path ());
+        async void parse (File source, bool headers_only=false) throws Error {
+            debug ("Parsing %s, caching %s", uri, source.get_path ());
             clear ();
-            var stream = new DataInputStream (file.read ());
+            var stream = new DataInputStream (source.read ());
             string? line;
             while ((line = stream.read_line (null)) != null) {
                 if (line == null) {
