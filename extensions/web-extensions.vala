@@ -28,26 +28,53 @@ namespace WebExtension {
         }
 
         public void add_resource (string resource, Bytes data) {
+            if (!is_safe_resource_path (resource)) {
+                warning ("Ignoring unsafe extension resource path '%s'", resource);
+                return;
+            }
             if (_files == null) {
                 _files = new HashTable<string, Bytes> (str_hash, str_equal);
             }
             _files.insert (resource, data);
         }
 
+        internal static bool is_safe_resource_path (string resource) {
+            if (resource == "" || Path.is_absolute (resource)) {
+                return false;
+            }
+            foreach (string component in resource.replace ("\\", "/").split ("/")) {
+                if (component == ".." || component == "") {
+                    return false;
+                }
+            }
+            return true;
+        }
+
         public async Bytes get_resource (string resource) throws Error {
-            // Strip ./ or / prefix
-            string _resource = resource.has_prefix (".") ? resource.substring (1, -1) : resource;
-            _resource = _resource.has_prefix ("/") ? _resource.substring (1, -1) : _resource;
+            string _resource = resource;
+            while (_resource.has_prefix ("./")) {
+                _resource = _resource.substring (2, -1);
+            }
+            if (!is_safe_resource_path (_resource)) {
+                throw new FileError.PERM ("Unsafe resource path '%s'".printf (resource));
+            }
 
             if (_files != null && _files.contains (_resource)) {
                 return _files.lookup (_resource);
             }
             var child = file.get_child (_resource);
-            if (child.query_exists ()) {
+            try {
+                var info = child.query_info ("standard::type,standard::is-symlink",
+                                             FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                if (info.get_file_type () != FileType.REGULAR || info.get_is_symlink ()) {
+                    throw new FileError.PERM ("Resource is not a regular file");
+                }
                 uint8[] data;
                 if (yield child.load_contents_async (null, out data, null)) {
                     return new Bytes (data);
                 }
+            } catch (Error error) {
+                throw new FileError.IO ("Failed to open '%s': %s".printf (resource, error.message));
             }
             throw new FileError.IO ("Failed to open '%s': Not found in %s".printf (resource, name));
         }
@@ -128,17 +155,26 @@ namespace WebExtension {
                             if (archive.open_filename (file.get_path (), 10240) == Archive.Result.OK) {
                                 unowned Archive.Entry entry;
                                 while (archive.next_header (out entry) == Archive.Result.OK) {
+                                    if (!Extension.is_safe_resource_path (entry.pathname ())) {
+                                        warning ("Ignoring unsafe resource path in '%s'", file.get_path ());
+                                        continue;
+                                    }
                                     if (entry.pathname () == "manifest.json") {
                                         uint8[] buffer;
                                         int64 offset;
                                         archive.read_data_block (out buffer, out offset);
-                                        stream = new MemoryInputStream.from_data (buffer, free);
+                                        // libarchive owns this buffer. The binding
+                                        // returns a borrowed pointer, so the stream
+                                        // receives a copied array.
+                                        unowned uint8[] borrowed = buffer;
+                                        stream = new MemoryInputStream.from_data (borrowed, free);
                                     } else {
                                         uint8[] buffer;
                                         int64 offset;
                                         archive.read_data_block (out buffer, out offset);
                                         if (buffer.length > 0) {
-                                            extension.add_resource (entry.pathname (), new Bytes (buffer));
+                                            unowned uint8[] borrowed = buffer;
+                                            extension.add_resource (entry.pathname (), new Bytes (borrowed));
                                         }
                                     }
                                 }

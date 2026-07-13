@@ -150,7 +150,7 @@ namespace Adblock {
             }
 
             // Skip if this hasn't been downloaded (yet)
-            if (!file.query_exists ()) {
+            if (!cache_file_is_regular ()) {
                 return false;
             }
 
@@ -158,9 +158,32 @@ namespace Adblock {
             return true;
         }
 
+        bool cache_file_is_regular () {
+            try {
+                var info = file.query_info ("standard::type,standard::is-symlink",
+                                            FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                return info.get_file_type () == FileType.REGULAR && !info.get_is_symlink ();
+            } catch (Error error) {
+                return false;
+            }
+        }
+
         bool ensure_downloaded (bool headers_only) {
-            if (file.query_exists ()) {
+            if (cache_file_is_regular ()) {
                 return true;
+            }
+
+            try {
+                file.query_info ("standard::type,standard::is-symlink",
+                                 FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                critical ("Refusing unsafe adblock cache path %s", file.get_path ());
+                return false;
+            } catch (Error error) {
+                if (!(error is IOError.NOT_FOUND)) {
+                    critical ("Failed to inspect adblock cache path %s: %s",
+                              file.get_path (), error.message);
+                    return false;
+                }
             }
 
             try {
@@ -170,7 +193,8 @@ namespace Adblock {
             }
 
             var download = WebKit.WebContext.get_default ().download_uri (uri.split ("&")[0]);
-            download.allow_overwrite = true;
+            // Do not allow a race to replace the destination with a symlink.
+            download.allow_overwrite = false;
             download.set_destination (file.get_uri ());
             download.finished.connect (() => {
                 queue_parse.begin (true);
