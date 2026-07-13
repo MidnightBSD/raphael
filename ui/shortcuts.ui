@@ -200,6 +200,13 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
+                <property name="action-name">win.save-page</property>
+                <property name="title" translatable="yes">Save the current page</property>
+                <property name="visible">yes</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
                 <property name="action-name">win.show-inspector</property>
                 <property name="title" translatable="yes">Toggle developer tools</property>
                 <property name="visible">yes</property>

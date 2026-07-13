@@ -120,6 +120,11 @@
         <attribute name="accel">&lt;Primary&gt;u</attribute>
       </item>
       <item>
+        <attribute name="action">win.save-page</attribute>
+        <attribute name="label" translatable="yes">_Save Page…</attribute>
+        <attribute name="accel">&lt;Primary&gt;s</attribute>
+      </item>
+      <item>
         <attribute name="action">win.print</attribute>
         <attribute name="label" translatable="yes">Print the current page</attribute>
         <attribute name="accel">&lt;Primary&gt;p</attribute>

@@ -42,6 +42,7 @@ namespace Raphael {
             { "zoomin", zoom_in_activated },
             { "find", find_activated },
             { "view-source", view_source_activated },
+            { "save-page", save_page_activated },
             { "print", print_activated },
             { "caret-browsing", caret_browsing_activated },
             { "show-inspector", show_inspector_activated },
@@ -124,6 +125,7 @@ namespace Raphael {
                 application.set_accels_for_action ("win.show-downloads", { "<Primary><Shift>j" });
                 application.set_accels_for_action ("win.find", { "<Primary>f" });
                 application.set_accels_for_action ("win.view-source", { "<Primary>u", "<Primary><Alt>u" });
+                application.set_accels_for_action ("win.save-page", { "<Primary>s" });
                 application.set_accels_for_action ("win.print", { "<Primary>p" });
                 application.set_accels_for_action ("win.caret-browsing", { "F7" });
                 application.set_accels_for_action ("win.show-inspector", { "<Primary><Shift>i" });
@@ -686,6 +688,45 @@ namespace Raphael {
 
         void print_activated () {
             tab.print (new WebKit.PrintOperation (tab));
+        }
+
+        void save_page_activated () {
+            save_page.begin ();
+        }
+
+        async void save_page () {
+            var dialog = new Gtk.FileChooserDialog (
+                _("Save Page"), this, Gtk.FileChooserAction.SAVE,
+                Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL,
+                Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT);
+            dialog.set_do_overwrite_confirmation (true);
+
+            string filename = tab.display_title.strip ();
+            filename = filename.replace ("/", "-")
+                               .replace ("\\", "-")
+                               .replace (":", "-")
+                               .replace ("\n", " ")
+                               .replace ("\r", " ");
+            if (filename == "") {
+                filename = _("webpage");
+            }
+            if (!filename.has_suffix (".mhtml")) {
+                filename += ".mhtml";
+            }
+            dialog.set_current_name (filename);
+
+            if (dialog.run () != Gtk.ResponseType.ACCEPT) {
+                dialog.destroy ();
+                return;
+            }
+            var file = File.new_for_path (dialog.get_filename ());
+            dialog.destroy ();
+
+            try {
+                yield tab.save_to_file (file, WebKit.SaveMode.MHTML, null);
+            } catch (Error error) {
+                warning ("Failed to save page: %s", error.message);
+            }
         }
 
         internal string? prompt (string title, string message, string confirm, string? text=null) {
