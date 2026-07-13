@@ -173,6 +173,19 @@ namespace WebExtension {
             FileInfo info;
             while ((info = enumerator.next_file ()) != null) {
                 var file = folder.get_child (info.get_name ());
+                try {
+                    var file_info = file.query_info ("standard::type,standard::is-symlink",
+                                                     FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                    if (file_info.get_file_type () != FileType.DIRECTORY
+                        || file_info.get_is_symlink ()) {
+                        warning ("Ignoring unsafe extension root '%s'", file.get_path ());
+                        continue;
+                    }
+                } catch (Error error) {
+                    warning ("Failed to validate extension root '%s': %s",
+                             file.get_path (), error.message);
+                    continue;
+                }
                 string id = file.get_basename ();
                 if (!Raphael.CoreSettings.get_default ().get_plugin_enabled (id)) {
                     continue;
