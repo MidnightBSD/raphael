@@ -31,6 +31,7 @@ namespace Raphael {
         bool was_error = false;
         internal TlsCertificate? tls { get; protected set; default = null; }
         public string link_uri { get; protected set; }
+        WebKit.PermissionRequest? pending_permission = null;
 
         [GtkChild]
         internal unowned Gtk.Popover popover;
@@ -57,6 +58,21 @@ namespace Raphael {
                 // Undelay if needed
                 if (display_uri != uri) {
                     load_uri (display_uri);
+                }
+            });
+            confirm.clicked.connect (() => {
+                var permission = pending_permission;
+                pending_permission = null;
+                if (permission != null) {
+                    permission.allow ();
+                }
+                popover.hide ();
+            });
+            popover.closed.connect (() => {
+                var permission = pending_permission;
+                pending_permission = null;
+                if (permission != null) {
+                    permission.deny ();
                 }
             });
         }
@@ -385,24 +401,21 @@ namespace Raphael {
         }
 
         public override bool permission_request (WebKit.PermissionRequest permission) {
+            if (pending_permission != null) {
+                pending_permission.deny ();
+            }
+            pending_permission = permission;
             if (permission is WebKit.GeolocationPermissionRequest) {
                 string hostname = uri_hostname (uri);
                 message.label = _("%s wants to know your location.").printf (hostname);
             } else if (permission is WebKit.NotificationPermissionRequest) {
-                permission.allow ();
-                return true;
+                string hostname = uri_hostname (uri);
+                message.label = _("%s wants to show notifications.").printf (hostname);
             } else {
                 message.label = permission.get_type ().name ();
             }
             confirm.label = _("_Allow");
             confirm.show ();
-            confirm.clicked.connect (() => {
-                permission.allow ();
-                popover.hide ();
-            });
-            popover.closed.connect (() => {
-                permission.deny ();
-            });
             popover.show ();
             return true;
         }
