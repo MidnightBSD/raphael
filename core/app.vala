@@ -69,6 +69,20 @@ namespace Raphael {
             return base.local_command_line (ref args, out exit_status);
         }
 
+        File? trusted_directory (File candidate) {
+            try {
+                var info = candidate.query_info ("standard::type,standard::is-symlink",
+                                                 FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                if (info.get_file_type () == FileType.DIRECTORY && !info.get_is_symlink ()) {
+                    return candidate;
+                }
+            } catch (Error error) {
+                debug ("Failed to validate plugin directory %s: %s",
+                       candidate.get_path (), error.message);
+            }
+            return null;
+        }
+
         public override void startup () {
             Intl.bindtextdomain (Config.PROJECT_NAME, null);
             Intl.bind_textdomain_codeset (Config.PROJECT_NAME, "UTF-8");
@@ -121,16 +135,16 @@ namespace Raphael {
             context.set_process_model (WebKit.ProcessModel.MULTIPLE_SECONDARY_PROCESSES);
 
             // Try and load web extensions from build folder
-            var web_path = exec_path.get_parent ().get_child ("web");
-            if (!web_path.query_exists (null)) {
+            var web_path = trusted_directory (exec_path.get_parent ().get_child ("web"));
+            if (web_path == null) {
                 // Alternatively look for an installed path
                 web_path = File.new_for_path (Config.PLUGINDIR);
             }
             context.set_web_extensions_directory (web_path.get_path ());
             context.initialize_web_extensions.connect (() => {
                 // Prefer plugins from the build folder
-                var builtin_path = exec_path.get_parent ().get_child ("extensions");
-                if (!builtin_path.query_exists (null)) {
+                var builtin_path = trusted_directory (exec_path.get_parent ().get_child ("extensions"));
+                if (builtin_path == null) {
                     // System-wide plugins
                     builtin_path = File.new_for_path (Config.PLUGINDIR);
                 }
@@ -176,8 +190,8 @@ namespace Raphael {
             }
 
             // Try and load plugins from build folder
-            var builtin_path = exec_path.get_parent ().get_child ("extensions");
-            if (!builtin_path.query_exists (null)) {
+            var builtin_path = trusted_directory (exec_path.get_parent ().get_child ("extensions"));
+            if (builtin_path == null) {
                 // System-wide plugins
                 builtin_path = File.new_for_path (Config.PLUGINDIR);
             }

@@ -91,6 +91,7 @@ namespace Adblock {
         Keys keys;
         Pattern pattern;
         public File file { get; protected set; }
+        File? pending_download_file = null;
 
         public Subscription (string uri, bool active=false) {
             Object (uri: uri, active: active);
@@ -158,14 +159,18 @@ namespace Adblock {
             return true;
         }
 
-        bool cache_file_is_regular () {
+        bool regular_file (File candidate) {
             try {
-                var info = file.query_info ("standard::type,standard::is-symlink",
+                var info = candidate.query_info ("standard::type,standard::is-symlink",
                                             FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
                 return info.get_file_type () == FileType.REGULAR && !info.get_is_symlink ();
             } catch (Error error) {
                 return false;
             }
+        }
+
+        bool cache_file_is_regular () {
+            return regular_file (file);
         }
 
         bool ensure_downloaded (bool headers_only) {
@@ -192,14 +197,73 @@ namespace Adblock {
                 // It's no error if the folder already exists
             }
 
+            if (pending_download_file != null) {
+                return false;
+            }
+
+            File temporary;
+            try {
+                // Reserve a private, unpredictable name without leaving an
+                // attacker-controlled destination for WebKit to overwrite.
+                temporary = file.get_parent ().get_child (
+                    ".raphael-adblock-%s".printf (Uuid.string_random ()));
+                var stream = temporary.create (FileCreateFlags.NONE);
+                stream.close (null);
+                temporary.delete (null);
+            } catch (Error error) {
+                critical ("Failed to create adblock temporary file: %s", error.message);
+                return false;
+            }
+            pending_download_file = temporary;
+
             var download = WebKit.WebContext.get_default ().download_uri (uri.split ("&")[0]);
-            // Do not allow a race to replace the destination with a symlink.
+            // The destination must not already exist. The final cache path is
+            // installed separately with a non-overwriting move below.
             download.allow_overwrite = false;
-            download.set_destination (file.get_uri ());
+            download.set_destination (temporary.get_uri ());
             download.finished.connect (() => {
-                queue_parse.begin (true);
+                finish_download.begin ();
+            });
+            download.failed.connect ((error) => {
+                cleanup_pending_download ();
             });
             return false;
+        }
+
+        void cleanup_pending_download () {
+            var temporary = pending_download_file;
+            pending_download_file = null;
+            if (temporary != null) {
+                try {
+                    temporary.delete (null);
+                } catch (Error error) {
+                    debug ("Failed to remove adblock temporary file: %s", error.message);
+                }
+            }
+        }
+
+        async void finish_download () {
+            var temporary = pending_download_file;
+            pending_download_file = null;
+            if (temporary == null) {
+                return;
+            }
+            try {
+                if (!regular_file (temporary)) {
+                    throw new IOError.FAILED ("Downloaded cache is not a regular file");
+                }
+                // Do not overwrite an existing cache entry or follow a final
+                // symlink. A competing download simply loses this race.
+                temporary.move (file, FileCopyFlags.NONE, null, null);
+                queue_parse.begin (true);
+            } catch (Error error) {
+                critical ("Failed to install adblock cache %s: %s", file.get_path (), error.message);
+                try {
+                    temporary.delete (null);
+                } catch (Error cleanup_error) {
+                    debug ("Failed to remove adblock temporary file: %s", cleanup_error.message);
+                }
+            }
         }
 
         async void queue_parse (bool headers_only=false) {

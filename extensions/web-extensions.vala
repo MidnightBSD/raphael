@@ -186,11 +186,12 @@ namespace WebExtension {
                                 throw new FileError.IO ("Failed to open '%s': %s".printf (file.get_path (), archive.error_string ()));
                             }
                         } else {
-                            // If we find a manifest, this is a web extension
+                            // Open the manifest directly. Do not check existence
+                            // first, since that creates a check-then-use race.
                             var manifest_file = file.get_child ("manifest.json");
-                            if (manifest_file.query_exists ()) {
+                            try {
                                 stream = new DataInputStream (yield manifest_file.read_async ());
-                            } else {
+                            } catch (IOError.NOT_FOUND error) {
                                 continue;
                             }
                         }
