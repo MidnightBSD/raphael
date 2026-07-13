@@ -142,6 +142,16 @@
         <attribute name="action">tally.duplicate</attribute>
         <attribute name="label" translatable="yes">_Duplicate Current Tab</attribute>
       </item>
+      <item>
+        <attribute name="action">tally.mute</attribute>
+        <attribute name="hidden-when">action-disabled</attribute>
+        <attribute name="label" translatable="yes">_Mute Tab</attribute>
+      </item>
+      <item>
+        <attribute name="action">tally.unmute</attribute>
+        <attribute name="hidden-when">action-disabled</attribute>
+        <attribute name="label" translatable="yes">_Unmute Tab</attribute>
+      </item>
     </section>
     <section>
       <item>

@@ -807,6 +807,7 @@ namespace WebKit {
 		public void go_forward ();
 		public void go_to_back_forward_list_item (WebKit.BackForwardListItem list_item);
 		public bool is_editable ();
+		public bool get_is_muted ();
 		public void load_alternate_html (string content, string content_uri, string? base_uri);
 		public void load_bytes (GLib.Bytes bytes, string? mime_type, string? encoding, string? base_uri);
 		public void load_html (string content, string? base_uri = null);
@@ -823,6 +824,7 @@ namespace WebKit {
 		public void set_background_color (Gdk.RGBA rgba);
 		public void set_custom_charset (string? charset);
 		public void set_editable (bool editable);
+		public void set_is_muted (bool muted);
 		public void set_settings (WebKit.Settings settings);
 		public void set_zoom_level (double zoom_level);
 		[NoWrapper]

@@ -167,6 +167,8 @@ namespace Raphael {
                 if (last_button == Gdk.BUTTON_SECONDARY) {
                     ((SimpleAction)group.lookup_action ("pin")).set_enabled (!tab.pinned);
                     ((SimpleAction)group.lookup_action ("unpin")).set_enabled (tab.pinned);
+                    ((SimpleAction)group.lookup_action ("mute")).set_enabled (!tab.get_is_muted ());
+                    ((SimpleAction)group.lookup_action ("unmute")).set_enabled (tab.get_is_muted ());
                     var app = (App)Application.get_default ();
                     var menu = new Gtk.Popover.from_model (this, app.get_menu_by_id ("tally-menu"));
                     menu.show ();
@@ -193,6 +195,16 @@ namespace Raphael {
             action = new SimpleAction ("unpin", null);
             action.activate.connect (() => {
                 tab.pinned = false;
+            });
+            group.add_action (action);
+            action = new SimpleAction ("mute", null);
+            action.activate.connect (() => {
+                tab.set_is_muted (true);
+            });
+            group.add_action (action);
+            action = new SimpleAction ("unmute", null);
+            action.activate.connect (() => {
+                tab.set_is_muted (false);
             });
             group.add_action (action);
             action = new SimpleAction ("duplicate", null);
