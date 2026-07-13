@@ -130,6 +130,26 @@ namespace WebExtension {
             return _default;
         }
 
+        static ByteArray read_archive_entry (Archive.Read archive) throws Error {
+            var data = new ByteArray ();
+            while (true) {
+                // archive_read_data_block() returns a borrowed pointer owned by
+                // libarchive. Copy it into our ByteArray before the next call.
+                unowned uint8[] buffer;
+                int64 offset;
+                var result = archive.read_data_block (out buffer, out offset);
+                if (result == Archive.Result.EOF) {
+                    break;
+                }
+                if (result != Archive.Result.OK) {
+                    throw new FileError.IO ("Failed to read archive entry: %s".printf (
+                        archive.error_string ()));
+                }
+                data.append (buffer);
+            }
+            return data;
+        }
+
         public async void load_from_folder (WebKit.UserContentManager content, File folder) throws Error {
             debug ("Load web extensions from %s", folder.get_path ());
             var enumerator = yield folder.enumerate_children_async (FileAttribute.STANDARD_NAME, 0);
@@ -160,21 +180,14 @@ namespace WebExtension {
                                         continue;
                                     }
                                     if (entry.pathname () == "manifest.json") {
-                                        uint8[] buffer;
-                                        int64 offset;
-                                        archive.read_data_block (out buffer, out offset);
-                                        // libarchive owns this buffer. The binding
-                                        // returns a borrowed pointer, so the stream
-                                        // receives a copied array.
-                                        unowned uint8[] borrowed = buffer;
-                                        stream = new MemoryInputStream.from_data (borrowed, free);
+                                        var data = read_archive_entry (archive);
+                                        var bytes = ByteArray.free_to_bytes ((owned) data);
+                                        stream = new MemoryInputStream.from_data (bytes.get_data (), free);
                                     } else {
-                                        uint8[] buffer;
-                                        int64 offset;
-                                        archive.read_data_block (out buffer, out offset);
-                                        if (buffer.length > 0) {
-                                            unowned uint8[] borrowed = buffer;
-                                            extension.add_resource (entry.pathname (), new Bytes (borrowed));
+                                        var data = read_archive_entry (archive);
+                                        if (data.len > 0) {
+                                            extension.add_resource (entry.pathname (),
+                                                ByteArray.free_to_bytes ((owned) data));
                                         }
                                     }
                                 }
